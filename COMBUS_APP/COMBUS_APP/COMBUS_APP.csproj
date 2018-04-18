@@ -96,6 +96,12 @@
     <Compile Include="Transection Form\StoreManagement.Designer.cs">
       <DependentUpon>StoreManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_Main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Main.Designer.cs">
+      <DependentUpon>UserControl_Main.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
