@@ -30,16 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.BtnHome = new System.Windows.Forms.Button();
-            this.BtnStore = new System.Windows.Forms.Button();
-            this.BtnEmployee = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.BtnReport = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnEmployee = new System.Windows.Forms.Button();
+            this.BtnStore = new System.Windows.Forms.Button();
+            this.BtnHome = new System.Windows.Forms.Button();
+            this.SidePanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -48,34 +49,21 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.SidePanel);
             this.panel1.Controls.Add(this.BtnReport);
             this.panel1.Controls.Add(this.BtnEmployee);
             this.panel1.Controls.Add(this.BtnStore);
             this.panel1.Controls.Add(this.BtnHome);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(219, 720);
             this.panel1.TabIndex = 3;
             // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 58);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(252)))));
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(248, 0);
@@ -106,63 +94,28 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(252)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(219, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1061, 10);
             this.panel2.TabIndex = 6;
             // 
-            // BtnHome
+            // panel4
             // 
-            this.BtnHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnHome.FlatAppearance.BorderSize = 0;
-            this.BtnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnHome.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnHome.ForeColor = System.Drawing.Color.White;
-            this.BtnHome.Image = ((System.Drawing.Image)(resources.GetObject("BtnHome.Image")));
-            this.BtnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnHome.Location = new System.Drawing.Point(0, 58);
-            this.BtnHome.Name = "BtnHome";
-            this.BtnHome.Size = new System.Drawing.Size(219, 58);
-            this.BtnHome.TabIndex = 2;
-            this.BtnHome.Text = "   Home";
-            this.BtnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnHome.UseVisualStyleBackColor = true;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(219, 91);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1061, 629);
+            this.panel4.TabIndex = 7;
             // 
-            // BtnStore
+            // panel5
             // 
-            this.BtnStore.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnStore.FlatAppearance.BorderSize = 0;
-            this.BtnStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnStore.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnStore.ForeColor = System.Drawing.Color.White;
-            this.BtnStore.Image = ((System.Drawing.Image)(resources.GetObject("BtnStore.Image")));
-            this.BtnStore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnStore.Location = new System.Drawing.Point(0, 116);
-            this.BtnStore.Name = "BtnStore";
-            this.BtnStore.Size = new System.Drawing.Size(219, 58);
-            this.BtnStore.TabIndex = 3;
-            this.BtnStore.Text = "   Store";
-            this.BtnStore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnStore.UseVisualStyleBackColor = true;
-            // 
-            // BtnEmployee
-            // 
-            this.BtnEmployee.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnEmployee.FlatAppearance.BorderSize = 0;
-            this.BtnEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEmployee.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEmployee.ForeColor = System.Drawing.Color.White;
-            this.BtnEmployee.Image = ((System.Drawing.Image)(resources.GetObject("BtnEmployee.Image")));
-            this.BtnEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEmployee.Location = new System.Drawing.Point(0, 174);
-            this.BtnEmployee.Name = "BtnEmployee";
-            this.BtnEmployee.Size = new System.Drawing.Size(219, 58);
-            this.BtnEmployee.TabIndex = 4;
-            this.BtnEmployee.Text = "   Employee";
-            this.BtnEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnEmployee.UseVisualStyleBackColor = true;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(219, 100);
+            this.panel5.TabIndex = 6;
             // 
             // BtnReport
             // 
@@ -173,30 +126,80 @@
             this.BtnReport.ForeColor = System.Drawing.Color.White;
             this.BtnReport.Image = ((System.Drawing.Image)(resources.GetObject("BtnReport.Image")));
             this.BtnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnReport.Location = new System.Drawing.Point(0, 232);
+            this.BtnReport.Location = new System.Drawing.Point(0, 274);
             this.BtnReport.Name = "BtnReport";
+            this.BtnReport.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.BtnReport.Size = new System.Drawing.Size(219, 58);
-            this.BtnReport.TabIndex = 5;
+            this.BtnReport.TabIndex = 10;
             this.BtnReport.Text = "   Report";
             this.BtnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnReport.UseVisualStyleBackColor = true;
+            this.BtnReport.Click += new System.EventHandler(this.BtnReport_Click);
             // 
-            // button1
+            // BtnEmployee
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 290);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 58);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "   Report";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnEmployee.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnEmployee.FlatAppearance.BorderSize = 0;
+            this.BtnEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEmployee.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEmployee.ForeColor = System.Drawing.Color.White;
+            this.BtnEmployee.Image = ((System.Drawing.Image)(resources.GetObject("BtnEmployee.Image")));
+            this.BtnEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEmployee.Location = new System.Drawing.Point(0, 216);
+            this.BtnEmployee.Name = "BtnEmployee";
+            this.BtnEmployee.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.BtnEmployee.Size = new System.Drawing.Size(219, 58);
+            this.BtnEmployee.TabIndex = 9;
+            this.BtnEmployee.Text = "   Employee";
+            this.BtnEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnEmployee.UseVisualStyleBackColor = true;
+            this.BtnEmployee.Click += new System.EventHandler(this.BtnEmployee_Click);
+            // 
+            // BtnStore
+            // 
+            this.BtnStore.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnStore.FlatAppearance.BorderSize = 0;
+            this.BtnStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnStore.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStore.ForeColor = System.Drawing.Color.White;
+            this.BtnStore.Image = ((System.Drawing.Image)(resources.GetObject("BtnStore.Image")));
+            this.BtnStore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnStore.Location = new System.Drawing.Point(0, 158);
+            this.BtnStore.Name = "BtnStore";
+            this.BtnStore.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.BtnStore.Size = new System.Drawing.Size(219, 58);
+            this.BtnStore.TabIndex = 8;
+            this.BtnStore.Text = "   Store";
+            this.BtnStore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnStore.UseVisualStyleBackColor = true;
+            this.BtnStore.Click += new System.EventHandler(this.BtnStore_Click);
+            // 
+            // BtnHome
+            // 
+            this.BtnHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnHome.FlatAppearance.BorderSize = 0;
+            this.BtnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnHome.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnHome.ForeColor = System.Drawing.Color.White;
+            this.BtnHome.Image = ((System.Drawing.Image)(resources.GetObject("BtnHome.Image")));
+            this.BtnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnHome.Location = new System.Drawing.Point(0, 100);
+            this.BtnHome.Name = "BtnHome";
+            this.BtnHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.BtnHome.Size = new System.Drawing.Size(219, 58);
+            this.BtnHome.TabIndex = 7;
+            this.BtnHome.Text = "   Home";
+            this.BtnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnHome.UseVisualStyleBackColor = true;
+            this.BtnHome.Click += new System.EventHandler(this.BtnHome_Click);
+            // 
+            // SidePanel
+            // 
+            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(252)))));
+            this.SidePanel.Location = new System.Drawing.Point(0, 100);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(12, 58);
+            this.SidePanel.TabIndex = 0;
             // 
             // Main
             // 
@@ -204,11 +207,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -220,16 +226,17 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel SidePanel;
         private System.Windows.Forms.Button BtnReport;
         private System.Windows.Forms.Button BtnEmployee;
         private System.Windows.Forms.Button BtnStore;
         private System.Windows.Forms.Button BtnHome;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel5;
     }
 }
 

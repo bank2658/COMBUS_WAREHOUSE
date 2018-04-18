@@ -15,6 +15,46 @@ namespace COMBUS_APP
         public Main()
         {
             InitializeComponent();
+            SidePanel.Height = BtnHome.Height;
+        }
+
+        void toggle(object sender)
+        {
+            SidePanel.Height = ((Button)sender).Height;
+            SidePanel.Top = ((Button)sender).Top;
+
+            BtnHome.BackColor = Color.FromArgb(41, 39, 40);
+            BtnStore.BackColor = Color.FromArgb(41, 39, 40);
+            BtnEmployee.BackColor = Color.FromArgb(41, 39, 40);
+            BtnReport.BackColor = Color.FromArgb(41, 39, 40);
+            //RGB not hover 41, 39, 40 
+            //RGB hover 49, 46, 48
+            ((Button)sender).BackColor = Color.FromArgb(49, 46, 48);
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            toggle(BtnHome);
+        }
+
+        private void BtnHome_Click(object sender, EventArgs e)
+        {
+            toggle(sender);
+        }
+
+        private void BtnStore_Click(object sender, EventArgs e)
+        {
+            toggle(sender);
+        }
+
+        private void BtnEmployee_Click(object sender, EventArgs e)
+        {
+            toggle(sender);
+        }
+
+        private void BtnReport_Click(object sender, EventArgs e)
+        {
+            toggle(sender);
         }
     }
 }
