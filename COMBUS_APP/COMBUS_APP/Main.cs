@@ -77,5 +77,10 @@ namespace COMBUS_APP
             MasterReport user_report = new MasterReport();
             panel4.Controls.Add(user_report);
         }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
