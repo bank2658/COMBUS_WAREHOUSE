@@ -35,6 +35,9 @@ namespace COMBUS_APP
         private void Main_Load(object sender, EventArgs e)
         {
             toggle(BtnHome);
+
+            UserControl_Main user_main = new UserControl_Main();
+            panel4.Controls.Add(user_main);
         }
 
         private void BtnHome_Click(object sender, EventArgs e)
