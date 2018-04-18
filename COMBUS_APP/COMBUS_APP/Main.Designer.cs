@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.BtnReport = new System.Windows.Forms.Button();
             this.BtnEmployee = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,6 +63,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(219, 720);
             this.panel1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(2, 692);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 24);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "(c)2018 Combus";
             // 
             // SidePanel
             // 
@@ -217,17 +228,6 @@
             this.button1.TabIndex = 11;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(2, 692);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 24);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "(c)2018 Combus";
             // 
             // Main
             // 

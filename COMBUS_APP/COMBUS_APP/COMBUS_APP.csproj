@@ -115,6 +115,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Report\MasterReport.resx">
+      <DependentUpon>MasterReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection Form\EmployeeManagement.resx">
+      <DependentUpon>EmployeeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection Form\StoreManagement.resx">
+      <DependentUpon>StoreManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Main.resx">
       <DependentUpon>UserControl_Main.cs</DependentUpon>
     </EmbeddedResource>
