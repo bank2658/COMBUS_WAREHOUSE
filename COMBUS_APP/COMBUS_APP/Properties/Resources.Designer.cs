@@ -73,9 +73,9 @@ namespace COMBUS_APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap home_icon_silhouette {
+        internal static System.Drawing.Bitmap home {
             get {
-                object obj = ResourceManager.GetObject("home-icon-silhouette", resourceCulture);
+                object obj = ResourceManager.GetObject("home", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,26 +86,6 @@ namespace COMBUS_APP.Properties {
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Menu_Company {
-            get {
-                object obj = ResourceManager.GetObject("Menu_Company", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Menu_Product {
-            get {
-                object obj = ResourceManager.GetObject("Menu_Product", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
