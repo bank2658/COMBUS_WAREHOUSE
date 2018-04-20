@@ -28,7 +28,14 @@ namespace COMBUS_APP
 
             SidePanel.Height = BtnHome.Height;
 
+            lbDatetime.Text = DateTime.Now.ToString("dd/mm/yyyy HH:mm:ss");
+            //BtnStore.Enabled = false;
+            //BtnEmployeeManagement.Enabled = false;
+            //BtnReport.Enabled = false;
+            //BtnTransactionError.Enabled = false;
+
             //panel3.BackColor = Color.FromArgb(150, Color.FromArgb(0, 157, 252));
+            panelBuntonTopR.BackColor = Color.FromArgb(150, Color.White);
         }
 
         void toggle(object sender, int panelLocation)
@@ -144,11 +151,13 @@ namespace COMBUS_APP
         private void BtnClose_MouseMove(object sender, MouseEventArgs e)
         {
             BtnClose.Image = ((System.Drawing.Image)(Properties.Resources.cancel_red));
+            panelBuntonTopR.BackColor = Color.FromArgb(229, 229, 229);
         }
 
         private void BtnClose_MouseLeave_1(object sender, EventArgs e)
         {
             BtnClose.Image = ((System.Drawing.Image)(Properties.Resources.close));
+            panelBuntonTopR.BackColor = Color.FromArgb(150, Color.White);
         }
 
         private void BtnMinus_Click(object sender, EventArgs e)
@@ -159,11 +168,19 @@ namespace COMBUS_APP
         private void BtnMinus_MouseMove(object sender, MouseEventArgs e)
         {
             BtnMinus.Image = ((System.Drawing.Image)(Properties.Resources.minus_blue));
+            panelBuntonTopR.BackColor = Color.FromArgb(229, 229, 229);
         }
 
         private void BtnMinus_MouseLeave(object sender, EventArgs e)
         {
             BtnMinus.Image = ((System.Drawing.Image)(Properties.Resources.minus));
+            panelBuntonTopR.BackColor = Color.FromArgb(150, Color.White);
+        }
+
+        private void timerDatetime_Tick(object sender, EventArgs e)
+        {
+            lbDatetime.Text = DateTime.Now.ToString("dd/mm/yyyy HH:mm:ss");
+            timerDatetime.Start();
         }
 
         private void timerStore_Tick(object sender, EventArgs e)
