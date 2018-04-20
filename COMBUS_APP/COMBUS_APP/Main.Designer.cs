@@ -42,9 +42,9 @@
             this.panelReport = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.BtnClose = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.BtnReport = new System.Windows.Forms.Button();
             this.BtnEmployee = new System.Windows.Forms.Button();
@@ -146,7 +146,7 @@
             this.panelStore.Controls.Add(this.button4);
             this.panelStore.Controls.Add(this.button3);
             this.panelStore.Controls.Add(this.button1);
-            this.panelStore.Location = new System.Drawing.Point(0, 394);
+            this.panelStore.Location = new System.Drawing.Point(1, 343);
             this.panelStore.Name = "panelStore";
             this.panelStore.Size = new System.Drawing.Size(219, 114);
             this.panelStore.TabIndex = 7;
@@ -177,7 +177,7 @@
             this.button4.Dock = System.Windows.Forms.DockStyle.Top;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(0, 76);
@@ -185,29 +185,10 @@
             this.button4.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.button4.Size = new System.Drawing.Size(219, 38);
             this.button4.TabIndex = 15;
-            this.button4.Text = " Truck";
+            this.button4.Text = "  Truck";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::COMBUS_APP.Properties.Resources.Menu_Product;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 38);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(219, 38);
-            this.button3.TabIndex = 14;
-            this.button3.Text = " Product";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // BtnClose
             // 
@@ -235,21 +216,38 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 38);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(219, 38);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "  Product";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::COMBUS_APP.Properties.Resources.Menu_Company;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.button1.Size = new System.Drawing.Size(219, 38);
             this.button1.TabIndex = 12;
-            this.button1.Text = " Company";
+            this.button1.Text = "  Company";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
@@ -268,7 +266,7 @@
             this.BtnReport.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.BtnReport.Size = new System.Drawing.Size(219, 58);
             this.BtnReport.TabIndex = 10;
-            this.BtnReport.Text = "   Report";
+            this.BtnReport.Text = " Report";
             this.BtnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnReport.UseVisualStyleBackColor = true;
             this.BtnReport.Click += new System.EventHandler(this.BtnReport_Click);
@@ -287,7 +285,7 @@
             this.BtnEmployee.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.BtnEmployee.Size = new System.Drawing.Size(219, 58);
             this.BtnEmployee.TabIndex = 9;
-            this.BtnEmployee.Text = "   Employee";
+            this.BtnEmployee.Text = " Employee";
             this.BtnEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmployee.UseVisualStyleBackColor = true;
             this.BtnEmployee.Click += new System.EventHandler(this.BtnEmployee_Click);
@@ -306,7 +304,7 @@
             this.BtnStore.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.BtnStore.Size = new System.Drawing.Size(219, 58);
             this.BtnStore.TabIndex = 8;
-            this.BtnStore.Text = "   Store";
+            this.BtnStore.Text = " Store";
             this.BtnStore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnStore.UseVisualStyleBackColor = true;
             this.BtnStore.Click += new System.EventHandler(this.BtnStore_Click);
@@ -325,7 +323,7 @@
             this.BtnHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.BtnHome.Size = new System.Drawing.Size(219, 58);
             this.BtnHome.TabIndex = 7;
-            this.BtnHome.Text = "   Home";
+            this.BtnHome.Text = " Home";
             this.BtnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnHome.UseVisualStyleBackColor = true;
             this.BtnHome.Click += new System.EventHandler(this.BtnHome_Click);
