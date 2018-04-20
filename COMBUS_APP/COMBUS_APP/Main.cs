@@ -27,6 +27,8 @@ namespace COMBUS_APP
             HiddenStore = HiddenEmployee = true;
 
             SidePanel.Height = BtnHome.Height;
+
+            //panel3.BackColor = Color.FromArgb(150, Color.FromArgb(0, 157, 252));
         }
 
         void toggle(object sender, int panelLocation)
@@ -41,7 +43,9 @@ namespace COMBUS_APP
             BtnCompany.BackColor = Color.FromArgb(41, 39, 40);
             BtnProduct.BackColor = Color.FromArgb(41, 39, 40);
             BtnEmployeeManagement.BackColor = Color.FromArgb(41, 39, 40);
+            BtnManagement.BackColor = Color.FromArgb(41, 39, 40);
             BtnReport.BackColor = Color.FromArgb(41, 39, 40);
+            BtnTransactionError.BackColor = Color.FromArgb(41, 39, 40);
             //RGB not hover 41, 39, 40 
             //RGB hover 49, 46, 48
             ((Button)sender).BackColor = Color.FromArgb(49, 46, 48);
@@ -128,6 +132,39 @@ namespace COMBUS_APP
             Application.Exit();
         }
 
+        private void BtnTransactionError_Click(object sender, EventArgs e)
+        {
+            toggle(sender, panelMainmenu.Top);
+            panel4.Controls.Clear();
+
+            //MasterReport user_report = new MasterReport();
+            //panel4.Controls.Add(user_report);
+        }
+
+        private void BtnClose_MouseMove(object sender, MouseEventArgs e)
+        {
+            BtnClose.Image = ((System.Drawing.Image)(Properties.Resources.cancel_red));
+        }
+
+        private void BtnClose_MouseLeave_1(object sender, EventArgs e)
+        {
+            BtnClose.Image = ((System.Drawing.Image)(Properties.Resources.close));
+        }
+
+        private void BtnMinus_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void BtnMinus_MouseMove(object sender, MouseEventArgs e)
+        {
+            BtnMinus.Image = ((System.Drawing.Image)(Properties.Resources.minus_blue));
+        }
+
+        private void BtnMinus_MouseLeave(object sender, EventArgs e)
+        {
+            BtnMinus.Image = ((System.Drawing.Image)(Properties.Resources.minus));
+        }
 
         private void timerStore_Tick(object sender, EventArgs e)
         {
@@ -136,6 +173,7 @@ namespace COMBUS_APP
                 panelStore.Height = panelStore.Height + 8;
                 BtnEmployeeManagement.Top = BtnEmployeeManagement.Top + 8;
                 BtnReport.Top = BtnReport.Top + 8;
+                BtnTransactionError.Top += 8;
                 panelEmployee.Top = panelEmployee.Top + 8;
                 if(panelStore.Height >= panelStoreHeight)
                 {
@@ -149,6 +187,7 @@ namespace COMBUS_APP
                 panelStore.Height = panelStore.Height - 8;
                 BtnEmployeeManagement.Top = BtnEmployeeManagement.Top - 8;
                 BtnReport.Top = BtnReport.Top - 8;
+                BtnTransactionError.Top -= 8;
                 panelEmployee.Top = panelEmployee.Top - 8;
                 if (panelStore.Height <= 0)
                 {
@@ -165,6 +204,7 @@ namespace COMBUS_APP
             {
                 panelEmployee.Height = panelEmployee.Height + 5;
                 BtnReport.Top = BtnReport.Top + 5;
+                BtnTransactionError.Top += 5;
                 if (panelEmployee.Height >= panelEmployeeHeight)
                 {
                     timerEmployee.Stop();
@@ -176,6 +216,7 @@ namespace COMBUS_APP
             {
                 panelEmployee.Height = panelEmployee.Height - 5;
                 BtnReport.Top = BtnReport.Top - 5;
+                BtnTransactionError.Top -= 5;
                 if (panelEmployee.Height <= 0)
                 {
                     timerEmployee.Stop();

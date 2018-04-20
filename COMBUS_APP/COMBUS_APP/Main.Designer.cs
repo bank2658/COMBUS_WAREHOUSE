@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panelMainmenu = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.SidePanel = new System.Windows.Forms.Panel();
@@ -46,9 +45,10 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.timerStore = new System.Windows.Forms.Timer(this.components);
             this.timerEmployee = new System.Windows.Forms.Timer(this.components);
+            this.BtnMinus = new System.Windows.Forms.Button();
             this.BtnClose = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnTransactionError = new System.Windows.Forms.Button();
             this.BtnReport = new System.Windows.Forms.Button();
             this.BtnEmployeeManagement = new System.Windows.Forms.Button();
             this.BtnStore = new System.Windows.Forms.Button();
@@ -63,9 +63,9 @@
             // panelMainmenu
             // 
             this.panelMainmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panelMainmenu.Controls.Add(this.button1);
-            this.panelMainmenu.Controls.Add(this.label1);
             this.panelMainmenu.Controls.Add(this.SidePanel);
+            this.panelMainmenu.Controls.Add(this.BtnTransactionError);
+            this.panelMainmenu.Controls.Add(this.label1);
             this.panelMainmenu.Controls.Add(this.BtnReport);
             this.panelMainmenu.Controls.Add(this.BtnEmployeeManagement);
             this.panelMainmenu.Controls.Add(this.BtnStore);
@@ -187,15 +187,16 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(248, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(263, 85);
+            this.panel3.Size = new System.Drawing.Size(263, 75);
             this.panel3.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 31);
+            this.label4.Location = new System.Drawing.Point(12, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(244, 42);
             this.label4.TabIndex = 6;
@@ -235,46 +236,65 @@
             this.timerEmployee.Interval = 10;
             this.timerEmployee.Tick += new System.EventHandler(this.timerEmployee_Tick);
             // 
+            // BtnMinus
+            // 
+            this.BtnMinus.FlatAppearance.BorderSize = 0;
+            this.BtnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMinus.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMinus.ForeColor = System.Drawing.Color.White;
+            this.BtnMinus.Location = new System.Drawing.Point(1215, 17);
+            this.BtnMinus.Name = "BtnMinus";
+            this.BtnMinus.Size = new System.Drawing.Size(26, 29);
+            this.BtnMinus.TabIndex = 12;
+            this.BtnMinus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnMinus.UseVisualStyleBackColor = true;
+            this.BtnMinus.Click += new System.EventHandler(this.BtnMinus_Click);
+            this.BtnMinus.MouseLeave += new System.EventHandler(this.BtnMinus_MouseLeave);
+            this.BtnMinus.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnMinus_MouseMove);
+            // 
             // BtnClose
             // 
             this.BtnClose.FlatAppearance.BorderSize = 0;
             this.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnClose.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnClose.ForeColor = System.Drawing.Color.White;
-            this.BtnClose.Image = ((System.Drawing.Image)(resources.GetObject("BtnClose.Image")));
-            this.BtnClose.Location = new System.Drawing.Point(1246, 15);
+            this.BtnClose.Location = new System.Drawing.Point(1246, 16);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.Size = new System.Drawing.Size(26, 29);
             this.BtnClose.TabIndex = 11;
             this.BtnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnClose.UseVisualStyleBackColor = true;
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            this.BtnClose.MouseLeave += new System.EventHandler(this.BtnClose_MouseLeave_1);
+            this.BtnClose.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnClose_MouseMove);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(106, 13);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Location = new System.Drawing.Point(106, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(62, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // BtnTransactionError
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 317);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(219, 58);
-            this.button1.TabIndex = 16;
-            this.button1.Text = " Transaction\r\n Error";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnTransactionError.FlatAppearance.BorderSize = 0;
+            this.BtnTransactionError.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnTransactionError.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnTransactionError.ForeColor = System.Drawing.Color.White;
+            this.BtnTransactionError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnTransactionError.Location = new System.Drawing.Point(0, 317);
+            this.BtnTransactionError.Name = "BtnTransactionError";
+            this.BtnTransactionError.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.BtnTransactionError.Size = new System.Drawing.Size(219, 58);
+            this.BtnTransactionError.TabIndex = 16;
+            this.BtnTransactionError.Text = " Transaction\r\n Error";
+            this.BtnTransactionError.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnTransactionError.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnTransactionError.UseVisualStyleBackColor = true;
+            this.BtnTransactionError.Click += new System.EventHandler(this.BtnTransactionError_Click);
             // 
             // BtnReport
             // 
@@ -355,6 +375,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.BtnMinus);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
@@ -400,7 +421,8 @@
         private System.Windows.Forms.Panel panelEmployee;
         private System.Windows.Forms.Button BtnManagement;
         private System.Windows.Forms.Timer timerEmployee;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnTransactionError;
+        private System.Windows.Forms.Button BtnMinus;
     }
 }
 
