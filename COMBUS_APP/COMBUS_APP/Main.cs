@@ -122,7 +122,7 @@ namespace COMBUS_APP
             toggle(sender, panelMainmenu.Top);
             panel4.Controls.Clear();
 
-            EmployeeManagement user_employee = new EmployeeManagement();
+            Employee user_employee = new Employee();
             panel4.Controls.Add(user_employee);
         }
         private void BtnManagement_Click(object sender, EventArgs e)
@@ -131,7 +131,7 @@ namespace COMBUS_APP
             toggle(sender, panelEmployee.Top);
             panel4.Controls.Clear();
 
-            Employee user_employee = new Employee();
+            EmployeeManagement user_employee = new EmployeeManagement();
             panel4.Controls.Add(user_employee);
         }
 
@@ -154,8 +154,8 @@ namespace COMBUS_APP
             toggle(sender, panelMainmenu.Top);
             panel4.Controls.Clear();
 
-            //MasterReport user_report = new MasterReport();
-            //panel4.Controls.Add(user_report);
+            TransectionError user_TransectionError = new TransectionError();
+            panel4.Controls.Add(user_TransectionError);
         }
 
         private void BtnClose_MouseMove(object sender, MouseEventArgs e)

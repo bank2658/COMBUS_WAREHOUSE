@@ -74,11 +74,11 @@
     <Compile Include="Master Form\Product.Designer.cs">
       <DependentUpon>Product.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master Form\Truck.cs">
+    <Compile Include="Master Form\TransectionError.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Master Form\Truck.Designer.cs">
-      <DependentUpon>Truck.cs</DependentUpon>
+    <Compile Include="Master Form\TransectionError.Designer.cs">
+      <DependentUpon>TransectionError.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -123,8 +123,8 @@
     <EmbeddedResource Include="Master Form\Product.resx">
       <DependentUpon>Product.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master Form\Truck.resx">
-      <DependentUpon>Truck.cs</DependentUpon>
+    <EmbeddedResource Include="Master Form\TransectionError.resx">
+      <DependentUpon>TransectionError.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

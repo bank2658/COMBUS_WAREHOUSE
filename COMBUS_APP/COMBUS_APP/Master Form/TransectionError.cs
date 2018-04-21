@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace COMBUS_APP.Master_Form
 {
-    public partial class Truck : UserControl
+    public partial class TransectionError : UserControl
     {
-        public Truck()
+        public TransectionError()
         {
             InitializeComponent();
         }
