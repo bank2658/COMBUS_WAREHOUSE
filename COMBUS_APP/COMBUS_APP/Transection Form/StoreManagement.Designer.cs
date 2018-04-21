@@ -67,12 +67,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
-            this.roundedProgressBar6 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar5 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar4 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar3 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar2 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar1 = new COMBUS_APP.Data.RoundedProgressBar();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -102,6 +96,12 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.roundedProgressBar6 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar5 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar4 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar3 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar2 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar1 = new COMBUS_APP.Data.RoundedProgressBar();
             this.pictureBox83 = new System.Windows.Forms.PictureBox();
             this.pictureBox81 = new System.Windows.Forms.PictureBox();
             this.pictureBox79 = new System.Windows.Forms.PictureBox();
@@ -275,7 +275,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.Location = new System.Drawing.Point(-1, 0);
+            this.label1.Location = new System.Drawing.Point(6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(351, 42);
             this.label1.TabIndex = 1;
@@ -283,6 +283,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.pictureBox75);
             this.panel1.Controls.Add(this.pictureBox76);
             this.panel1.Controls.Add(this.pictureBox77);
@@ -368,7 +369,7 @@
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Location = new System.Drawing.Point(366, 0);
+            this.panel1.Location = new System.Drawing.Point(365, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(696, 440);
             this.panel1.TabIndex = 9;
@@ -621,7 +622,7 @@
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Location = new System.Drawing.Point(0, 45);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(366, 414);
+            this.panel3.Size = new System.Drawing.Size(365, 414);
             this.panel3.TabIndex = 18;
             // 
             // label32
@@ -718,6 +719,7 @@
             // 
             // panel4
             // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label18);
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.label16);
@@ -725,9 +727,9 @@
             this.panel4.Controls.Add(this.pictureBox81);
             this.panel4.Controls.Add(this.pictureBox79);
             this.panel4.Controls.Add(this.label14);
-            this.panel4.Location = new System.Drawing.Point(0, 459);
+            this.panel4.Location = new System.Drawing.Point(0, 458);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(366, 210);
+            this.panel4.Size = new System.Drawing.Size(366, 211);
             this.panel4.TabIndex = 19;
             // 
             // label18
@@ -762,6 +764,7 @@
             // 
             // panel5
             // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label33);
             this.panel5.Controls.Add(this.roundedProgressBar6);
             this.panel5.Controls.Add(this.roundedProgressBar5);
@@ -798,9 +801,9 @@
             this.panel5.Controls.Add(this.label24);
             this.panel5.Controls.Add(this.label23);
             this.panel5.Controls.Add(this.label22);
-            this.panel5.Location = new System.Drawing.Point(366, 440);
+            this.panel5.Location = new System.Drawing.Point(365, 438);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(696, 229);
+            this.panel5.Size = new System.Drawing.Size(696, 231);
             this.panel5.TabIndex = 39;
             // 
             // label33
@@ -812,54 +815,6 @@
             this.label33.Size = new System.Drawing.Size(190, 22);
             this.label33.TabIndex = 79;
             this.label33.Text = "Total in Warehouse";
-            // 
-            // roundedProgressBar6
-            // 
-            this.roundedProgressBar6.Location = new System.Drawing.Point(504, 115);
-            this.roundedProgressBar6.Name = "roundedProgressBar6";
-            this.roundedProgressBar6.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar6.TabIndex = 78;
-            this.roundedProgressBar6.Value = 50;
-            // 
-            // roundedProgressBar5
-            // 
-            this.roundedProgressBar5.Location = new System.Drawing.Point(415, 115);
-            this.roundedProgressBar5.Name = "roundedProgressBar5";
-            this.roundedProgressBar5.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar5.TabIndex = 77;
-            this.roundedProgressBar5.Value = 69;
-            // 
-            // roundedProgressBar4
-            // 
-            this.roundedProgressBar4.Location = new System.Drawing.Point(324, 113);
-            this.roundedProgressBar4.Name = "roundedProgressBar4";
-            this.roundedProgressBar4.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar4.TabIndex = 76;
-            this.roundedProgressBar4.Value = 24;
-            // 
-            // roundedProgressBar3
-            // 
-            this.roundedProgressBar3.Location = new System.Drawing.Point(233, 114);
-            this.roundedProgressBar3.Name = "roundedProgressBar3";
-            this.roundedProgressBar3.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar3.TabIndex = 75;
-            this.roundedProgressBar3.Value = 58;
-            // 
-            // roundedProgressBar2
-            // 
-            this.roundedProgressBar2.Location = new System.Drawing.Point(145, 114);
-            this.roundedProgressBar2.Name = "roundedProgressBar2";
-            this.roundedProgressBar2.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar2.TabIndex = 74;
-            this.roundedProgressBar2.Value = 30;
-            // 
-            // roundedProgressBar1
-            // 
-            this.roundedProgressBar1.Location = new System.Drawing.Point(59, 114);
-            this.roundedProgressBar1.Name = "roundedProgressBar1";
-            this.roundedProgressBar1.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar1.TabIndex = 73;
-            this.roundedProgressBar1.Value = 88;
             // 
             // progressBar1
             // 
@@ -1169,6 +1124,54 @@
             this.label22.Size = new System.Drawing.Size(50, 22);
             this.label22.TabIndex = 39;
             this.label22.Text = "Rack";
+            // 
+            // roundedProgressBar6
+            // 
+            this.roundedProgressBar6.Location = new System.Drawing.Point(504, 115);
+            this.roundedProgressBar6.Name = "roundedProgressBar6";
+            this.roundedProgressBar6.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar6.TabIndex = 78;
+            this.roundedProgressBar6.Value = 50;
+            // 
+            // roundedProgressBar5
+            // 
+            this.roundedProgressBar5.Location = new System.Drawing.Point(415, 115);
+            this.roundedProgressBar5.Name = "roundedProgressBar5";
+            this.roundedProgressBar5.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar5.TabIndex = 77;
+            this.roundedProgressBar5.Value = 69;
+            // 
+            // roundedProgressBar4
+            // 
+            this.roundedProgressBar4.Location = new System.Drawing.Point(324, 113);
+            this.roundedProgressBar4.Name = "roundedProgressBar4";
+            this.roundedProgressBar4.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar4.TabIndex = 76;
+            this.roundedProgressBar4.Value = 24;
+            // 
+            // roundedProgressBar3
+            // 
+            this.roundedProgressBar3.Location = new System.Drawing.Point(233, 114);
+            this.roundedProgressBar3.Name = "roundedProgressBar3";
+            this.roundedProgressBar3.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar3.TabIndex = 75;
+            this.roundedProgressBar3.Value = 58;
+            // 
+            // roundedProgressBar2
+            // 
+            this.roundedProgressBar2.Location = new System.Drawing.Point(145, 114);
+            this.roundedProgressBar2.Name = "roundedProgressBar2";
+            this.roundedProgressBar2.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar2.TabIndex = 74;
+            this.roundedProgressBar2.Value = 30;
+            // 
+            // roundedProgressBar1
+            // 
+            this.roundedProgressBar1.Location = new System.Drawing.Point(59, 114);
+            this.roundedProgressBar1.Name = "roundedProgressBar1";
+            this.roundedProgressBar1.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar1.TabIndex = 73;
+            this.roundedProgressBar1.Value = 88;
             // 
             // pictureBox83
             // 
