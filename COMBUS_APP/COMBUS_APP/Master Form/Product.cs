@@ -16,5 +16,7 @@ namespace COMBUS_APP.Master_Form
         {
             InitializeComponent();
         }
+
+
     }
 }
