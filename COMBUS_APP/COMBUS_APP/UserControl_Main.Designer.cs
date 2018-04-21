@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Main));
             this.roundedPanel1 = new COMBUS_APP.Data.RoundedPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -90,7 +89,7 @@
             // 
             // roundedButton2
             // 
-            this.roundedButton2.Location = new System.Drawing.Point(67, 390);
+            this.roundedButton2.Location = new System.Drawing.Point(88, 395);
             this.roundedButton2.Name = "roundedButton2";
             this.roundedButton2.Size = new System.Drawing.Size(75, 23);
             this.roundedButton2.TabIndex = 5;
@@ -264,7 +263,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::COMBUS_APP.Properties.Resources.background_Login;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.roundedPanel1);
             this.Controls.Add(this.roundedButton2);

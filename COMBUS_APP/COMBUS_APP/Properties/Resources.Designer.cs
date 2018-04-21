@@ -73,6 +73,16 @@ namespace COMBUS_APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap background_Login {
+            get {
+                object obj = ResourceManager.GetObject("background_Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap box_store {
             get {
                 object obj = ResourceManager.GetObject("box_store", resourceCulture);
@@ -156,6 +166,16 @@ namespace COMBUS_APP.Properties {
         internal static System.Drawing.Bitmap password {
             get {
                 object obj = ResourceManager.GetObject("password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rack {
+            get {
+                object obj = ResourceManager.GetObject("Rack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

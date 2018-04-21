@@ -198,6 +198,12 @@
   <ItemGroup>
     <None Include="Resources\box_store.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_Login.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
