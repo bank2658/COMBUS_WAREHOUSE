@@ -15,8 +15,17 @@ namespace COMBUS_APP
 {
     public partial class Main : Form
     {
+        #region Variable
+
         int panelStoreHeight, panelEmployeeHeight;
         bool HiddenStore, HiddenEmployee;
+
+        #endregion
+        #region Function
+
+        #endregion
+        #region Event
+
         public Main()
         {
             InitializeComponent();
@@ -36,6 +45,7 @@ namespace COMBUS_APP
 
             //panel3.BackColor = Color.FromArgb(150, Color.FromArgb(0, 157, 252));
             panelBuntonTopR.BackColor = Color.FromArgb(150, Color.White);
+            panelLogo.BackColor = Color.FromArgb(100, Color.Black);
         }
 
         void toggle(object sender, int panelLocation)
@@ -242,5 +252,7 @@ namespace COMBUS_APP
                 }
             }
         }
+
+        #endregion
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using COMBUS_APP.Data;
 
 namespace COMBUS_APP.Transection_Form
 {

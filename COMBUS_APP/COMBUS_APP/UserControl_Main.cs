@@ -12,13 +12,10 @@ namespace COMBUS_APP
 {
     public partial class UserControl_Main : UserControl
     {
-        public UserControl_Main()
-        {
-            InitializeComponent();
+        #region Variable
+        #endregion
+        #region Function
 
-            panelLogin.BackColor = Color.FromArgb(175, Color.White);
-            
-        }
         private void CheckUserandPassword()
         {
             if (txtUsername.Text == " Username" || txtPassword.Text == " Password")
@@ -36,6 +33,16 @@ namespace COMBUS_APP
                 panelPassword.BackColor = Color.FromArgb(0, 157, 252);
                 lbEnter.Visible = false;
             }
+        }
+
+        #endregion
+        #region Event
+        public UserControl_Main()
+        {
+            InitializeComponent();
+
+            panelLogin.BackColor = Color.FromArgb(175, Color.White);
+            
         }
 
         private void txtUsername_Enter(object sender, EventArgs e)
@@ -95,5 +102,7 @@ namespace COMBUS_APP
         {
 
         }
+
+        #endregion
     }
 }

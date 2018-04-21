@@ -316,9 +316,9 @@
             this.panelLogo.BackColor = System.Drawing.Color.Transparent;
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Controls.Add(this.label4);
-            this.panelLogo.Location = new System.Drawing.Point(3, 4);
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(171, 43);
+            this.panelLogo.Size = new System.Drawing.Size(177, 51);
             this.panelLogo.TabIndex = 5;
             // 
             // pictureBox1

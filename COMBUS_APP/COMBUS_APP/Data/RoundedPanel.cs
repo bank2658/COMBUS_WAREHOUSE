@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace COMBUS_APP.Data
 {
@@ -104,7 +105,7 @@ namespace COMBUS_APP.Data
     //        RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
     //        GraphicsPath GraphPath = GetRoundPath(Rect, 30);
     //        this.Region = new Region(GraphPath);
-            
+
     //        //using (Pen pen = new Pen(Color.CadetBlue, 1.75f))
     //        //{
     //        //    pen.Alignment = PenAlignment.Inset;
@@ -120,4 +121,17 @@ namespace COMBUS_APP.Data
     //    }
 
     //}
+    class RoundedProgressBar : ProgressBar
+    {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.Style |= 0x04;
+                return cp;
+            }
+        }
+    }
+    
 }
