@@ -29,79 +29,79 @@
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.Report1 = new System.Windows.Forms.TabPage();
-            this.Report2 = new System.Windows.Forms.TabPage();
-            this.Report3 = new System.Windows.Forms.TabPage();
-            this.Report4 = new System.Windows.Forms.TabPage();
-            this.Report5 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.Report1);
-            this.tabControl1.Controls.Add(this.Report2);
-            this.tabControl1.Controls.Add(this.Report3);
-            this.tabControl1.Controls.Add(this.Report4);
-            this.tabControl1.Controls.Add(this.Report5);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1061, 669);
-            this.tabControl1.TabIndex = 2;
-            this.tabControl1.Tag = "";
+            this.tabControl1.TabIndex = 0;
             // 
-            // Report1
+            // tabPage1
             // 
-            this.Report1.Location = new System.Drawing.Point(4, 31);
-            this.Report1.Name = "Report1";
-            this.Report1.Padding = new System.Windows.Forms.Padding(3);
-            this.Report1.Size = new System.Drawing.Size(1053, 634);
-            this.Report1.TabIndex = 0;
-            this.Report1.Text = "Report1";
-            this.Report1.UseVisualStyleBackColor = true;
+            this.tabPage1.ForeColor = System.Drawing.SystemColors.Control;
+            this.tabPage1.Location = new System.Drawing.Point(4, 31);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1053, 634);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // Report2
+            // tabPage2
             // 
-            this.Report2.Location = new System.Drawing.Point(4, 31);
-            this.Report2.Name = "Report2";
-            this.Report2.Padding = new System.Windows.Forms.Padding(3);
-            this.Report2.Size = new System.Drawing.Size(1053, 634);
-            this.Report2.TabIndex = 1;
-            this.Report2.Text = "Report2";
-            this.Report2.UseVisualStyleBackColor = true;
+            this.tabPage2.Location = new System.Drawing.Point(4, 31);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1053, 634);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // Report3
+            // tabPage3
             // 
-            this.Report3.Location = new System.Drawing.Point(4, 31);
-            this.Report3.Name = "Report3";
-            this.Report3.Padding = new System.Windows.Forms.Padding(3);
-            this.Report3.Size = new System.Drawing.Size(1053, 634);
-            this.Report3.TabIndex = 2;
-            this.Report3.Text = "Report3";
-            this.Report3.UseVisualStyleBackColor = true;
+            this.tabPage3.Location = new System.Drawing.Point(4, 31);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1053, 634);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // Report4
+            // tabPage4
             // 
-            this.Report4.Location = new System.Drawing.Point(4, 31);
-            this.Report4.Name = "Report4";
-            this.Report4.Padding = new System.Windows.Forms.Padding(3);
-            this.Report4.Size = new System.Drawing.Size(1053, 634);
-            this.Report4.TabIndex = 3;
-            this.Report4.Text = "Report4";
-            this.Report4.UseVisualStyleBackColor = true;
+            this.tabPage4.Location = new System.Drawing.Point(4, 31);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1053, 634);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // Report5
+            // tabPage5
             // 
-            this.Report5.Location = new System.Drawing.Point(4, 31);
-            this.Report5.Name = "Report5";
-            this.Report5.Padding = new System.Windows.Forms.Padding(3);
-            this.Report5.Size = new System.Drawing.Size(1053, 634);
-            this.Report5.TabIndex = 4;
-            this.Report5.Text = "Report5";
-            this.Report5.UseVisualStyleBackColor = true;
+            this.tabPage5.Location = new System.Drawing.Point(4, 31);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1053, 634);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "tabPage5";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // MasterReport
             // 
@@ -118,10 +118,10 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage Report1;
-        private System.Windows.Forms.TabPage Report2;
-        private System.Windows.Forms.TabPage Report3;
-        private System.Windows.Forms.TabPage Report4;
-        private System.Windows.Forms.TabPage Report5;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
     }
 }

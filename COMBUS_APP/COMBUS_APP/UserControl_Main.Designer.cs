@@ -28,11 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.roundedPanel1 = new COMBUS_APP.Data.RoundedPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.roundedButton2 = new COMBUS_APP.Data.RoundedButton();
-            this.roundedPanel2 = new COMBUS_APP.Data.RoundedPanel();
             this.panelLogin = new COMBUS_APP.Data.RoundedPanel();
             this.lbEnter = new System.Windows.Forms.Label();
             this.panelPassword = new System.Windows.Forms.Panel();
@@ -45,65 +40,12 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lbWrong = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.roundedPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelLogin.SuspendLayout();
             this.panelPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelUsername.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(252)))));
-            this.roundedPanel1.Controls.Add(this.pictureBox3);
-            this.roundedPanel1.Controls.Add(this.textBox3);
-            this.roundedPanel1.Location = new System.Drawing.Point(67, 506);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(333, 37);
-            this.roundedPanel1.TabIndex = 6;
-            this.roundedPanel1.Visible = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::COMBUS_APP.Properties.Resources.password;
-            this.pictureBox3.Location = new System.Drawing.Point(5, 7);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.TabIndex = 25;
-            this.pictureBox3.TabStop = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox3.Location = new System.Drawing.Point(34, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(294, 29);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Tag = "";
-            this.textBox3.UseSystemPasswordChar = true;
-            // 
-            // roundedButton2
-            // 
-            this.roundedButton2.Location = new System.Drawing.Point(88, 395);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(75, 23);
-            this.roundedButton2.TabIndex = 5;
-            this.roundedButton2.Text = "roundedButton2";
-            this.roundedButton2.UseVisualStyleBackColor = true;
-            this.roundedButton2.Visible = false;
-            // 
-            // roundedPanel2
-            // 
-            this.roundedPanel2.Location = new System.Drawing.Point(67, 234);
-            this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(200, 100);
-            this.roundedPanel2.TabIndex = 4;
-            this.roundedPanel2.Visible = false;
             // 
             // panelLogin
             // 
@@ -265,15 +207,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::COMBUS_APP.Properties.Resources.background_Login;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.roundedPanel1);
-            this.Controls.Add(this.roundedButton2);
-            this.Controls.Add(this.roundedPanel2);
             this.Controls.Add(this.panelLogin);
+            this.DoubleBuffered = true;
             this.Name = "UserControl_Main";
             this.Size = new System.Drawing.Size(1061, 669);
-            this.roundedPanel1.ResumeLayout(false);
-            this.roundedPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
             this.panelPassword.ResumeLayout(false);
@@ -295,15 +232,10 @@
         private System.Windows.Forms.Label lbForgot;
         private Data.RoundedButton BtnLogin;
         private System.Windows.Forms.Panel panelUsername;
-        private Data.RoundedPanel roundedPanel2;
-        private Data.RoundedButton roundedButton2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelPassword;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private Data.RoundedPanel roundedPanel1;
         private System.Windows.Forms.Label lbEnter;
     }
 }
