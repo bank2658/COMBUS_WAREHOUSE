@@ -92,10 +92,17 @@ namespace COMBUS_APP
             timerStore.Start();
 
             toggle(sender, panelMainmenu.Top);
-            panel4.Controls.Clear();
-
-            StoreManagement user_store = new StoreManagement();
-            panel4.Controls.Add(user_store);
+            //
+            //start comment
+            //want load from Lessen
+            if (HiddenStore)
+            {
+                panel4.Controls.Clear();
+                StoreManagement user_store = new StoreManagement();
+                panel4.Controls.Add(user_store);
+            }
+            //endcomment
+            //
         }
         private void BtnCompany_Click(object sender, EventArgs e)
         {
@@ -120,10 +127,13 @@ namespace COMBUS_APP
             timerEmployee.Start();
 
             toggle(sender, panelMainmenu.Top);
-            panel4.Controls.Clear();
 
-            Employee user_employee = new Employee();
-            panel4.Controls.Add(user_employee);
+            if (HiddenEmployee)
+            {
+                panel4.Controls.Clear();
+                Employee user_employee = new Employee();
+                panel4.Controls.Add(user_employee);
+            }
         }
         private void BtnManagement_Click(object sender, EventArgs e)
                     //Masterform employee
