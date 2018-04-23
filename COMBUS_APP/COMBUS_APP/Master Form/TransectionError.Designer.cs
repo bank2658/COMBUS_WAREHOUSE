@@ -40,6 +40,11 @@
             this.DtpTo = new System.Windows.Forms.DateTimePicker();
             this.DtpFrom = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
+            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TransectionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TransectionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.screenName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -49,12 +54,27 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.No,
+            this.TransectionID,
+            this.TransectionName,
+            this.screenName,
+            this.userName});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.RowTemplate.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(1061, 519);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -166,6 +186,41 @@
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // No
+            // 
+            this.No.HeaderText = "No.";
+            this.No.Name = "No";
+            this.No.ReadOnly = true;
+            this.No.Width = 40;
+            // 
+            // TransectionID
+            // 
+            this.TransectionID.HeaderText = "TransectionID";
+            this.TransectionID.Name = "TransectionID";
+            this.TransectionID.ReadOnly = true;
+            this.TransectionID.Visible = false;
+            // 
+            // TransectionName
+            // 
+            this.TransectionName.HeaderText = "TransectionName";
+            this.TransectionName.Name = "TransectionName";
+            this.TransectionName.ReadOnly = true;
+            this.TransectionName.Width = 621;
+            // 
+            // screenName
+            // 
+            this.screenName.HeaderText = "screenName";
+            this.screenName.Name = "screenName";
+            this.screenName.ReadOnly = true;
+            this.screenName.Width = 200;
+            // 
+            // userName
+            // 
+            this.userName.HeaderText = "userName";
+            this.userName.Name = "userName";
+            this.userName.ReadOnly = true;
+            this.userName.Width = 200;
+            // 
             // TransectionError
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,6 +228,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "TransectionError";
             this.Size = new System.Drawing.Size(1061, 669);
+            this.Load += new System.EventHandler(this.TransectionError_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -196,5 +252,10 @@
         private System.Windows.Forms.DateTimePicker DtpTo;
         private System.Windows.Forms.DateTimePicker DtpFrom;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn No;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TransectionID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TransectionName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn screenName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userName;
     }
 }
