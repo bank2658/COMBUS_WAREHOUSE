@@ -36,6 +36,9 @@ namespace COMBUS_APP.Master_Form
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 10, FontStyle.Bold);
             dataGridView1.RowsDefaultCellStyle.Font = new Font("Consolas", 10);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
+            
+            dataGridView1.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         }
         public Company()
         {
