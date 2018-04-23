@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using COMBUS_APP.Data;
 
 namespace COMBUS_APP
 {
@@ -35,8 +36,23 @@ namespace COMBUS_APP
             }
         }
 
+        private void OnFormLoad()
+        {
+            if(AppCrash.StatusLogin == "T")
+            {
+                panelLogin.Visible = false;
+                BtnLogin.Text = "LOGOUT";
+                BtnLogin.BackColor = Color.Red;
+
+            }
+            else{
+                panelLogin.Visible = true;
+            }
+        }
         #endregion
         #region Event
+        public event EventHandler btnLoginClick;
+
         public UserControl_Main()
         {
             InitializeComponent();
@@ -86,6 +102,15 @@ namespace COMBUS_APP
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             CheckUserandPassword();
+            
+            if(this.btnLoginClick != null)
+            {
+                this.btnLoginClick(this, e);
+            }
+            panelLogin.Visible = false;
+            AppCrash.StatusLogin = "T";
+            BtnLogin.Text = "LOGOUT";
+            BtnLogin.BackColor = Color.Red;
         }
 
         private void lbForgot_MouseMove(object sender, MouseEventArgs e)
@@ -104,5 +129,17 @@ namespace COMBUS_APP
         }
 
         #endregion
+
+        private void UserControl_Main_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                OnFormLoad();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace COMBUS_APP.Data
 {
-    static class AppCrash
+    public static class AppCrash
     {
         private static string _Login = string.Empty;
         public static string Login
@@ -14,10 +14,17 @@ namespace COMBUS_APP.Data
             get { return _Login; }
             set { _Login = value; }
         }
+
+        private static string _StatusLogin = string.Empty;
+        public static string StatusLogin
+        {
+            get { return _StatusLogin; }
+            set { _StatusLogin = value; }
+        }
                  
     }
 
-    static class Messge
+    public static class Messge
     {
         public static string WRN_Error = "PROCESS ERROR PLEASE CALL SYSTEM ADMINISTRATOR !!!";
         public static string WRN_Date_FromMoreTo = "เวลาช่วงหลังน้อยกว่าช่วงแรก";

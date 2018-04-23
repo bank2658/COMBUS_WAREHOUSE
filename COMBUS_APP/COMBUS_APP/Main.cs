@@ -22,14 +22,19 @@ namespace COMBUS_APP
 
         #endregion
         #region Function
-
         #endregion
         #region Event
+            
+
+
+        protected void UserControlMain(object sender, EventArgs e)
+        {
+            panelMainmenu.Enabled = true;
+        }
 
         public Main()
         {
             InitializeComponent();
-
             panelStoreHeight = panelStore.Height;
             panelEmployeeHeight = panelEmployee.Height;
             panelStore.Height = panelEmployee.Height = 0;
@@ -70,11 +75,13 @@ namespace COMBUS_APP
 
         private void Main_Load(object sender, EventArgs e)
         {
+            panelMainmenu.Enabled = false;
             toggle(BtnHome, panelMainmenu.Top);
             panel4.Controls.Clear();
-
+            
             UserControl_Main user_main = new UserControl_Main();
             panel4.Controls.Add(user_main);
+            user_main.btnLoginClick += new EventHandler(UserControlMain);
         }
 
         private void BtnHome_Click(object sender, EventArgs e)
