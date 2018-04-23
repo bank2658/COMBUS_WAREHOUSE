@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TransectionError));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TransectionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TransectionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.screenName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -40,11 +45,6 @@
             this.DtpTo = new System.Windows.Forms.DateTimePicker();
             this.DtpFrom = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
-            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TransectionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TransectionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.screenName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -75,8 +75,44 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.RowTemplate.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1061, 519);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // No
+            // 
+            this.No.HeaderText = "No.";
+            this.No.Name = "No";
+            this.No.ReadOnly = true;
+            this.No.Width = 40;
+            // 
+            // TransectionID
+            // 
+            this.TransectionID.HeaderText = "TransectionID";
+            this.TransectionID.Name = "TransectionID";
+            this.TransectionID.ReadOnly = true;
+            this.TransectionID.Visible = false;
+            // 
+            // TransectionName
+            // 
+            this.TransectionName.HeaderText = "TransectionName";
+            this.TransectionName.Name = "TransectionName";
+            this.TransectionName.ReadOnly = true;
+            this.TransectionName.Width = 621;
+            // 
+            // screenName
+            // 
+            this.screenName.HeaderText = "screenName";
+            this.screenName.Name = "screenName";
+            this.screenName.ReadOnly = true;
+            this.screenName.Width = 200;
+            // 
+            // userName
+            // 
+            this.userName.HeaderText = "userName";
+            this.userName.Name = "userName";
+            this.userName.ReadOnly = true;
+            this.userName.Width = 200;
             // 
             // pictureBox1
             // 
@@ -185,41 +221,6 @@
             this.button1.TabIndex = 42;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // No
-            // 
-            this.No.HeaderText = "No.";
-            this.No.Name = "No";
-            this.No.ReadOnly = true;
-            this.No.Width = 40;
-            // 
-            // TransectionID
-            // 
-            this.TransectionID.HeaderText = "TransectionID";
-            this.TransectionID.Name = "TransectionID";
-            this.TransectionID.ReadOnly = true;
-            this.TransectionID.Visible = false;
-            // 
-            // TransectionName
-            // 
-            this.TransectionName.HeaderText = "TransectionName";
-            this.TransectionName.Name = "TransectionName";
-            this.TransectionName.ReadOnly = true;
-            this.TransectionName.Width = 621;
-            // 
-            // screenName
-            // 
-            this.screenName.HeaderText = "screenName";
-            this.screenName.Name = "screenName";
-            this.screenName.ReadOnly = true;
-            this.screenName.Width = 200;
-            // 
-            // userName
-            // 
-            this.userName.HeaderText = "userName";
-            this.userName.Name = "userName";
-            this.userName.ReadOnly = true;
-            this.userName.Width = 200;
             // 
             // TransectionError
             // 
