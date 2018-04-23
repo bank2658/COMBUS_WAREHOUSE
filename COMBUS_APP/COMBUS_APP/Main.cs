@@ -18,7 +18,7 @@ namespace COMBUS_APP
         #region Variable
 
         int panelStoreHeight, panelEmployeeHeight;
-        bool HiddenStore, HiddenEmployee;
+        bool HiddenStore, HiddenEmployee, LoadStore, LoadEmployeeManage;
 
         #endregion
         #region Function
@@ -34,7 +34,7 @@ namespace COMBUS_APP
             panelEmployeeHeight = panelEmployee.Height;
             panelStore.Height = panelEmployee.Height = 0;
             HiddenStore = HiddenEmployee = true;
-
+            LoadStore = LoadEmployeeManage = false;
             SidePanel.Height = BtnHome.Height;
 
             lbDatetime.Text = DateTime.Now.ToString("dd/mm/yyyy HH:mm:ss");
@@ -79,6 +79,7 @@ namespace COMBUS_APP
 
         private void BtnHome_Click(object sender, EventArgs e)
         {
+            LoadStore = LoadEmployeeManage = false;
             toggle(sender, panelMainmenu.Top);
             panel4.Controls.Clear();
 
@@ -91,21 +92,20 @@ namespace COMBUS_APP
             panelStore.Top = BtnEmployeeManagement.Top;
             timerStore.Start();
 
-            toggle(sender, panelMainmenu.Top);
-            //
-            //start comment
-            //want load from Lessen
-            if (HiddenStore)
+            if (!LoadStore)
             {
+                toggle(sender, panelMainmenu.Top);
+                LoadStore = true; LoadEmployeeManage = false;
                 panel4.Controls.Clear();
+
                 StoreManagement user_store = new StoreManagement();
                 panel4.Controls.Add(user_store);
             }
-            //endcomment
-            //
+            
         }
         private void BtnCompany_Click(object sender, EventArgs e)
         {
+            LoadStore = LoadEmployeeManage = false;
             toggle(sender, panelStore.Top);
             panel4.Controls.Clear();
 
@@ -115,6 +115,7 @@ namespace COMBUS_APP
 
         private void BtnProduct_Click(object sender, EventArgs e)
         {
+            LoadStore = LoadEmployeeManage = false;
             toggle(sender, panelStore.Top);
             panel4.Controls.Clear();
 
@@ -126,10 +127,11 @@ namespace COMBUS_APP
             panelEmployee.Top = BtnReport.Top;
             timerEmployee.Start();
 
-            toggle(sender, panelMainmenu.Top);
 
-            if (HiddenEmployee)
+            if (!LoadEmployeeManage)
             {
+                toggle(sender, panelMainmenu.Top);
+                LoadStore = false; LoadEmployeeManage = true;
                 panel4.Controls.Clear();
                 Employee user_employee = new Employee();
                 panel4.Controls.Add(user_employee);
@@ -138,6 +140,7 @@ namespace COMBUS_APP
         private void BtnManagement_Click(object sender, EventArgs e)
                     //Masterform employee
         {
+            LoadStore = LoadEmployeeManage = false;
             toggle(sender, panelEmployee.Top);
             panel4.Controls.Clear();
 
@@ -147,6 +150,7 @@ namespace COMBUS_APP
 
         private void BtnReport_Click(object sender, EventArgs e)
         {
+            LoadStore = LoadEmployeeManage = false;
             toggle(sender, panelMainmenu.Top);
             panel4.Controls.Clear();
 
@@ -154,18 +158,19 @@ namespace COMBUS_APP
             panel4.Controls.Add(user_report);
         }
 
-        private void BtnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void BtnTransactionError_Click(object sender, EventArgs e)
         {
+            LoadStore = LoadEmployeeManage = false;
             toggle(sender, panelMainmenu.Top);
             panel4.Controls.Clear();
 
             TransectionError user_TransectionError = new TransectionError();
             panel4.Controls.Add(user_TransectionError);
+        }
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void BtnClose_MouseMove(object sender, MouseEventArgs e)
