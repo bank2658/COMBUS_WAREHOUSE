@@ -215,4 +215,44 @@ namespace COMBUS_APP.Data
                    RDW_FRAME | RDW_IUPDATENOW | RDW_INVALIDATE);
         }
     }
+
+    //dataGridView1.BorderStyle = BorderStyle.None;
+    //dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+    //dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+    //dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 157, 252);
+    //dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+    //dataGridView1.BackgroundColor = Color.White;
+
+    //dataGridView1.EnableHeadersVisualStyles = false;
+    //dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+    //dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(41, 39, 40);
+    //dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 10, FontStyle.Bold);
+    //dataGridView1.RowsDefaultCellStyle.Font = new Font("Consolas", 10);
+    //dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+    class GradientDataGridView : DataGridView
+    {
+        //public Color ColorTop { get; set; }
+        //public Color ColorBottom { get; set; }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            //LinearGradientBrush lgb = new LinearGradientBrush(this.ClientRectangle, this.ColorTop, this.ColorBottom, 90F);
+            //Graphics g = e.Graphics;
+            //g.FillRectangle(lgb, this.ClientRectangle);
+            DataGridView Dgv = new DataGridView();
+            base.OnPaint(e);
+            Dgv.BorderStyle = BorderStyle.None;
+            Dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            Dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            Dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 157, 252);
+            Dgv.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            Dgv.BackgroundColor = Color.White;
+
+            Dgv.EnableHeadersVisualStyles = false;
+            Dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            Dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(41, 39, 40);
+            Dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 10, FontStyle.Bold);
+            Dgv.RowsDefaultCellStyle.Font = new Font("Consolas", 10);
+            Dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+        }
+    }
 }

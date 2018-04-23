@@ -50,14 +50,14 @@ namespace COMBUS_APP.Master_Form
         {
             if (txtSearch.Text == "")
             {
-                txtSearch.Text = " Company";
+                txtSearch.Text = " Company/Address";
                 txtSearch.ForeColor = Color.Silver;
             }
         }
 
         private void txtSearch_Enter(object sender, EventArgs e)
         {
-            if(txtSearch.Text == " Company")
+            if(txtSearch.Text == " Company/Address")
             {
                 txtSearch.Text = "";
                 txtSearch.ForeColor = Color.Black;
