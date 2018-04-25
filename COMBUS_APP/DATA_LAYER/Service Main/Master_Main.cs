@@ -27,14 +27,9 @@ namespace DATA_LAYER.Service_Main
 
         public List<Main_CheckLogin_Result> check_Login(string userName)
         {
-            try
-            {
-                return this.ContextEntity.Main_CheckLogin(userName).ToList();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+
+                return this.ContextEntity.Main_CheckLogin("admin").ToList();
+
         }
     }
 }

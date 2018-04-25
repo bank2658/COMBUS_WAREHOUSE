@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using COMBUS_APP.Data;
 
+
 namespace COMBUS_APP
 {
     public partial class UserControl_Main : UserControl
     {
         #region Variable
+        
         #endregion
         #region Function
 
@@ -102,8 +104,8 @@ namespace COMBUS_APP
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             CheckUserandPassword();
-            
-            if(this.btnLoginClick != null)
+
+            if (this.btnLoginClick != null)
             {
                 this.btnLoginClick(this, e);
             }
