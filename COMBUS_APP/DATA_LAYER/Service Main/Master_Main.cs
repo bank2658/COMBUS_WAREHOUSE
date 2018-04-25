@@ -8,14 +8,14 @@ namespace DATA_LAYER.Service_Main
 {
     public class Master_Main
     {
-        private Model_ConnectionContainer _ContextEntity;
-        public Model_ConnectionContainer ContextEntity
+        private EFContainer _ContextEntity;
+        public EFContainer ContextEntity
         {
             get
             {
                 if(_ContextEntity == null)
                 {
-                    _ContextEntity = new Model_ConnectionContainer();
+                    _ContextEntity = new EFContainer();
                 }
                 return _ContextEntity;
             }

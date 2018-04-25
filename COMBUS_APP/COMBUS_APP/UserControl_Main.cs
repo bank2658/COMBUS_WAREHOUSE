@@ -8,14 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using COMBUS_APP.Data;
-
+using DATA_LAYER.Service_Main;
+using DATA_LAYER;
 
 namespace COMBUS_APP
 {
     public partial class UserControl_Main : UserControl
     {
         #region Variable
-        
+        private Master_Main master;
         #endregion
         #region Function
 
@@ -104,7 +105,12 @@ namespace COMBUS_APP
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             CheckUserandPassword();
-
+            master = new Master_Main();
+            List<Main_CheckLogin_Result> result = master.check_Login("gg");
+            foreach(Main_CheckLogin_Result re in result)
+            {
+                
+            }
             if (this.btnLoginClick != null)
             {
                 this.btnLoginClick(this, e);

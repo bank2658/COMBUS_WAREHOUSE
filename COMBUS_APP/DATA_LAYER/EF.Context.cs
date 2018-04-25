@@ -15,10 +15,10 @@ namespace DATA_LAYER
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class Model_ConnectionContainer : DbContext
+    public partial class EFContainer : DbContext
     {
-        public Model_ConnectionContainer()
-            : base("name=Model_ConnectionContainer")
+        public EFContainer()
+            : base("name=EFContainer")
         {
         }
     
@@ -27,7 +27,6 @@ namespace DATA_LAYER
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<transectionError> transectionErrors { get; set; }
     
         public virtual ObjectResult<Main_CheckLogin_Result> Main_CheckLogin(string userName)
         {
@@ -36,19 +35,6 @@ namespace DATA_LAYER
                 new ObjectParameter("userName", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Main_CheckLogin_Result>("Main_CheckLogin", userNameParameter);
-        }
-    
-        public virtual ObjectResult<Get_transectionError_Result> Get_transectionError(Nullable<System.DateTime> fromDate, Nullable<System.DateTime> toDate)
-        {
-            var fromDateParameter = fromDate.HasValue ?
-                new ObjectParameter("fromDate", fromDate) :
-                new ObjectParameter("fromDate", typeof(System.DateTime));
-    
-            var toDateParameter = toDate.HasValue ?
-                new ObjectParameter("toDate", toDate) :
-                new ObjectParameter("toDate", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Get_transectionError_Result>("Get_transectionError", fromDateParameter, toDateParameter);
         }
     }
 }

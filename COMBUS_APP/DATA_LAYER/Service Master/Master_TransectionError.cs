@@ -9,14 +9,14 @@ namespace DATA_LAYER.Service_Master
     public class Master_TransectionError
     {
 
-        private Model_ConnectionContainer _ContextEntity;
-        public Model_ConnectionContainer ContextEntity
+        private EFContainer _ContextEntity;
+        public EFContainer ContextEntity
         {
             get
             {
                 if (_ContextEntity == null)
                 {
-                    _ContextEntity = new Model_ConnectionContainer();
+                    _ContextEntity = new EFContainer();
                 }
                 return _ContextEntity;
             }
@@ -26,17 +26,17 @@ namespace DATA_LAYER.Service_Master
             }
         }
 
-        public List<Get_transectionError_Result> Get_TransectionError(DateTime FromDate, DateTime ToDate)
-        {
-            try
-            {
-                return this.ContextEntity.Get_transectionError(FromDate, ToDate).ToList();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        //public List<Get_transectionError_Result> Get_TransectionError(DateTime FromDate, DateTime ToDate)
+        //{
+        //    try
+        //    {
+        //        return this.ContextEntity.Get_transectionError(FromDate, ToDate).ToList();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
 
     }
 }

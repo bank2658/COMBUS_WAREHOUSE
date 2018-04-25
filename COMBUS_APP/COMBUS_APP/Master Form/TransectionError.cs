@@ -43,15 +43,15 @@ namespace COMBUS_APP.Master_Form
             dataGridView1.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         }
 
-        private void Get_detailDgv(DateTime F,DateTime T)
-        {
-            List<Get_transectionError_Result> result = Master.Get_TransectionError(F, T).ToList();
+        //private void Get_detailDgv(DateTime F,DateTime T)
+        //{
+        //    List<Get_transectionError_Result> result = Master.Get_TransectionError(F, T).ToList();
 
-            foreach (Get_transectionError_Result re in result)
-            {
-                //dataGridView1.Rows.Add()
-            }
-        }
+        //    foreach (Get_transectionError_Result re in result)
+        //    {
+        //        //dataGridView1.Rows.Add()
+        //    }
+        //}
         public TransectionError()
         {
             InitializeComponent();
@@ -60,7 +60,7 @@ namespace COMBUS_APP.Master_Form
         private void TransectionError_Load(object sender, EventArgs e)
         {
             design_Dgv();
-            Get_detailDgv(DateTime.Now, DateTime.Now);
+            //Get_detailDgv(DateTime.Now, DateTime.Now);
         }
 
         private void BtnSearch_Click(object sender, EventArgs e)
