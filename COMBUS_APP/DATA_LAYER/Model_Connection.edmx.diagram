@@ -4,7 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="39911cb21e4c4672ad57bb2c9e2d0a5d" Name="Diagram1" />
+      <Diagram DiagramId="39911cb21e4c4672ad57bb2c9e2d0a5d" Name="Diagram1" >
+        <EntityTypeShape EntityType="Model_Connection.transectionError" Width="1.75" PointX="0.75" PointY="0.75" />
+      </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

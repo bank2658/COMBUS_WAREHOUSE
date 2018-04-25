@@ -44,7 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.DtpTo = new System.Windows.Forms.DateTimePicker();
             this.DtpFrom = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -162,7 +162,7 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.DtpTo);
             this.panel3.Controls.Add(this.DtpFrom);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.BtnSearch);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
@@ -207,20 +207,21 @@
             this.DtpFrom.Size = new System.Drawing.Size(323, 26);
             this.DtpFrom.TabIndex = 45;
             // 
-            // button1
+            // BtnSearch
             // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(928, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 90);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnSearch.BackColor = System.Drawing.Color.Gray;
+            this.BtnSearch.FlatAppearance.BorderSize = 0;
+            this.BtnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSearch.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSearch.ForeColor = System.Drawing.Color.White;
+            this.BtnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSearch.Location = new System.Drawing.Point(928, 25);
+            this.BtnSearch.Name = "BtnSearch";
+            this.BtnSearch.Size = new System.Drawing.Size(110, 90);
+            this.BtnSearch.TabIndex = 42;
+            this.BtnSearch.Text = "Search";
+            this.BtnSearch.UseVisualStyleBackColor = false;
+            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // TransectionError
             // 
@@ -252,7 +253,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker DtpTo;
         private System.Windows.Forms.DateTimePicker DtpFrom;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnSearch;
         private System.Windows.Forms.DataGridViewTextBoxColumn No;
         private System.Windows.Forms.DataGridViewTextBoxColumn TransectionID;
         private System.Windows.Forms.DataGridViewTextBoxColumn TransectionName;

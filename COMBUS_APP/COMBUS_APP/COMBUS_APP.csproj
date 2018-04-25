@@ -207,6 +207,12 @@
   <ItemGroup>
     <None Include="Resources\box_storeAlert.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DATA_LAYER\DATA_LAYER.csproj">
+      <Project>{1EA5BBA4-FCF8-4B00-843D-C91619D9A6B5}</Project>
+      <Name>DATA_LAYER</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

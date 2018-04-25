@@ -57,6 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Get_transectionError_Result.cs">
+      <DependentUpon>Model_Connection.tt</DependentUpon>
+    </Compile>
     <Compile Include="Main_CheckLogin_Result.cs">
       <DependentUpon>Model_Connection.tt</DependentUpon>
     </Compile>
@@ -81,9 +84,12 @@
     <Compile Include="Service Master\Master_Company.cs" />
     <Compile Include="Service Master\Master_Employee.cs" />
     <Compile Include="Service Master\Master_Product.cs" />
-    <Compile Include="Service Master\Master_Truck.cs" />
+    <Compile Include="Service Master\Master_TransectionError.cs" />
     <Compile Include="Service Transection\Master_EmployeeManagement.cs" />
     <Compile Include="Service Transection\Master_StoreManagement.cs" />
+    <Compile Include="transectionError.cs">
+      <DependentUpon>Model_Connection.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
