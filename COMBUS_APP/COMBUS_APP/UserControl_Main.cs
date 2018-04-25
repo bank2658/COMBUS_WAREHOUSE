@@ -20,15 +20,13 @@ namespace COMBUS_APP
         #endregion
         #region Function
 
-        private void CheckUserandPassword()
+        private void CheckUserandPassword(bool check)
         {
-            if (txtUsername.Text == " Username" || txtPassword.Text == " Password")
+            if (!check)
             {
-                if (txtUsername.Text == " Username") panelUsername.BackColor = Color.FromArgb(213, 0, 0);
-                else panelUsername.BackColor = Color.FromArgb(0, 157, 252);
-                if (txtPassword.Text == " Password") panelPassword.BackColor = Color.FromArgb(213, 0, 0);
-                else panelPassword.BackColor = Color.FromArgb(0, 157, 252);
-                //(txtPassword.Text = " Password") ? panelPassword.BackColor = Color.Red : panelPassword.BackColor = Color.FromArgb(0, 157, 252);
+                panelUsername.BackColor = Color.FromArgb(213, 0, 0);
+                
+                panelPassword.BackColor = Color.FromArgb(213, 0, 0);
                 lbEnter.Visible = true;
             }
             else
@@ -104,21 +102,25 @@ namespace COMBUS_APP
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            CheckUserandPassword();
+            
             master = new Master_Main();
-            List<Main_CheckLogin_Result> result = master.check_Login("gg");
+            List<Main_CheckLogin_Result> result = master.check_Login(txtUsername.Text.Trim());
             foreach(Main_CheckLogin_Result re in result)
             {
-                
+                if(re.password == txtPassword.Text.Trim())
+                {
+                    CheckUserandPassword(true);
+                    if (this.btnLoginClick != null)
+                    {
+                        this.btnLoginClick(this, e);
+                    }
+                    panelLogin.Visible = false;
+                    AppCrash.StatusLogin = "T";
+                    return;
+
+                }
             }
-            if (this.btnLoginClick != null)
-            {
-                this.btnLoginClick(this, e);
-            }
-            panelLogin.Visible = false;
-            AppCrash.StatusLogin = "T";
-            BtnLogin.Text = "LOGOUT";
-            BtnLogin.BackColor = Color.Red;
+            CheckUserandPassword(false);
         }
 
         private void lbForgot_MouseMove(object sender, MouseEventArgs e)

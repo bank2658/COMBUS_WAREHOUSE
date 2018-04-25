@@ -33,13 +33,13 @@
             this.panelPassword = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.BtnLogin = new COMBUS_APP.Data.RoundedButton();
             this.lbForgot = new System.Windows.Forms.Label();
             this.panelUsername = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lbWrong = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnLogin = new COMBUS_APP.Data.RoundedButton();
             this.panelLogin.SuspendLayout();
             this.panelPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -50,6 +50,7 @@
             // panelLogin
             // 
             this.panelLogin.BackColor = System.Drawing.Color.Transparent;
+            this.panelLogin.Controls.Add(this.BtnLogin);
             this.panelLogin.Controls.Add(this.lbEnter);
             this.panelLogin.Controls.Add(this.panelPassword);
             this.panelLogin.Controls.Add(this.lbForgot);
@@ -108,21 +109,6 @@
             this.txtPassword.Text = " Password";
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
             this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
-            // 
-            // BtnLogin
-            // 
-            this.BtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(252)))));
-            this.BtnLogin.FlatAppearance.BorderSize = 0;
-            this.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLogin.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLogin.ForeColor = System.Drawing.Color.White;
-            this.BtnLogin.Location = new System.Drawing.Point(410, 371);
-            this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(220, 58);
-            this.BtnLogin.TabIndex = 2;
-            this.BtnLogin.Text = "LOGIN";
-            this.BtnLogin.UseVisualStyleBackColor = false;
-            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // lbForgot
             // 
@@ -200,13 +186,27 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "MEMBER LOGIN";
             // 
+            // BtnLogin
+            // 
+            this.BtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(252)))));
+            this.BtnLogin.FlatAppearance.BorderSize = 0;
+            this.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogin.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogin.ForeColor = System.Drawing.Color.White;
+            this.BtnLogin.Location = new System.Drawing.Point(110, 236);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(220, 58);
+            this.BtnLogin.TabIndex = 2;
+            this.BtnLogin.Text = "LOGIN";
+            this.BtnLogin.UseVisualStyleBackColor = false;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
+            // 
             // UserControl_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::COMBUS_APP.Properties.Resources.background_Login;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.panelLogin);
             this.DoubleBuffered = true;
             this.Name = "UserControl_Main";
