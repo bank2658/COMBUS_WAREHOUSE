@@ -45,12 +45,12 @@ namespace COMBUS_APP.Master_Form
 
         private void Get_detailDgv(DateTime F,DateTime T)
         {
-            //List<Get_transectionError_Result> result = Master.Get_TransectionError(F, T).ToList();
+            List<Get_transectionError_Result> result = Master.Get_TransectionError(F, T).ToList();
 
-            //foreach (List<Get_transectionError_Result> re in result)
-            //{
-            //    //dataGridView1.Rows.Add()
-            //}
+            foreach (Get_transectionError_Result re in result)
+            {
+                //dataGridView1.Rows.Add()
+            }
         }
         public TransectionError()
         {
