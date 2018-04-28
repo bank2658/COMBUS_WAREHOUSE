@@ -153,6 +153,9 @@ namespace COMBUS_APP
                 foreach(Main_CheckLogin_Result re in result)
                 {
 
+
+
+                    return;
                 }
             }
             catch(Exception ex)
