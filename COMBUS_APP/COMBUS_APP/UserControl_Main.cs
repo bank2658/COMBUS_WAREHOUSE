@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using COMBUS_APP.Data;
 using DATA_LAYER.Service_Main;
 using DATA_LAYER;
+using DATA;
+using DATA.Service_Main;
 
 namespace COMBUS_APP
 {
@@ -17,6 +19,8 @@ namespace COMBUS_APP
     {
         #region Variable
         //private Master_Main master;
+
+        private Master_Main master;
         #endregion
         #region Function
 
@@ -144,6 +148,12 @@ namespace COMBUS_APP
             try
             {
                 OnFormLoad();
+                master = new Master_Main();
+                List<Main_CheckLogin_Result> result = master.Check_Login("admin");
+                foreach(Main_CheckLogin_Result re in result)
+                {
+
+                }
             }
             catch(Exception ex)
             {

@@ -218,6 +218,10 @@
     <None Include="Resources\box_storeAlert.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DATA\DATA.csproj">
+      <Project>{a038ee52-e423-468f-ac5d-46ae369abc46}</Project>
+      <Name>DATA</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DATA_LAYER\DATA_LAYER.csproj">
       <Project>{1EA5BBA4-FCF8-4B00-843D-C91619D9A6B5}</Project>
       <Name>DATA_LAYER</Name>
