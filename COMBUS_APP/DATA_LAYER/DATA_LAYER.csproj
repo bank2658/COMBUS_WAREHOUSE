@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EF.Context.cs">
     <Compile Include="Get_Company_Result.cs">
       <DependentUpon>Model_Connection.tt</DependentUpon>
     </Compile>
@@ -66,17 +67,20 @@
     <Compile Include="Model_Connection.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model_Connection.Context.tt</DependentUpon>
+      <DependentUpon>EF.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model_Connection.cs">
+    <Compile Include="EF.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model_Connection.tt</DependentUpon>
+      <DependentUpon>EF.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model_Connection.Designer.cs">
+    <Compile Include="EF.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model_Connection.edmx</DependentUpon>
+      <DependentUpon>EF.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Main_CheckLogin_Result.cs">
+      <DependentUpon>EF.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,7 +88,7 @@
     <Compile Include="Service Master\Master_Company.cs" />
     <Compile Include="Service Master\Master_Employee.cs" />
     <Compile Include="Service Master\Master_Product.cs" />
-    <Compile Include="Service Master\Master_Truck.cs" />
+    <Compile Include="Service Master\Master_TransectionError.cs" />
     <Compile Include="Service Transection\Master_EmployeeManagement.cs" />
     <Compile Include="Service Transection\Master_StoreManagement.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -96,12 +100,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="Model_Connection.edmx">
+    <EntityDeploy Include="EF.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model_Connection.Designer.cs</LastGenOutput>
+      <LastGenOutput>EF.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model_Connection.edmx.diagram">
-      <DependentUpon>Model_Connection.edmx</DependentUpon>
+    <None Include="EF.edmx.diagram">
+      <DependentUpon>EF.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -121,19 +125,19 @@
     <Folder Include="Service Report\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Model_Connection.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model_Connection.Context.cs</LastGenOutput>
-      <DependentUpon>Model_Connection.edmx</DependentUpon>
-    </Content>
-    <Content Include="Model_Connection.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model_Connection.cs</LastGenOutput>
-      <DependentUpon>Model_Connection.edmx</DependentUpon>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="EF.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EF.Context.cs</LastGenOutput>
+      <DependentUpon>EF.edmx</DependentUpon>
+    </Content>
+    <Content Include="EF.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EF.cs</LastGenOutput>
+      <DependentUpon>EF.edmx</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DATA_LAYER.Service_Main
+namespace DATA_LAYER.Service_Master
 {
-    public class Master_Main
+    public class Master_TransectionError
     {
+
         private EFContainer _ContextEntity;
         public EFContainer ContextEntity
         {
             get
             {
-                if(_ContextEntity == null)
+                if (_ContextEntity == null)
                 {
                     _ContextEntity = new EFContainer();
                 }
@@ -25,11 +26,19 @@ namespace DATA_LAYER.Service_Main
             }
         }
 
-        public List<Main_CheckLogin_Result> check_Login(string userName)
-        {
+        //public List<Get_transectionError_Result> Get_TransectionError(DateTime FromDate, DateTime ToDate)
+        //{
+        //    try
+        //    {
+        //        return this.ContextEntity.Get_transectionError(FromDate, ToDate).ToList();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
 
-                return this.ContextEntity.Main_CheckLogin(userName).ToList();
-
-        }
     }
 }
+        
+

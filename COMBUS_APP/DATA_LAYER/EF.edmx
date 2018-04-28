@@ -4,6 +4,9 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
+    <Schema Namespace="EF.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="Main_CheckLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="userName" Type="varchar" Mode="In" />
     <Schema Namespace="Model_Connection.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <Function Name="Get_Company" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="Insert_Company" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -12,14 +15,14 @@
           <Parameter Name="Phone" Type="varchar" Mode="In" />
           <Parameter Name="Address" Type="nvarchar" Mode="In" />
         </Function>
-        <EntityContainer Name="Model_ConnectionStoreContainer" />
+        <EntityContainer Name="EFStoreContainer" />
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model_Connection" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
-        <EntityContainer Name="Model_ConnectionContainer" annotation:LazyLoadingEnabled="true">
-          <FunctionImport Name="Main_CheckLogin" ReturnType="Collection(Model_Connection.Main_CheckLogin_Result)">
-            <Parameter Name="userName" Mode="In" Type="String" />
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EF" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="EFContainer" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="Main_CheckLogin" ReturnType="Collection(EF.Main_CheckLogin_Result)">
+          <Parameter Name="userName" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="Get_Company" ReturnType="Collection(Model_Connection.Get_Company_Result)" />
           <FunctionImport Name="Insert_Company">
@@ -51,11 +54,20 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="EF" />
+        <Alias Key="Target" Value="EF.Store" />
+        <EntityContainerMapping CdmEntityContainer="EFContainer" StorageEntityContainer="EFStoreContainer">
+          <FunctionImportMapping FunctionImportName="Main_CheckLogin" FunctionName="EF.Store.Main_CheckLogin">
         <Alias Key="Model" Value="Model_Connection" />
         <Alias Key="Target" Value="Model_Connection.Store" />
         <EntityContainerMapping CdmEntityContainer="Model_ConnectionContainer" StorageEntityContainer="Model_ConnectionStoreContainer">
         <FunctionImportMapping FunctionImportName="Get_Company" FunctionName="Model_Connection.Store.Get_Company">
             <ResultMapping>
+              <ComplexTypeMapping TypeName="EF.Main_CheckLogin_Result">
+                <ScalarProperty Name="employeeID" ColumnName="employeeID" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="age" ColumnName="age" />
               <ComplexTypeMapping TypeName="Model_Connection.Get_Company_Result">
                 <ScalarProperty Name="companyName" ColumnName="companyName" />
                 <ScalarProperty Name="phone" ColumnName="phone" />
