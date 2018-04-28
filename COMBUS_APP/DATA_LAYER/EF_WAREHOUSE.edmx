@@ -15,7 +15,7 @@
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EF_WAREHOUSE" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
         <EntityContainer Name="EF_WAREHOUSEContainer" annotation:LazyLoadingEnabled="true">
           <FunctionImport Name="Main_CheckLogin" ReturnType="Collection(EF_WAREHOUSE.Main_CheckLogin_Result)">
-            <Parameter Name="userName" Mode="In" Type="String" />
+          <Parameter Name="userName" Mode="In" Type="String" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="Main_CheckLogin_Result">

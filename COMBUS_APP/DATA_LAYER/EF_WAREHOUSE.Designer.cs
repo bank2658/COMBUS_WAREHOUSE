@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\stp.b\Source\Repos\COMBUS_WAREHOUSE\COMBUS_APP\DATA_LAYER\EF_WAREHOUSE.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Administrator.KKDV2-20150521U\Source\Repos\COMBUS_WAREHOUSE\COMBUS_APP\DATA_LAYER\EF_WAREHOUSE.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
