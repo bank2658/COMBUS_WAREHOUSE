@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMBUS_APP", "COMBUS_APP\CO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DATA_LAYER", "DATA_LAYER\DATA_LAYER.csproj", "{1EA5BBA4-FCF8-4B00-843D-C91619D9A6B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DATA", "DATA\DATA.csproj", "{A038EE52-E423-468F-AC5D-46AE369ABC46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1EA5BBA4-FCF8-4B00-843D-C91619D9A6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EA5BBA4-FCF8-4B00-843D-C91619D9A6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EA5BBA4-FCF8-4B00-843D-C91619D9A6B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A038EE52-E423-468F-AC5D-46AE369ABC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A038EE52-E423-468F-AC5D-46AE369ABC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A038EE52-E423-468F-AC5D-46AE369ABC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A038EE52-E423-468F-AC5D-46AE369ABC46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

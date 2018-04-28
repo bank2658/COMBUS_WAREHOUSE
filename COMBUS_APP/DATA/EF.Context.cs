@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DATA_LAYER
+namespace DATA
 {
     using System;
     using System.Data.Entity;
@@ -15,10 +15,10 @@ namespace DATA_LAYER
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class EF_WAREHOUSEContainer : DbContext
+    public partial class EF : DbContext
     {
-        public EF_WAREHOUSEContainer()
-            : base("name=EF_WAREHOUSEContainer")
+        public EF()
+            : base("name=EF")
         {
         }
     
