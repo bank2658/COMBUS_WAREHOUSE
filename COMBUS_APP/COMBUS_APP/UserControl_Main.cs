@@ -8,8 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using COMBUS_APP.Data;
-using DATA_LAYER.Service_Main;
-using DATA_LAYER;
 using DATA;
 using DATA.Service_Main;
 
