@@ -36,5 +36,31 @@ namespace DATA_LAYER
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Main_CheckLogin_Result>("Main_CheckLogin", userNameParameter);
         }
+    
+        public virtual ObjectResult<Get_Company_Result> Get_Company()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Get_Company_Result>("Get_Company");
+        }
+    
+        public virtual int Insert_Company(Nullable<int> companyID, string companyName, string phone, string address)
+        {
+            var companyIDParameter = companyID.HasValue ?
+                new ObjectParameter("CompanyID", companyID) :
+                new ObjectParameter("CompanyID", typeof(int));
+    
+            var companyNameParameter = companyName != null ?
+                new ObjectParameter("CompanyName", companyName) :
+                new ObjectParameter("CompanyName", typeof(string));
+    
+            var phoneParameter = phone != null ?
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Insert_Company", companyIDParameter, companyNameParameter, phoneParameter, addressParameter);
+        }
     }
 }

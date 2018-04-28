@@ -57,6 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EF.Context.cs">
+    <Compile Include="Get_Company_Result.cs">
+      <DependentUpon>Model_Connection.tt</DependentUpon>
+    </Compile>
     <Compile Include="Main_CheckLogin_Result.cs">
       <DependentUpon>Model_Connection.tt</DependentUpon>
     </Compile>
