@@ -15,16 +15,10 @@ namespace COMBUS_APP
 {
     public partial class Main : Form
     {
-        #region Variable
 
-        int panelStoreHeight, panelEmployeeHeight;
+        private int panelStoreHeight, panelEmployeeHeight;
         bool HiddenStore, HiddenEmployee, LoadStore, LoadEmployeeManage;
 
-        #endregion
-        #region Function
-        #endregion
-        #region Event
-            
 
 
         protected void UserControlMain(object sender, EventArgs e)
@@ -73,6 +67,8 @@ namespace COMBUS_APP
             ((Button)sender).BackColor = Color.FromArgb(49, 46, 48);
         }
 
+
+
         private void Main_Load(object sender, EventArgs e)
         {
             panelMainmenu.Enabled = false;
@@ -81,7 +77,7 @@ namespace COMBUS_APP
             
             UserControl_Main user_main = new UserControl_Main();
             panel4.Controls.Add(user_main);
-            //user_main.btnLoginClick += new EventHandler(UserControlMain);
+            user_main.btnLoginClick += new EventHandler(UserControlMain);
         }
 
         private void BtnHome_Click(object sender, EventArgs e)
@@ -110,6 +106,7 @@ namespace COMBUS_APP
             }
             
         }
+
         private void BtnCompany_Click(object sender, EventArgs e)
         {
             LoadStore = LoadEmployeeManage = false;
@@ -129,6 +126,7 @@ namespace COMBUS_APP
             Product user_product = new Product();
             panel4.Controls.Add(user_product);
         }
+
         private void BtnEmployeeManagement_Click_1(object sender, EventArgs e)
         {
             panelEmployee.Top = BtnReport.Top;
@@ -144,8 +142,8 @@ namespace COMBUS_APP
                 panel4.Controls.Add(user_employee);
             }
         }
+
         private void BtnManagement_Click(object sender, EventArgs e)
-                    //Masterform employee
         {
             LoadStore = LoadEmployeeManage = false;
             toggle(sender, panelEmployee.Top);
@@ -153,6 +151,7 @@ namespace COMBUS_APP
 
             EmployeeManagement user_employee = new EmployeeManagement();
             panel4.Controls.Add(user_employee);
+            
         }
 
         private void BtnReport_Click(object sender, EventArgs e)
@@ -165,7 +164,6 @@ namespace COMBUS_APP
             panel4.Controls.Add(user_report);
         }
 
-
         private void BtnTransactionError_Click(object sender, EventArgs e)
         {
             LoadStore = LoadEmployeeManage = false;
@@ -175,6 +173,7 @@ namespace COMBUS_APP
             TransectionError user_TransectionError = new TransectionError();
             panel4.Controls.Add(user_TransectionError);
         }
+
         private void BtnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -275,6 +274,5 @@ namespace COMBUS_APP
             }
         }
 
-        #endregion
     }
 }

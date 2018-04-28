@@ -17,13 +17,10 @@ namespace COMBUS_APP
 {
     public partial class UserControl_Main : UserControl
     {
-        #region Variable
-        //private Master_Main master;
-
+        
         private Master_Main master;
-        #endregion
-        #region Function
-
+        public EventHandler btnLoginClick;
+        
         private void CheckUserandPassword(bool check)
         {
             if (!check)
@@ -54,8 +51,6 @@ namespace COMBUS_APP
                 panelLogin.Visible = true;
             }
         }
-        #endregion
-        #region Event
 
         public UserControl_Main()
         {
@@ -105,25 +100,25 @@ namespace COMBUS_APP
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            
-            //master = new Master_Main();
-            //List<Main_CheckLogin_Result> result = master.check_Login(txtUsername.Text.Trim());
-            //foreach(Main_CheckLogin_Result re in result)
-            //{
-            //    if(re.password == txtPassword.Text.Trim())
-            //    {
-            //        CheckUserandPassword(true);
-            //        if (this.btnLoginClick != null)
-            //        {
-            //            this.btnLoginClick(this, e);
-            //        }
-            //        panelLogin.Visible = false;
-            //        AppCrash.StatusLogin = "T";
-            //        return;
+            master = new Master_Main();
+            List<Main_CheckLogin_Result> result = master.Check_Login("admin");
+            foreach (Main_CheckLogin_Result re in result)
+            {
+                if (re.password == txtPassword.Text.Trim())
+                {
+                    CheckUserandPassword(true);
+                    if (this.btnLoginClick != null)
+                    {
+                        this.btnLoginClick(this, e);
+                    }
+                    panelLogin.Visible = false;
+                    AppCrash.StatusLogin = "T";
+                    return;
 
-            //    }
-            //}
-            //CheckUserandPassword(false);
+                }
+
+            }
+            CheckUserandPassword(false);
         }
 
         private void lbForgot_MouseMove(object sender, MouseEventArgs e)
@@ -140,23 +135,13 @@ namespace COMBUS_APP
         {
 
         }
-
-        #endregion
-
+        
         private void UserControl_Main_Load(object sender, EventArgs e)
         {
             try
             {
                 OnFormLoad();
-                master = new Master_Main();
-                List<Main_CheckLogin_Result> result = master.Check_Login("admin");
-                foreach(Main_CheckLogin_Result re in result)
-                {
-
-
-
-                    return;
-                }
+                
             }
             catch(Exception ex)
             {
