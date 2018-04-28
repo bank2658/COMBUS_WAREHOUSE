@@ -222,10 +222,6 @@
       <Project>{a038ee52-e423-468f-ac5d-46ae369abc46}</Project>
       <Name>DATA</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DATA_LAYER\DATA_LAYER.csproj">
-      <Project>{1ea5bba4-fcf8-4b00-843d-c91619d9a6b5}</Project>
-      <Name>DATA_LAYER</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
