@@ -16,7 +16,7 @@ namespace COMBUS_APP
     public partial class UserControl_Main : UserControl
     {
         #region Variable
-        private Master_Main master;
+        //private Master_Main master;
         #endregion
         #region Function
 
@@ -52,7 +52,6 @@ namespace COMBUS_APP
         }
         #endregion
         #region Event
-        public event EventHandler btnLoginClick;
 
         public UserControl_Main()
         {
@@ -103,24 +102,24 @@ namespace COMBUS_APP
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             
-            master = new Master_Main();
-            List<Main_CheckLogin_Result> result = master.check_Login(txtUsername.Text.Trim());
-            foreach(Main_CheckLogin_Result re in result)
-            {
-                if(re.password == txtPassword.Text.Trim())
-                {
-                    CheckUserandPassword(true);
-                    if (this.btnLoginClick != null)
-                    {
-                        this.btnLoginClick(this, e);
-                    }
-                    panelLogin.Visible = false;
-                    AppCrash.StatusLogin = "T";
-                    return;
+            //master = new Master_Main();
+            //List<Main_CheckLogin_Result> result = master.check_Login(txtUsername.Text.Trim());
+            //foreach(Main_CheckLogin_Result re in result)
+            //{
+            //    if(re.password == txtPassword.Text.Trim())
+            //    {
+            //        CheckUserandPassword(true);
+            //        if (this.btnLoginClick != null)
+            //        {
+            //            this.btnLoginClick(this, e);
+            //        }
+            //        panelLogin.Visible = false;
+            //        AppCrash.StatusLogin = "T";
+            //        return;
 
-                }
-            }
-            CheckUserandPassword(false);
+            //    }
+            //}
+            //CheckUserandPassword(false);
         }
 
         private void lbForgot_MouseMove(object sender, MouseEventArgs e)

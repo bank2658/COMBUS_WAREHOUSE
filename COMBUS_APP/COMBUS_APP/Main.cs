@@ -81,7 +81,7 @@ namespace COMBUS_APP
             
             UserControl_Main user_main = new UserControl_Main();
             panel4.Controls.Add(user_main);
-            user_main.btnLoginClick += new EventHandler(UserControlMain);
+            //user_main.btnLoginClick += new EventHandler(UserControlMain);
         }
 
         private void BtnHome_Click(object sender, EventArgs e)

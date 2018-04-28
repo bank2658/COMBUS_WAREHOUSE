@@ -9,22 +9,22 @@ namespace DATA_LAYER.Service_Master
     public class Master_TransectionError
     {
 
-        private EFContainer _ContextEntity;
-        public EFContainer ContextEntity
-        {
-            get
-            {
-                if (_ContextEntity == null)
-                {
-                    _ContextEntity = new EFContainer();
-                }
-                return _ContextEntity;
-            }
-            set
-            {
-                _ContextEntity = value;
-            }
-        }
+        //private EFContainer _ContextEntity;
+        //public EFContainer ContextEntity
+        //{
+        //    get
+        //    {
+        //        if (_ContextEntity == null)
+        //        {
+        //            _ContextEntity = new EFContainer();
+        //        }
+        //        return _ContextEntity;
+        //    }
+        //    set
+        //    {
+        //        _ContextEntity = value;
+        //    }
+        //}
 
         //public List<Get_transectionError_Result> Get_TransectionError(DateTime FromDate, DateTime ToDate)
         //{
