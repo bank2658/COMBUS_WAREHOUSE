@@ -27,6 +27,7 @@ namespace COMBUS_APP.Data
     public static class Messge
     {
         public static string WRN_Error = "PROCESS ERROR PLEASE CALL SYSTEM ADMINISTRATOR !!!";
+        public static string WRN_ErrorHead = "Error";
         public static string WRN_Date_FromMoreTo = "เวลาช่วงหลังน้อยกว่าช่วงแรก";
         public static string WRN_NumberOnly = "กรุณากรอกข้อมูลที่เป้นตัวเลข 0-9 เท่านั้น";
         public static string WRN_NotData = "ไม่พบข้อมูล";

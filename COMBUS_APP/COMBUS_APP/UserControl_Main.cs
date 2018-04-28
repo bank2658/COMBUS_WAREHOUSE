@@ -21,6 +21,8 @@ namespace COMBUS_APP
         private Master_Main master;
         public EventHandler btnLoginClick;
         
+
+
         private void CheckUserandPassword(bool check)
         {
             if (!check)
@@ -29,6 +31,8 @@ namespace COMBUS_APP
                 
                 panelPassword.BackColor = Color.FromArgb(213, 0, 0);
                 lbEnter.Visible = true;
+                txtPassword.Text = string.Empty;
+                txtPassword.Focus();
             }
             else
             {
@@ -59,6 +63,8 @@ namespace COMBUS_APP
             panelLogin.BackColor = Color.FromArgb(175, Color.White);
             
         }
+
+
 
         private void txtUsername_Enter(object sender, EventArgs e)
         {

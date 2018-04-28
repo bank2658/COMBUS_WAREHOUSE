@@ -7,14 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DATA_LAYER.Service_Master;
-using DATA_LAYER;
+using DATA.Service_Master;
+using DATA;
+using COMBUS_APP.Data;
 
 namespace COMBUS_APP.Master_Form
 {
     public partial class TransectionError : UserControl
     {
-        Master_TransectionError Master = new Master_TransectionError();
+        Master_TransectionError master;
+        public TransectionError()
+        {
+            InitializeComponent();
+        }
+        
+
+        private String ScreenName = "TransectionError";
+        public void Log_Error(Exception ex)
+        {
+            Master_TransectionError log = new Master_TransectionError();
+            log.Log_Error(ex, ScreenName, AppCrash.Login);
+            MessageBox.Show(Messge.WRN_Error, Messge.WRN_ErrorHead);
+        }
+
         private void design_Dgv()
         {
             //dataGridView1.Rows.Add("1", "aasdasd", "aasd", "qweda");
@@ -25,47 +40,122 @@ namespace COMBUS_APP.Master_Form
             //dataGridView1.Rows.Add("6", "aqwed", "weca", "qweda");
             //dataGridView1.Rows.Add("7", "aqwed", "awc", "aqwed");
 
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 157, 252);
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridView1.BackgroundColor = Color.White;
+            dgvMonitor.BorderStyle = BorderStyle.None;
+            dgvMonitor.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dgvMonitor.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvMonitor.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 157, 252);
+            dgvMonitor.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dgvMonitor.BackgroundColor = Color.White;
 
-            dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(41, 39, 40);
-            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 10, FontStyle.Bold);
-            dataGridView1.RowsDefaultCellStyle.Font = new Font("Consolas", 10);
-            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvMonitor.EnableHeadersVisualStyles = false;
+            dgvMonitor.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvMonitor.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(41, 39, 40);
+            dgvMonitor.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 10, FontStyle.Bold);
+            dgvMonitor.RowsDefaultCellStyle.Font = new Font("Consolas", 10);
+            dgvMonitor.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
 
 
-            dataGridView1.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dgvMonitor.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         }
 
-        //private void Get_detailDgv(DateTime F,DateTime T)
-        //{
-        //    List<Get_transectionError_Result> result = Master.Get_TransectionError(F, T).ToList();
-
-        //    foreach (Get_transectionError_Result re in result)
-        //    {
-        //        //dataGridView1.Rows.Add()
-        //    }
-        //}
-        public TransectionError()
+        private void Get_TransectionError()
         {
-            InitializeComponent();
+            master = new Master_TransectionError();
+            List<Main_Get_TransectionError_Result> result = new List<Main_Get_TransectionError_Result>();
+            if (cbPullAll.Checked)
+            {
+                result = master.Get_TranAll();
+            }
+            else if (cbPullFrom.Checked)
+            {
+                result = master.Get_TranFrom(DtpFrom.Value);
+            }
+            else if (cbPullFromTo.Checked)
+            {
+                result = master.Get_TranFromTo(DtpFrom.Value, DtpTo.Value);
+            }
+
+            foreach(Main_Get_TransectionError_Result re in result)
+            {
+                dgvMonitor.Rows.Add(dgvMonitor.RowCount + 1
+                                    , re.transectionName
+                                    , re.screenName
+                                    , re.userName
+                                    , re.createDate);
+            }
         }
+
 
         private void TransectionError_Load(object sender, EventArgs e)
         {
-            design_Dgv();
-            //Get_detailDgv(DateTime.Now, DateTime.Now);
+            try
+            {
+                design_Dgv();
+            }
+            catch(Exception ex)
+            {
+                Log_Error(ex);
+            }
         }
 
         private void BtnSearch_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Get_TransectionError();
+            }
+            catch (Exception ex)
+            {
+                Log_Error(ex);
+            }
+        }
 
+        private void cbPullAll_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbPullAll.Checked)
+                {
+                    cbPullFrom.Checked = false;
+                    cbPullFromTo.Checked = false;
+                }
+            }
+            catch
+            {
+                //
+            }
+        }
+
+        private void cbPullFrom_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbPullFrom.Checked)
+                {
+                    cbPullAll.Checked = false;
+                    cbPullFromTo.Checked = false;
+                }
+            }
+            catch
+            {
+                //
+            }
+        }
+
+        private void cbPullFromTo_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbPullFromTo.Checked)
+                {
+                    cbPullAll.Checked = false;
+                    cbPullFrom.Checked = false;
+                }
+            }
+            catch
+            {
+                //
+            }
         }
     }
 }

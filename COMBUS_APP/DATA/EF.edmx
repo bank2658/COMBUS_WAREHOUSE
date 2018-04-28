@@ -4,19 +4,36 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="EF_COMBUS.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="EF_COMBUS.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <Function Name="Main_CheckLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userName" Type="varchar" Mode="In" />
         </Function>
+        <Function Name="Main_Get_TransectionError" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DateFrom" Type="date" Mode="In" />
+          <Parameter Name="DateTo" Type="date" Mode="In" />
+        </Function>
+        <Function Name="Main_Log_TransectionError" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ErrorName" Type="varchar(max)" Mode="In" />
+          <Parameter Name="ScreenName" Type="varchar" Mode="In" />
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+        </Function>
         <EntityContainer Name="EF_COMBUSStoreContainer" />
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="EF_COMBUS" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="EF" annotation:LazyLoadingEnabled="true" >
           <FunctionImport Name="Main_CheckLogin" ReturnType="Collection(EF_COMBUS.Main_CheckLogin_Result)">
-            <Parameter Name="userName" Mode="In" Type="String" />
+          <Parameter Name="userName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Main_Get_TransectionError" ReturnType="Collection(EF_COMBUS.Main_Get_TransectionError_Result)">
+            <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="Main_Log_TransectionError">
+            <Parameter Name="ErrorName" Mode="In" Type="String" />
+            <Parameter Name="ScreenName" Mode="In" Type="String" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="Main_CheckLogin_Result">
@@ -29,6 +46,13 @@
           <Property Type="String" Name="userName" Nullable="true" MaxLength="50" />
           <Property Type="String" Name="password" Nullable="true" MaxLength="50" />
           <Property Type="String" Name="createBy" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="Main_Get_TransectionError_Result">
+          <Property Type="Int32" Name="transectionID" Nullable="false" />
+          <Property Type="String" Name="transectionName" Nullable="true" />
+          <Property Type="String" Name="screenName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="userName" Nullable="true" MaxLength="50" />
           <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
         </ComplexType>
       </Schema>
@@ -53,6 +77,18 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Main_Get_TransectionError" FunctionName="EF_COMBUS.Store.Main_Get_TransectionError">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Main_Get_TransectionError_Result">
+                <ScalarProperty Name="transectionID" ColumnName="transectionID" />
+                <ScalarProperty Name="transectionName" ColumnName="transectionName" />
+                <ScalarProperty Name="screenName" ColumnName="screenName" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="createDate" ColumnName="createDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Main_Log_TransectionError" FunctionName="EF_COMBUS.Store.Main_Log_TransectionError" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

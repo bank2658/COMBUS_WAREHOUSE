@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelLogin = new COMBUS_APP.Data.RoundedPanel();
+            this.BtnLogin = new COMBUS_APP.Data.RoundedButton();
             this.lbEnter = new System.Windows.Forms.Label();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -39,7 +40,6 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lbWrong = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnLogin = new COMBUS_APP.Data.RoundedButton();
             this.panelLogin.SuspendLayout();
             this.panelPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -61,6 +61,21 @@
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(442, 319);
             this.panelLogin.TabIndex = 1;
+            // 
+            // BtnLogin
+            // 
+            this.BtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(252)))));
+            this.BtnLogin.FlatAppearance.BorderSize = 0;
+            this.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogin.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogin.ForeColor = System.Drawing.Color.White;
+            this.BtnLogin.Location = new System.Drawing.Point(110, 236);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(220, 58);
+            this.BtnLogin.TabIndex = 2;
+            this.BtnLogin.Text = "LOGIN";
+            this.BtnLogin.UseVisualStyleBackColor = false;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // lbEnter
             // 
@@ -104,7 +119,7 @@
             this.txtPassword.Location = new System.Drawing.Point(35, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(294, 29);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TabIndex = 0;
             this.txtPassword.Tag = "";
             this.txtPassword.Text = " Password";
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
@@ -155,7 +170,7 @@
             this.txtUsername.Location = new System.Drawing.Point(35, 4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(294, 29);
-            this.txtUsername.TabIndex = 1;
+            this.txtUsername.TabIndex = 0;
             this.txtUsername.Tag = "";
             this.txtUsername.Text = " Username";
             this.txtUsername.Enter += new System.EventHandler(this.txtUsername_Enter);
@@ -185,21 +200,6 @@
             this.label1.Size = new System.Drawing.Size(259, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "MEMBER LOGIN";
-            // 
-            // BtnLogin
-            // 
-            this.BtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(252)))));
-            this.BtnLogin.FlatAppearance.BorderSize = 0;
-            this.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLogin.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLogin.ForeColor = System.Drawing.Color.White;
-            this.BtnLogin.Location = new System.Drawing.Point(110, 236);
-            this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(220, 58);
-            this.BtnLogin.TabIndex = 2;
-            this.BtnLogin.Text = "LOGIN";
-            this.BtnLogin.UseVisualStyleBackColor = false;
-            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // UserControl_Main
             // 
