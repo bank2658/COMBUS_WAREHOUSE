@@ -223,10 +223,6 @@
       <Name>DATA</Name>
     </ProjectReference>
     <ProjectReference Include="..\DATA_LAYER\DATA_LAYER.csproj">
-      <Project>{1EA5BBA4-FCF8-4B00-843D-C91619D9A6B5}</Project>
-      <Name>DATA_LAYER</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DATA_LAYER\DATA_LAYER.csproj">
       <Project>{1ea5bba4-fcf8-4b00-843d-c91619d9a6b5}</Project>
       <Name>DATA_LAYER</Name>
     </ProjectReference>
