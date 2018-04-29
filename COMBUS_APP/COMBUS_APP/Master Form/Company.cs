@@ -7,38 +7,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DATA.Service_Master;
+using DATA;
+using COMBUS_APP.Data;
 
 namespace COMBUS_APP.Master_Form
 {
     public partial class Company : UserControl
     {
+        private String ScreenName = "TransectionError";
+        public void Log_Error(Exception ex)
+        {
+            Master_TransectionError log = new Master_TransectionError();
+            log.Log_Error(ex, ScreenName, AppCrash.Login);
+            MessageBox.Show(Messge.WRN_Error, Messge.WRN_ErrorHead);
+        }
+
+        private enum ECompany
+        {
+            No
+                ,ID
+                ,CompanyName
+                ,Contract
+                ,Address        
+        };
 
         private void design_Dgv()
         {
-            dataGridView1.Rows.Add("1", "aasdasd", "aasd", "qweda");
-            dataGridView1.Rows.Add("2", "aasdwed", "aas", "qweda");
-            dataGridView1.Rows.Add("3", "aqwedqwe", "acwe", "qweda");
-            dataGridView1.Rows.Add("4", "dqweda", "awec", "aqwed");
-            dataGridView1.Rows.Add("5", "aqwed", "awec", "qweda");
-            dataGridView1.Rows.Add("6", "aqwed", "weca", "qweda");
-            dataGridView1.Rows.Add("7", "aqwed", "awc", "aqwed");
+            //grdCompany.Rows.Add("1", "aasdasd", "aasd", "qweda");
+            //grdCompany.Rows.Add("2", "aasdwed", "aas", "qweda");
+            //grdCompany.Rows.Add("3", "aqwedqwe", "acwe", "qweda");
+            //grdCompany.Rows.Add("4", "dqweda", "awec", "aqwed");
+            //grdCompany.Rows.Add("5", "aqwed", "awec", "qweda");
+            //grdCompany.Rows.Add("6", "aqwed", "weca", "qweda");
+            //grdCompany.Rows.Add("7", "aqwed", "awc", "aqwed");
 
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 157, 252);
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridView1.BackgroundColor = Color.White;
+            grdCompany.BorderStyle = BorderStyle.None;
+            grdCompany.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            grdCompany.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            grdCompany.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 157, 252);
+            grdCompany.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            grdCompany.BackgroundColor = Color.White;
 
-            dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(41, 39, 40);
-            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 10, FontStyle.Bold);
-            dataGridView1.RowsDefaultCellStyle.Font = new Font("Consolas", 10);
-            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            grdCompany.EnableHeadersVisualStyles = false;
+            grdCompany.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            grdCompany.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(41, 39, 40);
+            grdCompany.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 10, FontStyle.Bold);
+            grdCompany.RowsDefaultCellStyle.Font = new Font("Consolas", 10);
+            grdCompany.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
 
             
-            dataGridView1.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdCompany.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         }
         public Company()
         {
@@ -66,7 +85,150 @@ namespace COMBUS_APP.Master_Form
 
         private void Company_Load(object sender, EventArgs e)
         {
-            design_Dgv();
+            try
+            {
+                design_Dgv();
+                ViewMode();
+
+            }
+            catch(Exception ex)
+            {
+                Log_Error(ex);
+            }
+        }
+
+        private void ViewMode()
+        {
+            txtID.ReadOnly = true;
+            txtCompany.ReadOnly = true;
+            txtPhone.ReadOnly = true;
+            txtAddress.ReadOnly = true;
+
+            btnSubmit.Enabled = false;
+            BtnCancel.Enabled = false;
+        }
+
+        private void EditMode()
+        {
+            txtID.ReadOnly = true;
+            txtCompany.ReadOnly = false;
+            txtPhone.ReadOnly = false;
+            txtAddress.ReadOnly = false;
+
+            btnSubmit.Enabled = true;
+            BtnCancel.Enabled = true;
+        }
+
+        private void AddMode()
+        {
+            txtID.ReadOnly = true;
+            txtCompany.ReadOnly = false;
+            txtPhone.ReadOnly = false;
+            txtAddress.ReadOnly = false;
+
+            btnSubmit.Enabled = true;
+            BtnCancel.Enabled = true;
+
+            txtID.Text = string.Empty;
+            txtCompany.Text = string.Empty;
+            txtPhone.Text = string.Empty;
+            txtAddress.Text = string.Empty;
+        }
+
+        private Master_Company master;
+
+        private void Onsearch()
+        {
+            try
+            {
+                grdCompany.Rows.Clear();
+                master = new Master_Company();
+                List<Company_GetCompany_Result> result = master.Get_Company(txtSearch.Text.Trim());
+                foreach (Company_GetCompany_Result re in result)
+                {
+                    grdCompany.Rows.Add(grdCompany.Rows.Count + 1
+                                        , re.companyID
+                                        , re.companyName
+                                        , re.phone
+                                        , re.address);
+                }
+                if(result.Count > 0)
+                {
+                    GrdComclick(0);
+                }
+            }
+            catch(Exception ex)
+            {
+                Log_Error(ex);
+            }
+        }
+
+        private void GrdComclick(int i)
+        {
+            txtID.Text = grdCompany.CurrentRow.Cells[(int)ECompany.ID].Value.ToString();
+            txtCompany.Text = grdCompany.CurrentRow.Cells[(int)ECompany.CompanyName].Value.ToString();
+            txtPhone.Text = grdCompany.CurrentRow.Cells[(int)ECompany.Contract].Value.ToString();
+            txtAddress.Text = grdCompany.CurrentRow.Cells[(int)ECompany.Address].Value.ToString();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Onsearch();
+            }
+            catch(Exception ex)
+            {
+                Log_Error(ex);
+            }
+        }
+
+        private void grdCompany_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                GrdComclick(e.RowIndex);
+            }
+            catch(Exception ex)
+            {
+                Log_Error(ex);
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                AddMode();
+            }
+            catch(Exception ex)
+            {
+                Log_Error(ex);
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                EditMode();
+            }
+            catch (Exception ex)
+            {
+                Log_Error(ex);
+            }
+        }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ViewMode();
+            }
+            catch (Exception ex)
+            {
+                Log_Error(ex);
+            }
         }
     }
 }

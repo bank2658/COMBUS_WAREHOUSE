@@ -5,6 +5,9 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="EF_COMBUS.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="Company_GetCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CompanyName" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="Main_CheckLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userName" Type="varchar" Mode="In" />
         </Function>
@@ -35,6 +38,9 @@
             <Parameter Name="ScreenName" Mode="In" Type="String" />
             <Parameter Name="UserName" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="Company_GetCompany" ReturnType="Collection(EF_COMBUS.Company_GetCompany_Result)" >
+          <Parameter Name="CompanyName" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="Main_CheckLogin_Result">
           <Property Type="Int32" Name="employeeID" Nullable="false" />
@@ -54,6 +60,12 @@
           <Property Type="String" Name="screenName" Nullable="true" MaxLength="50" />
           <Property Type="String" Name="userName" Nullable="true" MaxLength="50" />
           <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="Company_GetCompany_Result">
+          <Property Type="String" Name="companyName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="phone" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="address" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="companyID" Nullable="false" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -89,6 +101,16 @@
             </ResultMapping>
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="Main_Log_TransectionError" FunctionName="EF_COMBUS.Store.Main_Log_TransectionError" />
+          <FunctionImportMapping FunctionImportName="Company_GetCompany" FunctionName="EF_COMBUS.Store.Company_GetCompany">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Company_GetCompany_Result">
+                <ScalarProperty Name="companyName" ColumnName="companyName" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="companyID" ColumnName="companyID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

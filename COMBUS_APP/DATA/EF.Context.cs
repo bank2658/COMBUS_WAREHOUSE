@@ -66,5 +66,14 @@ namespace DATA
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Main_Log_TransectionError", errorNameParameter, screenNameParameter, userNameParameter);
         }
+    
+        public virtual ObjectResult<Company_GetCompany_Result> Company_GetCompany(string companyName)
+        {
+            var companyNameParameter = companyName != null ?
+                new ObjectParameter("CompanyName", companyName) :
+                new ObjectParameter("CompanyName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Company_GetCompany_Result>("Company_GetCompany", companyNameParameter);
+        }
     }
 }

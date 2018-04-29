@@ -57,6 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Company_GetCompany_Result.cs">
+      <DependentUpon>EF.tt</DependentUpon>
+    </Compile>
     <Compile Include="EF.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
