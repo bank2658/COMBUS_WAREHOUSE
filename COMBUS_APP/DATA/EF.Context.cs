@@ -75,5 +75,52 @@ namespace DATA
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Company_GetCompany_Result>("Company_GetCompany", companyNameParameter);
         }
+    
+        public virtual int Company_DelCompany(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Company_DelCompany", iDParameter);
+        }
+    
+        public virtual int Company_AddCompany(string companyname, string phone, string address)
+        {
+            var companynameParameter = companyname != null ?
+                new ObjectParameter("Companyname", companyname) :
+                new ObjectParameter("Companyname", typeof(string));
+    
+            var phoneParameter = phone != null ?
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Company_AddCompany", companynameParameter, phoneParameter, addressParameter);
+        }
+    
+        public virtual int Company_EditCompany(Nullable<int> iD, string companyname, string phone, string address)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            var companynameParameter = companyname != null ?
+                new ObjectParameter("Companyname", companyname) :
+                new ObjectParameter("Companyname", typeof(string));
+    
+            var phoneParameter = phone != null ?
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Company_EditCompany", iDParameter, companynameParameter, phoneParameter, addressParameter);
+        }
     }
 }

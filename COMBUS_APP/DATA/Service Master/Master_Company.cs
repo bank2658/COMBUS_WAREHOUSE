@@ -37,5 +37,20 @@ namespace DATA.Service_Master
             }
            
         }
+
+        public void Del_Company(int ID)
+        {
+            this.ContextEntity.Company_DelCompany(ID);
+        }
+
+        public void Add_Company(string Companyname,string Phone,string Address)
+        {
+            this.ContextEntity.Company_AddCompany(Companyname,Phone,Address);
+        }
+
+        public void Edit_Company(int ID,string Companyname,string Phone,string Address)
+        {
+            this.ContextEntity.Company_EditCompany(ID,Companyname,Phone,Address);
+        }
     }
 }

@@ -32,6 +32,8 @@ namespace COMBUS_APP.Master_Form
                 ,Address        
         };
 
+        int Chbtn = 0;
+
         private void design_Dgv()
         {
             //grdCompany.Rows.Add("1", "aasdasd", "aasd", "qweda");
@@ -106,6 +108,7 @@ namespace COMBUS_APP.Master_Form
 
             btnSubmit.Enabled = false;
             BtnCancel.Enabled = false;
+            Chbtn = 0;
         }
 
         private void EditMode()
@@ -163,6 +166,36 @@ namespace COMBUS_APP.Master_Form
             }
         }
 
+        private void OnAdd()
+        {           
+            DialogResult dialog = MessageBox.Show(Messge.CM_Add,Messge.CM_Confirm,MessageBoxButtons.YesNo);
+            if(dialog == DialogResult.Yes)
+            {
+                master = new Master_Company();
+                master.Add_Company(txtCompany.Text, txtPhone.Text, txtAddress.Text);
+                MessageBox.Show(Messge.INF_Save,Messge.CM_Confirm);
+            }
+            else
+            {
+                MessageBox.Show(Messge.INF_Cancel,Messge.CM_Confirm);
+            }
+        }
+
+        private void OnEdit()
+        {
+            DialogResult dialog = MessageBox.Show(Messge.INF_Edit, Messge.CM_Confirm, MessageBoxButtons.YesNo);
+            if(dialog == DialogResult.Yes)
+            {
+                master = new Master_Company();
+                master.Edit_Company(Convert.ToInt32(txtID.Text), txtCompany.Text, txtPhone.Text, txtAddress.Text);
+                MessageBox.Show(Messge.INF_Edit, Messge.CM_Confirm);
+            }
+            else
+            {
+                MessageBox.Show(Messge.INF_Cancel, Messge.CM_Confirm);
+            }
+        }
+
         private void GrdComclick(int i)
         {
             txtID.Text = grdCompany.CurrentRow.Cells[(int)ECompany.ID].Value.ToString();
@@ -200,6 +233,7 @@ namespace COMBUS_APP.Master_Form
             try
             {
                 AddMode();
+                Chbtn = 1;             
             }
             catch(Exception ex)
             {
@@ -212,6 +246,7 @@ namespace COMBUS_APP.Master_Form
             try
             {
                 EditMode();
+                Chbtn = 2;
             }
             catch (Exception ex)
             {
@@ -224,11 +259,42 @@ namespace COMBUS_APP.Master_Form
             try
             {
                 ViewMode();
+                GrdComclick(grdCompany.CurrentRow.Index);               
             }
             catch (Exception ex)
             {
                 Log_Error(ex);
             }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show(Messge.CM_Delete,Messge.CM_Confirm,MessageBoxButtons.YesNo);
+            if(dialog == DialogResult.Yes)
+            {
+                master = new Master_Company();
+                master.Del_Company(Convert.ToInt32(txtID.Text));
+                MessageBox.Show(Messge.INF_Delete,Messge.CM_Confirm);
+                Onsearch();
+            }
+            else
+            {
+                MessageBox.Show(Messge.INF_Cancel,Messge.CM_Confirm);
+            }
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if(Chbtn == 1)
+            {               
+                OnAdd();
+            }
+            else
+            {
+                OnEdit();
+            }
+            ViewMode();
+            Onsearch();
         }
     }
 }

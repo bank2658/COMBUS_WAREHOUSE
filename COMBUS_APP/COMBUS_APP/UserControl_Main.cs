@@ -152,5 +152,21 @@ namespace COMBUS_APP
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                BtnLogin_Click(sender, e);
+            }
+        }
+
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                BtnLogin_Click(sender,e);
+            }
+        }
     }
 }

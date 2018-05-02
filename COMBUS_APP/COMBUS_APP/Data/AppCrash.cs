@@ -32,6 +32,10 @@ namespace COMBUS_APP.Data
         public static string WRN_NumberOnly = "กรุณากรอกข้อมูลที่เป้นตัวเลข 0-9 เท่านั้น";
         public static string WRN_NotData = "ไม่พบข้อมูล";
 
+        public static string CM_Delete = "คุณต้องการลบรายการนี้หรือไม่";
+        public static string CM_Add = "ต้องการเพิ่มรายการนี้หรือไม่";
+        public static string CM_Confirm = "ยืนยันการทำรายการ";
+
         public static string INF_Save = "บันทึกเสร็จสิ้น";
         public static string INF_Delete = "ลบข้อมูลเสร็จสิ้น";
         public static string INF_Edit = "บันทึกข้อมูลเสร็จสิ้น";
