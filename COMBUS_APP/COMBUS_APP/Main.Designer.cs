@@ -44,6 +44,7 @@
             this.BtnProduct = new System.Windows.Forms.Button();
             this.BtnCompany = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.lbDatetime = new System.Windows.Forms.Label();
             this.lbUser = new System.Windows.Forms.Label();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -58,7 +59,6 @@
             this.timerStore = new System.Windows.Forms.Timer(this.components);
             this.timerEmployee = new System.Windows.Forms.Timer(this.components);
             this.timerDatetime = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.panelMainmenu.SuspendLayout();
             this.panelEmployee.SuspendLayout();
             this.panelStore.SuspendLayout();
@@ -305,6 +305,24 @@
             this.panel5.Size = new System.Drawing.Size(219, 51);
             this.panel5.TabIndex = 6;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(149, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(58, 20);
+            this.button1.TabIndex = 17;
+            this.button1.TabStop = false;
+            this.button1.Text = "Logout";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // lbDatetime
             // 
             this.lbDatetime.AutoSize = true;
@@ -453,24 +471,6 @@
             // 
             this.timerDatetime.Enabled = true;
             this.timerDatetime.Tick += new System.EventHandler(this.timerDatetime_Tick);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(149, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 20);
-            this.button1.TabIndex = 17;
-            this.button1.TabStop = false;
-            this.button1.Text = "Logout";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // Main
             // 

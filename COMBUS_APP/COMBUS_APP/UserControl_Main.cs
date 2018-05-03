@@ -106,7 +106,7 @@ namespace COMBUS_APP
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             master = new Master_Main();
-            List<Main_CheckLogin_Result> result = master.Check_Login("1");
+            List<Main_CheckLogin_Result> result = master.Check_Login(txtUsername.Text);
             foreach (Main_CheckLogin_Result re in result)
             {
                 if (re.password == txtPassword.Text.Trim())

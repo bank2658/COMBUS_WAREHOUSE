@@ -42,78 +42,78 @@
             this.button82 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button83 = new System.Windows.Forms.Button();
-            this.button77 = new System.Windows.Forms.Button();
-            this.button76 = new System.Windows.Forms.Button();
-            this.button75 = new System.Windows.Forms.Button();
-            this.button74 = new System.Windows.Forms.Button();
-            this.button73 = new System.Windows.Forms.Button();
-            this.button72 = new System.Windows.Forms.Button();
-            this.button71 = new System.Windows.Forms.Button();
-            this.button70 = new System.Windows.Forms.Button();
-            this.button69 = new System.Windows.Forms.Button();
-            this.button68 = new System.Windows.Forms.Button();
-            this.button67 = new System.Windows.Forms.Button();
-            this.button66 = new System.Windows.Forms.Button();
-            this.button65 = new System.Windows.Forms.Button();
-            this.button64 = new System.Windows.Forms.Button();
-            this.button63 = new System.Windows.Forms.Button();
-            this.button62 = new System.Windows.Forms.Button();
-            this.button61 = new System.Windows.Forms.Button();
-            this.button60 = new System.Windows.Forms.Button();
-            this.button59 = new System.Windows.Forms.Button();
-            this.button58 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
-            this.button56 = new System.Windows.Forms.Button();
-            this.button55 = new System.Windows.Forms.Button();
-            this.button54 = new System.Windows.Forms.Button();
-            this.button53 = new System.Windows.Forms.Button();
-            this.button52 = new System.Windows.Forms.Button();
-            this.button51 = new System.Windows.Forms.Button();
-            this.button50 = new System.Windows.Forms.Button();
-            this.button49 = new System.Windows.Forms.Button();
-            this.button48 = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
-            this.button46 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button43 = new System.Windows.Forms.Button();
-            this.button42 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.Btn11 = new System.Windows.Forms.Button();
-            this.Btn13 = new System.Windows.Forms.Button();
-            this.Btn14 = new System.Windows.Forms.Button();
-            this.Btn15 = new System.Windows.Forms.Button();
-            this.Btn16 = new System.Windows.Forms.Button();
-            this.Btn12 = new System.Windows.Forms.Button();
+            this.BTN126 = new System.Windows.Forms.Button();
+            this.BTN125 = new System.Windows.Forms.Button();
+            this.BTN124 = new System.Windows.Forms.Button();
+            this.BTN123 = new System.Windows.Forms.Button();
+            this.BTN122 = new System.Windows.Forms.Button();
+            this.BTN116 = new System.Windows.Forms.Button();
+            this.BTN115 = new System.Windows.Forms.Button();
+            this.BTN114 = new System.Windows.Forms.Button();
+            this.BTN113 = new System.Windows.Forms.Button();
+            this.BTN112 = new System.Windows.Forms.Button();
+            this.BTN106 = new System.Windows.Forms.Button();
+            this.BTN105 = new System.Windows.Forms.Button();
+            this.BTN104 = new System.Windows.Forms.Button();
+            this.BTN103 = new System.Windows.Forms.Button();
+            this.BTN102 = new System.Windows.Forms.Button();
+            this.BTN096 = new System.Windows.Forms.Button();
+            this.BTN095 = new System.Windows.Forms.Button();
+            this.BTN094 = new System.Windows.Forms.Button();
+            this.BTN093 = new System.Windows.Forms.Button();
+            this.BTN092 = new System.Windows.Forms.Button();
+            this.BTN121 = new System.Windows.Forms.Button();
+            this.BTN111 = new System.Windows.Forms.Button();
+            this.BTN101 = new System.Windows.Forms.Button();
+            this.BTN091 = new System.Windows.Forms.Button();
+            this.BTN086 = new System.Windows.Forms.Button();
+            this.BTN085 = new System.Windows.Forms.Button();
+            this.BTN084 = new System.Windows.Forms.Button();
+            this.BTN083 = new System.Windows.Forms.Button();
+            this.BTN082 = new System.Windows.Forms.Button();
+            this.BTN076 = new System.Windows.Forms.Button();
+            this.BTN075 = new System.Windows.Forms.Button();
+            this.BTN074 = new System.Windows.Forms.Button();
+            this.BTN073 = new System.Windows.Forms.Button();
+            this.BTN072 = new System.Windows.Forms.Button();
+            this.BTN081 = new System.Windows.Forms.Button();
+            this.BTN071 = new System.Windows.Forms.Button();
+            this.BTN066 = new System.Windows.Forms.Button();
+            this.BTN065 = new System.Windows.Forms.Button();
+            this.BTN064 = new System.Windows.Forms.Button();
+            this.BTN063 = new System.Windows.Forms.Button();
+            this.BTN062 = new System.Windows.Forms.Button();
+            this.BTN061 = new System.Windows.Forms.Button();
+            this.BTN056 = new System.Windows.Forms.Button();
+            this.BTN055 = new System.Windows.Forms.Button();
+            this.BTN054 = new System.Windows.Forms.Button();
+            this.BTN053 = new System.Windows.Forms.Button();
+            this.BTN052 = new System.Windows.Forms.Button();
+            this.BTN051 = new System.Windows.Forms.Button();
+            this.BTN046 = new System.Windows.Forms.Button();
+            this.BTN045 = new System.Windows.Forms.Button();
+            this.BTN044 = new System.Windows.Forms.Button();
+            this.BTN043 = new System.Windows.Forms.Button();
+            this.BTN042 = new System.Windows.Forms.Button();
+            this.BTN041 = new System.Windows.Forms.Button();
+            this.BTN036 = new System.Windows.Forms.Button();
+            this.BTN034 = new System.Windows.Forms.Button();
+            this.BTN035 = new System.Windows.Forms.Button();
+            this.BTN033 = new System.Windows.Forms.Button();
+            this.BTN032 = new System.Windows.Forms.Button();
+            this.BTN031 = new System.Windows.Forms.Button();
+            this.BTN026 = new System.Windows.Forms.Button();
+            this.BTN025 = new System.Windows.Forms.Button();
+            this.BTN024 = new System.Windows.Forms.Button();
+            this.BTN023 = new System.Windows.Forms.Button();
+            this.BTN022 = new System.Windows.Forms.Button();
+            this.BTN021 = new System.Windows.Forms.Button();
+            this.BTN011 = new System.Windows.Forms.Button();
+            this.BTN013 = new System.Windows.Forms.Button();
+            this.BTN014 = new System.Windows.Forms.Button();
+            this.BTN015 = new System.Windows.Forms.Button();
+            this.BTN016 = new System.Windows.Forms.Button();
+            this.BTN012 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.lbTrick = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -237,78 +237,78 @@
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.button77);
-            this.panel1.Controls.Add(this.button76);
-            this.panel1.Controls.Add(this.button75);
-            this.panel1.Controls.Add(this.button74);
-            this.panel1.Controls.Add(this.button73);
-            this.panel1.Controls.Add(this.button72);
-            this.panel1.Controls.Add(this.button71);
-            this.panel1.Controls.Add(this.button70);
-            this.panel1.Controls.Add(this.button69);
-            this.panel1.Controls.Add(this.button68);
-            this.panel1.Controls.Add(this.button67);
-            this.panel1.Controls.Add(this.button66);
-            this.panel1.Controls.Add(this.button65);
-            this.panel1.Controls.Add(this.button64);
-            this.panel1.Controls.Add(this.button63);
-            this.panel1.Controls.Add(this.button62);
-            this.panel1.Controls.Add(this.button61);
-            this.panel1.Controls.Add(this.button60);
-            this.panel1.Controls.Add(this.button59);
-            this.panel1.Controls.Add(this.button58);
-            this.panel1.Controls.Add(this.button57);
-            this.panel1.Controls.Add(this.button56);
-            this.panel1.Controls.Add(this.button55);
-            this.panel1.Controls.Add(this.button54);
-            this.panel1.Controls.Add(this.button53);
-            this.panel1.Controls.Add(this.button52);
-            this.panel1.Controls.Add(this.button51);
-            this.panel1.Controls.Add(this.button50);
-            this.panel1.Controls.Add(this.button49);
-            this.panel1.Controls.Add(this.button48);
-            this.panel1.Controls.Add(this.button47);
-            this.panel1.Controls.Add(this.button46);
-            this.panel1.Controls.Add(this.button45);
-            this.panel1.Controls.Add(this.button44);
-            this.panel1.Controls.Add(this.button43);
-            this.panel1.Controls.Add(this.button42);
-            this.panel1.Controls.Add(this.button41);
-            this.panel1.Controls.Add(this.button40);
-            this.panel1.Controls.Add(this.button39);
-            this.panel1.Controls.Add(this.button38);
-            this.panel1.Controls.Add(this.button37);
-            this.panel1.Controls.Add(this.button36);
-            this.panel1.Controls.Add(this.button35);
-            this.panel1.Controls.Add(this.button34);
-            this.panel1.Controls.Add(this.button33);
-            this.panel1.Controls.Add(this.button32);
-            this.panel1.Controls.Add(this.button31);
-            this.panel1.Controls.Add(this.button30);
-            this.panel1.Controls.Add(this.button29);
-            this.panel1.Controls.Add(this.button28);
-            this.panel1.Controls.Add(this.button27);
-            this.panel1.Controls.Add(this.button26);
-            this.panel1.Controls.Add(this.button25);
-            this.panel1.Controls.Add(this.button24);
-            this.panel1.Controls.Add(this.button23);
-            this.panel1.Controls.Add(this.button22);
-            this.panel1.Controls.Add(this.button21);
-            this.panel1.Controls.Add(this.button20);
-            this.panel1.Controls.Add(this.button19);
-            this.panel1.Controls.Add(this.button18);
-            this.panel1.Controls.Add(this.button17);
-            this.panel1.Controls.Add(this.button16);
-            this.panel1.Controls.Add(this.button15);
-            this.panel1.Controls.Add(this.button14);
-            this.panel1.Controls.Add(this.button13);
-            this.panel1.Controls.Add(this.button12);
-            this.panel1.Controls.Add(this.Btn11);
-            this.panel1.Controls.Add(this.Btn13);
-            this.panel1.Controls.Add(this.Btn14);
-            this.panel1.Controls.Add(this.Btn15);
-            this.panel1.Controls.Add(this.Btn16);
-            this.panel1.Controls.Add(this.Btn12);
+            this.panel1.Controls.Add(this.BTN126);
+            this.panel1.Controls.Add(this.BTN125);
+            this.panel1.Controls.Add(this.BTN124);
+            this.panel1.Controls.Add(this.BTN123);
+            this.panel1.Controls.Add(this.BTN122);
+            this.panel1.Controls.Add(this.BTN116);
+            this.panel1.Controls.Add(this.BTN115);
+            this.panel1.Controls.Add(this.BTN114);
+            this.panel1.Controls.Add(this.BTN113);
+            this.panel1.Controls.Add(this.BTN112);
+            this.panel1.Controls.Add(this.BTN106);
+            this.panel1.Controls.Add(this.BTN105);
+            this.panel1.Controls.Add(this.BTN104);
+            this.panel1.Controls.Add(this.BTN103);
+            this.panel1.Controls.Add(this.BTN102);
+            this.panel1.Controls.Add(this.BTN096);
+            this.panel1.Controls.Add(this.BTN095);
+            this.panel1.Controls.Add(this.BTN094);
+            this.panel1.Controls.Add(this.BTN093);
+            this.panel1.Controls.Add(this.BTN092);
+            this.panel1.Controls.Add(this.BTN121);
+            this.panel1.Controls.Add(this.BTN111);
+            this.panel1.Controls.Add(this.BTN101);
+            this.panel1.Controls.Add(this.BTN091);
+            this.panel1.Controls.Add(this.BTN086);
+            this.panel1.Controls.Add(this.BTN085);
+            this.panel1.Controls.Add(this.BTN084);
+            this.panel1.Controls.Add(this.BTN083);
+            this.panel1.Controls.Add(this.BTN082);
+            this.panel1.Controls.Add(this.BTN076);
+            this.panel1.Controls.Add(this.BTN075);
+            this.panel1.Controls.Add(this.BTN074);
+            this.panel1.Controls.Add(this.BTN073);
+            this.panel1.Controls.Add(this.BTN072);
+            this.panel1.Controls.Add(this.BTN081);
+            this.panel1.Controls.Add(this.BTN071);
+            this.panel1.Controls.Add(this.BTN066);
+            this.panel1.Controls.Add(this.BTN065);
+            this.panel1.Controls.Add(this.BTN064);
+            this.panel1.Controls.Add(this.BTN063);
+            this.panel1.Controls.Add(this.BTN062);
+            this.panel1.Controls.Add(this.BTN061);
+            this.panel1.Controls.Add(this.BTN056);
+            this.panel1.Controls.Add(this.BTN055);
+            this.panel1.Controls.Add(this.BTN054);
+            this.panel1.Controls.Add(this.BTN053);
+            this.panel1.Controls.Add(this.BTN052);
+            this.panel1.Controls.Add(this.BTN051);
+            this.panel1.Controls.Add(this.BTN046);
+            this.panel1.Controls.Add(this.BTN045);
+            this.panel1.Controls.Add(this.BTN044);
+            this.panel1.Controls.Add(this.BTN043);
+            this.panel1.Controls.Add(this.BTN042);
+            this.panel1.Controls.Add(this.BTN041);
+            this.panel1.Controls.Add(this.BTN036);
+            this.panel1.Controls.Add(this.BTN034);
+            this.panel1.Controls.Add(this.BTN035);
+            this.panel1.Controls.Add(this.BTN033);
+            this.panel1.Controls.Add(this.BTN032);
+            this.panel1.Controls.Add(this.BTN031);
+            this.panel1.Controls.Add(this.BTN026);
+            this.panel1.Controls.Add(this.BTN025);
+            this.panel1.Controls.Add(this.BTN024);
+            this.panel1.Controls.Add(this.BTN023);
+            this.panel1.Controls.Add(this.BTN022);
+            this.panel1.Controls.Add(this.BTN021);
+            this.panel1.Controls.Add(this.BTN011);
+            this.panel1.Controls.Add(this.BTN013);
+            this.panel1.Controls.Add(this.BTN014);
+            this.panel1.Controls.Add(this.BTN015);
+            this.panel1.Controls.Add(this.BTN016);
+            this.panel1.Controls.Add(this.BTN012);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.lbTrick);
             this.panel1.Controls.Add(this.pictureBox6);
@@ -466,1233 +466,1233 @@
             this.button83.Text = "F";
             this.button83.UseVisualStyleBackColor = false;
             // 
-            // button77
-            // 
-            this.button77.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button77.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button77.FlatAppearance.BorderSize = 0;
-            this.button77.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button77.ForeColor = System.Drawing.Color.Transparent;
-            this.button77.Location = new System.Drawing.Point(447, 216);
-            this.button77.Margin = new System.Windows.Forms.Padding(0);
-            this.button77.Name = "button77";
-            this.button77.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button77.Size = new System.Drawing.Size(30, 30);
-            this.button77.TabIndex = 155;
-            this.button77.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button77.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button77.UseVisualStyleBackColor = false;
-            // 
-            // button76
-            // 
-            this.button76.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button76.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button76.FlatAppearance.BorderSize = 0;
-            this.button76.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button76.ForeColor = System.Drawing.Color.Transparent;
-            this.button76.Location = new System.Drawing.Point(447, 248);
-            this.button76.Margin = new System.Windows.Forms.Padding(0);
-            this.button76.Name = "button76";
-            this.button76.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button76.Size = new System.Drawing.Size(30, 30);
-            this.button76.TabIndex = 154;
-            this.button76.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button76.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button76.UseVisualStyleBackColor = false;
-            // 
-            // button75
-            // 
-            this.button75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button75.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button75.FlatAppearance.BorderSize = 0;
-            this.button75.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button75.ForeColor = System.Drawing.Color.Transparent;
-            this.button75.Location = new System.Drawing.Point(447, 281);
-            this.button75.Margin = new System.Windows.Forms.Padding(0);
-            this.button75.Name = "button75";
-            this.button75.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button75.Size = new System.Drawing.Size(30, 30);
-            this.button75.TabIndex = 153;
-            this.button75.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button75.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button75.UseVisualStyleBackColor = false;
-            // 
-            // button74
-            // 
-            this.button74.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button74.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button74.FlatAppearance.BorderSize = 0;
-            this.button74.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button74.ForeColor = System.Drawing.Color.Transparent;
-            this.button74.Location = new System.Drawing.Point(447, 314);
-            this.button74.Margin = new System.Windows.Forms.Padding(0);
-            this.button74.Name = "button74";
-            this.button74.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button74.Size = new System.Drawing.Size(30, 30);
-            this.button74.TabIndex = 152;
-            this.button74.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button74.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button74.UseVisualStyleBackColor = false;
-            // 
-            // button73
-            // 
-            this.button73.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button73.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button73.FlatAppearance.BorderSize = 0;
-            this.button73.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button73.ForeColor = System.Drawing.Color.Transparent;
-            this.button73.Location = new System.Drawing.Point(447, 346);
-            this.button73.Margin = new System.Windows.Forms.Padding(0);
-            this.button73.Name = "button73";
-            this.button73.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button73.Size = new System.Drawing.Size(30, 30);
-            this.button73.TabIndex = 151;
-            this.button73.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button73.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button73.UseVisualStyleBackColor = false;
-            // 
-            // button72
-            // 
-            this.button72.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button72.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button72.FlatAppearance.BorderSize = 0;
-            this.button72.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button72.ForeColor = System.Drawing.Color.Transparent;
-            this.button72.Location = new System.Drawing.Point(414, 216);
-            this.button72.Margin = new System.Windows.Forms.Padding(0);
-            this.button72.Name = "button72";
-            this.button72.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button72.Size = new System.Drawing.Size(30, 30);
-            this.button72.TabIndex = 150;
-            this.button72.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button72.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button72.UseVisualStyleBackColor = false;
-            // 
-            // button71
-            // 
-            this.button71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button71.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button71.FlatAppearance.BorderSize = 0;
-            this.button71.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button71.ForeColor = System.Drawing.Color.Transparent;
-            this.button71.Location = new System.Drawing.Point(414, 248);
-            this.button71.Margin = new System.Windows.Forms.Padding(0);
-            this.button71.Name = "button71";
-            this.button71.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button71.Size = new System.Drawing.Size(30, 30);
-            this.button71.TabIndex = 149;
-            this.button71.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button71.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button71.UseVisualStyleBackColor = false;
-            // 
-            // button70
-            // 
-            this.button70.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button70.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button70.FlatAppearance.BorderSize = 0;
-            this.button70.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button70.ForeColor = System.Drawing.Color.Transparent;
-            this.button70.Location = new System.Drawing.Point(414, 281);
-            this.button70.Margin = new System.Windows.Forms.Padding(0);
-            this.button70.Name = "button70";
-            this.button70.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button70.Size = new System.Drawing.Size(30, 30);
-            this.button70.TabIndex = 148;
-            this.button70.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button70.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button70.UseVisualStyleBackColor = false;
-            // 
-            // button69
-            // 
-            this.button69.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button69.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button69.FlatAppearance.BorderSize = 0;
-            this.button69.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button69.ForeColor = System.Drawing.Color.Transparent;
-            this.button69.Location = new System.Drawing.Point(414, 314);
-            this.button69.Margin = new System.Windows.Forms.Padding(0);
-            this.button69.Name = "button69";
-            this.button69.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button69.Size = new System.Drawing.Size(30, 30);
-            this.button69.TabIndex = 147;
-            this.button69.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button69.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button69.UseVisualStyleBackColor = false;
-            // 
-            // button68
-            // 
-            this.button68.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button68.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button68.FlatAppearance.BorderSize = 0;
-            this.button68.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button68.ForeColor = System.Drawing.Color.Transparent;
-            this.button68.Location = new System.Drawing.Point(414, 346);
-            this.button68.Margin = new System.Windows.Forms.Padding(0);
-            this.button68.Name = "button68";
-            this.button68.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button68.Size = new System.Drawing.Size(30, 30);
-            this.button68.TabIndex = 146;
-            this.button68.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button68.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button68.UseVisualStyleBackColor = false;
-            // 
-            // button67
-            // 
-            this.button67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button67.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button67.FlatAppearance.BorderSize = 0;
-            this.button67.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button67.ForeColor = System.Drawing.Color.Transparent;
-            this.button67.Location = new System.Drawing.Point(381, 216);
-            this.button67.Margin = new System.Windows.Forms.Padding(0);
-            this.button67.Name = "button67";
-            this.button67.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button67.Size = new System.Drawing.Size(30, 30);
-            this.button67.TabIndex = 145;
-            this.button67.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button67.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button67.UseVisualStyleBackColor = false;
-            // 
-            // button66
-            // 
-            this.button66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button66.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button66.FlatAppearance.BorderSize = 0;
-            this.button66.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button66.ForeColor = System.Drawing.Color.Transparent;
-            this.button66.Location = new System.Drawing.Point(381, 248);
-            this.button66.Margin = new System.Windows.Forms.Padding(0);
-            this.button66.Name = "button66";
-            this.button66.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button66.Size = new System.Drawing.Size(30, 30);
-            this.button66.TabIndex = 144;
-            this.button66.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button66.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button66.UseVisualStyleBackColor = false;
-            // 
-            // button65
-            // 
-            this.button65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button65.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button65.FlatAppearance.BorderSize = 0;
-            this.button65.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button65.ForeColor = System.Drawing.Color.Transparent;
-            this.button65.Location = new System.Drawing.Point(381, 281);
-            this.button65.Margin = new System.Windows.Forms.Padding(0);
-            this.button65.Name = "button65";
-            this.button65.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button65.Size = new System.Drawing.Size(30, 30);
-            this.button65.TabIndex = 143;
-            this.button65.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button65.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button65.UseVisualStyleBackColor = false;
-            // 
-            // button64
-            // 
-            this.button64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button64.FlatAppearance.BorderSize = 0;
-            this.button64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button64.ForeColor = System.Drawing.Color.Transparent;
-            this.button64.Location = new System.Drawing.Point(381, 314);
-            this.button64.Margin = new System.Windows.Forms.Padding(0);
-            this.button64.Name = "button64";
-            this.button64.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button64.Size = new System.Drawing.Size(30, 30);
-            this.button64.TabIndex = 142;
-            this.button64.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button64.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button64.UseVisualStyleBackColor = false;
-            // 
-            // button63
-            // 
-            this.button63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button63.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button63.FlatAppearance.BorderSize = 0;
-            this.button63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button63.ForeColor = System.Drawing.Color.Transparent;
-            this.button63.Location = new System.Drawing.Point(381, 346);
-            this.button63.Margin = new System.Windows.Forms.Padding(0);
-            this.button63.Name = "button63";
-            this.button63.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button63.Size = new System.Drawing.Size(30, 30);
-            this.button63.TabIndex = 141;
-            this.button63.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button63.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button63.UseVisualStyleBackColor = false;
-            // 
-            // button62
-            // 
-            this.button62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button62.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button62.FlatAppearance.BorderSize = 0;
-            this.button62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button62.ForeColor = System.Drawing.Color.Transparent;
-            this.button62.Location = new System.Drawing.Point(348, 216);
-            this.button62.Margin = new System.Windows.Forms.Padding(0);
-            this.button62.Name = "button62";
-            this.button62.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button62.Size = new System.Drawing.Size(30, 30);
-            this.button62.TabIndex = 140;
-            this.button62.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button62.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button62.UseVisualStyleBackColor = false;
-            // 
-            // button61
-            // 
-            this.button61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button61.FlatAppearance.BorderSize = 0;
-            this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button61.ForeColor = System.Drawing.Color.Transparent;
-            this.button61.Location = new System.Drawing.Point(348, 248);
-            this.button61.Margin = new System.Windows.Forms.Padding(0);
-            this.button61.Name = "button61";
-            this.button61.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button61.Size = new System.Drawing.Size(30, 30);
-            this.button61.TabIndex = 139;
-            this.button61.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button61.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button61.UseVisualStyleBackColor = false;
-            // 
-            // button60
-            // 
-            this.button60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button60.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button60.FlatAppearance.BorderSize = 0;
-            this.button60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button60.ForeColor = System.Drawing.Color.Transparent;
-            this.button60.Location = new System.Drawing.Point(348, 281);
-            this.button60.Margin = new System.Windows.Forms.Padding(0);
-            this.button60.Name = "button60";
-            this.button60.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button60.Size = new System.Drawing.Size(30, 30);
-            this.button60.TabIndex = 138;
-            this.button60.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button60.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button60.UseVisualStyleBackColor = false;
-            // 
-            // button59
-            // 
-            this.button59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button59.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button59.FlatAppearance.BorderSize = 0;
-            this.button59.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button59.ForeColor = System.Drawing.Color.Transparent;
-            this.button59.Location = new System.Drawing.Point(348, 314);
-            this.button59.Margin = new System.Windows.Forms.Padding(0);
-            this.button59.Name = "button59";
-            this.button59.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button59.Size = new System.Drawing.Size(30, 30);
-            this.button59.TabIndex = 137;
-            this.button59.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button59.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button59.UseVisualStyleBackColor = false;
-            // 
-            // button58
-            // 
-            this.button58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button58.FlatAppearance.BorderSize = 0;
-            this.button58.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button58.ForeColor = System.Drawing.Color.Transparent;
-            this.button58.Location = new System.Drawing.Point(348, 346);
-            this.button58.Margin = new System.Windows.Forms.Padding(0);
-            this.button58.Name = "button58";
-            this.button58.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button58.Size = new System.Drawing.Size(30, 30);
-            this.button58.TabIndex = 136;
-            this.button58.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button58.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button58.UseVisualStyleBackColor = false;
-            // 
-            // button57
-            // 
-            this.button57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button57.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button57.FlatAppearance.BorderSize = 0;
-            this.button57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button57.ForeColor = System.Drawing.Color.Transparent;
-            this.button57.Location = new System.Drawing.Point(447, 380);
-            this.button57.Margin = new System.Windows.Forms.Padding(0);
-            this.button57.Name = "button57";
-            this.button57.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button57.Size = new System.Drawing.Size(30, 30);
-            this.button57.TabIndex = 135;
-            this.button57.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button57.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button57.UseVisualStyleBackColor = false;
-            // 
-            // button56
-            // 
-            this.button56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button56.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button56.FlatAppearance.BorderSize = 0;
-            this.button56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button56.ForeColor = System.Drawing.Color.Transparent;
-            this.button56.Location = new System.Drawing.Point(414, 380);
-            this.button56.Margin = new System.Windows.Forms.Padding(0);
-            this.button56.Name = "button56";
-            this.button56.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button56.Size = new System.Drawing.Size(30, 30);
-            this.button56.TabIndex = 134;
-            this.button56.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button56.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button56.UseVisualStyleBackColor = false;
-            // 
-            // button55
-            // 
-            this.button55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button55.FlatAppearance.BorderSize = 0;
-            this.button55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button55.ForeColor = System.Drawing.Color.Transparent;
-            this.button55.Location = new System.Drawing.Point(381, 380);
-            this.button55.Margin = new System.Windows.Forms.Padding(0);
-            this.button55.Name = "button55";
-            this.button55.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button55.Size = new System.Drawing.Size(30, 30);
-            this.button55.TabIndex = 133;
-            this.button55.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button55.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button55.UseVisualStyleBackColor = false;
-            // 
-            // button54
-            // 
-            this.button54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button54.FlatAppearance.BorderSize = 0;
-            this.button54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button54.ForeColor = System.Drawing.Color.Transparent;
-            this.button54.Location = new System.Drawing.Point(348, 380);
-            this.button54.Margin = new System.Windows.Forms.Padding(0);
-            this.button54.Name = "button54";
-            this.button54.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button54.Size = new System.Drawing.Size(30, 30);
-            this.button54.TabIndex = 122;
-            this.button54.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button54.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button54.UseVisualStyleBackColor = false;
-            // 
-            // button53
-            // 
-            this.button53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button53.FlatAppearance.BorderSize = 0;
-            this.button53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button53.ForeColor = System.Drawing.Color.Transparent;
-            this.button53.Location = new System.Drawing.Point(298, 216);
-            this.button53.Margin = new System.Windows.Forms.Padding(0);
-            this.button53.Name = "button53";
-            this.button53.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button53.Size = new System.Drawing.Size(30, 30);
-            this.button53.TabIndex = 132;
-            this.button53.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button53.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button53.UseVisualStyleBackColor = false;
-            // 
-            // button52
-            // 
-            this.button52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button52.FlatAppearance.BorderSize = 0;
-            this.button52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button52.ForeColor = System.Drawing.Color.Transparent;
-            this.button52.Location = new System.Drawing.Point(298, 248);
-            this.button52.Margin = new System.Windows.Forms.Padding(0);
-            this.button52.Name = "button52";
-            this.button52.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button52.Size = new System.Drawing.Size(30, 30);
-            this.button52.TabIndex = 131;
-            this.button52.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button52.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button52.UseVisualStyleBackColor = false;
-            // 
-            // button51
-            // 
-            this.button51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button51.FlatAppearance.BorderSize = 0;
-            this.button51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button51.ForeColor = System.Drawing.Color.Transparent;
-            this.button51.Location = new System.Drawing.Point(298, 281);
-            this.button51.Margin = new System.Windows.Forms.Padding(0);
-            this.button51.Name = "button51";
-            this.button51.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button51.Size = new System.Drawing.Size(30, 30);
-            this.button51.TabIndex = 130;
-            this.button51.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button51.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button51.UseVisualStyleBackColor = false;
-            // 
-            // button50
-            // 
-            this.button50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button50.FlatAppearance.BorderSize = 0;
-            this.button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button50.ForeColor = System.Drawing.Color.Transparent;
-            this.button50.Location = new System.Drawing.Point(298, 314);
-            this.button50.Margin = new System.Windows.Forms.Padding(0);
-            this.button50.Name = "button50";
-            this.button50.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button50.Size = new System.Drawing.Size(30, 30);
-            this.button50.TabIndex = 129;
-            this.button50.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button50.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button50.UseVisualStyleBackColor = false;
-            // 
-            // button49
-            // 
-            this.button49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button49.FlatAppearance.BorderSize = 0;
-            this.button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button49.ForeColor = System.Drawing.Color.Transparent;
-            this.button49.Location = new System.Drawing.Point(298, 346);
-            this.button49.Margin = new System.Windows.Forms.Padding(0);
-            this.button49.Name = "button49";
-            this.button49.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button49.Size = new System.Drawing.Size(30, 30);
-            this.button49.TabIndex = 128;
-            this.button49.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button49.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button49.UseVisualStyleBackColor = false;
-            // 
-            // button48
-            // 
-            this.button48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button48.FlatAppearance.BorderSize = 0;
-            this.button48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button48.ForeColor = System.Drawing.Color.Transparent;
-            this.button48.Location = new System.Drawing.Point(265, 216);
-            this.button48.Margin = new System.Windows.Forms.Padding(0);
-            this.button48.Name = "button48";
-            this.button48.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button48.Size = new System.Drawing.Size(30, 30);
-            this.button48.TabIndex = 127;
-            this.button48.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button48.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button48.UseVisualStyleBackColor = false;
-            // 
-            // button47
-            // 
-            this.button47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button47.FlatAppearance.BorderSize = 0;
-            this.button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button47.ForeColor = System.Drawing.Color.Transparent;
-            this.button47.Location = new System.Drawing.Point(265, 248);
-            this.button47.Margin = new System.Windows.Forms.Padding(0);
-            this.button47.Name = "button47";
-            this.button47.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button47.Size = new System.Drawing.Size(30, 30);
-            this.button47.TabIndex = 126;
-            this.button47.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button47.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button47.UseVisualStyleBackColor = false;
-            // 
-            // button46
-            // 
-            this.button46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button46.FlatAppearance.BorderSize = 0;
-            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button46.ForeColor = System.Drawing.Color.Transparent;
-            this.button46.Location = new System.Drawing.Point(265, 281);
-            this.button46.Margin = new System.Windows.Forms.Padding(0);
-            this.button46.Name = "button46";
-            this.button46.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button46.Size = new System.Drawing.Size(30, 30);
-            this.button46.TabIndex = 125;
-            this.button46.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button46.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button46.UseVisualStyleBackColor = false;
-            // 
-            // button45
-            // 
-            this.button45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button45.FlatAppearance.BorderSize = 0;
-            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button45.ForeColor = System.Drawing.Color.Transparent;
-            this.button45.Location = new System.Drawing.Point(265, 314);
-            this.button45.Margin = new System.Windows.Forms.Padding(0);
-            this.button45.Name = "button45";
-            this.button45.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button45.Size = new System.Drawing.Size(30, 30);
-            this.button45.TabIndex = 124;
-            this.button45.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button45.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button45.UseVisualStyleBackColor = false;
-            // 
-            // button44
-            // 
-            this.button44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button44.FlatAppearance.BorderSize = 0;
-            this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button44.ForeColor = System.Drawing.Color.Transparent;
-            this.button44.Location = new System.Drawing.Point(265, 346);
-            this.button44.Margin = new System.Windows.Forms.Padding(0);
-            this.button44.Name = "button44";
-            this.button44.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button44.Size = new System.Drawing.Size(30, 30);
-            this.button44.TabIndex = 123;
-            this.button44.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button44.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button44.UseVisualStyleBackColor = false;
-            // 
-            // button43
-            // 
-            this.button43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button43.FlatAppearance.BorderSize = 0;
-            this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button43.ForeColor = System.Drawing.Color.Transparent;
-            this.button43.Location = new System.Drawing.Point(298, 380);
-            this.button43.Margin = new System.Windows.Forms.Padding(0);
-            this.button43.Name = "button43";
-            this.button43.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button43.Size = new System.Drawing.Size(30, 30);
-            this.button43.TabIndex = 122;
-            this.button43.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button43.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button43.UseVisualStyleBackColor = false;
-            // 
-            // button42
-            // 
-            this.button42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button42.FlatAppearance.BorderSize = 0;
-            this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button42.ForeColor = System.Drawing.Color.Transparent;
-            this.button42.Location = new System.Drawing.Point(265, 380);
-            this.button42.Margin = new System.Windows.Forms.Padding(0);
-            this.button42.Name = "button42";
-            this.button42.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button42.Size = new System.Drawing.Size(30, 30);
-            this.button42.TabIndex = 121;
-            this.button42.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button42.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button42.UseVisualStyleBackColor = false;
-            // 
-            // button41
-            // 
-            this.button41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button41.FlatAppearance.BorderSize = 0;
-            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button41.ForeColor = System.Drawing.Color.Transparent;
-            this.button41.Location = new System.Drawing.Point(232, 216);
-            this.button41.Margin = new System.Windows.Forms.Padding(0);
-            this.button41.Name = "button41";
-            this.button41.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button41.Size = new System.Drawing.Size(30, 30);
-            this.button41.TabIndex = 120;
-            this.button41.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button41.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button41.UseVisualStyleBackColor = false;
-            // 
-            // button40
-            // 
-            this.button40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button40.FlatAppearance.BorderSize = 0;
-            this.button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button40.ForeColor = System.Drawing.Color.Transparent;
-            this.button40.Location = new System.Drawing.Point(232, 248);
-            this.button40.Margin = new System.Windows.Forms.Padding(0);
-            this.button40.Name = "button40";
-            this.button40.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button40.Size = new System.Drawing.Size(30, 30);
-            this.button40.TabIndex = 119;
-            this.button40.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button40.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button40.UseVisualStyleBackColor = false;
-            // 
-            // button39
-            // 
-            this.button39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button39.FlatAppearance.BorderSize = 0;
-            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button39.ForeColor = System.Drawing.Color.Transparent;
-            this.button39.Location = new System.Drawing.Point(232, 281);
-            this.button39.Margin = new System.Windows.Forms.Padding(0);
-            this.button39.Name = "button39";
-            this.button39.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button39.Size = new System.Drawing.Size(30, 30);
-            this.button39.TabIndex = 118;
-            this.button39.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button39.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button39.UseVisualStyleBackColor = false;
-            // 
-            // button38
-            // 
-            this.button38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button38.FlatAppearance.BorderSize = 0;
-            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button38.ForeColor = System.Drawing.Color.Transparent;
-            this.button38.Location = new System.Drawing.Point(232, 314);
-            this.button38.Margin = new System.Windows.Forms.Padding(0);
-            this.button38.Name = "button38";
-            this.button38.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button38.Size = new System.Drawing.Size(30, 30);
-            this.button38.TabIndex = 117;
-            this.button38.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button38.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button38.UseVisualStyleBackColor = false;
-            // 
-            // button37
-            // 
-            this.button37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button37.FlatAppearance.BorderSize = 0;
-            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button37.ForeColor = System.Drawing.Color.Transparent;
-            this.button37.Location = new System.Drawing.Point(232, 346);
-            this.button37.Margin = new System.Windows.Forms.Padding(0);
-            this.button37.Name = "button37";
-            this.button37.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button37.Size = new System.Drawing.Size(30, 30);
-            this.button37.TabIndex = 116;
-            this.button37.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button37.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button37.UseVisualStyleBackColor = false;
-            // 
-            // button36
-            // 
-            this.button36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button36.FlatAppearance.BorderSize = 0;
-            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button36.ForeColor = System.Drawing.Color.Transparent;
-            this.button36.Location = new System.Drawing.Point(232, 380);
-            this.button36.Margin = new System.Windows.Forms.Padding(0);
-            this.button36.Name = "button36";
-            this.button36.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button36.Size = new System.Drawing.Size(30, 30);
-            this.button36.TabIndex = 115;
-            this.button36.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button36.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button36.UseVisualStyleBackColor = false;
-            // 
-            // button35
-            // 
-            this.button35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button35.FlatAppearance.BorderSize = 0;
-            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button35.ForeColor = System.Drawing.Color.Transparent;
-            this.button35.Location = new System.Drawing.Point(199, 216);
-            this.button35.Margin = new System.Windows.Forms.Padding(0);
-            this.button35.Name = "button35";
-            this.button35.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button35.Size = new System.Drawing.Size(30, 30);
-            this.button35.TabIndex = 114;
-            this.button35.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button35.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button35.UseVisualStyleBackColor = false;
-            // 
-            // button34
-            // 
-            this.button34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button34.FlatAppearance.BorderSize = 0;
-            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button34.ForeColor = System.Drawing.Color.Transparent;
-            this.button34.Location = new System.Drawing.Point(199, 248);
-            this.button34.Margin = new System.Windows.Forms.Padding(0);
-            this.button34.Name = "button34";
-            this.button34.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button34.Size = new System.Drawing.Size(30, 30);
-            this.button34.TabIndex = 113;
-            this.button34.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button34.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button34.UseVisualStyleBackColor = false;
-            // 
-            // button33
-            // 
-            this.button33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button33.FlatAppearance.BorderSize = 0;
-            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button33.ForeColor = System.Drawing.Color.Transparent;
-            this.button33.Location = new System.Drawing.Point(199, 281);
-            this.button33.Margin = new System.Windows.Forms.Padding(0);
-            this.button33.Name = "button33";
-            this.button33.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button33.Size = new System.Drawing.Size(30, 30);
-            this.button33.TabIndex = 112;
-            this.button33.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button33.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button33.UseVisualStyleBackColor = false;
-            // 
-            // button32
-            // 
-            this.button32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button32.FlatAppearance.BorderSize = 0;
-            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button32.ForeColor = System.Drawing.Color.Transparent;
-            this.button32.Location = new System.Drawing.Point(199, 314);
-            this.button32.Margin = new System.Windows.Forms.Padding(0);
-            this.button32.Name = "button32";
-            this.button32.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button32.Size = new System.Drawing.Size(30, 30);
-            this.button32.TabIndex = 111;
-            this.button32.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button32.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button32.UseVisualStyleBackColor = false;
-            // 
-            // button31
-            // 
-            this.button31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button31.FlatAppearance.BorderSize = 0;
-            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button31.ForeColor = System.Drawing.Color.Transparent;
-            this.button31.Location = new System.Drawing.Point(199, 346);
-            this.button31.Margin = new System.Windows.Forms.Padding(0);
-            this.button31.Name = "button31";
-            this.button31.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button31.Size = new System.Drawing.Size(30, 30);
-            this.button31.TabIndex = 110;
-            this.button31.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button31.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button31.UseVisualStyleBackColor = false;
-            // 
-            // button30
-            // 
-            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button30.FlatAppearance.BorderSize = 0;
-            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.ForeColor = System.Drawing.Color.Transparent;
-            this.button30.Location = new System.Drawing.Point(199, 380);
-            this.button30.Margin = new System.Windows.Forms.Padding(0);
-            this.button30.Name = "button30";
-            this.button30.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button30.Size = new System.Drawing.Size(30, 30);
-            this.button30.TabIndex = 109;
-            this.button30.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button30.UseVisualStyleBackColor = false;
-            // 
-            // button29
-            // 
-            this.button29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button29.FlatAppearance.BorderSize = 0;
-            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button29.ForeColor = System.Drawing.Color.Transparent;
-            this.button29.Location = new System.Drawing.Point(148, 216);
-            this.button29.Margin = new System.Windows.Forms.Padding(0);
-            this.button29.Name = "button29";
-            this.button29.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button29.Size = new System.Drawing.Size(30, 30);
-            this.button29.TabIndex = 108;
-            this.button29.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button29.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button29.UseVisualStyleBackColor = false;
-            // 
-            // button28
-            // 
-            this.button28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button28.FlatAppearance.BorderSize = 0;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.ForeColor = System.Drawing.Color.Transparent;
-            this.button28.Location = new System.Drawing.Point(148, 248);
-            this.button28.Margin = new System.Windows.Forms.Padding(0);
-            this.button28.Name = "button28";
-            this.button28.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button28.Size = new System.Drawing.Size(30, 30);
-            this.button28.TabIndex = 107;
-            this.button28.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button28.UseVisualStyleBackColor = false;
-            // 
-            // button27
-            // 
-            this.button27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button27.FlatAppearance.BorderSize = 0;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.ForeColor = System.Drawing.Color.Transparent;
-            this.button27.Location = new System.Drawing.Point(148, 281);
-            this.button27.Margin = new System.Windows.Forms.Padding(0);
-            this.button27.Name = "button27";
-            this.button27.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button27.Size = new System.Drawing.Size(30, 30);
-            this.button27.TabIndex = 106;
-            this.button27.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button27.UseVisualStyleBackColor = false;
-            // 
-            // button26
-            // 
-            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button26.FlatAppearance.BorderSize = 0;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.ForeColor = System.Drawing.Color.Transparent;
-            this.button26.Location = new System.Drawing.Point(148, 314);
-            this.button26.Margin = new System.Windows.Forms.Padding(0);
-            this.button26.Name = "button26";
-            this.button26.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button26.Size = new System.Drawing.Size(30, 30);
-            this.button26.TabIndex = 105;
-            this.button26.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button26.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button26.UseVisualStyleBackColor = false;
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.ForeColor = System.Drawing.Color.Transparent;
-            this.button25.Location = new System.Drawing.Point(148, 346);
-            this.button25.Margin = new System.Windows.Forms.Padding(0);
-            this.button25.Name = "button25";
-            this.button25.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button25.Size = new System.Drawing.Size(30, 30);
-            this.button25.TabIndex = 104;
-            this.button25.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button25.UseVisualStyleBackColor = false;
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.ForeColor = System.Drawing.Color.Transparent;
-            this.button24.Location = new System.Drawing.Point(148, 380);
-            this.button24.Margin = new System.Windows.Forms.Padding(0);
-            this.button24.Name = "button24";
-            this.button24.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button24.Size = new System.Drawing.Size(30, 30);
-            this.button24.TabIndex = 103;
-            this.button24.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button24.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button24.UseVisualStyleBackColor = false;
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.ForeColor = System.Drawing.Color.Transparent;
-            this.button23.Location = new System.Drawing.Point(115, 216);
-            this.button23.Margin = new System.Windows.Forms.Padding(0);
-            this.button23.Name = "button23";
-            this.button23.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button23.Size = new System.Drawing.Size(30, 30);
-            this.button23.TabIndex = 102;
-            this.button23.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button23.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button23.UseVisualStyleBackColor = false;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.ForeColor = System.Drawing.Color.Transparent;
-            this.button22.Location = new System.Drawing.Point(115, 281);
-            this.button22.Margin = new System.Windows.Forms.Padding(0);
-            this.button22.Name = "button22";
-            this.button22.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button22.Size = new System.Drawing.Size(30, 30);
-            this.button22.TabIndex = 101;
-            this.button22.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button22.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button22.UseVisualStyleBackColor = false;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.ForeColor = System.Drawing.Color.Transparent;
-            this.button21.Location = new System.Drawing.Point(115, 248);
-            this.button21.Margin = new System.Windows.Forms.Padding(0);
-            this.button21.Name = "button21";
-            this.button21.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button21.Size = new System.Drawing.Size(30, 30);
-            this.button21.TabIndex = 100;
-            this.button21.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.ForeColor = System.Drawing.Color.Transparent;
-            this.button20.Location = new System.Drawing.Point(115, 314);
-            this.button20.Margin = new System.Windows.Forms.Padding(0);
-            this.button20.Name = "button20";
-            this.button20.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button20.Size = new System.Drawing.Size(30, 30);
-            this.button20.TabIndex = 99;
-            this.button20.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button20.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.ForeColor = System.Drawing.Color.Transparent;
-            this.button19.Location = new System.Drawing.Point(115, 346);
-            this.button19.Margin = new System.Windows.Forms.Padding(0);
-            this.button19.Name = "button19";
-            this.button19.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button19.Size = new System.Drawing.Size(30, 30);
-            this.button19.TabIndex = 98;
-            this.button19.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.ForeColor = System.Drawing.Color.Transparent;
-            this.button18.Location = new System.Drawing.Point(115, 380);
-            this.button18.Margin = new System.Windows.Forms.Padding(0);
-            this.button18.Name = "button18";
-            this.button18.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button18.Size = new System.Drawing.Size(30, 30);
-            this.button18.TabIndex = 97;
-            this.button18.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.ForeColor = System.Drawing.Color.Transparent;
-            this.button17.Location = new System.Drawing.Point(82, 216);
-            this.button17.Margin = new System.Windows.Forms.Padding(0);
-            this.button17.Name = "button17";
-            this.button17.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button17.Size = new System.Drawing.Size(30, 30);
-            this.button17.TabIndex = 96;
-            this.button17.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.ForeColor = System.Drawing.Color.Transparent;
-            this.button16.Location = new System.Drawing.Point(82, 248);
-            this.button16.Margin = new System.Windows.Forms.Padding(0);
-            this.button16.Name = "button16";
-            this.button16.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button16.Size = new System.Drawing.Size(30, 30);
-            this.button16.TabIndex = 95;
-            this.button16.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.ForeColor = System.Drawing.Color.Transparent;
-            this.button15.Location = new System.Drawing.Point(82, 281);
-            this.button15.Margin = new System.Windows.Forms.Padding(0);
-            this.button15.Name = "button15";
-            this.button15.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button15.Size = new System.Drawing.Size(30, 30);
-            this.button15.TabIndex = 94;
-            this.button15.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.ForeColor = System.Drawing.Color.Transparent;
-            this.button14.Location = new System.Drawing.Point(82, 314);
-            this.button14.Margin = new System.Windows.Forms.Padding(0);
-            this.button14.Name = "button14";
-            this.button14.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button14.Size = new System.Drawing.Size(30, 30);
-            this.button14.TabIndex = 93;
-            this.button14.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.ForeColor = System.Drawing.Color.Transparent;
-            this.button13.Location = new System.Drawing.Point(82, 346);
-            this.button13.Margin = new System.Windows.Forms.Padding(0);
-            this.button13.Name = "button13";
-            this.button13.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button13.Size = new System.Drawing.Size(30, 30);
-            this.button13.TabIndex = 92;
-            this.button13.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.ForeColor = System.Drawing.Color.Transparent;
-            this.button12.Image = global::COMBUS_APP.Properties.Resources.box_store;
-            this.button12.Location = new System.Drawing.Point(82, 380);
-            this.button12.Margin = new System.Windows.Forms.Padding(0);
-            this.button12.Name = "button12";
-            this.button12.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.button12.Size = new System.Drawing.Size(30, 30);
-            this.button12.TabIndex = 91;
-            this.button12.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // Btn11
-            // 
-            this.Btn11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.Btn11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Btn11.FlatAppearance.BorderSize = 0;
-            this.Btn11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn11.ForeColor = System.Drawing.Color.Transparent;
-            this.Btn11.Image = global::COMBUS_APP.Properties.Resources.box_store;
-            this.Btn11.Location = new System.Drawing.Point(49, 379);
-            this.Btn11.Margin = new System.Windows.Forms.Padding(0);
-            this.Btn11.Name = "Btn11";
-            this.Btn11.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.Btn11.Size = new System.Drawing.Size(30, 30);
-            this.Btn11.TabIndex = 90;
-            this.Btn11.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Btn11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn11.UseVisualStyleBackColor = false;
-            // 
-            // Btn13
-            // 
-            this.Btn13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.Btn13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Btn13.FlatAppearance.BorderSize = 0;
-            this.Btn13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn13.ForeColor = System.Drawing.Color.Transparent;
-            this.Btn13.Image = global::COMBUS_APP.Properties.Resources.box_store;
-            this.Btn13.Location = new System.Drawing.Point(49, 314);
-            this.Btn13.Margin = new System.Windows.Forms.Padding(0);
-            this.Btn13.Name = "Btn13";
-            this.Btn13.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.Btn13.Size = new System.Drawing.Size(30, 30);
-            this.Btn13.TabIndex = 89;
-            this.Btn13.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Btn13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn13.UseVisualStyleBackColor = false;
-            // 
-            // Btn14
-            // 
-            this.Btn14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.Btn14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Btn14.FlatAppearance.BorderSize = 0;
-            this.Btn14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn14.ForeColor = System.Drawing.Color.Transparent;
-            this.Btn14.Image = global::COMBUS_APP.Properties.Resources.box_store;
-            this.Btn14.Location = new System.Drawing.Point(49, 281);
-            this.Btn14.Margin = new System.Windows.Forms.Padding(0);
-            this.Btn14.Name = "Btn14";
-            this.Btn14.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.Btn14.Size = new System.Drawing.Size(30, 30);
-            this.Btn14.TabIndex = 88;
-            this.Btn14.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Btn14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn14.UseVisualStyleBackColor = false;
-            // 
-            // Btn15
-            // 
-            this.Btn15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.Btn15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Btn15.FlatAppearance.BorderSize = 0;
-            this.Btn15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn15.ForeColor = System.Drawing.Color.Transparent;
-            this.Btn15.Image = global::COMBUS_APP.Properties.Resources.box_store;
-            this.Btn15.Location = new System.Drawing.Point(49, 248);
-            this.Btn15.Margin = new System.Windows.Forms.Padding(0);
-            this.Btn15.Name = "Btn15";
-            this.Btn15.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.Btn15.Size = new System.Drawing.Size(30, 30);
-            this.Btn15.TabIndex = 87;
-            this.Btn15.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Btn15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn15.UseVisualStyleBackColor = false;
-            // 
-            // Btn16
-            // 
-            this.Btn16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.Btn16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Btn16.FlatAppearance.BorderSize = 0;
-            this.Btn16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn16.ForeColor = System.Drawing.Color.Transparent;
-            this.Btn16.Image = global::COMBUS_APP.Properties.Resources.box_storeAlert;
-            this.Btn16.Location = new System.Drawing.Point(49, 216);
-            this.Btn16.Name = "Btn16";
-            this.Btn16.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.Btn16.Size = new System.Drawing.Size(30, 30);
-            this.Btn16.TabIndex = 86;
-            this.Btn16.UseVisualStyleBackColor = false;
-            // 
-            // Btn12
-            // 
-            this.Btn12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.Btn12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Btn12.FlatAppearance.BorderSize = 0;
-            this.Btn12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn12.ForeColor = System.Drawing.Color.Transparent;
-            this.Btn12.Image = global::COMBUS_APP.Properties.Resources.box_store;
-            this.Btn12.Location = new System.Drawing.Point(49, 346);
-            this.Btn12.Margin = new System.Windows.Forms.Padding(0);
-            this.Btn12.Name = "Btn12";
-            this.Btn12.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.Btn12.Size = new System.Drawing.Size(30, 30);
-            this.Btn12.TabIndex = 84;
-            this.Btn12.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Btn12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn12.UseVisualStyleBackColor = false;
+            // BTN126
+            // 
+            this.BTN126.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN126.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN126.FlatAppearance.BorderSize = 0;
+            this.BTN126.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN126.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN126.Location = new System.Drawing.Point(447, 216);
+            this.BTN126.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN126.Name = "BTN126";
+            this.BTN126.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN126.Size = new System.Drawing.Size(30, 30);
+            this.BTN126.TabIndex = 155;
+            this.BTN126.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN126.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN126.UseVisualStyleBackColor = false;
+            // 
+            // BTN125
+            // 
+            this.BTN125.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN125.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN125.FlatAppearance.BorderSize = 0;
+            this.BTN125.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN125.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN125.Location = new System.Drawing.Point(447, 248);
+            this.BTN125.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN125.Name = "BTN125";
+            this.BTN125.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN125.Size = new System.Drawing.Size(30, 30);
+            this.BTN125.TabIndex = 154;
+            this.BTN125.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN125.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN125.UseVisualStyleBackColor = false;
+            // 
+            // BTN124
+            // 
+            this.BTN124.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN124.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN124.FlatAppearance.BorderSize = 0;
+            this.BTN124.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN124.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN124.Location = new System.Drawing.Point(447, 281);
+            this.BTN124.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN124.Name = "BTN124";
+            this.BTN124.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN124.Size = new System.Drawing.Size(30, 30);
+            this.BTN124.TabIndex = 153;
+            this.BTN124.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN124.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN124.UseVisualStyleBackColor = false;
+            // 
+            // BTN123
+            // 
+            this.BTN123.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN123.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN123.FlatAppearance.BorderSize = 0;
+            this.BTN123.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN123.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN123.Location = new System.Drawing.Point(447, 314);
+            this.BTN123.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN123.Name = "BTN123";
+            this.BTN123.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN123.Size = new System.Drawing.Size(30, 30);
+            this.BTN123.TabIndex = 152;
+            this.BTN123.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN123.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN123.UseVisualStyleBackColor = false;
+            // 
+            // BTN122
+            // 
+            this.BTN122.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN122.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN122.FlatAppearance.BorderSize = 0;
+            this.BTN122.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN122.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN122.Location = new System.Drawing.Point(447, 346);
+            this.BTN122.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN122.Name = "BTN122";
+            this.BTN122.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN122.Size = new System.Drawing.Size(30, 30);
+            this.BTN122.TabIndex = 151;
+            this.BTN122.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN122.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN122.UseVisualStyleBackColor = false;
+            // 
+            // BTN116
+            // 
+            this.BTN116.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN116.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN116.FlatAppearance.BorderSize = 0;
+            this.BTN116.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN116.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN116.Location = new System.Drawing.Point(414, 216);
+            this.BTN116.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN116.Name = "BTN116";
+            this.BTN116.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN116.Size = new System.Drawing.Size(30, 30);
+            this.BTN116.TabIndex = 150;
+            this.BTN116.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN116.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN116.UseVisualStyleBackColor = false;
+            // 
+            // BTN115
+            // 
+            this.BTN115.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN115.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN115.FlatAppearance.BorderSize = 0;
+            this.BTN115.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN115.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN115.Location = new System.Drawing.Point(414, 248);
+            this.BTN115.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN115.Name = "BTN115";
+            this.BTN115.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN115.Size = new System.Drawing.Size(30, 30);
+            this.BTN115.TabIndex = 149;
+            this.BTN115.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN115.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN115.UseVisualStyleBackColor = false;
+            // 
+            // BTN114
+            // 
+            this.BTN114.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN114.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN114.FlatAppearance.BorderSize = 0;
+            this.BTN114.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN114.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN114.Location = new System.Drawing.Point(414, 281);
+            this.BTN114.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN114.Name = "BTN114";
+            this.BTN114.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN114.Size = new System.Drawing.Size(30, 30);
+            this.BTN114.TabIndex = 148;
+            this.BTN114.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN114.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN114.UseVisualStyleBackColor = false;
+            // 
+            // BTN113
+            // 
+            this.BTN113.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN113.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN113.FlatAppearance.BorderSize = 0;
+            this.BTN113.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN113.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN113.Location = new System.Drawing.Point(414, 314);
+            this.BTN113.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN113.Name = "BTN113";
+            this.BTN113.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN113.Size = new System.Drawing.Size(30, 30);
+            this.BTN113.TabIndex = 147;
+            this.BTN113.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN113.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN113.UseVisualStyleBackColor = false;
+            // 
+            // BTN112
+            // 
+            this.BTN112.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN112.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN112.FlatAppearance.BorderSize = 0;
+            this.BTN112.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN112.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN112.Location = new System.Drawing.Point(414, 346);
+            this.BTN112.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN112.Name = "BTN112";
+            this.BTN112.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN112.Size = new System.Drawing.Size(30, 30);
+            this.BTN112.TabIndex = 146;
+            this.BTN112.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN112.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN112.UseVisualStyleBackColor = false;
+            // 
+            // BTN106
+            // 
+            this.BTN106.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN106.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN106.FlatAppearance.BorderSize = 0;
+            this.BTN106.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN106.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN106.Location = new System.Drawing.Point(381, 216);
+            this.BTN106.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN106.Name = "BTN106";
+            this.BTN106.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN106.Size = new System.Drawing.Size(30, 30);
+            this.BTN106.TabIndex = 145;
+            this.BTN106.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN106.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN106.UseVisualStyleBackColor = false;
+            // 
+            // BTN105
+            // 
+            this.BTN105.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN105.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN105.FlatAppearance.BorderSize = 0;
+            this.BTN105.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN105.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN105.Location = new System.Drawing.Point(381, 248);
+            this.BTN105.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN105.Name = "BTN105";
+            this.BTN105.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN105.Size = new System.Drawing.Size(30, 30);
+            this.BTN105.TabIndex = 144;
+            this.BTN105.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN105.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN105.UseVisualStyleBackColor = false;
+            // 
+            // BTN104
+            // 
+            this.BTN104.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN104.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN104.FlatAppearance.BorderSize = 0;
+            this.BTN104.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN104.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN104.Location = new System.Drawing.Point(381, 281);
+            this.BTN104.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN104.Name = "BTN104";
+            this.BTN104.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN104.Size = new System.Drawing.Size(30, 30);
+            this.BTN104.TabIndex = 143;
+            this.BTN104.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN104.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN104.UseVisualStyleBackColor = false;
+            // 
+            // BTN103
+            // 
+            this.BTN103.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN103.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN103.FlatAppearance.BorderSize = 0;
+            this.BTN103.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN103.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN103.Location = new System.Drawing.Point(381, 314);
+            this.BTN103.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN103.Name = "BTN103";
+            this.BTN103.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN103.Size = new System.Drawing.Size(30, 30);
+            this.BTN103.TabIndex = 142;
+            this.BTN103.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN103.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN103.UseVisualStyleBackColor = false;
+            // 
+            // BTN102
+            // 
+            this.BTN102.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN102.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN102.FlatAppearance.BorderSize = 0;
+            this.BTN102.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN102.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN102.Location = new System.Drawing.Point(381, 346);
+            this.BTN102.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN102.Name = "BTN102";
+            this.BTN102.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN102.Size = new System.Drawing.Size(30, 30);
+            this.BTN102.TabIndex = 141;
+            this.BTN102.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN102.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN102.UseVisualStyleBackColor = false;
+            // 
+            // BTN096
+            // 
+            this.BTN096.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN096.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN096.FlatAppearance.BorderSize = 0;
+            this.BTN096.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN096.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN096.Location = new System.Drawing.Point(348, 216);
+            this.BTN096.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN096.Name = "BTN096";
+            this.BTN096.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN096.Size = new System.Drawing.Size(30, 30);
+            this.BTN096.TabIndex = 140;
+            this.BTN096.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN096.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN096.UseVisualStyleBackColor = false;
+            // 
+            // BTN095
+            // 
+            this.BTN095.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN095.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN095.FlatAppearance.BorderSize = 0;
+            this.BTN095.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN095.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN095.Location = new System.Drawing.Point(348, 248);
+            this.BTN095.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN095.Name = "BTN095";
+            this.BTN095.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN095.Size = new System.Drawing.Size(30, 30);
+            this.BTN095.TabIndex = 139;
+            this.BTN095.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN095.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN095.UseVisualStyleBackColor = false;
+            // 
+            // BTN094
+            // 
+            this.BTN094.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN094.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN094.FlatAppearance.BorderSize = 0;
+            this.BTN094.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN094.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN094.Location = new System.Drawing.Point(348, 281);
+            this.BTN094.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN094.Name = "BTN094";
+            this.BTN094.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN094.Size = new System.Drawing.Size(30, 30);
+            this.BTN094.TabIndex = 138;
+            this.BTN094.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN094.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN094.UseVisualStyleBackColor = false;
+            // 
+            // BTN093
+            // 
+            this.BTN093.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN093.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN093.FlatAppearance.BorderSize = 0;
+            this.BTN093.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN093.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN093.Location = new System.Drawing.Point(348, 314);
+            this.BTN093.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN093.Name = "BTN093";
+            this.BTN093.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN093.Size = new System.Drawing.Size(30, 30);
+            this.BTN093.TabIndex = 137;
+            this.BTN093.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN093.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN093.UseVisualStyleBackColor = false;
+            // 
+            // BTN092
+            // 
+            this.BTN092.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN092.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN092.FlatAppearance.BorderSize = 0;
+            this.BTN092.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN092.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN092.Location = new System.Drawing.Point(348, 346);
+            this.BTN092.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN092.Name = "BTN092";
+            this.BTN092.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN092.Size = new System.Drawing.Size(30, 30);
+            this.BTN092.TabIndex = 136;
+            this.BTN092.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN092.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN092.UseVisualStyleBackColor = false;
+            // 
+            // BTN121
+            // 
+            this.BTN121.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN121.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN121.FlatAppearance.BorderSize = 0;
+            this.BTN121.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN121.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN121.Location = new System.Drawing.Point(447, 380);
+            this.BTN121.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN121.Name = "BTN121";
+            this.BTN121.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN121.Size = new System.Drawing.Size(30, 30);
+            this.BTN121.TabIndex = 135;
+            this.BTN121.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN121.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN121.UseVisualStyleBackColor = false;
+            // 
+            // BTN111
+            // 
+            this.BTN111.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN111.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN111.FlatAppearance.BorderSize = 0;
+            this.BTN111.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN111.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN111.Location = new System.Drawing.Point(414, 380);
+            this.BTN111.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN111.Name = "BTN111";
+            this.BTN111.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN111.Size = new System.Drawing.Size(30, 30);
+            this.BTN111.TabIndex = 134;
+            this.BTN111.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN111.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN111.UseVisualStyleBackColor = false;
+            // 
+            // BTN101
+            // 
+            this.BTN101.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN101.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN101.FlatAppearance.BorderSize = 0;
+            this.BTN101.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN101.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN101.Location = new System.Drawing.Point(381, 380);
+            this.BTN101.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN101.Name = "BTN101";
+            this.BTN101.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN101.Size = new System.Drawing.Size(30, 30);
+            this.BTN101.TabIndex = 133;
+            this.BTN101.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN101.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN101.UseVisualStyleBackColor = false;
+            // 
+            // BTN091
+            // 
+            this.BTN091.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN091.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN091.FlatAppearance.BorderSize = 0;
+            this.BTN091.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN091.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN091.Location = new System.Drawing.Point(348, 380);
+            this.BTN091.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN091.Name = "BTN091";
+            this.BTN091.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN091.Size = new System.Drawing.Size(30, 30);
+            this.BTN091.TabIndex = 122;
+            this.BTN091.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN091.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN091.UseVisualStyleBackColor = false;
+            // 
+            // BTN086
+            // 
+            this.BTN086.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN086.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN086.FlatAppearance.BorderSize = 0;
+            this.BTN086.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN086.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN086.Location = new System.Drawing.Point(298, 216);
+            this.BTN086.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN086.Name = "BTN086";
+            this.BTN086.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN086.Size = new System.Drawing.Size(30, 30);
+            this.BTN086.TabIndex = 132;
+            this.BTN086.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN086.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN086.UseVisualStyleBackColor = false;
+            // 
+            // BTN085
+            // 
+            this.BTN085.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN085.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN085.FlatAppearance.BorderSize = 0;
+            this.BTN085.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN085.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN085.Location = new System.Drawing.Point(298, 248);
+            this.BTN085.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN085.Name = "BTN085";
+            this.BTN085.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN085.Size = new System.Drawing.Size(30, 30);
+            this.BTN085.TabIndex = 131;
+            this.BTN085.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN085.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN085.UseVisualStyleBackColor = false;
+            // 
+            // BTN084
+            // 
+            this.BTN084.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN084.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN084.FlatAppearance.BorderSize = 0;
+            this.BTN084.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN084.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN084.Location = new System.Drawing.Point(298, 281);
+            this.BTN084.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN084.Name = "BTN084";
+            this.BTN084.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN084.Size = new System.Drawing.Size(30, 30);
+            this.BTN084.TabIndex = 130;
+            this.BTN084.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN084.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN084.UseVisualStyleBackColor = false;
+            // 
+            // BTN083
+            // 
+            this.BTN083.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN083.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN083.FlatAppearance.BorderSize = 0;
+            this.BTN083.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN083.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN083.Location = new System.Drawing.Point(298, 314);
+            this.BTN083.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN083.Name = "BTN083";
+            this.BTN083.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN083.Size = new System.Drawing.Size(30, 30);
+            this.BTN083.TabIndex = 129;
+            this.BTN083.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN083.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN083.UseVisualStyleBackColor = false;
+            // 
+            // BTN082
+            // 
+            this.BTN082.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN082.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN082.FlatAppearance.BorderSize = 0;
+            this.BTN082.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN082.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN082.Location = new System.Drawing.Point(298, 346);
+            this.BTN082.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN082.Name = "BTN082";
+            this.BTN082.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN082.Size = new System.Drawing.Size(30, 30);
+            this.BTN082.TabIndex = 128;
+            this.BTN082.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN082.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN082.UseVisualStyleBackColor = false;
+            // 
+            // BTN076
+            // 
+            this.BTN076.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN076.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN076.FlatAppearance.BorderSize = 0;
+            this.BTN076.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN076.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN076.Location = new System.Drawing.Point(265, 216);
+            this.BTN076.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN076.Name = "BTN076";
+            this.BTN076.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN076.Size = new System.Drawing.Size(30, 30);
+            this.BTN076.TabIndex = 127;
+            this.BTN076.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN076.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN076.UseVisualStyleBackColor = false;
+            // 
+            // BTN075
+            // 
+            this.BTN075.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN075.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN075.FlatAppearance.BorderSize = 0;
+            this.BTN075.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN075.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN075.Location = new System.Drawing.Point(265, 248);
+            this.BTN075.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN075.Name = "BTN075";
+            this.BTN075.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN075.Size = new System.Drawing.Size(30, 30);
+            this.BTN075.TabIndex = 126;
+            this.BTN075.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN075.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN075.UseVisualStyleBackColor = false;
+            // 
+            // BTN074
+            // 
+            this.BTN074.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN074.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN074.FlatAppearance.BorderSize = 0;
+            this.BTN074.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN074.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN074.Location = new System.Drawing.Point(265, 281);
+            this.BTN074.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN074.Name = "BTN074";
+            this.BTN074.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN074.Size = new System.Drawing.Size(30, 30);
+            this.BTN074.TabIndex = 125;
+            this.BTN074.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN074.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN074.UseVisualStyleBackColor = false;
+            // 
+            // BTN073
+            // 
+            this.BTN073.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN073.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN073.FlatAppearance.BorderSize = 0;
+            this.BTN073.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN073.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN073.Location = new System.Drawing.Point(265, 314);
+            this.BTN073.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN073.Name = "BTN073";
+            this.BTN073.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN073.Size = new System.Drawing.Size(30, 30);
+            this.BTN073.TabIndex = 124;
+            this.BTN073.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN073.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN073.UseVisualStyleBackColor = false;
+            // 
+            // BTN072
+            // 
+            this.BTN072.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN072.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN072.FlatAppearance.BorderSize = 0;
+            this.BTN072.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN072.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN072.Location = new System.Drawing.Point(265, 346);
+            this.BTN072.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN072.Name = "BTN072";
+            this.BTN072.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN072.Size = new System.Drawing.Size(30, 30);
+            this.BTN072.TabIndex = 123;
+            this.BTN072.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN072.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN072.UseVisualStyleBackColor = false;
+            // 
+            // BTN081
+            // 
+            this.BTN081.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN081.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN081.FlatAppearance.BorderSize = 0;
+            this.BTN081.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN081.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN081.Location = new System.Drawing.Point(298, 380);
+            this.BTN081.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN081.Name = "BTN081";
+            this.BTN081.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN081.Size = new System.Drawing.Size(30, 30);
+            this.BTN081.TabIndex = 122;
+            this.BTN081.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN081.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN081.UseVisualStyleBackColor = false;
+            // 
+            // BTN071
+            // 
+            this.BTN071.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN071.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN071.FlatAppearance.BorderSize = 0;
+            this.BTN071.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN071.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN071.Location = new System.Drawing.Point(265, 380);
+            this.BTN071.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN071.Name = "BTN071";
+            this.BTN071.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN071.Size = new System.Drawing.Size(30, 30);
+            this.BTN071.TabIndex = 121;
+            this.BTN071.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN071.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN071.UseVisualStyleBackColor = false;
+            // 
+            // BTN066
+            // 
+            this.BTN066.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN066.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN066.FlatAppearance.BorderSize = 0;
+            this.BTN066.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN066.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN066.Location = new System.Drawing.Point(232, 216);
+            this.BTN066.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN066.Name = "BTN066";
+            this.BTN066.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN066.Size = new System.Drawing.Size(30, 30);
+            this.BTN066.TabIndex = 120;
+            this.BTN066.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN066.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN066.UseVisualStyleBackColor = false;
+            // 
+            // BTN065
+            // 
+            this.BTN065.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN065.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN065.FlatAppearance.BorderSize = 0;
+            this.BTN065.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN065.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN065.Location = new System.Drawing.Point(232, 248);
+            this.BTN065.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN065.Name = "BTN065";
+            this.BTN065.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN065.Size = new System.Drawing.Size(30, 30);
+            this.BTN065.TabIndex = 119;
+            this.BTN065.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN065.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN065.UseVisualStyleBackColor = false;
+            // 
+            // BTN064
+            // 
+            this.BTN064.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN064.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN064.FlatAppearance.BorderSize = 0;
+            this.BTN064.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN064.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN064.Location = new System.Drawing.Point(232, 281);
+            this.BTN064.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN064.Name = "BTN064";
+            this.BTN064.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN064.Size = new System.Drawing.Size(30, 30);
+            this.BTN064.TabIndex = 118;
+            this.BTN064.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN064.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN064.UseVisualStyleBackColor = false;
+            // 
+            // BTN063
+            // 
+            this.BTN063.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN063.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN063.FlatAppearance.BorderSize = 0;
+            this.BTN063.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN063.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN063.Location = new System.Drawing.Point(232, 314);
+            this.BTN063.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN063.Name = "BTN063";
+            this.BTN063.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN063.Size = new System.Drawing.Size(30, 30);
+            this.BTN063.TabIndex = 117;
+            this.BTN063.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN063.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN063.UseVisualStyleBackColor = false;
+            // 
+            // BTN062
+            // 
+            this.BTN062.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN062.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN062.FlatAppearance.BorderSize = 0;
+            this.BTN062.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN062.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN062.Location = new System.Drawing.Point(232, 346);
+            this.BTN062.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN062.Name = "BTN062";
+            this.BTN062.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN062.Size = new System.Drawing.Size(30, 30);
+            this.BTN062.TabIndex = 116;
+            this.BTN062.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN062.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN062.UseVisualStyleBackColor = false;
+            // 
+            // BTN061
+            // 
+            this.BTN061.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN061.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN061.FlatAppearance.BorderSize = 0;
+            this.BTN061.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN061.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN061.Location = new System.Drawing.Point(232, 380);
+            this.BTN061.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN061.Name = "BTN061";
+            this.BTN061.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN061.Size = new System.Drawing.Size(30, 30);
+            this.BTN061.TabIndex = 115;
+            this.BTN061.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN061.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN061.UseVisualStyleBackColor = false;
+            // 
+            // BTN056
+            // 
+            this.BTN056.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN056.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN056.FlatAppearance.BorderSize = 0;
+            this.BTN056.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN056.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN056.Location = new System.Drawing.Point(199, 216);
+            this.BTN056.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN056.Name = "BTN056";
+            this.BTN056.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN056.Size = new System.Drawing.Size(30, 30);
+            this.BTN056.TabIndex = 114;
+            this.BTN056.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN056.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN056.UseVisualStyleBackColor = false;
+            // 
+            // BTN055
+            // 
+            this.BTN055.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN055.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN055.FlatAppearance.BorderSize = 0;
+            this.BTN055.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN055.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN055.Location = new System.Drawing.Point(199, 248);
+            this.BTN055.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN055.Name = "BTN055";
+            this.BTN055.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN055.Size = new System.Drawing.Size(30, 30);
+            this.BTN055.TabIndex = 113;
+            this.BTN055.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN055.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN055.UseVisualStyleBackColor = false;
+            // 
+            // BTN054
+            // 
+            this.BTN054.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN054.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN054.FlatAppearance.BorderSize = 0;
+            this.BTN054.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN054.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN054.Location = new System.Drawing.Point(199, 281);
+            this.BTN054.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN054.Name = "BTN054";
+            this.BTN054.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN054.Size = new System.Drawing.Size(30, 30);
+            this.BTN054.TabIndex = 112;
+            this.BTN054.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN054.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN054.UseVisualStyleBackColor = false;
+            // 
+            // BTN053
+            // 
+            this.BTN053.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN053.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN053.FlatAppearance.BorderSize = 0;
+            this.BTN053.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN053.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN053.Location = new System.Drawing.Point(199, 314);
+            this.BTN053.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN053.Name = "BTN053";
+            this.BTN053.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN053.Size = new System.Drawing.Size(30, 30);
+            this.BTN053.TabIndex = 111;
+            this.BTN053.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN053.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN053.UseVisualStyleBackColor = false;
+            // 
+            // BTN052
+            // 
+            this.BTN052.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN052.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN052.FlatAppearance.BorderSize = 0;
+            this.BTN052.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN052.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN052.Location = new System.Drawing.Point(199, 346);
+            this.BTN052.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN052.Name = "BTN052";
+            this.BTN052.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN052.Size = new System.Drawing.Size(30, 30);
+            this.BTN052.TabIndex = 110;
+            this.BTN052.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN052.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN052.UseVisualStyleBackColor = false;
+            // 
+            // BTN051
+            // 
+            this.BTN051.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN051.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN051.FlatAppearance.BorderSize = 0;
+            this.BTN051.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN051.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN051.Location = new System.Drawing.Point(199, 380);
+            this.BTN051.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN051.Name = "BTN051";
+            this.BTN051.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN051.Size = new System.Drawing.Size(30, 30);
+            this.BTN051.TabIndex = 109;
+            this.BTN051.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN051.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN051.UseVisualStyleBackColor = false;
+            // 
+            // BTN046
+            // 
+            this.BTN046.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN046.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN046.FlatAppearance.BorderSize = 0;
+            this.BTN046.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN046.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN046.Location = new System.Drawing.Point(148, 216);
+            this.BTN046.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN046.Name = "BTN046";
+            this.BTN046.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN046.Size = new System.Drawing.Size(30, 30);
+            this.BTN046.TabIndex = 108;
+            this.BTN046.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN046.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN046.UseVisualStyleBackColor = false;
+            // 
+            // BTN045
+            // 
+            this.BTN045.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN045.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN045.FlatAppearance.BorderSize = 0;
+            this.BTN045.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN045.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN045.Location = new System.Drawing.Point(148, 248);
+            this.BTN045.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN045.Name = "BTN045";
+            this.BTN045.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN045.Size = new System.Drawing.Size(30, 30);
+            this.BTN045.TabIndex = 107;
+            this.BTN045.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN045.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN045.UseVisualStyleBackColor = false;
+            // 
+            // BTN044
+            // 
+            this.BTN044.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN044.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN044.FlatAppearance.BorderSize = 0;
+            this.BTN044.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN044.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN044.Location = new System.Drawing.Point(148, 281);
+            this.BTN044.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN044.Name = "BTN044";
+            this.BTN044.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN044.Size = new System.Drawing.Size(30, 30);
+            this.BTN044.TabIndex = 106;
+            this.BTN044.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN044.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN044.UseVisualStyleBackColor = false;
+            // 
+            // BTN043
+            // 
+            this.BTN043.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN043.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN043.FlatAppearance.BorderSize = 0;
+            this.BTN043.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN043.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN043.Location = new System.Drawing.Point(148, 314);
+            this.BTN043.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN043.Name = "BTN043";
+            this.BTN043.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN043.Size = new System.Drawing.Size(30, 30);
+            this.BTN043.TabIndex = 105;
+            this.BTN043.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN043.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN043.UseVisualStyleBackColor = false;
+            // 
+            // BTN042
+            // 
+            this.BTN042.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN042.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN042.FlatAppearance.BorderSize = 0;
+            this.BTN042.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN042.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN042.Location = new System.Drawing.Point(148, 346);
+            this.BTN042.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN042.Name = "BTN042";
+            this.BTN042.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN042.Size = new System.Drawing.Size(30, 30);
+            this.BTN042.TabIndex = 104;
+            this.BTN042.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN042.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN042.UseVisualStyleBackColor = false;
+            // 
+            // BTN041
+            // 
+            this.BTN041.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN041.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN041.FlatAppearance.BorderSize = 0;
+            this.BTN041.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN041.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN041.Location = new System.Drawing.Point(148, 380);
+            this.BTN041.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN041.Name = "BTN041";
+            this.BTN041.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN041.Size = new System.Drawing.Size(30, 30);
+            this.BTN041.TabIndex = 103;
+            this.BTN041.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN041.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN041.UseVisualStyleBackColor = false;
+            // 
+            // BTN036
+            // 
+            this.BTN036.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN036.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN036.FlatAppearance.BorderSize = 0;
+            this.BTN036.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN036.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN036.Location = new System.Drawing.Point(115, 216);
+            this.BTN036.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN036.Name = "BTN036";
+            this.BTN036.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN036.Size = new System.Drawing.Size(30, 30);
+            this.BTN036.TabIndex = 102;
+            this.BTN036.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN036.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN036.UseVisualStyleBackColor = false;
+            // 
+            // BTN034
+            // 
+            this.BTN034.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN034.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN034.FlatAppearance.BorderSize = 0;
+            this.BTN034.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN034.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN034.Location = new System.Drawing.Point(115, 281);
+            this.BTN034.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN034.Name = "BTN034";
+            this.BTN034.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN034.Size = new System.Drawing.Size(30, 30);
+            this.BTN034.TabIndex = 101;
+            this.BTN034.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN034.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN034.UseVisualStyleBackColor = false;
+            // 
+            // BTN035
+            // 
+            this.BTN035.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN035.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN035.FlatAppearance.BorderSize = 0;
+            this.BTN035.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN035.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN035.Location = new System.Drawing.Point(115, 248);
+            this.BTN035.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN035.Name = "BTN035";
+            this.BTN035.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN035.Size = new System.Drawing.Size(30, 30);
+            this.BTN035.TabIndex = 100;
+            this.BTN035.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN035.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN035.UseVisualStyleBackColor = false;
+            // 
+            // BTN033
+            // 
+            this.BTN033.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN033.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN033.FlatAppearance.BorderSize = 0;
+            this.BTN033.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN033.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN033.Location = new System.Drawing.Point(115, 314);
+            this.BTN033.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN033.Name = "BTN033";
+            this.BTN033.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN033.Size = new System.Drawing.Size(30, 30);
+            this.BTN033.TabIndex = 99;
+            this.BTN033.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN033.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN033.UseVisualStyleBackColor = false;
+            // 
+            // BTN032
+            // 
+            this.BTN032.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN032.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN032.FlatAppearance.BorderSize = 0;
+            this.BTN032.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN032.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN032.Location = new System.Drawing.Point(115, 346);
+            this.BTN032.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN032.Name = "BTN032";
+            this.BTN032.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN032.Size = new System.Drawing.Size(30, 30);
+            this.BTN032.TabIndex = 98;
+            this.BTN032.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN032.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN032.UseVisualStyleBackColor = false;
+            // 
+            // BTN031
+            // 
+            this.BTN031.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN031.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN031.FlatAppearance.BorderSize = 0;
+            this.BTN031.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN031.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN031.Location = new System.Drawing.Point(115, 380);
+            this.BTN031.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN031.Name = "BTN031";
+            this.BTN031.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN031.Size = new System.Drawing.Size(30, 30);
+            this.BTN031.TabIndex = 97;
+            this.BTN031.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN031.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN031.UseVisualStyleBackColor = false;
+            // 
+            // BTN026
+            // 
+            this.BTN026.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN026.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN026.FlatAppearance.BorderSize = 0;
+            this.BTN026.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN026.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN026.Location = new System.Drawing.Point(82, 216);
+            this.BTN026.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN026.Name = "BTN026";
+            this.BTN026.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN026.Size = new System.Drawing.Size(30, 30);
+            this.BTN026.TabIndex = 96;
+            this.BTN026.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN026.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN026.UseVisualStyleBackColor = false;
+            // 
+            // BTN025
+            // 
+            this.BTN025.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN025.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN025.FlatAppearance.BorderSize = 0;
+            this.BTN025.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN025.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN025.Location = new System.Drawing.Point(82, 248);
+            this.BTN025.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN025.Name = "BTN025";
+            this.BTN025.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN025.Size = new System.Drawing.Size(30, 30);
+            this.BTN025.TabIndex = 95;
+            this.BTN025.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN025.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN025.UseVisualStyleBackColor = false;
+            // 
+            // BTN024
+            // 
+            this.BTN024.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN024.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN024.FlatAppearance.BorderSize = 0;
+            this.BTN024.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN024.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN024.Location = new System.Drawing.Point(82, 281);
+            this.BTN024.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN024.Name = "BTN024";
+            this.BTN024.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN024.Size = new System.Drawing.Size(30, 30);
+            this.BTN024.TabIndex = 94;
+            this.BTN024.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN024.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN024.UseVisualStyleBackColor = false;
+            // 
+            // BTN023
+            // 
+            this.BTN023.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN023.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN023.FlatAppearance.BorderSize = 0;
+            this.BTN023.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN023.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN023.Location = new System.Drawing.Point(82, 314);
+            this.BTN023.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN023.Name = "BTN023";
+            this.BTN023.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN023.Size = new System.Drawing.Size(30, 30);
+            this.BTN023.TabIndex = 93;
+            this.BTN023.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN023.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN023.UseVisualStyleBackColor = false;
+            // 
+            // BTN022
+            // 
+            this.BTN022.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN022.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN022.FlatAppearance.BorderSize = 0;
+            this.BTN022.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN022.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN022.Location = new System.Drawing.Point(82, 346);
+            this.BTN022.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN022.Name = "BTN022";
+            this.BTN022.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN022.Size = new System.Drawing.Size(30, 30);
+            this.BTN022.TabIndex = 92;
+            this.BTN022.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN022.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN022.UseVisualStyleBackColor = false;
+            // 
+            // BTN021
+            // 
+            this.BTN021.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN021.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN021.FlatAppearance.BorderSize = 0;
+            this.BTN021.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN021.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN021.Image = global::COMBUS_APP.Properties.Resources.box_store;
+            this.BTN021.Location = new System.Drawing.Point(82, 380);
+            this.BTN021.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN021.Name = "BTN021";
+            this.BTN021.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN021.Size = new System.Drawing.Size(30, 30);
+            this.BTN021.TabIndex = 91;
+            this.BTN021.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN021.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN021.UseVisualStyleBackColor = false;
+            // 
+            // BTN011
+            // 
+            this.BTN011.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN011.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN011.FlatAppearance.BorderSize = 0;
+            this.BTN011.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN011.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN011.Image = global::COMBUS_APP.Properties.Resources.box_store;
+            this.BTN011.Location = new System.Drawing.Point(49, 379);
+            this.BTN011.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN011.Name = "BTN011";
+            this.BTN011.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN011.Size = new System.Drawing.Size(30, 30);
+            this.BTN011.TabIndex = 90;
+            this.BTN011.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN011.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN011.UseVisualStyleBackColor = false;
+            // 
+            // BTN013
+            // 
+            this.BTN013.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN013.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN013.FlatAppearance.BorderSize = 0;
+            this.BTN013.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN013.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN013.Image = global::COMBUS_APP.Properties.Resources.box_store;
+            this.BTN013.Location = new System.Drawing.Point(49, 314);
+            this.BTN013.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN013.Name = "BTN013";
+            this.BTN013.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN013.Size = new System.Drawing.Size(30, 30);
+            this.BTN013.TabIndex = 89;
+            this.BTN013.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN013.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN013.UseVisualStyleBackColor = false;
+            // 
+            // BTN014
+            // 
+            this.BTN014.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN014.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN014.FlatAppearance.BorderSize = 0;
+            this.BTN014.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN014.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN014.Image = global::COMBUS_APP.Properties.Resources.box_store;
+            this.BTN014.Location = new System.Drawing.Point(49, 281);
+            this.BTN014.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN014.Name = "BTN014";
+            this.BTN014.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN014.Size = new System.Drawing.Size(30, 30);
+            this.BTN014.TabIndex = 88;
+            this.BTN014.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN014.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN014.UseVisualStyleBackColor = false;
+            // 
+            // BTN015
+            // 
+            this.BTN015.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN015.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN015.FlatAppearance.BorderSize = 0;
+            this.BTN015.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN015.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN015.Image = global::COMBUS_APP.Properties.Resources.box_store;
+            this.BTN015.Location = new System.Drawing.Point(49, 248);
+            this.BTN015.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN015.Name = "BTN015";
+            this.BTN015.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN015.Size = new System.Drawing.Size(30, 30);
+            this.BTN015.TabIndex = 87;
+            this.BTN015.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN015.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN015.UseVisualStyleBackColor = false;
+            // 
+            // BTN016
+            // 
+            this.BTN016.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN016.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN016.FlatAppearance.BorderSize = 0;
+            this.BTN016.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN016.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN016.Image = global::COMBUS_APP.Properties.Resources.box_storeAlert;
+            this.BTN016.Location = new System.Drawing.Point(49, 216);
+            this.BTN016.Name = "BTN016";
+            this.BTN016.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN016.Size = new System.Drawing.Size(30, 30);
+            this.BTN016.TabIndex = 86;
+            this.BTN016.UseVisualStyleBackColor = false;
+            // 
+            // BTN012
+            // 
+            this.BTN012.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
+            this.BTN012.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN012.FlatAppearance.BorderSize = 0;
+            this.BTN012.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN012.ForeColor = System.Drawing.Color.Transparent;
+            this.BTN012.Image = global::COMBUS_APP.Properties.Resources.box_store;
+            this.BTN012.Location = new System.Drawing.Point(49, 346);
+            this.BTN012.Margin = new System.Windows.Forms.Padding(0);
+            this.BTN012.Name = "BTN012";
+            this.BTN012.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.BTN012.Size = new System.Drawing.Size(30, 30);
+            this.BTN012.TabIndex = 84;
+            this.BTN012.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BTN012.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN012.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -1949,7 +1949,6 @@
             this.button4.TabIndex = 31;
             this.button4.Text = "Add";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -2740,78 +2739,78 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button Btn11;
-        private System.Windows.Forms.Button Btn13;
-        private System.Windows.Forms.Button Btn14;
-        private System.Windows.Forms.Button Btn15;
-        private System.Windows.Forms.Button Btn16;
-        private System.Windows.Forms.Button Btn12;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button77;
-        private System.Windows.Forms.Button button76;
-        private System.Windows.Forms.Button button75;
-        private System.Windows.Forms.Button button74;
-        private System.Windows.Forms.Button button73;
-        private System.Windows.Forms.Button button72;
-        private System.Windows.Forms.Button button71;
-        private System.Windows.Forms.Button button70;
-        private System.Windows.Forms.Button button69;
-        private System.Windows.Forms.Button button68;
-        private System.Windows.Forms.Button button67;
-        private System.Windows.Forms.Button button66;
-        private System.Windows.Forms.Button button65;
-        private System.Windows.Forms.Button button64;
-        private System.Windows.Forms.Button button63;
-        private System.Windows.Forms.Button button62;
-        private System.Windows.Forms.Button button61;
-        private System.Windows.Forms.Button button60;
-        private System.Windows.Forms.Button button59;
-        private System.Windows.Forms.Button button58;
-        private System.Windows.Forms.Button button57;
-        private System.Windows.Forms.Button button56;
-        private System.Windows.Forms.Button button55;
-        private System.Windows.Forms.Button button54;
-        private System.Windows.Forms.Button button53;
-        private System.Windows.Forms.Button button52;
-        private System.Windows.Forms.Button button51;
-        private System.Windows.Forms.Button button50;
-        private System.Windows.Forms.Button button49;
-        private System.Windows.Forms.Button button48;
-        private System.Windows.Forms.Button button47;
-        private System.Windows.Forms.Button button46;
-        private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button44;
-        private System.Windows.Forms.Button button43;
-        private System.Windows.Forms.Button button42;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button BTN022;
+        private System.Windows.Forms.Button BTN021;
+        private System.Windows.Forms.Button BTN011;
+        private System.Windows.Forms.Button BTN013;
+        private System.Windows.Forms.Button BTN014;
+        private System.Windows.Forms.Button BTN015;
+        private System.Windows.Forms.Button BTN016;
+        private System.Windows.Forms.Button BTN012;
+        private System.Windows.Forms.Button BTN023;
+        private System.Windows.Forms.Button BTN026;
+        private System.Windows.Forms.Button BTN025;
+        private System.Windows.Forms.Button BTN024;
+        private System.Windows.Forms.Button BTN056;
+        private System.Windows.Forms.Button BTN055;
+        private System.Windows.Forms.Button BTN054;
+        private System.Windows.Forms.Button BTN053;
+        private System.Windows.Forms.Button BTN052;
+        private System.Windows.Forms.Button BTN051;
+        private System.Windows.Forms.Button BTN046;
+        private System.Windows.Forms.Button BTN045;
+        private System.Windows.Forms.Button BTN044;
+        private System.Windows.Forms.Button BTN043;
+        private System.Windows.Forms.Button BTN042;
+        private System.Windows.Forms.Button BTN041;
+        private System.Windows.Forms.Button BTN036;
+        private System.Windows.Forms.Button BTN034;
+        private System.Windows.Forms.Button BTN035;
+        private System.Windows.Forms.Button BTN033;
+        private System.Windows.Forms.Button BTN032;
+        private System.Windows.Forms.Button BTN031;
+        private System.Windows.Forms.Button BTN126;
+        private System.Windows.Forms.Button BTN125;
+        private System.Windows.Forms.Button BTN124;
+        private System.Windows.Forms.Button BTN123;
+        private System.Windows.Forms.Button BTN122;
+        private System.Windows.Forms.Button BTN116;
+        private System.Windows.Forms.Button BTN115;
+        private System.Windows.Forms.Button BTN114;
+        private System.Windows.Forms.Button BTN113;
+        private System.Windows.Forms.Button BTN112;
+        private System.Windows.Forms.Button BTN106;
+        private System.Windows.Forms.Button BTN105;
+        private System.Windows.Forms.Button BTN104;
+        private System.Windows.Forms.Button BTN103;
+        private System.Windows.Forms.Button BTN102;
+        private System.Windows.Forms.Button BTN096;
+        private System.Windows.Forms.Button BTN095;
+        private System.Windows.Forms.Button BTN094;
+        private System.Windows.Forms.Button BTN093;
+        private System.Windows.Forms.Button BTN092;
+        private System.Windows.Forms.Button BTN121;
+        private System.Windows.Forms.Button BTN111;
+        private System.Windows.Forms.Button BTN101;
+        private System.Windows.Forms.Button BTN091;
+        private System.Windows.Forms.Button BTN086;
+        private System.Windows.Forms.Button BTN085;
+        private System.Windows.Forms.Button BTN084;
+        private System.Windows.Forms.Button BTN083;
+        private System.Windows.Forms.Button BTN082;
+        private System.Windows.Forms.Button BTN076;
+        private System.Windows.Forms.Button BTN075;
+        private System.Windows.Forms.Button BTN074;
+        private System.Windows.Forms.Button BTN073;
+        private System.Windows.Forms.Button BTN072;
+        private System.Windows.Forms.Button BTN081;
+        private System.Windows.Forms.Button BTN071;
+        private System.Windows.Forms.Button BTN066;
+        private System.Windows.Forms.Button BTN065;
+        private System.Windows.Forms.Button BTN064;
+        private System.Windows.Forms.Button BTN063;
+        private System.Windows.Forms.Button BTN062;
+        private System.Windows.Forms.Button BTN061;
         private System.Windows.Forms.Button button83;
         private System.Windows.Forms.Button button82;
         private System.Windows.Forms.Panel panel6;
