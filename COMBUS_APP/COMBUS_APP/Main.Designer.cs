@@ -58,6 +58,7 @@
             this.timerStore = new System.Windows.Forms.Timer(this.components);
             this.timerEmployee = new System.Windows.Forms.Timer(this.components);
             this.timerDatetime = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.panelMainmenu.SuspendLayout();
             this.panelEmployee.SuspendLayout();
             this.panelStore.SuspendLayout();
@@ -97,6 +98,7 @@
             // 
             // BtnTransactionError
             // 
+            this.BtnTransactionError.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnTransactionError.FlatAppearance.BorderSize = 0;
             this.BtnTransactionError.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnTransactionError.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -108,6 +110,7 @@
             this.BtnTransactionError.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.BtnTransactionError.Size = new System.Drawing.Size(219, 58);
             this.BtnTransactionError.TabIndex = 16;
+            this.BtnTransactionError.TabStop = false;
             this.BtnTransactionError.Text = " Transaction\r\n Error";
             this.BtnTransactionError.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnTransactionError.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -127,6 +130,7 @@
             // 
             // BtnReport
             // 
+            this.BtnReport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnReport.FlatAppearance.BorderSize = 0;
             this.BtnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnReport.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,6 +142,7 @@
             this.BtnReport.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.BtnReport.Size = new System.Drawing.Size(219, 58);
             this.BtnReport.TabIndex = 10;
+            this.BtnReport.TabStop = false;
             this.BtnReport.Text = " Report";
             this.BtnReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -146,6 +151,7 @@
             // 
             // BtnEmployeeManagement
             // 
+            this.BtnEmployeeManagement.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEmployeeManagement.FlatAppearance.BorderSize = 0;
             this.BtnEmployeeManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEmployeeManagement.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -157,6 +163,7 @@
             this.BtnEmployeeManagement.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.BtnEmployeeManagement.Size = new System.Drawing.Size(219, 58);
             this.BtnEmployeeManagement.TabIndex = 9;
+            this.BtnEmployeeManagement.TabStop = false;
             this.BtnEmployeeManagement.Text = " Employee";
             this.BtnEmployeeManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmployeeManagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -165,6 +172,7 @@
             // 
             // BtnStore
             // 
+            this.BtnStore.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnStore.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnStore.FlatAppearance.BorderSize = 0;
             this.BtnStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -177,6 +185,7 @@
             this.BtnStore.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.BtnStore.Size = new System.Drawing.Size(219, 58);
             this.BtnStore.TabIndex = 8;
+            this.BtnStore.TabStop = false;
             this.BtnStore.Text = " Store";
             this.BtnStore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnStore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -185,6 +194,7 @@
             // 
             // BtnHome
             // 
+            this.BtnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnHome.FlatAppearance.BorderSize = 0;
             this.BtnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -197,6 +207,7 @@
             this.BtnHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.BtnHome.Size = new System.Drawing.Size(219, 58);
             this.BtnHome.TabIndex = 7;
+            this.BtnHome.TabStop = false;
             this.BtnHome.Text = " Home";
             this.BtnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -213,6 +224,7 @@
             // 
             // BtnManagement
             // 
+            this.BtnManagement.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnManagement.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnManagement.FlatAppearance.BorderSize = 0;
             this.BtnManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -224,6 +236,7 @@
             this.BtnManagement.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.BtnManagement.Size = new System.Drawing.Size(219, 38);
             this.BtnManagement.TabIndex = 12;
+            this.BtnManagement.TabStop = false;
             this.BtnManagement.Text = "  Management";
             this.BtnManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnManagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -241,6 +254,7 @@
             // 
             // BtnProduct
             // 
+            this.BtnProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnProduct.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnProduct.FlatAppearance.BorderSize = 0;
             this.BtnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -252,6 +266,7 @@
             this.BtnProduct.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.BtnProduct.Size = new System.Drawing.Size(219, 38);
             this.BtnProduct.TabIndex = 14;
+            this.BtnProduct.TabStop = false;
             this.BtnProduct.Text = "  Product";
             this.BtnProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -260,6 +275,7 @@
             // 
             // BtnCompany
             // 
+            this.BtnCompany.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCompany.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnCompany.FlatAppearance.BorderSize = 0;
             this.BtnCompany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -271,6 +287,7 @@
             this.BtnCompany.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.BtnCompany.Size = new System.Drawing.Size(219, 38);
             this.BtnCompany.TabIndex = 12;
+            this.BtnCompany.TabStop = false;
             this.BtnCompany.Text = "  Company";
             this.BtnCompany.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnCompany.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -279,6 +296,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.button1);
             this.panel5.Controls.Add(this.lbDatetime);
             this.panel5.Controls.Add(this.lbUser);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -293,7 +311,7 @@
             this.lbDatetime.BackColor = System.Drawing.Color.Transparent;
             this.lbDatetime.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDatetime.ForeColor = System.Drawing.Color.White;
-            this.lbDatetime.Location = new System.Drawing.Point(19, 26);
+            this.lbDatetime.Location = new System.Drawing.Point(25, 26);
             this.lbDatetime.Name = "lbDatetime";
             this.lbDatetime.Size = new System.Drawing.Size(162, 19);
             this.lbDatetime.TabIndex = 24;
@@ -305,7 +323,7 @@
             this.lbUser.BackColor = System.Drawing.Color.Transparent;
             this.lbUser.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUser.ForeColor = System.Drawing.Color.White;
-            this.lbUser.Location = new System.Drawing.Point(19, 6);
+            this.lbUser.Location = new System.Drawing.Point(14, 4);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(135, 19);
             this.lbUser.TabIndex = 23;
@@ -369,6 +387,7 @@
             // BtnClose
             // 
             this.BtnClose.BackColor = System.Drawing.Color.Transparent;
+            this.BtnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnClose.FlatAppearance.BorderSize = 0;
             this.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnClose.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -378,6 +397,7 @@
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.Size = new System.Drawing.Size(26, 29);
             this.BtnClose.TabIndex = 11;
+            this.BtnClose.TabStop = false;
             this.BtnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnClose.UseVisualStyleBackColor = false;
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
@@ -387,6 +407,7 @@
             // BtnMinus
             // 
             this.BtnMinus.BackColor = System.Drawing.Color.Transparent;
+            this.BtnMinus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnMinus.FlatAppearance.BorderSize = 0;
             this.BtnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMinus.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -396,6 +417,7 @@
             this.BtnMinus.Name = "BtnMinus";
             this.BtnMinus.Size = new System.Drawing.Size(26, 29);
             this.BtnMinus.TabIndex = 12;
+            this.BtnMinus.TabStop = false;
             this.BtnMinus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnMinus.UseVisualStyleBackColor = false;
             this.BtnMinus.Click += new System.EventHandler(this.BtnMinus_Click);
@@ -431,6 +453,24 @@
             // 
             this.timerDatetime.Enabled = true;
             this.timerDatetime.Tick += new System.EventHandler(this.timerDatetime_Tick);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(149, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(58, 20);
+            this.button1.TabIndex = 17;
+            this.button1.TabStop = false;
+            this.button1.Text = "Logout";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Main
             // 
@@ -490,6 +530,7 @@
         private System.Windows.Forms.Label lbDatetime;
         private System.Windows.Forms.Label lbUser;
         private System.Windows.Forms.Timer timerDatetime;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -30,7 +30,7 @@ namespace COMBUS_APP
                 panelPassword.BackColor = Color.FromArgb(213, 0, 0);
                 lbEnter.Visible = true;
                 txtPassword.Text = string.Empty;
-                txtPassword.Focus();
+                //txtPassword.Focus();
             }
             else
             {
@@ -87,8 +87,8 @@ namespace COMBUS_APP
             if (txtPassword.Text == " Password")
             {
                 txtPassword.Text = "";
-                txtPassword.UseSystemPasswordChar = true;
                 txtPassword.ForeColor = Color.Black;
+                txtPassword.UseSystemPasswordChar = true;
             }
         }
 
@@ -97,15 +97,16 @@ namespace COMBUS_APP
             if (txtPassword.Text == "")
             {
                 txtPassword.Text = " Password";
-                txtPassword.UseSystemPasswordChar = false;
                 txtPassword.ForeColor = Color.Silver;
+                txtPassword.UseSystemPasswordChar = false;
+                BtnLogin.Focus();
             }
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             master = new Master_Main();
-            List<Main_CheckLogin_Result> result = master.Check_Login("admin");
+            List<Main_CheckLogin_Result> result = master.Check_Login("1");
             foreach (Main_CheckLogin_Result re in result)
             {
                 if (re.password == txtPassword.Text.Trim())
@@ -165,7 +166,7 @@ namespace COMBUS_APP
         {
             if (e.KeyChar == (char)13)
             {
-                BtnLogin_Click(sender,e);
+                BtnLogin_Click(sender, e);
             }
         }
     }

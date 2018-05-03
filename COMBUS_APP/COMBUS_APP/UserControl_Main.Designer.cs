@@ -60,11 +60,12 @@
             this.panelLogin.Location = new System.Drawing.Point(297, 142);
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(442, 319);
-            this.panelLogin.TabIndex = 1;
+            this.panelLogin.TabIndex = 0;
             // 
             // BtnLogin
             // 
             this.BtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(252)))));
+            this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnLogin.FlatAppearance.BorderSize = 0;
             this.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLogin.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -86,7 +87,7 @@
             this.lbEnter.Location = new System.Drawing.Point(67, 185);
             this.lbEnter.Name = "lbEnter";
             this.lbEnter.Size = new System.Drawing.Size(310, 22);
-            this.lbEnter.TabIndex = 22;
+            this.lbEnter.TabIndex = 6;
             this.lbEnter.Text = "*Enter an username or password";
             this.lbEnter.Visible = false;
             // 
@@ -98,7 +99,7 @@
             this.panelPassword.Location = new System.Drawing.Point(58, 142);
             this.panelPassword.Name = "panelPassword";
             this.panelPassword.Size = new System.Drawing.Size(333, 37);
-            this.panelPassword.TabIndex = 3;
+            this.panelPassword.TabIndex = 1;
             // 
             // pictureBox2
             // 
@@ -119,7 +120,7 @@
             this.txtPassword.Location = new System.Drawing.Point(35, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(294, 29);
-            this.txtPassword.TabIndex = 0;
+            this.txtPassword.TabIndex = 1;
             this.txtPassword.Tag = "";
             this.txtPassword.Text = " Password";
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
@@ -135,7 +136,7 @@
             this.lbForgot.Location = new System.Drawing.Point(320, 297);
             this.lbForgot.Name = "lbForgot";
             this.lbForgot.Size = new System.Drawing.Size(119, 15);
-            this.lbForgot.TabIndex = 21;
+            this.lbForgot.TabIndex = 6;
             this.lbForgot.Text = "Forgot password?";
             this.lbForgot.Click += new System.EventHandler(this.lbForgot_Click);
             this.lbForgot.MouseLeave += new System.EventHandler(this.lbForgot_MouseLeave);
@@ -150,7 +151,7 @@
             this.panelUsername.Location = new System.Drawing.Point(58, 84);
             this.panelUsername.Name = "panelUsername";
             this.panelUsername.Size = new System.Drawing.Size(333, 37);
-            this.panelUsername.TabIndex = 2;
+            this.panelUsername.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -187,7 +188,7 @@
             this.lbWrong.Location = new System.Drawing.Point(25, 185);
             this.lbWrong.Name = "lbWrong";
             this.lbWrong.Size = new System.Drawing.Size(400, 22);
-            this.lbWrong.TabIndex = 18;
+            this.lbWrong.TabIndex = 6;
             this.lbWrong.Text = "*Wrong username or password. Try again ";
             this.lbWrong.Visible = false;
             // 
@@ -200,7 +201,7 @@
             this.label1.Location = new System.Drawing.Point(13, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(259, 43);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 6;
             this.label1.Text = "MEMBER LOGIN";
             // 
             // UserControl_Main
