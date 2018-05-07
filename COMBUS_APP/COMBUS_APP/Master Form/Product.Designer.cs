@@ -136,7 +136,7 @@
             // 
             // BtnTransactionError
             // 
-            this.BtnTransactionError.BackColor = System.Drawing.Color.Gray;
+            this.BtnTransactionError.BackColor = System.Drawing.Color.Brown;
             this.BtnTransactionError.FlatAppearance.BorderSize = 0;
             this.BtnTransactionError.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnTransactionError.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
