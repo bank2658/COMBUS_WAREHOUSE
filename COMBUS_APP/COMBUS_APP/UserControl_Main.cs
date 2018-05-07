@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using COMBUS_APP.Data;
 using DATA;
 using DATA.Service_Main;
+using System.Text.RegularExpressions;
 
 namespace COMBUS_APP
 {
@@ -21,23 +22,31 @@ namespace COMBUS_APP
         
 
 
-        private void CheckUserandPassword(bool check)
+        private bool CheckUserandPassword()
         {
-            if (!check)
+            if (txtUsername.Text == string.Empty || txtPassword.Text == string.Empty
+                    || txtUsername.Text == " Username" || txtPassword.Text == " Password")
             {
-                panelUsername.BackColor = Color.FromArgb(213, 0, 0);
-                
-                panelPassword.BackColor = Color.FromArgb(213, 0, 0);
-                lbEnter.Visible = true;
-                txtPassword.Text = string.Empty;
-                //txtPassword.Focus();
+                if (txtUsername.Text == string.Empty
+                    || txtUsername.Text == " Username")
+                {
+                    panelUsername.BackColor = Color.FromArgb(213, 0, 0);
+                }
+                if (txtPassword.Text == string.Empty
+                    || txtPassword.Text == " Password")
+                {
+                    panelPassword.BackColor = Color.FromArgb(213, 0, 0);
+                }
+                txtUsername.Focus();
+                lbWrong.Visible = true;
+                return false;
             }
-            else
-            {
-                panelUsername.BackColor = Color.FromArgb(0, 157, 252);
-                panelPassword.BackColor = Color.FromArgb(0, 157, 252);
-                lbEnter.Visible = false;
-            }
+            return true;
+        }
+
+        private void CheckEnterChar()
+        {
+
         }
 
         private void OnFormLoad()
@@ -61,8 +70,6 @@ namespace COMBUS_APP
             panelLogin.BackColor = Color.FromArgb(175, Color.White);
             
         }
-
-
 
         private void txtUsername_Enter(object sender, EventArgs e)
         {
@@ -88,7 +95,7 @@ namespace COMBUS_APP
             {
                 txtPassword.Text = "";
                 txtPassword.ForeColor = Color.Black;
-                txtPassword.UseSystemPasswordChar = true;
+                txtPassword.PasswordChar = '●';
             }
         }
 
@@ -98,32 +105,32 @@ namespace COMBUS_APP
             {
                 txtPassword.Text = " Password";
                 txtPassword.ForeColor = Color.Silver;
-                txtPassword.UseSystemPasswordChar = false;
-                BtnLogin.Focus();
+                txtPassword.PasswordChar = (Char)0;
             }
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            master = new Master_Main();
-            List<Main_CheckLogin_Result> result = master.Check_Login(txtUsername.Text);
-            foreach (Main_CheckLogin_Result re in result)
+            if (CheckUserandPassword())
             {
-                if (re.password == txtPassword.Text.Trim())
+                master = new Master_Main();
+                List<Main_CheckLogin_Result> result = master.Check_Login(txtUsername.Text);
+                foreach (Main_CheckLogin_Result re in result)
                 {
-                    CheckUserandPassword(true);
-                    if (this.btnLoginClick != null)
+                    if (re.password == txtPassword.Text.Trim())
                     {
-                        this.btnLoginClick(this, e);
+                        if (this.btnLoginClick != null)
+                        {
+                            this.btnLoginClick(this, e);
+                        }
+                        panelLogin.Visible = false;
+                        AppCrash.StatusLogin = "T";
+                        return;
                     }
-                    panelLogin.Visible = false;
-                    AppCrash.StatusLogin = "T";
-                    return;
-
                 }
-
+                txtPassword.Text = string.Empty;
+                CheckUserandPassword();
             }
-            CheckUserandPassword(false);
         }
 
         private void lbForgot_MouseMove(object sender, MouseEventArgs e)
@@ -156,17 +163,35 @@ namespace COMBUS_APP
 
         private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
+            var regex = new Regex(@"[^a-zA-Z0-9\b]");
             if (e.KeyChar == (char)13)
             {
                 BtnLogin_Click(sender, e);
+            }
+            else if (regex.IsMatch(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                panelPassword.BackColor = Color.FromArgb(0, 157, 252);
             }
         }
 
         private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
         {
+            var regex = new Regex(@"[^a-zA-Z0-9\b]");
             if (e.KeyChar == (char)13)
             {
                 BtnLogin_Click(sender, e);
+            }
+            else if (regex.IsMatch(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                panelUsername.BackColor = Color.FromArgb(0, 157, 252);
             }
         }
         

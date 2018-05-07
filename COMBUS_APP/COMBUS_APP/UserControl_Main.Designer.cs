@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lbEnter = new System.Windows.Forms.Label();
             this.panelLogin = new COMBUS_APP.Data.RoundedPanel();
             this.BtnLogin = new COMBUS_APP.Data.RoundedButton();
-            this.lbEnter = new System.Windows.Forms.Label();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -47,11 +47,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // lbEnter
+            // 
+            this.lbEnter.AutoSize = true;
+            this.lbEnter.BackColor = System.Drawing.Color.Transparent;
+            this.lbEnter.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEnter.ForeColor = System.Drawing.Color.Red;
+            this.lbEnter.Location = new System.Drawing.Point(356, 553);
+            this.lbEnter.Name = "lbEnter";
+            this.lbEnter.Size = new System.Drawing.Size(310, 22);
+            this.lbEnter.TabIndex = 6;
+            this.lbEnter.Text = "*Enter an username or password";
+            this.lbEnter.Visible = false;
+            // 
             // panelLogin
             // 
             this.panelLogin.BackColor = System.Drawing.Color.Transparent;
             this.panelLogin.Controls.Add(this.BtnLogin);
-            this.panelLogin.Controls.Add(this.lbEnter);
             this.panelLogin.Controls.Add(this.panelPassword);
             this.panelLogin.Controls.Add(this.lbForgot);
             this.panelLogin.Controls.Add(this.panelUsername);
@@ -77,19 +89,6 @@
             this.BtnLogin.Text = "LOGIN";
             this.BtnLogin.UseVisualStyleBackColor = false;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
-            // 
-            // lbEnter
-            // 
-            this.lbEnter.AutoSize = true;
-            this.lbEnter.BackColor = System.Drawing.Color.Transparent;
-            this.lbEnter.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEnter.ForeColor = System.Drawing.Color.Red;
-            this.lbEnter.Location = new System.Drawing.Point(67, 185);
-            this.lbEnter.Name = "lbEnter";
-            this.lbEnter.Size = new System.Drawing.Size(310, 22);
-            this.lbEnter.TabIndex = 6;
-            this.lbEnter.Text = "*Enter an username or password";
-            this.lbEnter.Visible = false;
             // 
             // panelPassword
             // 
@@ -185,11 +184,12 @@
             this.lbWrong.BackColor = System.Drawing.Color.Transparent;
             this.lbWrong.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWrong.ForeColor = System.Drawing.Color.Red;
-            this.lbWrong.Location = new System.Drawing.Point(25, 185);
+            this.lbWrong.Location = new System.Drawing.Point(19, 183);
             this.lbWrong.Name = "lbWrong";
-            this.lbWrong.Size = new System.Drawing.Size(400, 22);
+            this.lbWrong.Size = new System.Drawing.Size(410, 44);
             this.lbWrong.TabIndex = 6;
-            this.lbWrong.Text = "*Wrong username or password. Try again ";
+            this.lbWrong.Text = "*Wrong! username or password. Try again,\r\nor Please enter an username or password" +
+    "";
             this.lbWrong.Visible = false;
             // 
             // label1
@@ -211,6 +211,7 @@
             this.BackgroundImage = global::COMBUS_APP.Properties.Resources.background_Login;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.panelLogin);
+            this.Controls.Add(this.lbEnter);
             this.DoubleBuffered = true;
             this.Name = "UserControl_Main";
             this.Size = new System.Drawing.Size(1061, 669);
@@ -224,6 +225,7 @@
             this.panelUsername.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
