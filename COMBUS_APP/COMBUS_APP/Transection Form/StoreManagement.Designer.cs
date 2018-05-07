@@ -135,6 +135,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label32 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -142,6 +144,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.BtnTransactionError = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -158,6 +161,12 @@
             this.label19 = new System.Windows.Forms.Label();
             this.lbPercentTotal = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.roundedProgressBar6 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar5 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar4 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar3 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar2 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar1 = new COMBUS_APP.Data.RoundedProgressBar();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -187,15 +196,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.roundedProgressBar6 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar5 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar4 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar3 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar2 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar1 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -1918,6 +1919,24 @@
             this.panel3.Size = new System.Drawing.Size(365, 414);
             this.panel3.TabIndex = 18;
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(126, 215);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(168, 26);
+            this.dateTimePicker2.TabIndex = 55;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(126, 249);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(168, 26);
+            this.dateTimePicker1.TabIndex = 54;
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -2009,6 +2028,14 @@
             this.BtnTransactionError.TabIndex = 27;
             this.BtnTransactionError.Text = "Cancel";
             this.BtnTransactionError.UseVisualStyleBackColor = false;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(126, 282);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(213, 30);
+            this.textBox6.TabIndex = 25;
             // 
             // panel4
             // 
@@ -2232,6 +2259,54 @@
             this.label33.Size = new System.Drawing.Size(190, 22);
             this.label33.TabIndex = 79;
             this.label33.Text = "Total in Warehouse";
+            // 
+            // roundedProgressBar6
+            // 
+            this.roundedProgressBar6.Location = new System.Drawing.Point(504, 106);
+            this.roundedProgressBar6.Name = "roundedProgressBar6";
+            this.roundedProgressBar6.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar6.TabIndex = 78;
+            this.roundedProgressBar6.Value = 50;
+            // 
+            // roundedProgressBar5
+            // 
+            this.roundedProgressBar5.Location = new System.Drawing.Point(415, 106);
+            this.roundedProgressBar5.Name = "roundedProgressBar5";
+            this.roundedProgressBar5.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar5.TabIndex = 77;
+            this.roundedProgressBar5.Value = 69;
+            // 
+            // roundedProgressBar4
+            // 
+            this.roundedProgressBar4.Location = new System.Drawing.Point(324, 104);
+            this.roundedProgressBar4.Name = "roundedProgressBar4";
+            this.roundedProgressBar4.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar4.TabIndex = 76;
+            this.roundedProgressBar4.Value = 24;
+            // 
+            // roundedProgressBar3
+            // 
+            this.roundedProgressBar3.Location = new System.Drawing.Point(233, 105);
+            this.roundedProgressBar3.Name = "roundedProgressBar3";
+            this.roundedProgressBar3.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar3.TabIndex = 75;
+            this.roundedProgressBar3.Value = 58;
+            // 
+            // roundedProgressBar2
+            // 
+            this.roundedProgressBar2.Location = new System.Drawing.Point(145, 105);
+            this.roundedProgressBar2.Name = "roundedProgressBar2";
+            this.roundedProgressBar2.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar2.TabIndex = 74;
+            this.roundedProgressBar2.Value = 30;
+            // 
+            // roundedProgressBar1
+            // 
+            this.roundedProgressBar1.Location = new System.Drawing.Point(59, 105);
+            this.roundedProgressBar1.Name = "roundedProgressBar1";
+            this.roundedProgressBar1.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar1.TabIndex = 73;
+            this.roundedProgressBar1.Value = 88;
             // 
             // progressBar1
             // 
@@ -2542,80 +2617,6 @@
             this.label22.TabIndex = 39;
             this.label22.Text = "Rack";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(126, 249);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(168, 26);
-            this.dateTimePicker1.TabIndex = 54;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(126, 282);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(213, 30);
-            this.textBox6.TabIndex = 25;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(126, 215);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(168, 26);
-            this.dateTimePicker2.TabIndex = 55;
-            // 
-            // roundedProgressBar6
-            // 
-            this.roundedProgressBar6.Location = new System.Drawing.Point(504, 106);
-            this.roundedProgressBar6.Name = "roundedProgressBar6";
-            this.roundedProgressBar6.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar6.TabIndex = 78;
-            this.roundedProgressBar6.Value = 50;
-            // 
-            // roundedProgressBar5
-            // 
-            this.roundedProgressBar5.Location = new System.Drawing.Point(415, 106);
-            this.roundedProgressBar5.Name = "roundedProgressBar5";
-            this.roundedProgressBar5.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar5.TabIndex = 77;
-            this.roundedProgressBar5.Value = 69;
-            // 
-            // roundedProgressBar4
-            // 
-            this.roundedProgressBar4.Location = new System.Drawing.Point(324, 104);
-            this.roundedProgressBar4.Name = "roundedProgressBar4";
-            this.roundedProgressBar4.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar4.TabIndex = 76;
-            this.roundedProgressBar4.Value = 24;
-            // 
-            // roundedProgressBar3
-            // 
-            this.roundedProgressBar3.Location = new System.Drawing.Point(233, 105);
-            this.roundedProgressBar3.Name = "roundedProgressBar3";
-            this.roundedProgressBar3.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar3.TabIndex = 75;
-            this.roundedProgressBar3.Value = 58;
-            // 
-            // roundedProgressBar2
-            // 
-            this.roundedProgressBar2.Location = new System.Drawing.Point(145, 105);
-            this.roundedProgressBar2.Name = "roundedProgressBar2";
-            this.roundedProgressBar2.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar2.TabIndex = 74;
-            this.roundedProgressBar2.Value = 30;
-            // 
-            // roundedProgressBar1
-            // 
-            this.roundedProgressBar1.Location = new System.Drawing.Point(59, 105);
-            this.roundedProgressBar1.Name = "roundedProgressBar1";
-            this.roundedProgressBar1.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar1.TabIndex = 73;
-            this.roundedProgressBar1.Value = 88;
-            // 
             // StoreManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2826,5 +2827,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox6;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
