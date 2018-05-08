@@ -259,7 +259,10 @@ namespace COMBUS_APP.Master_Form
             try
             {
                 ViewMode();
-                GrdComclick(grdCompany.CurrentRow.Index);               
+                if(grdCompany.RowCount > 0)
+                {
+                    GrdComclick(grdCompany.CurrentRow.Index);               
+                }
             }
             catch (Exception ex)
             {

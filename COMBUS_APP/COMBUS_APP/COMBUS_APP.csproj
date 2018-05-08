@@ -71,10 +71,10 @@
     <Compile Include="Master Form\Company.Designer.cs">
       <DependentUpon>Company.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master Form\Employee.cs">
+    <Compile Include="Transection Form\Employee.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Master Form\Employee.Designer.cs">
+    <Compile Include="Transection Form\Employee.Designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
     </Compile>
     <Compile Include="Master Form\Product.cs">
@@ -102,10 +102,10 @@
     <Compile Include="Report\MasterReport.Designer.cs">
       <DependentUpon>MasterReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transection Form\EmployeeManagement.cs">
+    <Compile Include="Master Form\EmployeeManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Transection Form\EmployeeManagement.Designer.cs">
+    <Compile Include="Master Form\EmployeeManagement.Designer.cs">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Transection Form\StoreManagement.cs">
@@ -126,7 +126,7 @@
     <EmbeddedResource Include="Master Form\Company.resx">
       <DependentUpon>Company.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master Form\Employee.resx">
+    <EmbeddedResource Include="Transection Form\Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master Form\Product.resx">
@@ -143,7 +143,7 @@
     <EmbeddedResource Include="Report\MasterReport.resx">
       <DependentUpon>MasterReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transection Form\EmployeeManagement.resx">
+    <EmbeddedResource Include="Master Form\EmployeeManagement.resx">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transection Form\StoreManagement.resx">
