@@ -122,5 +122,10 @@ namespace DATA
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Company_EditCompany", iDParameter, companynameParameter, phoneParameter, addressParameter);
         }
+    
+        public virtual ObjectResult<Product_GetProductAll_Result> Product_GetProductAll()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Product_GetProductAll_Result>("Product_GetProductAll");
+        }
     }
 }
