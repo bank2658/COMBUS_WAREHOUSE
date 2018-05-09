@@ -75,10 +75,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EF.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Employee_GetEmpName_Result.cs">
+      <DependentUpon>EF.tt</DependentUpon>
+    </Compile>
     <Compile Include="Main_CheckLogin_Result.cs">
       <DependentUpon>EF.tt</DependentUpon>
     </Compile>
     <Compile Include="Main_Get_TransectionError_Result.cs">
+      <DependentUpon>EF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product_GetProductAll_Result.cs">
+      <DependentUpon>EF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product_GetProductName_Result.cs">
+      <DependentUpon>EF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product_GetProductTime_Result.cs">
       <DependentUpon>EF.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
