@@ -34,7 +34,33 @@
           <Parameter Name="ScreenName" Type="varchar" Mode="In" />
           <Parameter Name="UserName" Type="varchar" Mode="In" />
         </Function>
+        <Function Name="Product_AddProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Weight" Type="decimal" Mode="In" />
+          <Parameter Name="type" Type="int" Mode="In" />
+          <Parameter Name="ComID" Type="int" Mode="In" />
+          <Parameter Name="TimeIn" Type="date" Mode="In" />
+          <Parameter Name="TimeOut" Type="date" Mode="In" />
+        </Function>
+        <Function Name="Product_DelProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Product_EditProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="ProductName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Weight" Type="decimal" Mode="In" />
+          <Parameter Name="Type" Type="int" Mode="In" />
+          <Parameter Name="TimeIn" Type="date" Mode="In" />
+          <Parameter Name="TimeOut" Type="date" Mode="In" />
+        </Function>
         <Function Name="Product_GetProductAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Product_GetProductName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Product_GetProductTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Timein" Type="date" Mode="In" />
+          <Parameter Name="Timeout" Type="date" Mode="In" />
+        </Function>
         <EntityContainer Name="EF_COMBUSStoreContainer" />
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -71,6 +97,32 @@
             <Parameter Name="Address" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="Product_GetProductAll" ReturnType="Collection(EF_COMBUS.Product_GetProductAll_Result)" />
+          <FunctionImport Name="Product_GetProductName" ReturnType="Collection(EF_COMBUS.Product_GetProductName_Result)">
+          <Parameter Name="ProductName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Product_GetProductTime" ReturnType="Collection(EF_COMBUS.Product_GetProductTime_Result)">
+            <Parameter Name="Timein" Mode="In" Type="DateTime" />
+            <Parameter Name="Timeout" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="Product_DelProduct">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Product_EditProduct">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="ProductName" Mode="In" Type="String" />
+            <Parameter Name="Weight" Mode="In" Type="Decimal" />
+            <Parameter Name="Type" Mode="In" Type="Int32" />
+            <Parameter Name="TimeIn" Mode="In" Type="DateTime" />
+            <Parameter Name="TimeOut" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="Product_AddProduct">
+            <Parameter Name="ProductName" Mode="In" Type="String" />
+            <Parameter Name="Weight" Mode="In" Type="Decimal" />
+            <Parameter Name="type" Mode="In" Type="Int32" />
+            <Parameter Name="ComID" Mode="In" Type="Int32" />
+            <Parameter Name="TimeIn" Mode="In" Type="DateTime" />
+            <Parameter Name="TimeOut" Mode="In" Type="DateTime" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="Main_CheckLogin_Result">
           <Property Type="Int32" Name="employeeID" Nullable="false" />
@@ -102,6 +154,26 @@
           <Property Type="Int32" Name="bankID" Nullable="true" />
           <Property Type="DateTime" Name="dateIN" Nullable="true" />
           <Property Type="DateTime" Name="dateOut" Nullable="true" />
+          <Property Type="Int32" Name="productID" Nullable="false" />
+          <Property Type="Decimal" Name="productKG" Nullable="true" Precision="18" Scale="2" />
+        </ComplexType>
+        <ComplexType Name="Product_GetProductName_Result">
+          <Property Type="Int32" Name="productID" Nullable="false" />
+          <Property Type="String" Name="productName" Nullable="true" MaxLength="200" />
+          <Property Type="Decimal" Name="productKG" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="Int32" Name="bankID" Nullable="true" />
+          <Property Type="DateTime" Name="dateIN" Nullable="true" />
+          <Property Type="DateTime" Name="dateOut" Nullable="true" />
+          <Property Type="Int32" Name="companyID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Product_GetProductTime_Result">
+          <Property Type="Int32" Name="productID" Nullable="false" />
+          <Property Type="String" Name="productName" Nullable="true" MaxLength="200" />
+          <Property Type="Decimal" Name="productKG" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="Int32" Name="bankID" Nullable="true" />
+          <Property Type="DateTime" Name="dateIN" Nullable="true" />
+          <Property Type="DateTime" Name="dateOut" Nullable="true" />
+          <Property Type="Int32" Name="companyID" Nullable="true" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -157,9 +229,40 @@
                 <ScalarProperty Name="bankID" ColumnName="bankID" />
                 <ScalarProperty Name="dateIN" ColumnName="dateIN" />
                 <ScalarProperty Name="dateOut" ColumnName="dateOut" />
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="productKG" ColumnName="productKG" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Product_GetProductName" FunctionName="EF_COMBUS.Store.Product_GetProductName">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Product_GetProductName_Result">
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="productName" ColumnName="productName" />
+                <ScalarProperty Name="productKG" ColumnName="productKG" />
+                <ScalarProperty Name="bankID" ColumnName="bankID" />
+                <ScalarProperty Name="dateIN" ColumnName="dateIN" />
+                <ScalarProperty Name="dateOut" ColumnName="dateOut" />
+                <ScalarProperty Name="companyID" ColumnName="companyID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Product_GetProductTime" FunctionName="EF_COMBUS.Store.Product_GetProductTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Product_GetProductTime_Result">
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="productName" ColumnName="productName" />
+                <ScalarProperty Name="productKG" ColumnName="productKG" />
+                <ScalarProperty Name="bankID" ColumnName="bankID" />
+                <ScalarProperty Name="dateIN" ColumnName="dateIN" />
+                <ScalarProperty Name="dateOut" ColumnName="dateOut" />
+                <ScalarProperty Name="companyID" ColumnName="companyID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Product_DelProduct" FunctionName="EF_COMBUS.Store.Product_DelProduct" />
+          <FunctionImportMapping FunctionImportName="Product_EditProduct" FunctionName="EF_COMBUS.Store.Product_EditProduct" />
+          <FunctionImportMapping FunctionImportName="Product_AddProduct" FunctionName="EF_COMBUS.Store.Product_AddProduct" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

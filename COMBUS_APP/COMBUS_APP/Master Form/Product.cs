@@ -7,38 +7,56 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DATA.Service_Master;
+using DATA;
+using COMBUS_APP.Data;
 
 namespace COMBUS_APP.Master_Form
 {
     public partial class Product : UserControl
     {
 
+        private Master_Product master;
+        private int Check = 0;
+
+        private enum EProduct
+        {
+            No
+                ,ProductID
+                ,ProductName
+                ,ProductKg
+                ,ProductType
+                ,ComID
+                ,DateIn
+                ,Dateout
+        };
+
         private void design_Dgv()
         {
-            dataGridView1.Rows.Add("1", "aasdasd", "aasd", "qweda");
-            dataGridView1.Rows.Add("2", "aasdwed", "aas", "qweda");
-            dataGridView1.Rows.Add("3", "aqwedqwe", "acwe", "qweda");
-            dataGridView1.Rows.Add("4", "dqweda", "awec", "aqwed");
-            dataGridView1.Rows.Add("5", "aqwed", "awec", "qweda");
-            dataGridView1.Rows.Add("6", "aqwed", "weca", "qweda");
-            dataGridView1.Rows.Add("7", "aqwed", "awc", "aqwed");
+            GrdProduct.Rows.Add("1", "aasdasd", "aasd", "qweda");
+            GrdProduct.Rows.Add("2", "aasdwed", "aas", "qweda");
+            GrdProduct.Rows.Add("3", "aqwedqwe", "acwe", "qweda");
+            GrdProduct.Rows.Add("4", "dqweda", "awec", "aqwed");
+            GrdProduct.Rows.Add("5", "aqwed", "awec", "qweda");
+            GrdProduct.Rows.Add("6", "aqwed", "weca", "qweda");
+            GrdProduct.Rows.Add("7", "aqwed", "awc", "aqwed");
 
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 157, 252);
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridView1.BackgroundColor = Color.White;
+            GrdProduct.BorderStyle = BorderStyle.None;
+            GrdProduct.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            GrdProduct.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            GrdProduct.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 157, 252);
+            GrdProduct.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            GrdProduct.BackgroundColor = Color.White;
 
-            dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(41, 39, 40);
-            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 10, FontStyle.Bold);
-            dataGridView1.RowsDefaultCellStyle.Font = new Font("Consolas", 10);
-            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            GrdProduct.EnableHeadersVisualStyles = false;
+            GrdProduct.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            GrdProduct.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(41, 39, 40);
+            GrdProduct.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 10, FontStyle.Bold);
+            GrdProduct.RowsDefaultCellStyle.Font = new Font("Consolas", 10);
+            GrdProduct.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
 
 
-            dataGridView1.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            GrdProduct.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         }
         public Product()
         {
@@ -66,6 +84,229 @@ namespace COMBUS_APP.Master_Form
         private void Product_Load(object sender, EventArgs e)
         {
             design_Dgv();
+
+            ViewMode();
+        }
+
+        private void ViewMode()
+        {           
+            txtName.ReadOnly = true;
+            txtWeight.ReadOnly = true;
+
+            cbbType.Enabled = false;
+
+            dtpIn.Enabled = false;
+            dtpOut.Enabled = false;
+
+            btnSubmit.Enabled = false;
+            btnCancel.Enabled = false;
+            btnAdd.Enabled = true;
+            btnEdit.Enabled = true;
+            btnDelete.Enabled = true;
+            Check = 0;
+        }
+
+        private void AddMode()
+        {
+            txtID.Text = "ADD";
+            txtName.ReadOnly = false;
+            txtWeight.ReadOnly = false;
+
+            cbbType.Enabled = true;
+
+            dtpIn.Enabled = true;
+            dtpOut.Enabled = true;
+
+            btnSubmit.Enabled = true;
+            btnCancel.Enabled = true;
+            btnEdit.Enabled = false;
+            btnDelete.Enabled = false;
+
+            txtName.Text = string.Empty;
+            txtWeight.Text = string.Empty;
+            cbbType.Text = string.Empty;
+            txtComID.Text = string.Empty;           
+        }
+
+        private void EditMode()
+        {
+            //txtID.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductID].Value.ToString();
+            txtName.ReadOnly = false;
+            txtWeight.ReadOnly = false;
+
+            cbbType.Enabled = false;
+
+            dtpIn.Enabled = true;
+            dtpOut.Enabled = true;
+
+            btnSubmit.Enabled = true;
+            btnCancel.Enabled = true;
+            btnAdd.Enabled = false;
+            btnDelete.Enabled = false;          
+        }
+
+        private void OnSearchName()
+        {
+            GrdProduct.Rows.Clear();
+            master = new Master_Product();
+            List<Product_GetProductName_Result> result = master.Get_ProductName(txtSearch.Text.Trim());
+            foreach(Product_GetProductName_Result re in result)
+            {
+                GrdProduct.Rows.Add(GrdProduct.Rows.Count + 1
+                                    , re.productID
+                                    , re.productName
+                                    , re.productKG
+                                    , re.bankID
+                                    , re.companyID
+                                    , re.dateIN
+                                    , re.dateOut);
+            }
+            if (result.Count > 0)
+            {
+                GrdProClick(0);
+            }
+        }
+
+        private void OnSearchTime()
+        {
+            GrdProduct.Rows.Clear();
+            master = new Master_Product();
+            List<Product_GetProductTime_Result> result = master.Get_ProductTime(dtpFirst.Value,dtplast.Value);
+            foreach(Product_GetProductTime_Result re in result)
+            {
+                GrdProduct.Rows.Add(GrdProduct.Rows.Count + 1
+                                    , re.productID
+                                    , re.productName
+                                    , re.productKG
+                                    , re.bankID
+                                    , re.companyID
+                                    , re.dateIN
+                                    , re.dateOut);
+            }
+            if (result.Count > 0)
+            {
+                GrdProClick(0);
+            }
+        }
+
+        private void OnDelete()
+        {
+            master = new Master_Product();
+            DialogResult dialog = MessageBox.Show(Messge.CM_Delete, Messge.CM_Confirm, MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                master.Del_Product(Convert.ToInt32(txtID.Text));
+                MessageBox.Show(Messge.INF_Delete, Messge.CM_Confirm);
+            }
+            else
+            {
+                MessageBox.Show(Messge.INF_Cancel, Messge.CM_Confirm);
+            }
+            OnSearchName();
+        }
+
+        private void OnEdit()
+        {
+            master = new Master_Product();
+            master.Edit_Product(Convert.ToInt32(txtID.Text),txtName.Text,Convert.ToDecimal(txtWeight.Text),Convert.ToInt32(cbbType.Text),dtpIn.Value,dtpOut.Value);
+            MessageBox.Show(Messge.INF_Edit,Messge.CM_Confirm);
+            OnSearchName();
+        }
+
+        private void OnAdd()
+        {
+            master = new Master_Product();
+            DialogResult dialog = MessageBox.Show(Messge.CM_Add, Messge.CM_Confirm, MessageBoxButtons.YesNo);
+            if(dialog == DialogResult.Yes)
+            {
+                master.Add_Product(txtName.Text
+                                , Convert.ToDecimal(txtWeight.Text)
+                                , Convert.ToInt32(cbbType.Text)
+                                , Convert.ToInt32(txtComID.Text)
+                                , dtpIn.Value
+                                , dtpOut.Value);
+                MessageBox.Show(Messge.INF_Save, Messge.CM_Confirm);
+            }
+            else
+            {
+                MessageBox.Show(Messge.INF_Cancel, Messge.CM_Confirm);
+            }
+            OnSearchName();
+        }
+
+        private void GrdProClick(int index)
+        {            
+            txtID.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductID].Value.ToString();
+            txtName.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductName].Value.ToString();
+            txtWeight.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductKg].Value.ToString();
+            cbbType.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductType].Value.ToString();
+            txtComID.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ComID].Value.ToString();
+            dtpIn.Value = Convert.ToDateTime(GrdProduct.CurrentRow.Cells[(int)EProduct.DateIn].Value.ToString());
+            dtpOut.Value = Convert.ToDateTime(GrdProduct.CurrentRow.Cells[(int)EProduct.Dateout].Value.ToString());
+        }
+
+        private void BtnSearch_Click(object sender, EventArgs e)
+        {           
+            if(rdoSearch.Checked == true)
+            {
+                OnSearchName();
+            }
+            else if(rdoTime.Checked == true)
+            {
+                OnSearchTime();
+            }
+        }
+
+        private void rdoSearch_CheckedChanged(object sender, EventArgs e)
+        {
+            rdoTime.Checked = false;
+        }
+
+        private void rdoTime_CheckedChanged(object sender, EventArgs e)
+        {
+            rdoSearch.Checked = false;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddMode();
+            Check = 1;
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            EditMode();
+            Check = 2;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            ViewMode();
+            GrdProClick(0);
+        }
+
+        private void GrdProduct_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            GrdProClick(GrdProduct.CurrentRow.Index);
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            OnDelete();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if(Check == 1)
+            {
+                OnAdd();
+            }
+            else if(Check == 2)
+            {
+                OnEdit();
+            }
+            ViewMode();
         }
     }
 }

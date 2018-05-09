@@ -127,5 +127,94 @@ namespace DATA
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Product_GetProductAll_Result>("Product_GetProductAll");
         }
+    
+        public virtual ObjectResult<Product_GetProductName_Result> Product_GetProductName(string productName)
+        {
+            var productNameParameter = productName != null ?
+                new ObjectParameter("ProductName", productName) :
+                new ObjectParameter("ProductName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Product_GetProductName_Result>("Product_GetProductName", productNameParameter);
+        }
+    
+        public virtual ObjectResult<Product_GetProductTime_Result> Product_GetProductTime(Nullable<System.DateTime> timein, Nullable<System.DateTime> timeout)
+        {
+            var timeinParameter = timein.HasValue ?
+                new ObjectParameter("Timein", timein) :
+                new ObjectParameter("Timein", typeof(System.DateTime));
+    
+            var timeoutParameter = timeout.HasValue ?
+                new ObjectParameter("Timeout", timeout) :
+                new ObjectParameter("Timeout", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Product_GetProductTime_Result>("Product_GetProductTime", timeinParameter, timeoutParameter);
+        }
+    
+        public virtual int Product_DelProduct(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Product_DelProduct", iDParameter);
+        }
+    
+        public virtual int Product_EditProduct(Nullable<int> iD, string productName, Nullable<decimal> weight, Nullable<int> type, Nullable<System.DateTime> timeIn, Nullable<System.DateTime> timeOut)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            var productNameParameter = productName != null ?
+                new ObjectParameter("ProductName", productName) :
+                new ObjectParameter("ProductName", typeof(string));
+    
+            var weightParameter = weight.HasValue ?
+                new ObjectParameter("Weight", weight) :
+                new ObjectParameter("Weight", typeof(decimal));
+    
+            var typeParameter = type.HasValue ?
+                new ObjectParameter("Type", type) :
+                new ObjectParameter("Type", typeof(int));
+    
+            var timeInParameter = timeIn.HasValue ?
+                new ObjectParameter("TimeIn", timeIn) :
+                new ObjectParameter("TimeIn", typeof(System.DateTime));
+    
+            var timeOutParameter = timeOut.HasValue ?
+                new ObjectParameter("TimeOut", timeOut) :
+                new ObjectParameter("TimeOut", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Product_EditProduct", iDParameter, productNameParameter, weightParameter, typeParameter, timeInParameter, timeOutParameter);
+        }
+    
+        public virtual int Product_AddProduct(string productName, Nullable<decimal> weight, Nullable<int> type, Nullable<int> comID, Nullable<System.DateTime> timeIn, Nullable<System.DateTime> timeOut)
+        {
+            var productNameParameter = productName != null ?
+                new ObjectParameter("ProductName", productName) :
+                new ObjectParameter("ProductName", typeof(string));
+    
+            var weightParameter = weight.HasValue ?
+                new ObjectParameter("Weight", weight) :
+                new ObjectParameter("Weight", typeof(decimal));
+    
+            var typeParameter = type.HasValue ?
+                new ObjectParameter("type", type) :
+                new ObjectParameter("type", typeof(int));
+    
+            var comIDParameter = comID.HasValue ?
+                new ObjectParameter("ComID", comID) :
+                new ObjectParameter("ComID", typeof(int));
+    
+            var timeInParameter = timeIn.HasValue ?
+                new ObjectParameter("TimeIn", timeIn) :
+                new ObjectParameter("TimeIn", typeof(System.DateTime));
+    
+            var timeOutParameter = timeOut.HasValue ?
+                new ObjectParameter("TimeOut", timeOut) :
+                new ObjectParameter("TimeOut", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Product_AddProduct", productNameParameter, weightParameter, typeParameter, comIDParameter, timeInParameter, timeOutParameter);
+        }
     }
 }

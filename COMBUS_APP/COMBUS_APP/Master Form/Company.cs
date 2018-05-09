@@ -32,7 +32,7 @@ namespace COMBUS_APP.Master_Form
                 ,Address        
         };
 
-        int Chbtn = 0;
+        private int Chbtn = 0;
 
         private void design_Dgv()
         {
@@ -101,38 +101,45 @@ namespace COMBUS_APP.Master_Form
 
         private void ViewMode()
         {
-            txtID.ReadOnly = true;
+            //txtID.ReadOnly = true;
             txtCompany.ReadOnly = true;
             txtPhone.ReadOnly = true;
             txtAddress.ReadOnly = true;
 
             btnSubmit.Enabled = false;
             BtnCancel.Enabled = false;
+            btnAdd.Enabled = true;
+            btnEdit.Enabled = true;
+            btnDelete.Enabled = true;
             Chbtn = 0;
         }
 
         private void EditMode()
         {
-            txtID.ReadOnly = true;
+            //txtID.ReadOnly = true;
             txtCompany.ReadOnly = false;
             txtPhone.ReadOnly = false;
             txtAddress.ReadOnly = false;
 
             btnSubmit.Enabled = true;
             BtnCancel.Enabled = true;
+            btnAdd.Enabled = false;
+            btnDelete.Enabled = false;
         }
 
         private void AddMode()
         {
-            txtID.ReadOnly = true;
+            txtID.Text = "ADD";
+            //txtID.ReadOnly = true;
             txtCompany.ReadOnly = false;
             txtPhone.ReadOnly = false;
             txtAddress.ReadOnly = false;
 
             btnSubmit.Enabled = true;
             BtnCancel.Enabled = true;
+            btnEdit.Enabled = false;
+            btnDelete.Enabled = false;
 
-            txtID.Text = string.Empty;
             txtCompany.Text = string.Empty;
             txtPhone.Text = string.Empty;
             txtAddress.Text = string.Empty;
@@ -232,7 +239,7 @@ namespace COMBUS_APP.Master_Form
         {
             try
             {
-                AddMode();
+                AddMode();               
                 Chbtn = 1;             
             }
             catch(Exception ex)
