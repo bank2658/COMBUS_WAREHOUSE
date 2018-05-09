@@ -22,6 +22,22 @@
         <Function Name="Company_GetCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="CompanyName" Type="nvarchar" Mode="In" />
         </Function>
+        <Function Name="Emploee_DelEmp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Emploee_EditEmp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="Fname" Type="nvarchar" Mode="In" />
+          <Parameter Name="Lname" Type="nvarchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="Address" Type="nvarchar" Mode="In" />
+          <Parameter Name="Permistion" Type="varchar" Mode="In" />
+          <Parameter Name="Username" Type="varchar" Mode="In" />
+          <Parameter Name="Pass" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Employee_GetEmpName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="EmpName" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="Main_CheckLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userName" Type="varchar" Mode="In" />
         </Function>
@@ -123,6 +139,22 @@
             <Parameter Name="TimeIn" Mode="In" Type="DateTime" />
             <Parameter Name="TimeOut" Mode="In" Type="DateTime" />
           </FunctionImport>
+          <FunctionImport Name="Employee_GetEmpName" ReturnType="Collection(EF_COMBUS.Employee_GetEmpName_Result)">
+          <Parameter Name="EmpName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Emploee_DelEmp">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Emploee_EditEmp">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="Fname" Mode="In" Type="String" />
+            <Parameter Name="Lname" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="Permistion" Mode="In" Type="String" />
+            <Parameter Name="Username" Mode="In" Type="String" />
+            <Parameter Name="Pass" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="Main_CheckLogin_Result">
           <Property Type="Int32" Name="employeeID" Nullable="false" />
@@ -174,6 +206,18 @@
           <Property Type="DateTime" Name="dateIN" Nullable="true" />
           <Property Type="DateTime" Name="dateOut" Nullable="true" />
           <Property Type="Int32" Name="companyID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Employee_GetEmpName_Result">
+          <Property Type="Int32" Name="employeeID" Nullable="false" />
+          <Property Type="String" Name="firstName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="lastName" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="age" Nullable="true" />
+          <Property Type="String" Name="address" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="permissionLoginSystem" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="userName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="password" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="createBy" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -263,6 +307,24 @@
           <FunctionImportMapping FunctionImportName="Product_DelProduct" FunctionName="EF_COMBUS.Store.Product_DelProduct" />
           <FunctionImportMapping FunctionImportName="Product_EditProduct" FunctionName="EF_COMBUS.Store.Product_EditProduct" />
           <FunctionImportMapping FunctionImportName="Product_AddProduct" FunctionName="EF_COMBUS.Store.Product_AddProduct" />
+          <FunctionImportMapping FunctionImportName="Employee_GetEmpName" FunctionName="EF_COMBUS.Store.Employee_GetEmpName">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Employee_GetEmpName_Result">
+                <ScalarProperty Name="employeeID" ColumnName="employeeID" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="permissionLoginSystem" ColumnName="permissionLoginSystem" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="createBy" ColumnName="createBy" />
+                <ScalarProperty Name="createDate" ColumnName="createDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Emploee_DelEmp" FunctionName="EF_COMBUS.Store.Emploee_DelEmp" />
+          <FunctionImportMapping FunctionImportName="Emploee_EditEmp" FunctionName="EF_COMBUS.Store.Emploee_EditEmp" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

@@ -134,7 +134,7 @@ namespace COMBUS_APP.Master_Form
             txtName.ReadOnly = false;
             txtWeight.ReadOnly = false;
 
-            cbbType.Enabled = false;
+            cbbType.Enabled = true;
 
             dtpIn.Enabled = true;
             dtpOut.Enabled = true;

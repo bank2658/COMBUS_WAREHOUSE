@@ -216,5 +216,60 @@ namespace DATA
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Product_AddProduct", productNameParameter, weightParameter, typeParameter, comIDParameter, timeInParameter, timeOutParameter);
         }
+    
+        public virtual ObjectResult<Employee_GetEmpName_Result> Employee_GetEmpName(string empName)
+        {
+            var empNameParameter = empName != null ?
+                new ObjectParameter("EmpName", empName) :
+                new ObjectParameter("EmpName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Employee_GetEmpName_Result>("Employee_GetEmpName", empNameParameter);
+        }
+    
+        public virtual int Emploee_DelEmp(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Emploee_DelEmp", iDParameter);
+        }
+    
+        public virtual int Emploee_EditEmp(Nullable<int> iD, string fname, string lname, Nullable<int> age, string address, string permistion, string username, string pass)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            var fnameParameter = fname != null ?
+                new ObjectParameter("Fname", fname) :
+                new ObjectParameter("Fname", typeof(string));
+    
+            var lnameParameter = lname != null ?
+                new ObjectParameter("Lname", lname) :
+                new ObjectParameter("Lname", typeof(string));
+    
+            var ageParameter = age.HasValue ?
+                new ObjectParameter("Age", age) :
+                new ObjectParameter("Age", typeof(int));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            var permistionParameter = permistion != null ?
+                new ObjectParameter("Permistion", permistion) :
+                new ObjectParameter("Permistion", typeof(string));
+    
+            var usernameParameter = username != null ?
+                new ObjectParameter("Username", username) :
+                new ObjectParameter("Username", typeof(string));
+    
+            var passParameter = pass != null ?
+                new ObjectParameter("Pass", pass) :
+                new ObjectParameter("Pass", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Emploee_EditEmp", iDParameter, fnameParameter, lnameParameter, ageParameter, addressParameter, permistionParameter, usernameParameter, passParameter);
+        }
     }
 }

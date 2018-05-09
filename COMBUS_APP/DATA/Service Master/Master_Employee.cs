@@ -24,5 +24,34 @@ namespace DATA.Service_Master
                 _ContextEntity = value;
             }
         }
+
+        public List<Employee_GetEmpName_Result> Get_EmpName(string Name)
+        {
+            return this.ContextEntity.Employee_GetEmpName(Name).ToList();
+        }
+
+        public void Del_Emp(int ID)
+        {
+            this.ContextEntity.Emploee_DelEmp(ID);
+        }
+
+        public void Edit_Emp(int ID
+                                , string Fname
+                                , string Lname
+                                , int Age
+                                , string Address
+                                , string Permistion
+                                , string Username
+                                , string Pass)
+        {
+            this.ContextEntity.Emploee_EditEmp(ID
+                                                , Fname
+                                                , Lname
+                                                , Age
+                                                , Address
+                                                , Permistion
+                                                , Username
+                                                , Pass);
+        }
     }
 }
