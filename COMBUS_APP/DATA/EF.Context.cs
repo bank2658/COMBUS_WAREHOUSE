@@ -271,5 +271,38 @@ namespace DATA
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Emploee_EditEmp", iDParameter, fnameParameter, lnameParameter, ageParameter, addressParameter, permistionParameter, usernameParameter, passParameter);
         }
+    
+        public virtual int Emoloyee_AddEmp(string fname, string lname, Nullable<int> age, string address, string permistion, string username, string pass)
+        {
+            var fnameParameter = fname != null ?
+                new ObjectParameter("Fname", fname) :
+                new ObjectParameter("Fname", typeof(string));
+    
+            var lnameParameter = lname != null ?
+                new ObjectParameter("Lname", lname) :
+                new ObjectParameter("Lname", typeof(string));
+    
+            var ageParameter = age.HasValue ?
+                new ObjectParameter("Age", age) :
+                new ObjectParameter("Age", typeof(int));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            var permistionParameter = permistion != null ?
+                new ObjectParameter("Permistion", permistion) :
+                new ObjectParameter("Permistion", typeof(string));
+    
+            var usernameParameter = username != null ?
+                new ObjectParameter("Username", username) :
+                new ObjectParameter("Username", typeof(string));
+    
+            var passParameter = pass != null ?
+                new ObjectParameter("Pass", pass) :
+                new ObjectParameter("Pass", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Emoloyee_AddEmp", fnameParameter, lnameParameter, ageParameter, addressParameter, permistionParameter, usernameParameter, passParameter);
+        }
     }
 }

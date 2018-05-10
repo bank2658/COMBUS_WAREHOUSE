@@ -153,18 +153,47 @@ namespace COMBUS_APP.Transection_Form
             }
         }
 
-        private void OnEdit()
+        private void OnAdd()
         {
             master = new Master_Employee();
-            master.Edit_Emp(Convert.ToInt32(txtID.Text)
-                            , txtFname.Text
-                            , txtLname.Text
-                            , Convert.ToInt32(txtAge.Text)
-                            , txtAddress.Text
-                            , cbbPermistion.Text
-                            , txtUsername.Text
-                            , txtPassword.Text);
-            MessageBox.Show(Messge.INF_Edit, Messge.CM_Confirm);
+            DialogResult dialog = MessageBox.Show(Messge.CM_Add, Messge.CM_Confirm, MessageBoxButtons.YesNo);
+            if(dialog == DialogResult.Yes)
+            {
+                master.Add_Emp(txtFname.Text
+                                , txtLname.Text
+                                , Convert.ToInt32(txtAge.Text)
+                                , txtAddress.Text
+                                , cbbPermistion.Text
+                                , txtUsername.Text
+                                , txtPassword.Text);
+                MessageBox.Show(Messge.INF_Save, Messge.CM_Confirm);
+            }
+            else
+            {
+                MessageBox.Show(Messge.INF_Cancel, Messge.CM_Confirm);
+            }
+        }
+
+        private void OnEdit()
+        {
+            DialogResult dialog = MessageBox.Show(Messge.INF_Edit, Messge.CM_Confirm, MessageBoxButtons.YesNo);
+            if(dialog == DialogResult.Yes)
+            {
+                master = new Master_Employee();
+                master.Edit_Emp(Convert.ToInt32(txtID.Text)
+                                , txtFname.Text
+                                , txtLname.Text
+                                , Convert.ToInt32(txtAge.Text)
+                                , txtAddress.Text
+                                , cbbPermistion.Text
+                                , txtUsername.Text
+                                , txtPassword.Text);
+                MessageBox.Show(Messge.INF_Edit, Messge.CM_Confirm);
+            }
+            else
+            {
+                MessageBox.Show(Messge.INF_Cancel, Messge.CM_Confirm);
+            }
         }
 
         private void OnDelete()
@@ -230,7 +259,11 @@ namespace COMBUS_APP.Transection_Form
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if(Check == 2)
+            if(Check == 1)
+            {
+                OnAdd();
+            }
+            else if(Check == 2)
             {
                 OnEdit();
             }

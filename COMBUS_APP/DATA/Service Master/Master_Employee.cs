@@ -53,5 +53,22 @@ namespace DATA.Service_Master
                                                 , Username
                                                 , Pass);
         }
+
+        public void Add_Emp(string Fname
+                                , string Lname
+                                , int Age
+                                , string Address
+                                , string Permistion
+                                , string Usrname
+                                , string Pass)
+        {
+            this.ContextEntity.Emoloyee_AddEmp(Fname
+                                                , Lname
+                                                , Age
+                                                , Address
+                                                , Permistion
+                                                , Usrname
+                                                , Pass);
+        }
     }
 }

@@ -22,6 +22,15 @@
         <Function Name="Company_GetCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="CompanyName" Type="nvarchar" Mode="In" />
         </Function>
+        <Function Name="Emoloyee_AddEmp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Fname" Type="nvarchar" Mode="In" />
+          <Parameter Name="Lname" Type="nvarchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="Address" Type="nvarchar" Mode="In" />
+          <Parameter Name="Permistion" Type="varchar" Mode="In" />
+          <Parameter Name="Username" Type="varchar" Mode="In" />
+          <Parameter Name="Pass" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="Emploee_DelEmp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ID" Type="int" Mode="In" />
         </Function>
@@ -147,6 +156,15 @@
           </FunctionImport>
           <FunctionImport Name="Emploee_EditEmp">
             <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="Fname" Mode="In" Type="String" />
+            <Parameter Name="Lname" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="Permistion" Mode="In" Type="String" />
+            <Parameter Name="Username" Mode="In" Type="String" />
+            <Parameter Name="Pass" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Emoloyee_AddEmp">
             <Parameter Name="Fname" Mode="In" Type="String" />
             <Parameter Name="Lname" Mode="In" Type="String" />
             <Parameter Name="Age" Mode="In" Type="Int32" />
@@ -325,6 +343,7 @@
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="Emploee_DelEmp" FunctionName="EF_COMBUS.Store.Emploee_DelEmp" />
           <FunctionImportMapping FunctionImportName="Emploee_EditEmp" FunctionName="EF_COMBUS.Store.Emploee_EditEmp" />
+          <FunctionImportMapping FunctionImportName="Emoloyee_AddEmp" FunctionName="EF_COMBUS.Store.Emoloyee_AddEmp" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
