@@ -33,13 +33,13 @@ namespace COMBUS_APP.Master_Form
 
         private void design_Dgv()
         {
-            GrdProduct.Rows.Add("1", "aasdasd", "aasd", "qweda");
-            GrdProduct.Rows.Add("2", "aasdwed", "aas", "qweda");
-            GrdProduct.Rows.Add("3", "aqwedqwe", "acwe", "qweda");
-            GrdProduct.Rows.Add("4", "dqweda", "awec", "aqwed");
-            GrdProduct.Rows.Add("5", "aqwed", "awec", "qweda");
-            GrdProduct.Rows.Add("6", "aqwed", "weca", "qweda");
-            GrdProduct.Rows.Add("7", "aqwed", "awc", "aqwed");
+            //GrdProduct.Rows.Add("1", "aasdasd", "aasd", "qweda");
+            //GrdProduct.Rows.Add("2", "aasdwed", "aas", "qweda");
+            //GrdProduct.Rows.Add("3", "aqwedqwe", "acwe", "qweda");
+            //GrdProduct.Rows.Add("4", "dqweda", "awec", "aqwed");
+            //GrdProduct.Rows.Add("5", "aqwed", "awec", "qweda");
+            //GrdProduct.Rows.Add("6", "aqwed", "weca", "qweda");
+            //GrdProduct.Rows.Add("7", "aqwed", "awc", "aqwed");
 
             GrdProduct.BorderStyle = BorderStyle.None;
             GrdProduct.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
@@ -89,9 +89,10 @@ namespace COMBUS_APP.Master_Form
         }
 
         private void ViewMode()
-        {           
+        {                  
             txtName.ReadOnly = true;
             txtWeight.ReadOnly = true;
+            txtComID.ReadOnly = true;
 
             cbbType.Enabled = false;
 
@@ -111,6 +112,7 @@ namespace COMBUS_APP.Master_Form
             txtID.Text = "ADD";
             txtName.ReadOnly = false;
             txtWeight.ReadOnly = false;
+            txtComID.ReadOnly = false;
 
             cbbType.Enabled = true;
 
@@ -133,6 +135,7 @@ namespace COMBUS_APP.Master_Form
             //txtID.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductID].Value.ToString();
             txtName.ReadOnly = false;
             txtWeight.ReadOnly = false;
+            txtComID.ReadOnly = false;
 
             cbbType.Enabled = true;
 
