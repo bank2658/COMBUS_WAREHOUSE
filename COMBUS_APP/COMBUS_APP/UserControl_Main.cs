@@ -33,15 +33,13 @@ namespace COMBUS_APP
             if (AppCrash.StatusLogin == "T")
             {
                 panelLogin.Visible = false;
-                
-
             }
             else {
 
                 panelLogin.Visible = true;
 
-                txtUsername.Text = string.Empty;
-                txtPassword.Text = string.Empty;
+                //txtUsername.Text = string.Empty;
+                //txtPassword.Text = string.Empty;
             }
                 panelLogin.BackColor = Color.FromArgb(175, Color.White);
         }

@@ -114,11 +114,10 @@
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.txtPassword.ForeColor = System.Drawing.Color.Silver;
             this.txtPassword.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtPassword.Location = new System.Drawing.Point(35, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(294, 29);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.Tag = "";
@@ -167,7 +166,7 @@
             // 
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.txtUsername.ForeColor = System.Drawing.Color.Silver;
             this.txtUsername.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtUsername.Location = new System.Drawing.Point(35, 4);
             this.txtUsername.Name = "txtUsername";
