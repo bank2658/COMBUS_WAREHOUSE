@@ -317,5 +317,34 @@ namespace DATA
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Employee_GetTimeWork_Result>("Employee_GetTimeWork", dateINParameter, employeeIDParameter);
         }
+    
+        public virtual int Employee_AddTimeWork(Nullable<System.DateTime> dateIN, string wid, string wtimeIN, string wtimeOUT, string note, string user)
+        {
+            var dateINParameter = dateIN.HasValue ?
+                new ObjectParameter("dateIN", dateIN) :
+                new ObjectParameter("dateIN", typeof(System.DateTime));
+    
+            var widParameter = wid != null ?
+                new ObjectParameter("Wid", wid) :
+                new ObjectParameter("Wid", typeof(string));
+    
+            var wtimeINParameter = wtimeIN != null ?
+                new ObjectParameter("WtimeIN", wtimeIN) :
+                new ObjectParameter("WtimeIN", typeof(string));
+    
+            var wtimeOUTParameter = wtimeOUT != null ?
+                new ObjectParameter("WtimeOUT", wtimeOUT) :
+                new ObjectParameter("WtimeOUT", typeof(string));
+    
+            var noteParameter = note != null ?
+                new ObjectParameter("note", note) :
+                new ObjectParameter("note", typeof(string));
+    
+            var userParameter = user != null ?
+                new ObjectParameter("user", user) :
+                new ObjectParameter("user", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Employee_AddTimeWork", dateINParameter, widParameter, wtimeINParameter, wtimeOUTParameter, noteParameter, userParameter);
+        }
     }
 }

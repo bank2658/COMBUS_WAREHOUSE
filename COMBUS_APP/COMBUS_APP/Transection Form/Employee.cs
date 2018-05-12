@@ -11,6 +11,7 @@ using DATA.Service_Master;
 using COMBUS_APP.Data;
 using DATA;
 using DATA.Service_Transection;
+using System.Text.RegularExpressions;
 
 namespace COMBUS_APP.Master_Form
 {
@@ -103,10 +104,17 @@ namespace COMBUS_APP.Master_Form
 
         private void SaveData_Time()
         {
-
+            timeMaster = new Master_EmployeeManagement();
+            for (int i = 0; i < dgvEmployee.RowCount; i++)
+            {
+                timeMaster.Add_TimeWork(dtpDate.Value
+                                            , dgvEmployee.Rows[i].Cells[(int)employee.employeeID].Value.ToString()
+                                            , dgvEmployee.Rows[i].Cells[(int)employee.timeIN].Value.ToString().Replace(".",":")
+                                            , dgvEmployee.Rows[i].Cells[(int)employee.timeOUT].Value.ToString().Replace(".", ":")
+                                            , dgvEmployee.Rows[i].Cells[(int)employee.note].Value.ToString()
+                                            , AppCrash.Login);
+            }
         }
-
-
 
         //private void design_Dgv()
         //{
@@ -159,6 +167,20 @@ namespace COMBUS_APP.Master_Form
             {
                 Log_Error(ex);
             }
+        }
+
+        private void dgvEmployee_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            var regex = new Regex(@"[0-9\b\.]");
+            if (regex.IsMatch(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void dgvEmployee_KeyUp(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }

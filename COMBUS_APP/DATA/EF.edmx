@@ -44,6 +44,14 @@
           <Parameter Name="Username" Type="varchar" Mode="In" />
           <Parameter Name="Pass" Type="varchar" Mode="In" />
         </Function>
+        <Function Name="Employee_AddTimeWork" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="dateIN" Type="date" Mode="In" />
+          <Parameter Name="Wid" Type="varchar" Mode="In" />
+          <Parameter Name="WtimeIN" Type="varchar" Mode="In" />
+          <Parameter Name="WtimeOUT" Type="varchar" Mode="In" />
+          <Parameter Name="note" Type="nvarchar" Mode="In" />
+          <Parameter Name="user" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="Employee_GetEmpName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="EmpName" Type="nvarchar" Mode="In" />
         </Function>
@@ -180,6 +188,14 @@
           <FunctionImport Name="Employee_GetTimeWork" ReturnType="Collection(EF_COMBUS.Employee_GetTimeWork_Result)">
             <Parameter Name="dateIN" Mode="In" Type="DateTime" />
             <Parameter Name="employeeID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Employee_AddTimeWork">
+            <Parameter Name="dateIN" Mode="In" Type="DateTime" />
+            <Parameter Name="Wid" Mode="In" Type="String" />
+            <Parameter Name="WtimeIN" Mode="In" Type="String" />
+            <Parameter Name="WtimeOUT" Mode="In" Type="String" />
+            <Parameter Name="note" Mode="In" Type="String" />
+            <Parameter Name="user" Mode="In" Type="String" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="Main_CheckLogin_Result">
@@ -372,6 +388,7 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Employee_AddTimeWork" FunctionName="EF_COMBUS.Store.Employee_AddTimeWork" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

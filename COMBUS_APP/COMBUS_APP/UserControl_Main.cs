@@ -132,6 +132,7 @@ namespace COMBUS_APP
                             this.btnLoginClick(this, e);
                         }
                         AppCrash.StatusLogin = "T";
+                        AppCrash.Login = re.userName;
                         showObjectLoad();
                         return;
                     }

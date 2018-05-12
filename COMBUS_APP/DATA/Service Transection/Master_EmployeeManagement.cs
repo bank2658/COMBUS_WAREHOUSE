@@ -25,9 +25,21 @@ namespace DATA.Service_Transection
             }
         }
 
-        public Employee_GetTimeWork_Result Get_TimeWork( DateTime dateIN, int id)
+        public Employee_GetTimeWork_Result Get_TimeWork(DateTime dateIN, int id)
         {
             return this.ContextEntity.Employee_GetTimeWork(dateIN, id).FirstOrDefault();
         }
+
+        public void Add_TimeWork(DateTime datein, string id, string timeIN, string timeOUT, string note, string user)
+        {
+
+            this.ContextEntity.Employee_AddTimeWork(datein
+                , id
+                , timeIN
+                , timeOUT
+                , note
+                , user);
+        }
+
     }
 }
