@@ -15,7 +15,7 @@ namespace COMBUS_APP.Data
             set { _Login = value; }
         }
 
-        private static string _StatusLogin = string.Empty;
+        private static string _StatusLogin = "F";
         public static string StatusLogin
         {
             get { return _StatusLogin; }

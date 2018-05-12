@@ -11,16 +11,40 @@ using COMBUS_APP.Data;
 using DATA;
 using DATA.Service_Main;
 using System.Text.RegularExpressions;
+using System.Reflection;
 
 namespace COMBUS_APP
 {
     public partial class UserControl_Main : UserControl
     {
+        public UserControl_Main()
+        {
+            
+            InitializeComponent();
+            
+            
+        }
         
         private Master_Main master;
-        public EventHandler btnLoginClick;
+        public EventHandler btnLoginClick = null;
         
+        public void showObjectLoad()
+        {
+            if (AppCrash.StatusLogin == "T")
+            {
+                panelLogin.Visible = false;
+                
 
+            }
+            else {
+
+                panelLogin.Visible = true;
+
+                txtUsername.Text = string.Empty;
+                txtPassword.Text = string.Empty;
+            }
+                panelLogin.BackColor = Color.FromArgb(175, Color.White);
+        }
 
         private bool CheckUserandPassword()
         {
@@ -51,25 +75,9 @@ namespace COMBUS_APP
 
         private void OnFormLoad()
         {
-            if(AppCrash.StatusLogin == "T")
-            {
-                panelLogin.Visible = false;
-                BtnLogin.Text = "LOGOUT";
-                BtnLogin.BackColor = Color.Red;
-
-            }
-            else{
-                panelLogin.Visible = true;
-            }
+            showObjectLoad();
         }
 
-        public UserControl_Main()
-        {
-            InitializeComponent();
-
-            panelLogin.BackColor = Color.FromArgb(175, Color.White);
-            
-        }
 
         private void txtUsername_Enter(object sender, EventArgs e)
         {
@@ -123,14 +131,15 @@ namespace COMBUS_APP
                         {
                             this.btnLoginClick(this, e);
                         }
-                        panelLogin.Visible = false;
                         AppCrash.StatusLogin = "T";
+                        showObjectLoad();
                         return;
                     }
                 }
                 txtPassword.Text = string.Empty;
                 CheckUserandPassword();
             }
+            
         }
 
         private void lbForgot_MouseMove(object sender, MouseEventArgs e)

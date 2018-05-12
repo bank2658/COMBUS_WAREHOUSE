@@ -1,4 +1,5 @@
-﻿using COMBUS_APP.Master_Form;
+﻿using COMBUS_APP.Data;
+using COMBUS_APP.Master_Form;
 using COMBUS_APP.Report;
 using COMBUS_APP.Transection_Form;
 using System;
@@ -19,7 +20,7 @@ namespace COMBUS_APP
         private int panelStoreHeight, panelEmployeeHeight;
         bool HiddenStore, HiddenEmployee, LoadStore, LoadEmployeeManage;
 
-
+        UserControl_Main user_main = new UserControl_Main();
 
         protected void UserControlMain(object sender, EventArgs e)
         {
@@ -66,28 +67,30 @@ namespace COMBUS_APP
             //RGB hover 49, 46, 48
             ((Button)sender).BackColor = Color.FromArgb(49, 46, 48);
         }
-
-
-
+        
         private void Main_Load(object sender, EventArgs e)
         {
             panelMainmenu.Enabled = false;
             toggle(BtnHome, panelMainmenu.Top);
             panel4.Controls.Clear();
             
-            UserControl_Main user_main = new UserControl_Main();
+            //UserControl_Main user_main = new UserControl_Main();
             panel4.Controls.Add(user_main);
             user_main.btnLoginClick += new EventHandler(UserControlMain);
         }
 
         private void BtnHome_Click(object sender, EventArgs e)
         {
-            LoadStore = LoadEmployeeManage = false;
-            toggle(sender, panelMainmenu.Top);
-            panel4.Controls.Clear();
 
-            UserControl_Main user_main = new UserControl_Main();
-            panel4.Controls.Add(user_main);
+                LoadStore = LoadEmployeeManage = false;
+                toggle(sender, panelMainmenu.Top);
+                panel4.Controls.Clear();
+
+                UserControl_Main user_main = new UserControl_Main();
+                panel4.Controls.Add(user_main);
+           
+
+            
         }
 
         private void BtnStore_Click(object sender, EventArgs e)
@@ -200,6 +203,21 @@ namespace COMBUS_APP
         {
             BtnMinus.Image = ((System.Drawing.Image)(Properties.Resources.minus_blue));
             panelBuntonTopR.BackColor = Color.FromArgb(229, 229, 229);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            AppCrash.StatusLogin = "F";
+            AppCrash.Login = string.Empty;
+            panelMainmenu.Enabled = false;
+            panel4.Controls.Clear();
+            user_main.btnLoginClick -= new EventHandler(UserControlMain);
+            user_main.showObjectLoad();
+            //UserControl_Main user_main = new UserControl_Main();
+            panel4.Controls.Add(user_main);
+            user_main.btnLoginClick += new EventHandler(UserControlMain);
+
+            //user_main.btnLoginClick = null;
         }
 
         private void BtnMinus_MouseLeave(object sender, EventArgs e)
