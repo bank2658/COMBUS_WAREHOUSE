@@ -47,6 +47,10 @@
         <Function Name="Employee_GetEmpName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="EmpName" Type="nvarchar" Mode="In" />
         </Function>
+        <Function Name="Employee_GetTimeWork" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="dateIN" Type="date" Mode="In" />
+          <Parameter Name="employeeID" Type="int" Mode="In" />
+        </Function>
         <Function Name="Main_CheckLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userName" Type="varchar" Mode="In" />
         </Function>
@@ -173,6 +177,10 @@
             <Parameter Name="Username" Mode="In" Type="String" />
             <Parameter Name="Pass" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="Employee_GetTimeWork" ReturnType="Collection(EF_COMBUS.Employee_GetTimeWork_Result)">
+            <Parameter Name="dateIN" Mode="In" Type="DateTime" />
+            <Parameter Name="employeeID" Mode="In" Type="Int32" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="Main_CheckLogin_Result">
           <Property Type="Int32" Name="employeeID" Nullable="false" />
@@ -236,6 +244,14 @@
           <Property Type="String" Name="password" Nullable="true" MaxLength="50" />
           <Property Type="String" Name="createBy" Nullable="true" MaxLength="50" />
           <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="Employee_GetTimeWork_Result">
+          <Property Type="Int32" Name="WorkID" Nullable="false" />
+          <Property Type="DateTime" Name="dateWork" Nullable="true" />
+          <Property Type="Int32" Name="employeeID" Nullable="true" />
+          <Property Type="DateTime" Name="timeIN" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="timeOUT" Nullable="true" Precision="23" />
+          <Property Type="String" Name="note" Nullable="true" MaxLength="200" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -344,6 +360,18 @@
           <FunctionImportMapping FunctionImportName="Emploee_DelEmp" FunctionName="EF_COMBUS.Store.Emploee_DelEmp" />
           <FunctionImportMapping FunctionImportName="Emploee_EditEmp" FunctionName="EF_COMBUS.Store.Emploee_EditEmp" />
           <FunctionImportMapping FunctionImportName="Emoloyee_AddEmp" FunctionName="EF_COMBUS.Store.Emoloyee_AddEmp" />
+          <FunctionImportMapping FunctionImportName="Employee_GetTimeWork" FunctionName="EF_COMBUS.Store.Employee_GetTimeWork">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Employee_GetTimeWork_Result">
+                <ScalarProperty Name="WorkID" ColumnName="WorkID" />
+                <ScalarProperty Name="dateWork" ColumnName="dateWork" />
+                <ScalarProperty Name="employeeID" ColumnName="employeeID" />
+                <ScalarProperty Name="timeIN" ColumnName="timeIN" />
+                <ScalarProperty Name="timeOUT" ColumnName="timeOUT" />
+                <ScalarProperty Name="note" ColumnName="note" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

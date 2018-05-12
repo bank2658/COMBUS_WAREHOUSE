@@ -78,6 +78,9 @@
     <Compile Include="Employee_GetEmpName_Result.cs">
       <DependentUpon>EF.tt</DependentUpon>
     </Compile>
+    <Compile Include="Employee_GetTimeWork_Result.cs">
+      <DependentUpon>EF.tt</DependentUpon>
+    </Compile>
     <Compile Include="Main_CheckLogin_Result.cs">
       <DependentUpon>EF.tt</DependentUpon>
     </Compile>

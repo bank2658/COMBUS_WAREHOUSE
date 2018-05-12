@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee));
             this.label15 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -42,20 +40,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.DtpTo = new System.Windows.Forms.DateTimePicker();
-            this.DtpFrom = new System.Windows.Forms.DateTimePicker();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
+            this.no = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeIN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeOUT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.note = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnSave = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -63,9 +60,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // label15
@@ -73,34 +70,15 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.Control;
             this.label15.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(429, 15);
+            this.label15.Location = new System.Drawing.Point(357, 28);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(90, 28);
             this.label15.TabIndex = 49;
             this.label15.Text = "Search";
             // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(469, 86);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 44;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(469, 52);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 43;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnSave);
             this.panel3.Controls.Add(this.pictureBox6);
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Controls.Add(this.pictureBox4);
@@ -110,17 +88,13 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.txtSearch);
-            this.panel3.Controls.Add(this.DtpTo);
             this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.DtpFrom);
-            this.panel3.Controls.Add(this.radioButton2);
-            this.panel3.Controls.Add(this.radioButton1);
+            this.panel3.Controls.Add(this.dtpDate);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1061, 156);
+            this.panel3.Size = new System.Drawing.Size(1061, 155);
             this.panel3.TabIndex = 1;
             // 
             // pictureBox6
@@ -215,32 +189,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "EMPLOYEE";
             // 
-            // txtSearch
+            // dtpDate
             // 
-            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSearch.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.Silver;
-            this.txtSearch.Location = new System.Drawing.Point(498, 46);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(323, 23);
-            this.txtSearch.TabIndex = 51;
-            this.txtSearch.Text = " Employee Name";
-            // 
-            // DtpTo
-            // 
-            this.DtpTo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DtpTo.Location = new System.Drawing.Point(498, 110);
-            this.DtpTo.Name = "DtpTo";
-            this.DtpTo.Size = new System.Drawing.Size(323, 26);
-            this.DtpTo.TabIndex = 50;
-            // 
-            // DtpFrom
-            // 
-            this.DtpFrom.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DtpFrom.Location = new System.Drawing.Point(498, 79);
-            this.DtpFrom.Name = "DtpFrom";
-            this.DtpFrom.Size = new System.Drawing.Size(323, 26);
-            this.DtpFrom.TabIndex = 45;
+            this.dtpDate.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDate.Location = new System.Drawing.Point(380, 68);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(323, 26);
+            this.dtpDate.TabIndex = 45;
             // 
             // button1
             // 
@@ -250,82 +205,12 @@
             this.button1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(850, 46);
+            this.button1.Location = new System.Drawing.Point(730, 59);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 90);
+            this.button1.Size = new System.Drawing.Size(93, 49);
             this.button1.TabIndex = 42;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.No,
-            this.employeeID,
-            this.firstName,
-            this.lastName,
-            this.timeIN,
-            this.timeOUT,
-            this.note});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.RowTemplate.ReadOnly = true;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1061, 513);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // No
-            // 
-            this.No.HeaderText = "No.";
-            this.No.Name = "No";
-            this.No.Width = 38;
-            // 
-            // employeeID
-            // 
-            this.employeeID.HeaderText = "employeeID";
-            this.employeeID.Name = "employeeID";
-            this.employeeID.Visible = false;
-            // 
-            // firstName
-            // 
-            this.firstName.HeaderText = "firstName";
-            this.firstName.Name = "firstName";
-            this.firstName.Width = 202;
-            // 
-            // lastName
-            // 
-            this.lastName.HeaderText = "lastName";
-            this.lastName.Name = "lastName";
-            this.lastName.Width = 202;
-            // 
-            // timeIN
-            // 
-            this.timeIN.HeaderText = "timeIN";
-            this.timeIN.Name = "timeIN";
-            this.timeIN.Width = 135;
-            // 
-            // timeOUT
-            // 
-            this.timeOUT.HeaderText = "timeOUT";
-            this.timeOUT.Name = "timeOUT";
-            this.timeOUT.Width = 135;
-            // 
-            // note
-            // 
-            this.note.HeaderText = "note";
-            this.note.Name = "note";
-            this.note.Width = 350;
             // 
             // panel1
             // 
@@ -339,12 +224,93 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.dataGridView1);
+            this.panel4.Controls.Add(this.dgvEmployee);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 156);
+            this.panel4.Location = new System.Drawing.Point(0, 155);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1061, 513);
+            this.panel4.Size = new System.Drawing.Size(1061, 514);
             this.panel4.TabIndex = 2;
+            // 
+            // dgvEmployee
+            // 
+            this.dgvEmployee.AllowUserToAddRows = false;
+            this.dgvEmployee.AllowUserToDeleteRows = false;
+            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.no,
+            this.employeeID,
+            this.firstName,
+            this.lastName,
+            this.timeIN,
+            this.timeOUT,
+            this.note});
+            this.dgvEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvEmployee.Location = new System.Drawing.Point(0, 0);
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.Size = new System.Drawing.Size(1061, 514);
+            this.dgvEmployee.TabIndex = 0;
+            // 
+            // no
+            // 
+            this.no.HeaderText = "No";
+            this.no.Name = "no";
+            this.no.ReadOnly = true;
+            this.no.Width = 50;
+            // 
+            // employeeID
+            // 
+            this.employeeID.HeaderText = "ID";
+            this.employeeID.Name = "employeeID";
+            this.employeeID.ReadOnly = true;
+            this.employeeID.Visible = false;
+            // 
+            // firstName
+            // 
+            this.firstName.HeaderText = "FirstName";
+            this.firstName.Name = "firstName";
+            this.firstName.ReadOnly = true;
+            this.firstName.Width = 200;
+            // 
+            // lastName
+            // 
+            this.lastName.HeaderText = "LastName";
+            this.lastName.Name = "lastName";
+            this.lastName.ReadOnly = true;
+            this.lastName.Width = 200;
+            // 
+            // timeIN
+            // 
+            this.timeIN.HeaderText = "TimeIN";
+            this.timeIN.Name = "timeIN";
+            this.timeIN.Width = 200;
+            // 
+            // timeOUT
+            // 
+            this.timeOUT.HeaderText = "TimeOUT";
+            this.timeOUT.Name = "timeOUT";
+            this.timeOUT.Width = 200;
+            // 
+            // note
+            // 
+            this.note.HeaderText = "Note";
+            this.note.Name = "note";
+            this.note.Width = 150;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Gray;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.Location = new System.Drawing.Point(844, 59);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(93, 49);
+            this.btnSave.TabIndex = 60;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // Employee
             // 
@@ -362,9 +328,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -372,14 +338,9 @@
         #endregion
 
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.DateTimePicker DtpTo;
-        private System.Windows.Forms.DateTimePicker DtpFrom;
+        private System.Windows.Forms.DateTimePicker dtpDate;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
@@ -391,12 +352,14 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn No;
+        private System.Windows.Forms.DataGridView dgvEmployee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn no;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeID;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstName;
         private System.Windows.Forms.DataGridViewTextBoxColumn lastName;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeIN;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeOUT;
         private System.Windows.Forms.DataGridViewTextBoxColumn note;
+        private System.Windows.Forms.Button btnSave;
     }
 }

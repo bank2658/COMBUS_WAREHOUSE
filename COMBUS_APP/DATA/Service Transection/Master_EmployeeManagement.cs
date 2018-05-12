@@ -24,5 +24,10 @@ namespace DATA.Service_Transection
                 _ContextEntity = value;
             }
         }
+
+        public Employee_GetTimeWork_Result Get_TimeWork( DateTime dateIN, int id)
+        {
+            return this.ContextEntity.Employee_GetTimeWork(dateIN, id).FirstOrDefault();
+        }
     }
 }

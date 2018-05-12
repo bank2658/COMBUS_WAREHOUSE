@@ -304,5 +304,18 @@ namespace DATA
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Emoloyee_AddEmp", fnameParameter, lnameParameter, ageParameter, addressParameter, permistionParameter, usernameParameter, passParameter);
         }
+    
+        public virtual ObjectResult<Employee_GetTimeWork_Result> Employee_GetTimeWork(Nullable<System.DateTime> dateIN, Nullable<int> employeeID)
+        {
+            var dateINParameter = dateIN.HasValue ?
+                new ObjectParameter("dateIN", dateIN) :
+                new ObjectParameter("dateIN", typeof(System.DateTime));
+    
+            var employeeIDParameter = employeeID.HasValue ?
+                new ObjectParameter("employeeID", employeeID) :
+                new ObjectParameter("employeeID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Employee_GetTimeWork_Result>("Employee_GetTimeWork", dateINParameter, employeeIDParameter);
+        }
     }
 }
