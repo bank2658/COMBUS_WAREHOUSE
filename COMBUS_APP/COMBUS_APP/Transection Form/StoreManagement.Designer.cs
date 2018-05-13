@@ -30,8 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.button87 = new System.Windows.Forms.Button();
+            this.CbbRock = new System.Windows.Forms.ComboBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button86 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -138,7 +137,6 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label32 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -161,12 +159,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.lbPercentTotal = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.roundedProgressBar6 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar5 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar4 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar3 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar2 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar1 = new COMBUS_APP.Data.RoundedProgressBar();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -197,8 +189,15 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.roundedProgressBar6 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar5 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar4 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar3 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar2 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.roundedProgressBar1 = new COMBUS_APP.Data.RoundedProgressBar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -232,7 +231,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel11);
+            this.panel1.Controls.Add(this.CbbRock);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel8);
@@ -323,29 +322,16 @@
             this.panel1.Size = new System.Drawing.Size(696, 440);
             this.panel1.TabIndex = 9;
             // 
-            // panel11
+            // CbbRock
             // 
-            this.panel11.BackColor = System.Drawing.Color.Black;
-            this.panel11.Controls.Add(this.button87);
-            this.panel11.Location = new System.Drawing.Point(491, 219);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(37, 44);
-            this.panel11.TabIndex = 165;
-            // 
-            // button87
-            // 
-            this.button87.BackColor = System.Drawing.Color.White;
-            this.button87.FlatAppearance.BorderSize = 0;
-            this.button87.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button87.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button87.ForeColor = System.Drawing.Color.Black;
-            this.button87.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button87.Location = new System.Drawing.Point(1, 1);
-            this.button87.Name = "button87";
-            this.button87.Size = new System.Drawing.Size(35, 42);
-            this.button87.TabIndex = 159;
-            this.button87.Text = "A";
-            this.button87.UseVisualStyleBackColor = false;
+            this.CbbRock.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbbRock.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CbbRock.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CbbRock.FormattingEnabled = true;
+            this.CbbRock.Location = new System.Drawing.Point(492, 219);
+            this.CbbRock.Name = "CbbRock";
+            this.CbbRock.Size = new System.Drawing.Size(56, 45);
+            this.CbbRock.TabIndex = 166;
             // 
             // panel10
             // 
@@ -1799,7 +1785,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(29, 216);
+            this.label10.Location = new System.Drawing.Point(29, 246);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 22);
             this.label10.TabIndex = 12;
@@ -1809,7 +1795,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(29, 250);
+            this.label11.Location = new System.Drawing.Point(29, 280);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(30, 22);
             this.label11.TabIndex = 13;
@@ -1819,7 +1805,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(29, 182);
+            this.label12.Location = new System.Drawing.Point(29, 212);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(90, 22);
             this.label12.TabIndex = 14;
@@ -1829,7 +1815,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(29, 284);
+            this.label13.Location = new System.Drawing.Point(29, 314);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(30, 22);
             this.label13.TabIndex = 15;
@@ -1839,7 +1825,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(197, 91);
+            this.label14.Location = new System.Drawing.Point(237, 83);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(100, 22);
             this.label14.TabIndex = 16;
@@ -1858,6 +1844,7 @@
             // 
             // txtRack
             // 
+            this.txtRack.BackColor = System.Drawing.Color.White;
             this.txtRack.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRack.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRack.Enabled = false;
@@ -1869,34 +1856,41 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(126, 143);
+            this.textBox2.Location = new System.Drawing.Point(126, 146);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 30);
+            this.textBox2.Size = new System.Drawing.Size(213, 23);
             this.textBox2.TabIndex = 21;
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.White;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(126, 179);
+            this.textBox3.Location = new System.Drawing.Point(126, 212);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(213, 30);
+            this.textBox3.Size = new System.Drawing.Size(213, 23);
             this.textBox3.TabIndex = 22;
             // 
             // textBox7
             // 
+            this.textBox7.BackColor = System.Drawing.Color.White;
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(126, 318);
+            this.textBox7.Location = new System.Drawing.Point(126, 350);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(213, 30);
+            this.textBox7.Size = new System.Drawing.Size(213, 23);
             this.textBox7.TabIndex = 26;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.dateTimePicker2);
             this.panel3.Controls.Add(this.dateTimePicker1);
             this.panel3.Controls.Add(this.label32);
-            this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.button2);
@@ -1916,23 +1910,24 @@
             this.panel3.Controls.Add(this.txtRack);
             this.panel3.Location = new System.Drawing.Point(0, 45);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(365, 414);
+            this.panel3.Size = new System.Drawing.Size(365, 442);
             this.panel3.TabIndex = 18;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(126, 215);
+            this.dateTimePicker2.Location = new System.Drawing.Point(126, 245);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(168, 26);
             this.dateTimePicker2.TabIndex = 55;
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(126, 249);
+            this.dateTimePicker1.Location = new System.Drawing.Point(126, 279);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(168, 26);
             this.dateTimePicker1.TabIndex = 54;
@@ -1941,18 +1936,11 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(29, 320);
+            this.label32.Location = new System.Drawing.Point(29, 350);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(70, 22);
             this.label32.TabIndex = 32;
             this.label32.Text = "Status";
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(0, 420);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
-            this.panel2.TabIndex = 19;
             // 
             // button4
             // 
@@ -2007,7 +1995,7 @@
             this.button1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(134, 357);
+            this.button1.Location = new System.Drawing.Point(134, 387);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 42);
             this.button1.TabIndex = 28;
@@ -2022,7 +2010,7 @@
             this.BtnTransactionError.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnTransactionError.ForeColor = System.Drawing.Color.White;
             this.BtnTransactionError.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnTransactionError.Location = new System.Drawing.Point(242, 357);
+            this.BtnTransactionError.Location = new System.Drawing.Point(242, 387);
             this.BtnTransactionError.Name = "BtnTransactionError";
             this.BtnTransactionError.Size = new System.Drawing.Size(88, 42);
             this.BtnTransactionError.TabIndex = 27;
@@ -2031,10 +2019,12 @@
             // 
             // textBox6
             // 
+            this.textBox6.BackColor = System.Drawing.Color.White;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(126, 282);
+            this.textBox6.Location = new System.Drawing.Point(126, 314);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(213, 30);
+            this.textBox6.Size = new System.Drawing.Size(213, 23);
             this.textBox6.TabIndex = 25;
             // 
             // panel4
@@ -2047,16 +2037,16 @@
             this.panel4.Controls.Add(this.pictureBox81);
             this.panel4.Controls.Add(this.pictureBox79);
             this.panel4.Controls.Add(this.label14);
-            this.panel4.Location = new System.Drawing.Point(0, 458);
+            this.panel4.Location = new System.Drawing.Point(0, 484);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(366, 211);
+            this.panel4.Size = new System.Drawing.Size(366, 185);
             this.panel4.TabIndex = 19;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(197, 130);
+            this.label17.Location = new System.Drawing.Point(237, 122);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(110, 44);
             this.label17.TabIndex = 48;
@@ -2067,7 +2057,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(197, 43);
+            this.label18.Location = new System.Drawing.Point(237, 35);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(110, 22);
             this.label18.TabIndex = 35;
@@ -2077,7 +2067,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(21, 22);
+            this.label16.Location = new System.Drawing.Point(49, 13);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(100, 44);
             this.label16.TabIndex = 32;
@@ -2086,7 +2076,7 @@
             // pictureBox83
             // 
             this.pictureBox83.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
-            this.pictureBox83.Location = new System.Drawing.Point(156, 39);
+            this.pictureBox83.Location = new System.Drawing.Point(196, 31);
             this.pictureBox83.Name = "pictureBox83";
             this.pictureBox83.Size = new System.Drawing.Size(30, 30);
             this.pictureBox83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -2097,7 +2087,7 @@
             // 
             this.pictureBox81.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox81.Image = global::COMBUS_APP.Properties.Resources.box_storeAlert;
-            this.pictureBox81.Location = new System.Drawing.Point(156, 137);
+            this.pictureBox81.Location = new System.Drawing.Point(196, 129);
             this.pictureBox81.Name = "pictureBox81";
             this.pictureBox81.Size = new System.Drawing.Size(30, 30);
             this.pictureBox81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -2108,7 +2098,7 @@
             // 
             this.pictureBox79.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox79.Image = global::COMBUS_APP.Properties.Resources.box_store;
-            this.pictureBox79.Location = new System.Drawing.Point(156, 87);
+            this.pictureBox79.Location = new System.Drawing.Point(196, 79);
             this.pictureBox79.Name = "pictureBox79";
             this.pictureBox79.Size = new System.Drawing.Size(30, 30);
             this.pictureBox79.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -2259,54 +2249,6 @@
             this.label33.Size = new System.Drawing.Size(190, 22);
             this.label33.TabIndex = 79;
             this.label33.Text = "Total in Warehouse";
-            // 
-            // roundedProgressBar6
-            // 
-            this.roundedProgressBar6.Location = new System.Drawing.Point(504, 106);
-            this.roundedProgressBar6.Name = "roundedProgressBar6";
-            this.roundedProgressBar6.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar6.TabIndex = 78;
-            this.roundedProgressBar6.Value = 50;
-            // 
-            // roundedProgressBar5
-            // 
-            this.roundedProgressBar5.Location = new System.Drawing.Point(415, 106);
-            this.roundedProgressBar5.Name = "roundedProgressBar5";
-            this.roundedProgressBar5.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar5.TabIndex = 77;
-            this.roundedProgressBar5.Value = 69;
-            // 
-            // roundedProgressBar4
-            // 
-            this.roundedProgressBar4.Location = new System.Drawing.Point(324, 104);
-            this.roundedProgressBar4.Name = "roundedProgressBar4";
-            this.roundedProgressBar4.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar4.TabIndex = 76;
-            this.roundedProgressBar4.Value = 24;
-            // 
-            // roundedProgressBar3
-            // 
-            this.roundedProgressBar3.Location = new System.Drawing.Point(233, 105);
-            this.roundedProgressBar3.Name = "roundedProgressBar3";
-            this.roundedProgressBar3.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar3.TabIndex = 75;
-            this.roundedProgressBar3.Value = 58;
-            // 
-            // roundedProgressBar2
-            // 
-            this.roundedProgressBar2.Location = new System.Drawing.Point(145, 105);
-            this.roundedProgressBar2.Name = "roundedProgressBar2";
-            this.roundedProgressBar2.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar2.TabIndex = 74;
-            this.roundedProgressBar2.Value = 30;
-            // 
-            // roundedProgressBar1
-            // 
-            this.roundedProgressBar1.Location = new System.Drawing.Point(59, 105);
-            this.roundedProgressBar1.Name = "roundedProgressBar1";
-            this.roundedProgressBar1.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar1.TabIndex = 73;
-            this.roundedProgressBar1.Value = 88;
             // 
             // progressBar1
             // 
@@ -2617,6 +2559,74 @@
             this.label22.TabIndex = 39;
             this.label22.Text = "Rack";
             // 
+            // roundedProgressBar6
+            // 
+            this.roundedProgressBar6.Location = new System.Drawing.Point(504, 106);
+            this.roundedProgressBar6.Name = "roundedProgressBar6";
+            this.roundedProgressBar6.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar6.TabIndex = 78;
+            this.roundedProgressBar6.Value = 50;
+            // 
+            // roundedProgressBar5
+            // 
+            this.roundedProgressBar5.Location = new System.Drawing.Point(415, 106);
+            this.roundedProgressBar5.Name = "roundedProgressBar5";
+            this.roundedProgressBar5.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar5.TabIndex = 77;
+            this.roundedProgressBar5.Value = 69;
+            // 
+            // roundedProgressBar4
+            // 
+            this.roundedProgressBar4.Location = new System.Drawing.Point(324, 104);
+            this.roundedProgressBar4.Name = "roundedProgressBar4";
+            this.roundedProgressBar4.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar4.TabIndex = 76;
+            this.roundedProgressBar4.Value = 24;
+            // 
+            // roundedProgressBar3
+            // 
+            this.roundedProgressBar3.Location = new System.Drawing.Point(233, 105);
+            this.roundedProgressBar3.Name = "roundedProgressBar3";
+            this.roundedProgressBar3.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar3.TabIndex = 75;
+            this.roundedProgressBar3.Value = 58;
+            // 
+            // roundedProgressBar2
+            // 
+            this.roundedProgressBar2.Location = new System.Drawing.Point(145, 105);
+            this.roundedProgressBar2.Name = "roundedProgressBar2";
+            this.roundedProgressBar2.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar2.TabIndex = 74;
+            this.roundedProgressBar2.Value = 30;
+            // 
+            // roundedProgressBar1
+            // 
+            this.roundedProgressBar1.Location = new System.Drawing.Point(59, 105);
+            this.roundedProgressBar1.Name = "roundedProgressBar1";
+            this.roundedProgressBar1.Size = new System.Drawing.Size(23, 95);
+            this.roundedProgressBar1.TabIndex = 73;
+            this.roundedProgressBar1.Value = 88;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(27, 178);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 22);
+            this.label2.TabIndex = 56;
+            this.label2.Text = "Product";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(126, 178);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(213, 23);
+            this.textBox1.TabIndex = 57;
+            // 
             // StoreManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2631,7 +2641,6 @@
             this.Load += new System.EventHandler(this.StoreManagement_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel11.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
@@ -2730,7 +2739,6 @@
         private Data.RoundedProgressBar roundedProgressBar5;
         private Data.RoundedProgressBar roundedProgressBar4;
         private Data.RoundedProgressBar roundedProgressBar3;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label lbPercentTotal;
         private System.Windows.Forms.Label label36;
@@ -2815,8 +2823,6 @@
         private System.Windows.Forms.Button button83;
         private System.Windows.Forms.Button button82;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button button87;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button86;
         private System.Windows.Forms.Panel panel9;
@@ -2828,5 +2834,8 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox6;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ComboBox CbbRock;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
