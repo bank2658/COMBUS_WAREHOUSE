@@ -53,7 +53,7 @@
             this.lbEnter.BackColor = System.Drawing.Color.Transparent;
             this.lbEnter.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEnter.ForeColor = System.Drawing.Color.Red;
-            this.lbEnter.Location = new System.Drawing.Point(356, 553);
+            this.lbEnter.Location = new System.Drawing.Point(374, 542);
             this.lbEnter.Name = "lbEnter";
             this.lbEnter.Size = new System.Drawing.Size(310, 22);
             this.lbEnter.TabIndex = 6;
