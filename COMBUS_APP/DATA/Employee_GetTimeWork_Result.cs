@@ -16,8 +16,10 @@ namespace DATA
         public int WorkID { get; set; }
         public Nullable<System.DateTime> dateWork { get; set; }
         public Nullable<int> employeeID { get; set; }
-        public Nullable<System.DateTime> timeIN { get; set; }
-        public Nullable<System.DateTime> timeOUT { get; set; }
+        public Nullable<System.TimeSpan> timeIN { get; set; }
+        public Nullable<System.TimeSpan> timeOUT { get; set; }
         public string note { get; set; }
+        public string createBy { get; set; }
+        public Nullable<System.DateTime> createDate { get; set; }
     }
 }
