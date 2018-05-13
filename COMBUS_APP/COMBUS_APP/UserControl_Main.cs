@@ -38,8 +38,10 @@ namespace COMBUS_APP
 
                 panelLogin.Visible = true;
 
-                //txtUsername.Text = string.Empty;
-                //txtPassword.Text = string.Empty;
+                txtUsername.Text = " Username";
+                txtPassword.Text = " Password";
+                txtUsername.ForeColor = Color.Silver;
+                txtPassword.ForeColor = Color.Silver;
             }
                 panelLogin.BackColor = Color.FromArgb(175, Color.White);
         }
