@@ -265,9 +265,11 @@
           <Property Type="Int32" Name="WorkID" Nullable="false" />
           <Property Type="DateTime" Name="dateWork" Nullable="true" />
           <Property Type="Int32" Name="employeeID" Nullable="true" />
-          <Property Type="DateTime" Name="timeIN" Nullable="true" Precision="23" />
-          <Property Type="DateTime" Name="timeOUT" Nullable="true" Precision="23" />
+          <Property Type="Time" Name="timeIN" Nullable="true" />
+          <Property Type="Time" Name="timeOUT" Nullable="true" />
           <Property Type="String" Name="note" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="createBy" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -385,6 +387,8 @@
                 <ScalarProperty Name="timeIN" ColumnName="timeIN" />
                 <ScalarProperty Name="timeOUT" ColumnName="timeOUT" />
                 <ScalarProperty Name="note" ColumnName="note" />
+                <ScalarProperty Name="createBy" ColumnName="createBy" />
+                <ScalarProperty Name="createDate" ColumnName="createDate" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

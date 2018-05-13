@@ -182,5 +182,17 @@ namespace COMBUS_APP.Master_Form
         {
 
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                getData_Employee();
+            }
+            catch(Exception ex)
+            {
+                Log_Error(ex);
+            }
+        }
     }
 }
