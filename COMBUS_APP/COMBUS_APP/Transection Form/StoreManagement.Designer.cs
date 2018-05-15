@@ -130,19 +130,21 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txtRack = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtDuration = new System.Windows.Forms.TextBox();
+            this.txtStatus = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.CbbCompany = new System.Windows.Forms.ComboBox();
+            this.CbbProduct = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.DpkFrom = new System.Windows.Forms.DateTimePicker();
+            this.DpkTo = new System.Windows.Forms.DateTimePicker();
             this.label32 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.BtnTransactionError = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.BtnAdd = new System.Windows.Forms.Button();
+            this.BtnEdit = new System.Windows.Forms.Button();
+            this.BtnDelete = new System.Windows.Forms.Button();
+            this.BtnSubmit = new System.Windows.Forms.Button();
+            this.BtnCancel = new System.Windows.Forms.Button();
+            this.txtBy = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -151,52 +153,50 @@
             this.pictureBox81 = new System.Windows.Forms.PictureBox();
             this.pictureBox79 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbPercentF = new System.Windows.Forms.Label();
+            this.lbPercentE = new System.Windows.Forms.Label();
+            this.lbPercentD = new System.Windows.Forms.Label();
+            this.lbPercentC = new System.Windows.Forms.Label();
+            this.lbPercentB = new System.Windows.Forms.Label();
+            this.lbPercentA = new System.Windows.Forms.Label();
             this.lbPercentTotal = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.PgbF = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbE = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbD = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbC = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbB = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbA = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbTotal = new System.Windows.Forms.ProgressBar();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
+            this.txtITTF = new System.Windows.Forms.TextBox();
+            this.txtITTE = new System.Windows.Forms.TextBox();
+            this.txtITTD = new System.Windows.Forms.TextBox();
+            this.txtITTC = new System.Windows.Forms.TextBox();
+            this.txtITTB = new System.Windows.Forms.TextBox();
+            this.txtEmptyF = new System.Windows.Forms.TextBox();
+            this.txtEmptyE = new System.Windows.Forms.TextBox();
+            this.txtEmptyD = new System.Windows.Forms.TextBox();
+            this.txtEmptyC = new System.Windows.Forms.TextBox();
+            this.txtEmptyB = new System.Windows.Forms.TextBox();
+            this.txtITTA = new System.Windows.Forms.TextBox();
+            this.txtEmptyA = new System.Windows.Forms.TextBox();
+            this.txtTotalF = new System.Windows.Forms.TextBox();
+            this.txtTotalE = new System.Windows.Forms.TextBox();
+            this.txtTotalD = new System.Windows.Forms.TextBox();
+            this.txtTotalC = new System.Windows.Forms.TextBox();
+            this.txtTotalB = new System.Windows.Forms.TextBox();
+            this.txtTotalA = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.roundedProgressBar6 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar5 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar4 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar3 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar2 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.roundedProgressBar1 = new COMBUS_APP.Data.RoundedProgressBar();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -1775,7 +1775,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(27, 146);
+            this.label9.Location = new System.Drawing.Point(27, 145);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 22);
             this.label9.TabIndex = 11;
@@ -1785,7 +1785,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(29, 246);
+            this.label10.Location = new System.Drawing.Point(29, 248);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 22);
             this.label10.TabIndex = 12;
@@ -1795,7 +1795,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(29, 280);
+            this.label11.Location = new System.Drawing.Point(29, 282);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(30, 22);
             this.label11.TabIndex = 13;
@@ -1805,7 +1805,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(29, 212);
+            this.label12.Location = new System.Drawing.Point(29, 216);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(90, 22);
             this.label12.TabIndex = 14;
@@ -1815,7 +1815,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(29, 314);
+            this.label13.Location = new System.Drawing.Point(29, 315);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(30, 22);
             this.label13.TabIndex = 15;
@@ -1854,58 +1854,48 @@
             this.txtRack.Size = new System.Drawing.Size(108, 23);
             this.txtRack.TabIndex = 20;
             // 
-            // textBox2
+            // txtDuration
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(126, 146);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 23);
-            this.textBox2.TabIndex = 21;
+            this.txtDuration.BackColor = System.Drawing.Color.White;
+            this.txtDuration.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDuration.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDuration.Location = new System.Drawing.Point(126, 216);
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.Size = new System.Drawing.Size(213, 23);
+            this.txtDuration.TabIndex = 22;
             // 
-            // textBox3
+            // txtStatus
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(126, 212);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(213, 23);
-            this.textBox3.TabIndex = 22;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(126, 350);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(213, 23);
-            this.textBox7.TabIndex = 26;
+            this.txtStatus.BackColor = System.Drawing.Color.White;
+            this.txtStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStatus.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStatus.Location = new System.Drawing.Point(126, 350);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Size = new System.Drawing.Size(213, 23);
+            this.txtStatus.TabIndex = 26;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.CbbCompany);
+            this.panel3.Controls.Add(this.CbbProduct);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.dateTimePicker2);
-            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.DpkFrom);
+            this.panel3.Controls.Add(this.DpkTo);
             this.panel3.Controls.Add(this.label32);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.BtnTransactionError);
+            this.panel3.Controls.Add(this.BtnAdd);
+            this.panel3.Controls.Add(this.BtnEdit);
+            this.panel3.Controls.Add(this.BtnDelete);
+            this.panel3.Controls.Add(this.BtnSubmit);
+            this.panel3.Controls.Add(this.BtnCancel);
             this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.textBox7);
+            this.panel3.Controls.Add(this.txtStatus);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.textBox6);
+            this.panel3.Controls.Add(this.txtBy);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txtDuration);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.txtRack);
             this.panel3.Location = new System.Drawing.Point(0, 45);
@@ -1913,24 +1903,57 @@
             this.panel3.Size = new System.Drawing.Size(365, 442);
             this.panel3.TabIndex = 18;
             // 
-            // dateTimePicker2
+            // CbbCompany
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(126, 245);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(168, 26);
-            this.dateTimePicker2.TabIndex = 55;
+            this.CbbCompany.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbbCompany.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CbbCompany.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CbbCompany.FormattingEnabled = true;
+            this.CbbCompany.Location = new System.Drawing.Point(126, 142);
+            this.CbbCompany.Name = "CbbCompany";
+            this.CbbCompany.Size = new System.Drawing.Size(213, 30);
+            this.CbbCompany.TabIndex = 168;
+            this.CbbCompany.SelectedIndexChanged += new System.EventHandler(this.CbbCompany_SelectedIndexChanged);
             // 
-            // dateTimePicker1
+            // CbbProduct
             // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(126, 279);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(168, 26);
-            this.dateTimePicker1.TabIndex = 54;
+            this.CbbProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbbProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CbbProduct.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CbbProduct.FormattingEnabled = true;
+            this.CbbProduct.Location = new System.Drawing.Point(126, 179);
+            this.CbbProduct.Name = "CbbProduct";
+            this.CbbProduct.Size = new System.Drawing.Size(213, 30);
+            this.CbbProduct.TabIndex = 167;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(27, 180);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 22);
+            this.label2.TabIndex = 56;
+            this.label2.Text = "Product";
+            // 
+            // DpkFrom
+            // 
+            this.DpkFrom.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DpkFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DpkFrom.Location = new System.Drawing.Point(126, 247);
+            this.DpkFrom.Name = "DpkFrom";
+            this.DpkFrom.Size = new System.Drawing.Size(168, 26);
+            this.DpkFrom.TabIndex = 55;
+            // 
+            // DpkTo
+            // 
+            this.DpkTo.Enabled = false;
+            this.DpkTo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DpkTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DpkTo.Location = new System.Drawing.Point(126, 281);
+            this.DpkTo.Name = "DpkTo";
+            this.DpkTo.Size = new System.Drawing.Size(168, 26);
+            this.DpkTo.TabIndex = 54;
             // 
             // label32
             // 
@@ -1942,90 +1965,90 @@
             this.label32.TabIndex = 32;
             this.label32.Text = "Status";
             // 
-            // button4
+            // BtnAdd
             // 
-            this.button4.BackColor = System.Drawing.Color.Gray;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(33, 56);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(88, 42);
-            this.button4.TabIndex = 31;
-            this.button4.Text = "Add";
-            this.button4.UseVisualStyleBackColor = false;
+            this.BtnAdd.BackColor = System.Drawing.Color.Gray;
+            this.BtnAdd.FlatAppearance.BorderSize = 0;
+            this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAdd.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAdd.ForeColor = System.Drawing.Color.White;
+            this.BtnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAdd.Location = new System.Drawing.Point(33, 56);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(88, 42);
+            this.BtnAdd.TabIndex = 31;
+            this.BtnAdd.Text = "Add";
+            this.BtnAdd.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // BtnEdit
             // 
-            this.button3.BackColor = System.Drawing.Color.Gray;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(137, 56);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 42);
-            this.button3.TabIndex = 30;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnEdit.BackColor = System.Drawing.Color.Gray;
+            this.BtnEdit.FlatAppearance.BorderSize = 0;
+            this.BtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEdit.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEdit.ForeColor = System.Drawing.Color.White;
+            this.BtnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnEdit.Location = new System.Drawing.Point(137, 56);
+            this.BtnEdit.Name = "BtnEdit";
+            this.BtnEdit.Size = new System.Drawing.Size(88, 42);
+            this.BtnEdit.TabIndex = 30;
+            this.BtnEdit.Text = "Edit";
+            this.BtnEdit.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // BtnDelete
             // 
-            this.button2.BackColor = System.Drawing.Color.Gray;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(242, 56);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 42);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = false;
+            this.BtnDelete.BackColor = System.Drawing.Color.Gray;
+            this.BtnDelete.FlatAppearance.BorderSize = 0;
+            this.BtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDelete.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDelete.ForeColor = System.Drawing.Color.White;
+            this.BtnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnDelete.Location = new System.Drawing.Point(242, 56);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(88, 42);
+            this.BtnDelete.TabIndex = 29;
+            this.BtnDelete.Text = "Delete";
+            this.BtnDelete.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // BtnSubmit
             // 
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(134, 387);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 42);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnSubmit.BackColor = System.Drawing.Color.Green;
+            this.BtnSubmit.FlatAppearance.BorderSize = 0;
+            this.BtnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSubmit.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSubmit.ForeColor = System.Drawing.Color.White;
+            this.BtnSubmit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSubmit.Location = new System.Drawing.Point(134, 387);
+            this.BtnSubmit.Name = "BtnSubmit";
+            this.BtnSubmit.Size = new System.Drawing.Size(88, 42);
+            this.BtnSubmit.TabIndex = 28;
+            this.BtnSubmit.Text = "Submit";
+            this.BtnSubmit.UseVisualStyleBackColor = false;
             // 
-            // BtnTransactionError
+            // BtnCancel
             // 
-            this.BtnTransactionError.BackColor = System.Drawing.Color.Gray;
-            this.BtnTransactionError.FlatAppearance.BorderSize = 0;
-            this.BtnTransactionError.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnTransactionError.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTransactionError.ForeColor = System.Drawing.Color.White;
-            this.BtnTransactionError.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnTransactionError.Location = new System.Drawing.Point(242, 387);
-            this.BtnTransactionError.Name = "BtnTransactionError";
-            this.BtnTransactionError.Size = new System.Drawing.Size(88, 42);
-            this.BtnTransactionError.TabIndex = 27;
-            this.BtnTransactionError.Text = "Cancel";
-            this.BtnTransactionError.UseVisualStyleBackColor = false;
+            this.BtnCancel.BackColor = System.Drawing.Color.Gray;
+            this.BtnCancel.FlatAppearance.BorderSize = 0;
+            this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancel.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancel.ForeColor = System.Drawing.Color.White;
+            this.BtnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCancel.Location = new System.Drawing.Point(242, 387);
+            this.BtnCancel.Name = "BtnCancel";
+            this.BtnCancel.Size = new System.Drawing.Size(88, 42);
+            this.BtnCancel.TabIndex = 27;
+            this.BtnCancel.Text = "Cancel";
+            this.BtnCancel.UseVisualStyleBackColor = false;
             // 
-            // textBox6
+            // txtBy
             // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(126, 314);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(213, 23);
-            this.textBox6.TabIndex = 25;
+            this.txtBy.BackColor = System.Drawing.Color.White;
+            this.txtBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBy.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBy.Location = new System.Drawing.Point(126, 315);
+            this.txtBy.Name = "txtBy";
+            this.txtBy.Size = new System.Drawing.Size(213, 23);
+            this.txtBy.TabIndex = 25;
             // 
             // panel4
             // 
@@ -2067,7 +2090,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(49, 13);
+            this.label16.Location = new System.Drawing.Point(49, 12);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(100, 44);
             this.label16.TabIndex = 32;
@@ -2108,46 +2131,46 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label36);
-            this.panel5.Controls.Add(this.label35);
-            this.panel5.Controls.Add(this.label34);
-            this.panel5.Controls.Add(this.label21);
-            this.panel5.Controls.Add(this.label20);
-            this.panel5.Controls.Add(this.label19);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.lbPercentF);
+            this.panel5.Controls.Add(this.lbPercentE);
+            this.panel5.Controls.Add(this.lbPercentD);
+            this.panel5.Controls.Add(this.lbPercentC);
+            this.panel5.Controls.Add(this.lbPercentB);
+            this.panel5.Controls.Add(this.lbPercentA);
             this.panel5.Controls.Add(this.lbPercentTotal);
             this.panel5.Controls.Add(this.label33);
-            this.panel5.Controls.Add(this.roundedProgressBar6);
-            this.panel5.Controls.Add(this.roundedProgressBar5);
-            this.panel5.Controls.Add(this.roundedProgressBar4);
-            this.panel5.Controls.Add(this.roundedProgressBar3);
-            this.panel5.Controls.Add(this.roundedProgressBar2);
-            this.panel5.Controls.Add(this.roundedProgressBar1);
-            this.panel5.Controls.Add(this.progressBar1);
+            this.panel5.Controls.Add(this.PgbF);
+            this.panel5.Controls.Add(this.PgbE);
+            this.panel5.Controls.Add(this.PgbD);
+            this.panel5.Controls.Add(this.PgbC);
+            this.panel5.Controls.Add(this.PgbB);
+            this.panel5.Controls.Add(this.PgbA);
+            this.panel5.Controls.Add(this.PgbTotal);
             this.panel5.Controls.Add(this.label31);
             this.panel5.Controls.Add(this.label30);
             this.panel5.Controls.Add(this.label29);
             this.panel5.Controls.Add(this.label28);
             this.panel5.Controls.Add(this.label27);
             this.panel5.Controls.Add(this.label26);
-            this.panel5.Controls.Add(this.textBox25);
-            this.panel5.Controls.Add(this.textBox24);
-            this.panel5.Controls.Add(this.textBox23);
-            this.panel5.Controls.Add(this.textBox22);
-            this.panel5.Controls.Add(this.textBox21);
-            this.panel5.Controls.Add(this.textBox20);
-            this.panel5.Controls.Add(this.textBox19);
-            this.panel5.Controls.Add(this.textBox18);
-            this.panel5.Controls.Add(this.textBox17);
-            this.panel5.Controls.Add(this.textBox16);
-            this.panel5.Controls.Add(this.textBox15);
-            this.panel5.Controls.Add(this.textBox14);
-            this.panel5.Controls.Add(this.textBox13);
-            this.panel5.Controls.Add(this.textBox12);
-            this.panel5.Controls.Add(this.textBox11);
-            this.panel5.Controls.Add(this.textBox10);
-            this.panel5.Controls.Add(this.textBox9);
-            this.panel5.Controls.Add(this.textBox8);
-            this.panel5.Controls.Add(this.label25);
+            this.panel5.Controls.Add(this.txtITTF);
+            this.panel5.Controls.Add(this.txtITTE);
+            this.panel5.Controls.Add(this.txtITTD);
+            this.panel5.Controls.Add(this.txtITTC);
+            this.panel5.Controls.Add(this.txtITTB);
+            this.panel5.Controls.Add(this.txtEmptyF);
+            this.panel5.Controls.Add(this.txtEmptyE);
+            this.panel5.Controls.Add(this.txtEmptyD);
+            this.panel5.Controls.Add(this.txtEmptyC);
+            this.panel5.Controls.Add(this.txtEmptyB);
+            this.panel5.Controls.Add(this.txtITTA);
+            this.panel5.Controls.Add(this.txtEmptyA);
+            this.panel5.Controls.Add(this.txtTotalF);
+            this.panel5.Controls.Add(this.txtTotalE);
+            this.panel5.Controls.Add(this.txtTotalD);
+            this.panel5.Controls.Add(this.txtTotalC);
+            this.panel5.Controls.Add(this.txtTotalB);
+            this.panel5.Controls.Add(this.txtTotalA);
             this.panel5.Controls.Add(this.label24);
             this.panel5.Controls.Add(this.label23);
             this.panel5.Controls.Add(this.label22);
@@ -2156,84 +2179,95 @@
             this.panel5.Size = new System.Drawing.Size(696, 231);
             this.panel5.TabIndex = 39;
             // 
-            // label36
+            // label3
             // 
-            this.label36.AutoSize = true;
-            this.label36.BackColor = System.Drawing.Color.Transparent;
-            this.label36.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(496, 198);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(36, 19);
-            this.label36.TabIndex = 86;
-            this.label36.Text = "50%";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(578, 168);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 44);
+            this.label3.TabIndex = 87;
+            this.label3.Text = "imminent \r\nto timeout";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label35
+            // lbPercentF
             // 
-            this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.Color.Transparent;
-            this.label35.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(409, 198);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(36, 19);
-            this.label35.TabIndex = 85;
-            this.label35.Text = "50%";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbPercentF.AutoSize = true;
+            this.lbPercentF.BackColor = System.Drawing.Color.Transparent;
+            this.lbPercentF.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPercentF.Location = new System.Drawing.Point(496, 198);
+            this.lbPercentF.Name = "lbPercentF";
+            this.lbPercentF.Size = new System.Drawing.Size(36, 19);
+            this.lbPercentF.TabIndex = 86;
+            this.lbPercentF.Text = "50%";
+            this.lbPercentF.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label34
+            // lbPercentE
             // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.Transparent;
-            this.label34.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(316, 198);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(36, 19);
-            this.label34.TabIndex = 84;
-            this.label34.Text = "50%";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbPercentE.AutoSize = true;
+            this.lbPercentE.BackColor = System.Drawing.Color.Transparent;
+            this.lbPercentE.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPercentE.Location = new System.Drawing.Point(409, 198);
+            this.lbPercentE.Name = "lbPercentE";
+            this.lbPercentE.Size = new System.Drawing.Size(36, 19);
+            this.lbPercentE.TabIndex = 85;
+            this.lbPercentE.Text = "50%";
+            this.lbPercentE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label21
+            // lbPercentD
             // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(225, 198);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(36, 19);
-            this.label21.TabIndex = 83;
-            this.label21.Text = "50%";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbPercentD.AutoSize = true;
+            this.lbPercentD.BackColor = System.Drawing.Color.Transparent;
+            this.lbPercentD.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPercentD.Location = new System.Drawing.Point(316, 198);
+            this.lbPercentD.Name = "lbPercentD";
+            this.lbPercentD.Size = new System.Drawing.Size(36, 19);
+            this.lbPercentD.TabIndex = 84;
+            this.lbPercentD.Text = "50%";
+            this.lbPercentD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label20
+            // lbPercentC
             // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(138, 198);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(36, 19);
-            this.label20.TabIndex = 82;
-            this.label20.Text = "50%";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbPercentC.AutoSize = true;
+            this.lbPercentC.BackColor = System.Drawing.Color.Transparent;
+            this.lbPercentC.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPercentC.Location = new System.Drawing.Point(225, 198);
+            this.lbPercentC.Name = "lbPercentC";
+            this.lbPercentC.Size = new System.Drawing.Size(36, 19);
+            this.lbPercentC.TabIndex = 83;
+            this.lbPercentC.Text = "50%";
+            this.lbPercentC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label19
+            // lbPercentB
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(53, 198);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(36, 19);
-            this.label19.TabIndex = 81;
-            this.label19.Text = "50%";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbPercentB.AutoSize = true;
+            this.lbPercentB.BackColor = System.Drawing.Color.Transparent;
+            this.lbPercentB.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPercentB.Location = new System.Drawing.Point(138, 198);
+            this.lbPercentB.Name = "lbPercentB";
+            this.lbPercentB.Size = new System.Drawing.Size(36, 19);
+            this.lbPercentB.TabIndex = 82;
+            this.lbPercentB.Text = "50%";
+            this.lbPercentB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbPercentA
+            // 
+            this.lbPercentA.AutoSize = true;
+            this.lbPercentA.BackColor = System.Drawing.Color.Transparent;
+            this.lbPercentA.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPercentA.Location = new System.Drawing.Point(53, 198);
+            this.lbPercentA.Name = "lbPercentA";
+            this.lbPercentA.Size = new System.Drawing.Size(36, 19);
+            this.lbPercentA.TabIndex = 81;
+            this.lbPercentA.Text = "50%";
+            this.lbPercentA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lbPercentTotal
             // 
             this.lbPercentTotal.AutoSize = true;
             this.lbPercentTotal.BackColor = System.Drawing.Color.Transparent;
             this.lbPercentTotal.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPercentTotal.Location = new System.Drawing.Point(632, 27);
+            this.lbPercentTotal.Location = new System.Drawing.Point(632, 23);
             this.lbPercentTotal.Name = "lbPercentTotal";
             this.lbPercentTotal.Size = new System.Drawing.Size(36, 19);
             this.lbPercentTotal.TabIndex = 80;
@@ -2244,19 +2278,67 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(41, 25);
+            this.label33.Location = new System.Drawing.Point(41, 21);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(190, 22);
             this.label33.TabIndex = 79;
             this.label33.Text = "Total in Warehouse";
             // 
-            // progressBar1
+            // PgbF
             // 
-            this.progressBar1.Location = new System.Drawing.Point(237, 25);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(392, 23);
-            this.progressBar1.TabIndex = 72;
-            this.progressBar1.Value = 50;
+            this.PgbF.Location = new System.Drawing.Point(504, 106);
+            this.PgbF.Name = "PgbF";
+            this.PgbF.Size = new System.Drawing.Size(23, 95);
+            this.PgbF.TabIndex = 78;
+            this.PgbF.Value = 50;
+            // 
+            // PgbE
+            // 
+            this.PgbE.Location = new System.Drawing.Point(415, 106);
+            this.PgbE.Name = "PgbE";
+            this.PgbE.Size = new System.Drawing.Size(23, 95);
+            this.PgbE.TabIndex = 77;
+            this.PgbE.Value = 69;
+            // 
+            // PgbD
+            // 
+            this.PgbD.Location = new System.Drawing.Point(324, 104);
+            this.PgbD.Name = "PgbD";
+            this.PgbD.Size = new System.Drawing.Size(23, 95);
+            this.PgbD.TabIndex = 76;
+            this.PgbD.Value = 24;
+            // 
+            // PgbC
+            // 
+            this.PgbC.Location = new System.Drawing.Point(233, 105);
+            this.PgbC.Name = "PgbC";
+            this.PgbC.Size = new System.Drawing.Size(23, 95);
+            this.PgbC.TabIndex = 75;
+            this.PgbC.Value = 58;
+            // 
+            // PgbB
+            // 
+            this.PgbB.Location = new System.Drawing.Point(145, 105);
+            this.PgbB.Name = "PgbB";
+            this.PgbB.Size = new System.Drawing.Size(23, 95);
+            this.PgbB.TabIndex = 74;
+            this.PgbB.Value = 30;
+            // 
+            // PgbA
+            // 
+            this.PgbA.Location = new System.Drawing.Point(59, 105);
+            this.PgbA.Name = "PgbA";
+            this.PgbA.Size = new System.Drawing.Size(23, 95);
+            this.PgbA.TabIndex = 73;
+            this.PgbA.Value = 88;
+            // 
+            // PgbTotal
+            // 
+            this.PgbTotal.Location = new System.Drawing.Point(237, 21);
+            this.PgbTotal.Name = "PgbTotal";
+            this.PgbTotal.Size = new System.Drawing.Size(392, 23);
+            this.PgbTotal.TabIndex = 72;
+            this.PgbTotal.Value = 50;
             // 
             // label31
             // 
@@ -2332,200 +2414,189 @@
             this.label26.Text = "A";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox25
+            // txtITTF
             // 
-            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox25.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox25.Location = new System.Drawing.Point(533, 178);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(30, 23);
-            this.textBox25.TabIndex = 65;
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtITTF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTF.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtITTF.Location = new System.Drawing.Point(533, 178);
+            this.txtITTF.Name = "txtITTF";
+            this.txtITTF.Size = new System.Drawing.Size(30, 23);
+            this.txtITTF.TabIndex = 65;
+            this.txtITTF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox24
+            // txtITTE
             // 
-            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox24.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.Location = new System.Drawing.Point(444, 178);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(30, 23);
-            this.textBox24.TabIndex = 64;
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtITTE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTE.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtITTE.Location = new System.Drawing.Point(444, 178);
+            this.txtITTE.Name = "txtITTE";
+            this.txtITTE.Size = new System.Drawing.Size(30, 23);
+            this.txtITTE.TabIndex = 64;
+            this.txtITTE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox23
+            // txtITTD
             // 
-            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox23.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(353, 177);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(30, 23);
-            this.textBox23.TabIndex = 63;
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtITTD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTD.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtITTD.Location = new System.Drawing.Point(353, 177);
+            this.txtITTD.Name = "txtITTD";
+            this.txtITTD.Size = new System.Drawing.Size(30, 23);
+            this.txtITTD.TabIndex = 63;
+            this.txtITTD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox22
+            // txtITTC
             // 
-            this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox22.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox22.Location = new System.Drawing.Point(262, 176);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(30, 23);
-            this.textBox22.TabIndex = 62;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtITTC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTC.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtITTC.Location = new System.Drawing.Point(262, 176);
+            this.txtITTC.Name = "txtITTC";
+            this.txtITTC.Size = new System.Drawing.Size(30, 23);
+            this.txtITTC.TabIndex = 62;
+            this.txtITTC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox21
+            // txtITTB
             // 
-            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox21.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(174, 177);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(30, 23);
-            this.textBox21.TabIndex = 61;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtITTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTB.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtITTB.Location = new System.Drawing.Point(174, 177);
+            this.txtITTB.Name = "txtITTB";
+            this.txtITTB.Size = new System.Drawing.Size(30, 23);
+            this.txtITTB.TabIndex = 61;
+            this.txtITTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox20
+            // txtEmptyF
             // 
-            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox20.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(533, 141);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(30, 23);
-            this.textBox20.TabIndex = 60;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmptyF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyF.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmptyF.Location = new System.Drawing.Point(533, 141);
+            this.txtEmptyF.Name = "txtEmptyF";
+            this.txtEmptyF.Size = new System.Drawing.Size(30, 23);
+            this.txtEmptyF.TabIndex = 60;
+            this.txtEmptyF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox19
+            // txtEmptyE
             // 
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox19.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(444, 142);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(30, 23);
-            this.textBox19.TabIndex = 59;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmptyE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyE.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmptyE.Location = new System.Drawing.Point(444, 142);
+            this.txtEmptyE.Name = "txtEmptyE";
+            this.txtEmptyE.Size = new System.Drawing.Size(30, 23);
+            this.txtEmptyE.TabIndex = 59;
+            this.txtEmptyE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox18
+            // txtEmptyD
             // 
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(353, 142);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(30, 23);
-            this.textBox18.TabIndex = 58;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmptyD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyD.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmptyD.Location = new System.Drawing.Point(353, 142);
+            this.txtEmptyD.Name = "txtEmptyD";
+            this.txtEmptyD.Size = new System.Drawing.Size(30, 23);
+            this.txtEmptyD.TabIndex = 58;
+            this.txtEmptyD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox17
+            // txtEmptyC
             // 
-            this.textBox17.BackColor = System.Drawing.Color.White;
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(262, 140);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(30, 23);
-            this.textBox17.TabIndex = 57;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmptyC.BackColor = System.Drawing.Color.White;
+            this.txtEmptyC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyC.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmptyC.Location = new System.Drawing.Point(262, 140);
+            this.txtEmptyC.Name = "txtEmptyC";
+            this.txtEmptyC.Size = new System.Drawing.Size(30, 23);
+            this.txtEmptyC.TabIndex = 57;
+            this.txtEmptyC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox16
+            // txtEmptyB
             // 
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(174, 141);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(30, 23);
-            this.textBox16.TabIndex = 56;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmptyB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyB.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmptyB.Location = new System.Drawing.Point(174, 141);
+            this.txtEmptyB.Name = "txtEmptyB";
+            this.txtEmptyB.Size = new System.Drawing.Size(30, 23);
+            this.txtEmptyB.TabIndex = 56;
+            this.txtEmptyB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox15
+            // txtITTA
             // 
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(88, 177);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(30, 23);
-            this.textBox15.TabIndex = 55;
-            this.textBox15.Text = "2";
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtITTA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTA.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtITTA.Location = new System.Drawing.Point(88, 177);
+            this.txtITTA.Name = "txtITTA";
+            this.txtITTA.Size = new System.Drawing.Size(30, 23);
+            this.txtITTA.TabIndex = 55;
+            this.txtITTA.Text = "2";
+            this.txtITTA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox14
+            // txtEmptyA
             // 
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(88, 141);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(30, 23);
-            this.textBox14.TabIndex = 54;
-            this.textBox14.Text = "20";
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmptyA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyA.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmptyA.Location = new System.Drawing.Point(88, 141);
+            this.txtEmptyA.Name = "txtEmptyA";
+            this.txtEmptyA.Size = new System.Drawing.Size(30, 23);
+            this.txtEmptyA.TabIndex = 54;
+            this.txtEmptyA.Text = "20";
+            this.txtEmptyA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox13
+            // txtTotalF
             // 
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(533, 106);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(30, 23);
-            this.textBox13.TabIndex = 53;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTotalF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalF.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalF.Location = new System.Drawing.Point(533, 106);
+            this.txtTotalF.Name = "txtTotalF";
+            this.txtTotalF.Size = new System.Drawing.Size(30, 23);
+            this.txtTotalF.TabIndex = 53;
+            this.txtTotalF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // txtTotalE
             // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(444, 106);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(30, 23);
-            this.textBox12.TabIndex = 52;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTotalE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalE.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalE.Location = new System.Drawing.Point(444, 106);
+            this.txtTotalE.Name = "txtTotalE";
+            this.txtTotalE.Size = new System.Drawing.Size(30, 23);
+            this.txtTotalE.TabIndex = 52;
+            this.txtTotalE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox11
+            // txtTotalD
             // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(353, 106);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(30, 23);
-            this.textBox11.TabIndex = 51;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTotalD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalD.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalD.Location = new System.Drawing.Point(353, 106);
+            this.txtTotalD.Name = "txtTotalD";
+            this.txtTotalD.Size = new System.Drawing.Size(30, 23);
+            this.txtTotalD.TabIndex = 51;
+            this.txtTotalD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox10
+            // txtTotalC
             // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(262, 105);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(30, 23);
-            this.textBox10.TabIndex = 50;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTotalC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalC.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalC.Location = new System.Drawing.Point(262, 105);
+            this.txtTotalC.Name = "txtTotalC";
+            this.txtTotalC.Size = new System.Drawing.Size(30, 23);
+            this.txtTotalC.TabIndex = 50;
+            this.txtTotalC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // txtTotalB
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(174, 105);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(30, 23);
-            this.textBox9.TabIndex = 49;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTotalB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalB.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalB.Location = new System.Drawing.Point(174, 105);
+            this.txtTotalB.Name = "txtTotalB";
+            this.txtTotalB.Size = new System.Drawing.Size(30, 23);
+            this.txtTotalB.TabIndex = 49;
+            this.txtTotalB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox8
+            // txtTotalA
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(88, 105);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(30, 23);
-            this.textBox8.TabIndex = 48;
-            this.textBox8.Text = "48";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(578, 168);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(110, 44);
-            this.label25.TabIndex = 47;
-            this.label25.Text = "Close \r\nto timeout";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtTotalA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalA.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalA.Location = new System.Drawing.Point(88, 105);
+            this.txtTotalA.Name = "txtTotalA";
+            this.txtTotalA.Size = new System.Drawing.Size(30, 23);
+            this.txtTotalA.TabIndex = 48;
+            this.txtTotalA.Text = "48";
+            this.txtTotalA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label24
             // 
@@ -2558,74 +2629,6 @@
             this.label22.Size = new System.Drawing.Size(50, 22);
             this.label22.TabIndex = 39;
             this.label22.Text = "Rack";
-            // 
-            // roundedProgressBar6
-            // 
-            this.roundedProgressBar6.Location = new System.Drawing.Point(504, 106);
-            this.roundedProgressBar6.Name = "roundedProgressBar6";
-            this.roundedProgressBar6.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar6.TabIndex = 78;
-            this.roundedProgressBar6.Value = 50;
-            // 
-            // roundedProgressBar5
-            // 
-            this.roundedProgressBar5.Location = new System.Drawing.Point(415, 106);
-            this.roundedProgressBar5.Name = "roundedProgressBar5";
-            this.roundedProgressBar5.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar5.TabIndex = 77;
-            this.roundedProgressBar5.Value = 69;
-            // 
-            // roundedProgressBar4
-            // 
-            this.roundedProgressBar4.Location = new System.Drawing.Point(324, 104);
-            this.roundedProgressBar4.Name = "roundedProgressBar4";
-            this.roundedProgressBar4.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar4.TabIndex = 76;
-            this.roundedProgressBar4.Value = 24;
-            // 
-            // roundedProgressBar3
-            // 
-            this.roundedProgressBar3.Location = new System.Drawing.Point(233, 105);
-            this.roundedProgressBar3.Name = "roundedProgressBar3";
-            this.roundedProgressBar3.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar3.TabIndex = 75;
-            this.roundedProgressBar3.Value = 58;
-            // 
-            // roundedProgressBar2
-            // 
-            this.roundedProgressBar2.Location = new System.Drawing.Point(145, 105);
-            this.roundedProgressBar2.Name = "roundedProgressBar2";
-            this.roundedProgressBar2.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar2.TabIndex = 74;
-            this.roundedProgressBar2.Value = 30;
-            // 
-            // roundedProgressBar1
-            // 
-            this.roundedProgressBar1.Location = new System.Drawing.Point(59, 105);
-            this.roundedProgressBar1.Name = "roundedProgressBar1";
-            this.roundedProgressBar1.Size = new System.Drawing.Size(23, 95);
-            this.roundedProgressBar1.TabIndex = 73;
-            this.roundedProgressBar1.Value = 88;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 178);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 22);
-            this.label2.TabIndex = 56;
-            this.label2.Text = "Product";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(126, 178);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 23);
-            this.textBox1.TabIndex = 57;
             // 
             // StoreManagement
             // 
@@ -2686,15 +2689,14 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtRack;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtDuration;
+        private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button BtnTransactionError;
+        private System.Windows.Forms.Button BtnAdd;
+        private System.Windows.Forms.Button BtnEdit;
+        private System.Windows.Forms.Button BtnDelete;
+        private System.Windows.Forms.Button BtnSubmit;
+        private System.Windows.Forms.Button BtnCancel;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
@@ -2702,51 +2704,50 @@
         private System.Windows.Forms.PictureBox pictureBox81;
         private System.Windows.Forms.PictureBox pictureBox79;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar PgbTotal;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox txtITTF;
+        private System.Windows.Forms.TextBox txtITTE;
+        private System.Windows.Forms.TextBox txtITTD;
+        private System.Windows.Forms.TextBox txtITTC;
+        private System.Windows.Forms.TextBox txtITTB;
+        private System.Windows.Forms.TextBox txtEmptyF;
+        private System.Windows.Forms.TextBox txtEmptyE;
+        private System.Windows.Forms.TextBox txtEmptyD;
+        private System.Windows.Forms.TextBox txtEmptyC;
+        private System.Windows.Forms.TextBox txtEmptyB;
+        private System.Windows.Forms.TextBox txtITTA;
+        private System.Windows.Forms.TextBox txtEmptyA;
+        private System.Windows.Forms.TextBox txtTotalF;
+        private System.Windows.Forms.TextBox txtTotalE;
+        private System.Windows.Forms.TextBox txtTotalD;
+        private System.Windows.Forms.TextBox txtTotalC;
+        private System.Windows.Forms.TextBox txtTotalB;
+        private System.Windows.Forms.TextBox txtTotalA;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
-        private Data.RoundedProgressBar roundedProgressBar2;
-        private Data.RoundedProgressBar roundedProgressBar1;
+        private Data.RoundedProgressBar PgbB;
+        private Data.RoundedProgressBar PgbA;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private Data.RoundedProgressBar roundedProgressBar6;
-        private Data.RoundedProgressBar roundedProgressBar5;
-        private Data.RoundedProgressBar roundedProgressBar4;
-        private Data.RoundedProgressBar roundedProgressBar3;
+        private Data.RoundedProgressBar PgbF;
+        private Data.RoundedProgressBar PgbE;
+        private Data.RoundedProgressBar PgbD;
+        private Data.RoundedProgressBar PgbC;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label lbPercentTotal;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lbPercentF;
+        private System.Windows.Forms.Label lbPercentE;
+        private System.Windows.Forms.Label lbPercentD;
+        private System.Windows.Forms.Label lbPercentC;
+        private System.Windows.Forms.Label lbPercentB;
+        private System.Windows.Forms.Label lbPercentA;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button BTN022;
         private System.Windows.Forms.Button BTN021;
@@ -2830,12 +2831,14 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button84;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.DateTimePicker DpkFrom;
+        private System.Windows.Forms.DateTimePicker DpkTo;
+        private System.Windows.Forms.TextBox txtBy;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ComboBox CbbRock;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox CbbCompany;
+        private System.Windows.Forms.ComboBox CbbProduct;
+        private System.Windows.Forms.Label label3;
     }
 }

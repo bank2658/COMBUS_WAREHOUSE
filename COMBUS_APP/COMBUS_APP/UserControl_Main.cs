@@ -17,16 +17,13 @@ namespace COMBUS_APP
 {
     public partial class UserControl_Main : UserControl
     {
-        public UserControl_Main()
-        {
-            
-            InitializeComponent();
-            
-            
-        }
-        
         private Master_Main master;
         public EventHandler btnLoginClick = null;
+
+        public UserControl_Main()
+        {
+            InitializeComponent();
+        }
         
         public void showObjectLoad()
         {

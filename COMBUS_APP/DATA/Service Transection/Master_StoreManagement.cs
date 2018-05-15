@@ -24,5 +24,31 @@ namespace DATA.Service_Transection
                 _ContextEntity = value;
             }
         }
+
+        public List<Store_GetListbank_Result> Get_Listbank()
+        {
+            return this.ContextEntity.Store_GetListbank().ToList();
+        }
+        public List<Store_GetListcompany_Result> Get_Listcompany()
+        {
+            return this.ContextEntity.Store_GetListcompany().ToList();
+        }
+        public List<Store_GetListproduct_Result> Get_Listproduct()
+        {
+            return this.ContextEntity.Store_GetListproduct().ToList();
+        }
+        public List<Store_GetListrock_Result> Get_Listrock(int Bankid)
+        {
+            return this.ContextEntity.Store_GetListrock(Bankid).ToList();
+        }
+        public List<Store_GetPercentrock_Result> Get_Percentrock()
+        {
+            return this.ContextEntity.Store_GetPercentrock().ToList();
+        }
+
+        public List<Store_GetListCpAndPd_Result> Get_ListCpAndPd()
+        {
+            return this.ContextEntity.Store_GetListCpAndPd().ToList();
+        }
     }
 }

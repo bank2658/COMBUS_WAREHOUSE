@@ -346,5 +346,39 @@ namespace DATA
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Employee_AddTimeWork", dateINParameter, widParameter, wtimeINParameter, wtimeOUTParameter, noteParameter, userParameter);
         }
+    
+        public virtual ObjectResult<Store_GetListbank_Result> Store_GetListbank()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListbank_Result>("Store_GetListbank");
+        }
+    
+        public virtual ObjectResult<Store_GetListcompany_Result> Store_GetListcompany()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListcompany_Result>("Store_GetListcompany");
+        }
+    
+        public virtual ObjectResult<Store_GetListproduct_Result> Store_GetListproduct()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListproduct_Result>("Store_GetListproduct");
+        }
+    
+        public virtual ObjectResult<Store_GetListrock_Result> Store_GetListrock(Nullable<int> bANKID)
+        {
+            var bANKIDParameter = bANKID.HasValue ?
+                new ObjectParameter("BANKID", bANKID) :
+                new ObjectParameter("BANKID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListrock_Result>("Store_GetListrock", bANKIDParameter);
+        }
+    
+        public virtual ObjectResult<Store_GetPercentrock_Result> Store_GetPercentrock()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetPercentrock_Result>("Store_GetPercentrock");
+        }
+    
+        public virtual ObjectResult<Store_GetListCpAndPd_Result> Store_GetListCpAndPd()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListCpAndPd_Result>("Store_GetListCpAndPd");
+        }
     }
 }
