@@ -162,12 +162,6 @@
             this.lbPercentA = new System.Windows.Forms.Label();
             this.lbPercentTotal = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.PgbF = new COMBUS_APP.Data.RoundedProgressBar();
-            this.PgbE = new COMBUS_APP.Data.RoundedProgressBar();
-            this.PgbD = new COMBUS_APP.Data.RoundedProgressBar();
-            this.PgbC = new COMBUS_APP.Data.RoundedProgressBar();
-            this.PgbB = new COMBUS_APP.Data.RoundedProgressBar();
-            this.PgbA = new COMBUS_APP.Data.RoundedProgressBar();
             this.PgbTotal = new System.Windows.Forms.ProgressBar();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -197,6 +191,12 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.PgbF = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbE = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbD = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbC = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbB = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbA = new COMBUS_APP.Data.RoundedProgressBar();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -324,6 +324,7 @@
             // 
             // CbbRock
             // 
+            this.CbbRock.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CbbRock.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbbRock.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CbbRock.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -332,6 +333,7 @@
             this.CbbRock.Name = "CbbRock";
             this.CbbRock.Size = new System.Drawing.Size(56, 45);
             this.CbbRock.TabIndex = 166;
+            this.CbbRock.SelectedIndexChanged += new System.EventHandler(this.CbbRock_SelectedIndexChanged);
             // 
             // panel10
             // 
@@ -457,6 +459,7 @@
             // 
             this.BTN126.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN126.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN126.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN126.FlatAppearance.BorderSize = 0;
             this.BTN126.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN126.ForeColor = System.Drawing.Color.Transparent;
@@ -474,6 +477,7 @@
             // 
             this.BTN125.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN125.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN125.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN125.FlatAppearance.BorderSize = 0;
             this.BTN125.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN125.ForeColor = System.Drawing.Color.Transparent;
@@ -491,6 +495,7 @@
             // 
             this.BTN124.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN124.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN124.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN124.FlatAppearance.BorderSize = 0;
             this.BTN124.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN124.ForeColor = System.Drawing.Color.Transparent;
@@ -508,6 +513,7 @@
             // 
             this.BTN123.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN123.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN123.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN123.FlatAppearance.BorderSize = 0;
             this.BTN123.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN123.ForeColor = System.Drawing.Color.Transparent;
@@ -525,6 +531,7 @@
             // 
             this.BTN122.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN122.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN122.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN122.FlatAppearance.BorderSize = 0;
             this.BTN122.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN122.ForeColor = System.Drawing.Color.Transparent;
@@ -542,6 +549,7 @@
             // 
             this.BTN116.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN116.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN116.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN116.FlatAppearance.BorderSize = 0;
             this.BTN116.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN116.ForeColor = System.Drawing.Color.Transparent;
@@ -559,6 +567,7 @@
             // 
             this.BTN115.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN115.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN115.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN115.FlatAppearance.BorderSize = 0;
             this.BTN115.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN115.ForeColor = System.Drawing.Color.Transparent;
@@ -576,6 +585,7 @@
             // 
             this.BTN114.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN114.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN114.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN114.FlatAppearance.BorderSize = 0;
             this.BTN114.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN114.ForeColor = System.Drawing.Color.Transparent;
@@ -593,6 +603,7 @@
             // 
             this.BTN113.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN113.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN113.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN113.FlatAppearance.BorderSize = 0;
             this.BTN113.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN113.ForeColor = System.Drawing.Color.Transparent;
@@ -610,6 +621,7 @@
             // 
             this.BTN112.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN112.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN112.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN112.FlatAppearance.BorderSize = 0;
             this.BTN112.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN112.ForeColor = System.Drawing.Color.Transparent;
@@ -627,6 +639,7 @@
             // 
             this.BTN106.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN106.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN106.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN106.FlatAppearance.BorderSize = 0;
             this.BTN106.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN106.ForeColor = System.Drawing.Color.Transparent;
@@ -644,6 +657,7 @@
             // 
             this.BTN105.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN105.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN105.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN105.FlatAppearance.BorderSize = 0;
             this.BTN105.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN105.ForeColor = System.Drawing.Color.Transparent;
@@ -661,6 +675,7 @@
             // 
             this.BTN104.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN104.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN104.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN104.FlatAppearance.BorderSize = 0;
             this.BTN104.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN104.ForeColor = System.Drawing.Color.Transparent;
@@ -678,6 +693,7 @@
             // 
             this.BTN103.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN103.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN103.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN103.FlatAppearance.BorderSize = 0;
             this.BTN103.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN103.ForeColor = System.Drawing.Color.Transparent;
@@ -695,6 +711,7 @@
             // 
             this.BTN102.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN102.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN102.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN102.FlatAppearance.BorderSize = 0;
             this.BTN102.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN102.ForeColor = System.Drawing.Color.Transparent;
@@ -712,6 +729,7 @@
             // 
             this.BTN096.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN096.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN096.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN096.FlatAppearance.BorderSize = 0;
             this.BTN096.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN096.ForeColor = System.Drawing.Color.Transparent;
@@ -729,6 +747,7 @@
             // 
             this.BTN095.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN095.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN095.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN095.FlatAppearance.BorderSize = 0;
             this.BTN095.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN095.ForeColor = System.Drawing.Color.Transparent;
@@ -746,6 +765,7 @@
             // 
             this.BTN094.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN094.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN094.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN094.FlatAppearance.BorderSize = 0;
             this.BTN094.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN094.ForeColor = System.Drawing.Color.Transparent;
@@ -763,6 +783,7 @@
             // 
             this.BTN093.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN093.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN093.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN093.FlatAppearance.BorderSize = 0;
             this.BTN093.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN093.ForeColor = System.Drawing.Color.Transparent;
@@ -780,6 +801,7 @@
             // 
             this.BTN092.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN092.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN092.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN092.FlatAppearance.BorderSize = 0;
             this.BTN092.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN092.ForeColor = System.Drawing.Color.Transparent;
@@ -797,6 +819,7 @@
             // 
             this.BTN121.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN121.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN121.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN121.FlatAppearance.BorderSize = 0;
             this.BTN121.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN121.ForeColor = System.Drawing.Color.Transparent;
@@ -814,6 +837,7 @@
             // 
             this.BTN111.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN111.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN111.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN111.FlatAppearance.BorderSize = 0;
             this.BTN111.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN111.ForeColor = System.Drawing.Color.Transparent;
@@ -831,6 +855,7 @@
             // 
             this.BTN101.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN101.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN101.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN101.FlatAppearance.BorderSize = 0;
             this.BTN101.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN101.ForeColor = System.Drawing.Color.Transparent;
@@ -848,6 +873,7 @@
             // 
             this.BTN091.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN091.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN091.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN091.FlatAppearance.BorderSize = 0;
             this.BTN091.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN091.ForeColor = System.Drawing.Color.Transparent;
@@ -865,6 +891,7 @@
             // 
             this.BTN086.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN086.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN086.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN086.FlatAppearance.BorderSize = 0;
             this.BTN086.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN086.ForeColor = System.Drawing.Color.Transparent;
@@ -882,6 +909,7 @@
             // 
             this.BTN085.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN085.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN085.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN085.FlatAppearance.BorderSize = 0;
             this.BTN085.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN085.ForeColor = System.Drawing.Color.Transparent;
@@ -899,6 +927,7 @@
             // 
             this.BTN084.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN084.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN084.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN084.FlatAppearance.BorderSize = 0;
             this.BTN084.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN084.ForeColor = System.Drawing.Color.Transparent;
@@ -916,6 +945,7 @@
             // 
             this.BTN083.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN083.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN083.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN083.FlatAppearance.BorderSize = 0;
             this.BTN083.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN083.ForeColor = System.Drawing.Color.Transparent;
@@ -933,6 +963,7 @@
             // 
             this.BTN082.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN082.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN082.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN082.FlatAppearance.BorderSize = 0;
             this.BTN082.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN082.ForeColor = System.Drawing.Color.Transparent;
@@ -950,6 +981,7 @@
             // 
             this.BTN076.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN076.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN076.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN076.FlatAppearance.BorderSize = 0;
             this.BTN076.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN076.ForeColor = System.Drawing.Color.Transparent;
@@ -967,6 +999,7 @@
             // 
             this.BTN075.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN075.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN075.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN075.FlatAppearance.BorderSize = 0;
             this.BTN075.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN075.ForeColor = System.Drawing.Color.Transparent;
@@ -984,6 +1017,7 @@
             // 
             this.BTN074.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN074.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN074.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN074.FlatAppearance.BorderSize = 0;
             this.BTN074.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN074.ForeColor = System.Drawing.Color.Transparent;
@@ -1001,6 +1035,7 @@
             // 
             this.BTN073.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN073.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN073.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN073.FlatAppearance.BorderSize = 0;
             this.BTN073.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN073.ForeColor = System.Drawing.Color.Transparent;
@@ -1018,6 +1053,7 @@
             // 
             this.BTN072.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN072.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN072.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN072.FlatAppearance.BorderSize = 0;
             this.BTN072.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN072.ForeColor = System.Drawing.Color.Transparent;
@@ -1035,6 +1071,7 @@
             // 
             this.BTN081.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN081.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN081.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN081.FlatAppearance.BorderSize = 0;
             this.BTN081.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN081.ForeColor = System.Drawing.Color.Transparent;
@@ -1052,6 +1089,7 @@
             // 
             this.BTN071.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN071.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN071.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN071.FlatAppearance.BorderSize = 0;
             this.BTN071.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN071.ForeColor = System.Drawing.Color.Transparent;
@@ -1069,6 +1107,7 @@
             // 
             this.BTN066.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN066.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN066.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN066.FlatAppearance.BorderSize = 0;
             this.BTN066.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN066.ForeColor = System.Drawing.Color.Transparent;
@@ -1086,6 +1125,7 @@
             // 
             this.BTN065.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN065.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN065.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN065.FlatAppearance.BorderSize = 0;
             this.BTN065.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN065.ForeColor = System.Drawing.Color.Transparent;
@@ -1103,6 +1143,7 @@
             // 
             this.BTN064.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN064.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN064.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN064.FlatAppearance.BorderSize = 0;
             this.BTN064.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN064.ForeColor = System.Drawing.Color.Transparent;
@@ -1120,6 +1161,7 @@
             // 
             this.BTN063.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN063.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN063.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN063.FlatAppearance.BorderSize = 0;
             this.BTN063.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN063.ForeColor = System.Drawing.Color.Transparent;
@@ -1137,6 +1179,7 @@
             // 
             this.BTN062.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN062.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN062.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN062.FlatAppearance.BorderSize = 0;
             this.BTN062.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN062.ForeColor = System.Drawing.Color.Transparent;
@@ -1154,6 +1197,7 @@
             // 
             this.BTN061.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN061.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN061.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN061.FlatAppearance.BorderSize = 0;
             this.BTN061.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN061.ForeColor = System.Drawing.Color.Transparent;
@@ -1171,6 +1215,7 @@
             // 
             this.BTN056.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN056.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN056.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN056.FlatAppearance.BorderSize = 0;
             this.BTN056.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN056.ForeColor = System.Drawing.Color.Transparent;
@@ -1188,6 +1233,7 @@
             // 
             this.BTN055.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN055.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN055.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN055.FlatAppearance.BorderSize = 0;
             this.BTN055.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN055.ForeColor = System.Drawing.Color.Transparent;
@@ -1205,6 +1251,7 @@
             // 
             this.BTN054.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN054.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN054.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN054.FlatAppearance.BorderSize = 0;
             this.BTN054.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN054.ForeColor = System.Drawing.Color.Transparent;
@@ -1222,6 +1269,7 @@
             // 
             this.BTN053.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN053.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN053.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN053.FlatAppearance.BorderSize = 0;
             this.BTN053.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN053.ForeColor = System.Drawing.Color.Transparent;
@@ -1239,6 +1287,7 @@
             // 
             this.BTN052.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN052.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN052.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN052.FlatAppearance.BorderSize = 0;
             this.BTN052.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN052.ForeColor = System.Drawing.Color.Transparent;
@@ -1256,6 +1305,7 @@
             // 
             this.BTN051.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN051.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN051.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN051.FlatAppearance.BorderSize = 0;
             this.BTN051.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN051.ForeColor = System.Drawing.Color.Transparent;
@@ -1273,6 +1323,7 @@
             // 
             this.BTN046.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN046.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN046.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN046.FlatAppearance.BorderSize = 0;
             this.BTN046.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN046.ForeColor = System.Drawing.Color.Transparent;
@@ -1290,6 +1341,7 @@
             // 
             this.BTN045.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN045.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN045.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN045.FlatAppearance.BorderSize = 0;
             this.BTN045.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN045.ForeColor = System.Drawing.Color.Transparent;
@@ -1307,6 +1359,7 @@
             // 
             this.BTN044.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN044.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN044.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN044.FlatAppearance.BorderSize = 0;
             this.BTN044.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN044.ForeColor = System.Drawing.Color.Transparent;
@@ -1324,6 +1377,7 @@
             // 
             this.BTN043.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN043.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN043.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN043.FlatAppearance.BorderSize = 0;
             this.BTN043.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN043.ForeColor = System.Drawing.Color.Transparent;
@@ -1341,6 +1395,7 @@
             // 
             this.BTN042.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN042.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN042.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN042.FlatAppearance.BorderSize = 0;
             this.BTN042.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN042.ForeColor = System.Drawing.Color.Transparent;
@@ -1358,6 +1413,7 @@
             // 
             this.BTN041.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN041.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN041.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN041.FlatAppearance.BorderSize = 0;
             this.BTN041.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN041.ForeColor = System.Drawing.Color.Transparent;
@@ -1375,6 +1431,7 @@
             // 
             this.BTN036.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN036.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN036.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN036.FlatAppearance.BorderSize = 0;
             this.BTN036.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN036.ForeColor = System.Drawing.Color.Transparent;
@@ -1392,6 +1449,7 @@
             // 
             this.BTN034.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN034.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN034.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN034.FlatAppearance.BorderSize = 0;
             this.BTN034.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN034.ForeColor = System.Drawing.Color.Transparent;
@@ -1409,6 +1467,7 @@
             // 
             this.BTN035.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN035.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN035.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN035.FlatAppearance.BorderSize = 0;
             this.BTN035.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN035.ForeColor = System.Drawing.Color.Transparent;
@@ -1426,6 +1485,7 @@
             // 
             this.BTN033.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN033.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN033.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN033.FlatAppearance.BorderSize = 0;
             this.BTN033.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN033.ForeColor = System.Drawing.Color.Transparent;
@@ -1443,6 +1503,7 @@
             // 
             this.BTN032.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN032.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN032.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN032.FlatAppearance.BorderSize = 0;
             this.BTN032.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN032.ForeColor = System.Drawing.Color.Transparent;
@@ -1460,6 +1521,7 @@
             // 
             this.BTN031.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN031.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN031.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN031.FlatAppearance.BorderSize = 0;
             this.BTN031.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN031.ForeColor = System.Drawing.Color.Transparent;
@@ -1477,6 +1539,7 @@
             // 
             this.BTN026.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN026.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN026.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN026.FlatAppearance.BorderSize = 0;
             this.BTN026.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN026.ForeColor = System.Drawing.Color.Transparent;
@@ -1494,6 +1557,7 @@
             // 
             this.BTN025.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN025.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN025.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN025.FlatAppearance.BorderSize = 0;
             this.BTN025.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN025.ForeColor = System.Drawing.Color.Transparent;
@@ -1511,6 +1575,7 @@
             // 
             this.BTN024.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN024.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN024.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN024.FlatAppearance.BorderSize = 0;
             this.BTN024.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN024.ForeColor = System.Drawing.Color.Transparent;
@@ -1528,6 +1593,7 @@
             // 
             this.BTN023.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN023.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN023.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN023.FlatAppearance.BorderSize = 0;
             this.BTN023.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN023.ForeColor = System.Drawing.Color.Transparent;
@@ -1545,6 +1611,7 @@
             // 
             this.BTN022.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN022.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN022.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN022.FlatAppearance.BorderSize = 0;
             this.BTN022.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN022.ForeColor = System.Drawing.Color.Transparent;
@@ -1562,6 +1629,7 @@
             // 
             this.BTN021.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN021.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN021.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN021.FlatAppearance.BorderSize = 0;
             this.BTN021.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN021.ForeColor = System.Drawing.Color.Transparent;
@@ -1580,6 +1648,7 @@
             // 
             this.BTN011.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN011.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN011.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN011.FlatAppearance.BorderSize = 0;
             this.BTN011.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN011.ForeColor = System.Drawing.Color.Transparent;
@@ -1598,6 +1667,7 @@
             // 
             this.BTN013.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN013.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN013.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN013.FlatAppearance.BorderSize = 0;
             this.BTN013.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN013.ForeColor = System.Drawing.Color.Transparent;
@@ -1616,6 +1686,7 @@
             // 
             this.BTN014.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN014.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN014.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN014.FlatAppearance.BorderSize = 0;
             this.BTN014.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN014.ForeColor = System.Drawing.Color.Transparent;
@@ -1634,6 +1705,7 @@
             // 
             this.BTN015.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN015.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN015.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN015.FlatAppearance.BorderSize = 0;
             this.BTN015.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN015.ForeColor = System.Drawing.Color.Transparent;
@@ -1652,6 +1724,7 @@
             // 
             this.BTN016.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN016.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN016.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN016.FlatAppearance.BorderSize = 0;
             this.BTN016.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN016.ForeColor = System.Drawing.Color.Transparent;
@@ -1667,6 +1740,7 @@
             // 
             this.BTN012.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(182)))));
             this.BTN012.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN012.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN012.FlatAppearance.BorderSize = 0;
             this.BTN012.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN012.ForeColor = System.Drawing.Color.Transparent;
@@ -1858,6 +1932,7 @@
             // 
             this.txtDuration.BackColor = System.Drawing.Color.White;
             this.txtDuration.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDuration.Enabled = false;
             this.txtDuration.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuration.Location = new System.Drawing.Point(126, 216);
             this.txtDuration.Name = "txtDuration";
@@ -1868,6 +1943,7 @@
             // 
             this.txtStatus.BackColor = System.Drawing.Color.White;
             this.txtStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStatus.Enabled = false;
             this.txtStatus.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStatus.Location = new System.Drawing.Point(126, 350);
             this.txtStatus.Name = "txtStatus";
@@ -1906,6 +1982,7 @@
             // CbbCompany
             // 
             this.CbbCompany.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbbCompany.Enabled = false;
             this.CbbCompany.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CbbCompany.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CbbCompany.FormattingEnabled = true;
@@ -1918,6 +1995,7 @@
             // CbbProduct
             // 
             this.CbbProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbbProduct.Enabled = false;
             this.CbbProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CbbProduct.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CbbProduct.FormattingEnabled = true;
@@ -1938,6 +2016,7 @@
             // 
             // DpkFrom
             // 
+            this.DpkFrom.Enabled = false;
             this.DpkFrom.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DpkFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DpkFrom.Location = new System.Drawing.Point(126, 247);
@@ -1968,6 +2047,7 @@
             // BtnAdd
             // 
             this.BtnAdd.BackColor = System.Drawing.Color.Gray;
+            this.BtnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAdd.FlatAppearance.BorderSize = 0;
             this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAdd.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1983,6 +2063,7 @@
             // BtnEdit
             // 
             this.BtnEdit.BackColor = System.Drawing.Color.Gray;
+            this.BtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEdit.FlatAppearance.BorderSize = 0;
             this.BtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEdit.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1998,6 +2079,7 @@
             // BtnDelete
             // 
             this.BtnDelete.BackColor = System.Drawing.Color.Gray;
+            this.BtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnDelete.FlatAppearance.BorderSize = 0;
             this.BtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDelete.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2013,6 +2095,7 @@
             // BtnSubmit
             // 
             this.BtnSubmit.BackColor = System.Drawing.Color.Green;
+            this.BtnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSubmit.FlatAppearance.BorderSize = 0;
             this.BtnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSubmit.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2028,6 +2111,7 @@
             // BtnCancel
             // 
             this.BtnCancel.BackColor = System.Drawing.Color.Gray;
+            this.BtnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCancel.FlatAppearance.BorderSize = 0;
             this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancel.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2044,6 +2128,7 @@
             // 
             this.txtBy.BackColor = System.Drawing.Color.White;
             this.txtBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBy.Enabled = false;
             this.txtBy.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBy.Location = new System.Drawing.Point(126, 315);
             this.txtBy.Name = "txtBy";
@@ -2283,54 +2368,6 @@
             this.label33.Size = new System.Drawing.Size(190, 22);
             this.label33.TabIndex = 79;
             this.label33.Text = "Total in Warehouse";
-            // 
-            // PgbF
-            // 
-            this.PgbF.Location = new System.Drawing.Point(504, 106);
-            this.PgbF.Name = "PgbF";
-            this.PgbF.Size = new System.Drawing.Size(23, 95);
-            this.PgbF.TabIndex = 78;
-            this.PgbF.Value = 50;
-            // 
-            // PgbE
-            // 
-            this.PgbE.Location = new System.Drawing.Point(415, 106);
-            this.PgbE.Name = "PgbE";
-            this.PgbE.Size = new System.Drawing.Size(23, 95);
-            this.PgbE.TabIndex = 77;
-            this.PgbE.Value = 69;
-            // 
-            // PgbD
-            // 
-            this.PgbD.Location = new System.Drawing.Point(324, 104);
-            this.PgbD.Name = "PgbD";
-            this.PgbD.Size = new System.Drawing.Size(23, 95);
-            this.PgbD.TabIndex = 76;
-            this.PgbD.Value = 24;
-            // 
-            // PgbC
-            // 
-            this.PgbC.Location = new System.Drawing.Point(233, 105);
-            this.PgbC.Name = "PgbC";
-            this.PgbC.Size = new System.Drawing.Size(23, 95);
-            this.PgbC.TabIndex = 75;
-            this.PgbC.Value = 58;
-            // 
-            // PgbB
-            // 
-            this.PgbB.Location = new System.Drawing.Point(145, 105);
-            this.PgbB.Name = "PgbB";
-            this.PgbB.Size = new System.Drawing.Size(23, 95);
-            this.PgbB.TabIndex = 74;
-            this.PgbB.Value = 30;
-            // 
-            // PgbA
-            // 
-            this.PgbA.Location = new System.Drawing.Point(59, 105);
-            this.PgbA.Name = "PgbA";
-            this.PgbA.Size = new System.Drawing.Size(23, 95);
-            this.PgbA.TabIndex = 73;
-            this.PgbA.Value = 88;
             // 
             // PgbTotal
             // 
@@ -2629,6 +2666,54 @@
             this.label22.Size = new System.Drawing.Size(50, 22);
             this.label22.TabIndex = 39;
             this.label22.Text = "Rack";
+            // 
+            // PgbF
+            // 
+            this.PgbF.Location = new System.Drawing.Point(504, 106);
+            this.PgbF.Name = "PgbF";
+            this.PgbF.Size = new System.Drawing.Size(23, 95);
+            this.PgbF.TabIndex = 78;
+            this.PgbF.Value = 50;
+            // 
+            // PgbE
+            // 
+            this.PgbE.Location = new System.Drawing.Point(415, 106);
+            this.PgbE.Name = "PgbE";
+            this.PgbE.Size = new System.Drawing.Size(23, 95);
+            this.PgbE.TabIndex = 77;
+            this.PgbE.Value = 69;
+            // 
+            // PgbD
+            // 
+            this.PgbD.Location = new System.Drawing.Point(324, 104);
+            this.PgbD.Name = "PgbD";
+            this.PgbD.Size = new System.Drawing.Size(23, 95);
+            this.PgbD.TabIndex = 76;
+            this.PgbD.Value = 24;
+            // 
+            // PgbC
+            // 
+            this.PgbC.Location = new System.Drawing.Point(233, 105);
+            this.PgbC.Name = "PgbC";
+            this.PgbC.Size = new System.Drawing.Size(23, 95);
+            this.PgbC.TabIndex = 75;
+            this.PgbC.Value = 58;
+            // 
+            // PgbB
+            // 
+            this.PgbB.Location = new System.Drawing.Point(145, 105);
+            this.PgbB.Name = "PgbB";
+            this.PgbB.Size = new System.Drawing.Size(23, 95);
+            this.PgbB.TabIndex = 74;
+            this.PgbB.Value = 30;
+            // 
+            // PgbA
+            // 
+            this.PgbA.Location = new System.Drawing.Point(59, 105);
+            this.PgbA.Name = "PgbA";
+            this.PgbA.Size = new System.Drawing.Size(23, 95);
+            this.PgbA.TabIndex = 73;
+            this.PgbA.Value = 88;
             // 
             // StoreManagement
             // 

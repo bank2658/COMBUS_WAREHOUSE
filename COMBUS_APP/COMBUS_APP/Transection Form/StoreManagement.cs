@@ -15,8 +15,8 @@ namespace COMBUS_APP.Transection_Form
 {
     public partial class StoreManagement : UserControl
     {
-        Array[] arrRack;
         private Master_StoreManagement Master;
+        List<Store_GetListrock_Result> ListRock = new List<Store_GetListrock_Result>();
         List<Store_GetListcompany_Result> Listcompany = new List<Store_GetListcompany_Result>();
         List<Store_GetListproduct_Result> Listproduct = new List<Store_GetListproduct_Result>();
         //Dictionary<string, Companyy> dic = new Dictionary<string, Companyy>();
@@ -25,7 +25,13 @@ namespace COMBUS_APP.Transection_Form
         void BtnRockClick(object sender,EventArgs e)
         {
             Button RackName = (Button)sender;
-            txtRack.Text = CbbRock.Text + RackName.Name.Replace("BTN","");
+            List<Store_GetListrock_Result> Listtmp = new List<Store_GetListrock_Result>();
+            foreach(Store_GetListrock_Result re in GetListRock(RackName.Name.Replace("BTN", "")))
+            {
+
+            }
+            
+            //txtRack.Text = CbbRock.Text + RackName.Name.Replace("BTN","");
             //MessageBox.Show(s.Name);
         }
 
@@ -44,9 +50,10 @@ namespace COMBUS_APP.Transection_Form
 
         void LoadComboboxData()
         {
-            Dictionary<int, string> List = new Dictionary<int, string>();
 
+            Dictionary<int, string> List = new Dictionary<int, string>();
             Master = new Master_StoreManagement();
+            // List Rack
             List<Store_GetListbank_Result> resultListbank = Master.Get_Listbank();
             foreach (Store_GetListbank_Result re in resultListbank)
             {
@@ -57,7 +64,8 @@ namespace COMBUS_APP.Transection_Form
             CbbRock.DisplayMember = "Value";
             CbbRock.ValueMember = "Key";
             List.Clear();
-
+            
+            // List Company combobox
             List<Store_GetListcompany_Result> resultListcompany = Master.Get_Listcompany();
             foreach(Store_GetListcompany_Result re in resultListcompany){
                 List.Add(re.companyID
@@ -128,9 +136,14 @@ namespace COMBUS_APP.Transection_Form
 
         }
 
-        private String[] GetIDproduct(int id)
+        private List<Store_GetListproduct_Result> GetIDproduct(int id)
         {
-            return Listproduct.Where(line => line.companyID == id).Select(l => l.productName).ToArray();
+            return Listproduct.Where(line => line.companyID == id).ToList();
+        }
+
+        private List<Store_GetListrock_Result> GetListRock(string Rack)
+        {
+            return ListRock.Where(line => line.Rack == Rack).ToList();
         }
 
         public StoreManagement()
@@ -147,17 +160,49 @@ namespace COMBUS_APP.Transection_Form
 
         private void CbbCompany_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CbbProduct.Items.Clear();
+            CbbProduct.DataSource = null;
+            Dictionary<int, string> List = new Dictionary<int, string>();
             int id = Listcompany[CbbCompany.SelectedIndex].companyID;
-            foreach(string name in GetIDproduct(id))
+            //string[] tmp;
+            foreach(Store_GetListproduct_Result re in GetIDproduct(id))
             {
-                CbbProduct.Items.Add(name);
+                List.Add(re.productID
+                            ,re.productName);
             }
+            if(List.Count > 0)
+            {
+                CbbProduct.DataSource = new BindingSource(List, null);
+                CbbProduct.DisplayMember = "Value";
+                CbbProduct.ValueMember = "Key";
+            }
+            List.Clear();
+
             //string key = CbbCompany.SelectedValue.ToString();
             //MessageBox.Show(key);
             //CbbProduct.DataSource = new BindingSource(dic[key].getProduct(), null);
             //MessageBox.Show("ID : " + CbbCompany.SelectedValue.ToString() 
             //                        + Environment.NewLine);
+        }
+
+        private void CbbRock_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Master = new Master_StoreManagement();
+            int id = (int)CbbRock.SelectedValue;
+            List<Store_GetListrock_Result> result = Master.Get_Listrock(id);
+            foreach (Store_GetListrock_Result re in result)
+            {
+                ListRock.Add(new Store_GetListrock_Result()
+                {
+                    Rack = re.Rack,
+                    companyName = re.companyName,
+                    productName = re.productName,
+                    Duration = (int)re.Duration,
+                    dateIN = (DateTime)re.dateIN,
+                    dateOut = (DateTime)re.dateOut,
+                    createBy = re.createBy,
+                    statusInStock = re.statusInStock
+                });
+            }
         }
     }
     //public class Companyy
