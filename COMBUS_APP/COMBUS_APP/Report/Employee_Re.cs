@@ -16,14 +16,14 @@ namespace COMBUS_APP.Report {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class Report_TransectionError : ReportClass {
+    public class Employee_Re : ReportClass {
         
-        public Report_TransectionError() {
+        public Employee_Re() {
         }
         
         public override string ResourceName {
             get {
-                return "Report_TransectionError.rpt";
+                return "Employee_Re.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace COMBUS_APP.Report {
         
         public override string FullResourceName {
             get {
-                return "COMBUS_APP.Report.Report_TransectionError.rpt";
+                return "COMBUS_APP.Report.Employee_Re.rpt";
             }
             set {
                 // Do nothing
@@ -87,28 +87,12 @@ namespace COMBUS_APP.Report {
                 return this.ReportDefinition.Sections[4];
             }
         }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_DateFrom {
-            get {
-                return this.DataDefinition.ParameterFields[0];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_DateTo {
-            get {
-                return this.DataDefinition.ParameterFields[1];
-            }
-        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReport_TransectionError : Component, ICachedReport {
+    public class CachedEmployee_Re : Component, ICachedReport {
         
-        public CachedReport_TransectionError() {
+        public CachedEmployee_Re() {
         }
         
         [Browsable(false)]
@@ -145,7 +129,7 @@ namespace COMBUS_APP.Report {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            Report_TransectionError rpt = new Report_TransectionError();
+            Employee_Re rpt = new Employee_Re();
             rpt.Site = this.Site;
             return rpt;
         }

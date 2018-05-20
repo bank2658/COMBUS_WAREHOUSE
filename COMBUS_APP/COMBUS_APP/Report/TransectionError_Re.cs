@@ -16,14 +16,14 @@ namespace COMBUS_APP.Report {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class Report_Company : ReportClass {
+    public class TransectionError_Re : ReportClass {
         
-        public Report_Company() {
+        public TransectionError_Re() {
         }
         
         public override string ResourceName {
             get {
-                return "Report_Company.rpt";
+                return "TransectionError_Re.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace COMBUS_APP.Report {
         
         public override string FullResourceName {
             get {
-                return "COMBUS_APP.Report.Report_Company.rpt";
+                return "COMBUS_APP.Report.TransectionError_Re.rpt";
             }
             set {
                 // Do nothing
@@ -87,20 +87,12 @@ namespace COMBUS_APP.Report {
                 return this.ReportDefinition.Sections[4];
             }
         }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_CompanyName {
-            get {
-                return this.DataDefinition.ParameterFields[0];
-            }
-        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReport_Company : Component, ICachedReport {
+    public class CachedTransectionError_Re : Component, ICachedReport {
         
-        public CachedReport_Company() {
+        public CachedTransectionError_Re() {
         }
         
         [Browsable(false)]
@@ -137,7 +129,7 @@ namespace COMBUS_APP.Report {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            Report_Company rpt = new Report_Company();
+            TransectionError_Re rpt = new TransectionError_Re();
             rpt.Site = this.Site;
             return rpt;
         }

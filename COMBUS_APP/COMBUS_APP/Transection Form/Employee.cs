@@ -105,13 +105,18 @@ namespace COMBUS_APP.Master_Form
         private void SaveData_Time()
         {
             timeMaster = new Master_EmployeeManagement();
+
             for (int i = 0; i < dgvEmployee.RowCount; i++)
             {
+                string a = dgvEmployee.Rows[i].Cells[(int)employee.employeeID].Value == null ? string.Empty : dgvEmployee.Rows[i].Cells[(int)employee.employeeID].Value.ToString();
+                string b = dgvEmployee.Rows[i].Cells[(int)employee.timeIN].Value == null ? string.Empty : dgvEmployee.Rows[i].Cells[(int)employee.timeIN].Value.ToString().Replace(".", ":");
+                string c = dgvEmployee.Rows[i].Cells[(int)employee.timeOUT].Value == null ? string.Empty : dgvEmployee.Rows[i].Cells[(int)employee.timeOUT].Value.ToString().Replace(".", ":");
+                string d = dgvEmployee.Rows[i].Cells[(int)employee.note].Value == null ? string.Empty : dgvEmployee.Rows[i].Cells[(int)employee.note].Value.ToString();
                 timeMaster.Add_TimeWork(dtpDate.Value
-                                            , dgvEmployee.Rows[i].Cells[(int)employee.employeeID].Value.ToString()
-                                            , dgvEmployee.Rows[i].Cells[(int)employee.timeIN].Value.ToString().Replace(".",":")
-                                            , dgvEmployee.Rows[i].Cells[(int)employee.timeOUT].Value.ToString().Replace(".", ":")
-                                            , dgvEmployee.Rows[i].Cells[(int)employee.note].Value.ToString()
+                                            , a
+                                            , b.ToString().Replace(".", ":")
+                                            , c.ToString().Replace(".", ":")
+                                            , d
                                             , AppCrash.Login);
             }
         }
