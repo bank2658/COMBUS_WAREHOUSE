@@ -1938,6 +1938,7 @@
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.Size = new System.Drawing.Size(213, 23);
             this.txtDuration.TabIndex = 22;
+            this.txtDuration.Leave += new System.EventHandler(this.txtDuration_Leave);
             // 
             // txtStatus
             // 
@@ -2033,6 +2034,7 @@
             this.DpkTo.Name = "DpkTo";
             this.DpkTo.Size = new System.Drawing.Size(168, 26);
             this.DpkTo.TabIndex = 54;
+            this.DpkTo.Leave += new System.EventHandler(this.DpkTo_Leave);
             // 
             // label32
             // 
@@ -2175,7 +2177,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(49, 12);
+            this.label16.Location = new System.Drawing.Point(48, 11);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(100, 44);
             this.label16.TabIndex = 32;
@@ -2453,7 +2455,9 @@
             // 
             // txtITTF
             // 
+            this.txtITTF.BackColor = System.Drawing.Color.White;
             this.txtITTF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTF.Enabled = false;
             this.txtITTF.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtITTF.Location = new System.Drawing.Point(533, 178);
             this.txtITTF.Name = "txtITTF";
@@ -2463,7 +2467,9 @@
             // 
             // txtITTE
             // 
+            this.txtITTE.BackColor = System.Drawing.Color.White;
             this.txtITTE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTE.Enabled = false;
             this.txtITTE.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtITTE.Location = new System.Drawing.Point(444, 178);
             this.txtITTE.Name = "txtITTE";
@@ -2473,7 +2479,9 @@
             // 
             // txtITTD
             // 
+            this.txtITTD.BackColor = System.Drawing.Color.White;
             this.txtITTD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTD.Enabled = false;
             this.txtITTD.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtITTD.Location = new System.Drawing.Point(353, 177);
             this.txtITTD.Name = "txtITTD";
@@ -2483,7 +2491,9 @@
             // 
             // txtITTC
             // 
+            this.txtITTC.BackColor = System.Drawing.Color.White;
             this.txtITTC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTC.Enabled = false;
             this.txtITTC.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtITTC.Location = new System.Drawing.Point(262, 176);
             this.txtITTC.Name = "txtITTC";
@@ -2493,7 +2503,9 @@
             // 
             // txtITTB
             // 
+            this.txtITTB.BackColor = System.Drawing.Color.White;
             this.txtITTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTB.Enabled = false;
             this.txtITTB.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtITTB.Location = new System.Drawing.Point(174, 177);
             this.txtITTB.Name = "txtITTB";
@@ -2503,7 +2515,9 @@
             // 
             // txtEmptyF
             // 
+            this.txtEmptyF.BackColor = System.Drawing.Color.White;
             this.txtEmptyF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyF.Enabled = false;
             this.txtEmptyF.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmptyF.Location = new System.Drawing.Point(533, 141);
             this.txtEmptyF.Name = "txtEmptyF";
@@ -2513,7 +2527,9 @@
             // 
             // txtEmptyE
             // 
+            this.txtEmptyE.BackColor = System.Drawing.Color.White;
             this.txtEmptyE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyE.Enabled = false;
             this.txtEmptyE.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmptyE.Location = new System.Drawing.Point(444, 142);
             this.txtEmptyE.Name = "txtEmptyE";
@@ -2523,7 +2539,9 @@
             // 
             // txtEmptyD
             // 
+            this.txtEmptyD.BackColor = System.Drawing.Color.White;
             this.txtEmptyD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyD.Enabled = false;
             this.txtEmptyD.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmptyD.Location = new System.Drawing.Point(353, 142);
             this.txtEmptyD.Name = "txtEmptyD";
@@ -2535,6 +2553,7 @@
             // 
             this.txtEmptyC.BackColor = System.Drawing.Color.White;
             this.txtEmptyC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyC.Enabled = false;
             this.txtEmptyC.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmptyC.Location = new System.Drawing.Point(262, 140);
             this.txtEmptyC.Name = "txtEmptyC";
@@ -2544,7 +2563,9 @@
             // 
             // txtEmptyB
             // 
+            this.txtEmptyB.BackColor = System.Drawing.Color.White;
             this.txtEmptyB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyB.Enabled = false;
             this.txtEmptyB.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmptyB.Location = new System.Drawing.Point(174, 141);
             this.txtEmptyB.Name = "txtEmptyB";
@@ -2554,7 +2575,9 @@
             // 
             // txtITTA
             // 
+            this.txtITTA.BackColor = System.Drawing.Color.White;
             this.txtITTA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtITTA.Enabled = false;
             this.txtITTA.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtITTA.Location = new System.Drawing.Point(88, 177);
             this.txtITTA.Name = "txtITTA";
@@ -2565,7 +2588,9 @@
             // 
             // txtEmptyA
             // 
+            this.txtEmptyA.BackColor = System.Drawing.Color.White;
             this.txtEmptyA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmptyA.Enabled = false;
             this.txtEmptyA.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmptyA.Location = new System.Drawing.Point(88, 141);
             this.txtEmptyA.Name = "txtEmptyA";
@@ -2576,7 +2601,9 @@
             // 
             // txtTotalF
             // 
+            this.txtTotalF.BackColor = System.Drawing.Color.White;
             this.txtTotalF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalF.Enabled = false;
             this.txtTotalF.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalF.Location = new System.Drawing.Point(533, 106);
             this.txtTotalF.Name = "txtTotalF";
@@ -2586,7 +2613,9 @@
             // 
             // txtTotalE
             // 
+            this.txtTotalE.BackColor = System.Drawing.Color.White;
             this.txtTotalE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalE.Enabled = false;
             this.txtTotalE.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalE.Location = new System.Drawing.Point(444, 106);
             this.txtTotalE.Name = "txtTotalE";
@@ -2596,7 +2625,9 @@
             // 
             // txtTotalD
             // 
+            this.txtTotalD.BackColor = System.Drawing.Color.White;
             this.txtTotalD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalD.Enabled = false;
             this.txtTotalD.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalD.Location = new System.Drawing.Point(353, 106);
             this.txtTotalD.Name = "txtTotalD";
@@ -2606,7 +2637,9 @@
             // 
             // txtTotalC
             // 
+            this.txtTotalC.BackColor = System.Drawing.Color.White;
             this.txtTotalC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalC.Enabled = false;
             this.txtTotalC.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalC.Location = new System.Drawing.Point(262, 105);
             this.txtTotalC.Name = "txtTotalC";
@@ -2616,7 +2649,9 @@
             // 
             // txtTotalB
             // 
+            this.txtTotalB.BackColor = System.Drawing.Color.White;
             this.txtTotalB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalB.Enabled = false;
             this.txtTotalB.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalB.Location = new System.Drawing.Point(174, 105);
             this.txtTotalB.Name = "txtTotalB";
@@ -2626,7 +2661,9 @@
             // 
             // txtTotalA
             // 
+            this.txtTotalA.BackColor = System.Drawing.Color.White;
             this.txtTotalA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalA.Enabled = false;
             this.txtTotalA.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalA.Location = new System.Drawing.Point(88, 105);
             this.txtTotalA.Name = "txtTotalA";

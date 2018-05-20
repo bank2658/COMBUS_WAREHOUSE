@@ -224,6 +224,9 @@
         <ComplexType Name="Store_GetPercentrock_Result">
           <Property Type="String" Name="instandName" Nullable="true" MaxLength="5" />
           <Property Type="Int32" Name="Percen" Nullable="true" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+          <Property Type="Int32" Name="Empty" Nullable="true" />
+          <Property Type="Int32" Name="Imminent" Nullable="true" />
         </ComplexType>
         <ComplexType Name="Store_GetListCpAndPd_Result">
           <Property Type="Int32" Name="productID" Nullable="false" />
@@ -298,6 +301,9 @@
               <ComplexTypeMapping TypeName="EF_COMBUS.Store_GetPercentrock_Result">
                 <ScalarProperty Name="instandName" ColumnName="instandName" />
                 <ScalarProperty Name="Percen" ColumnName="Percen" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="Empty" ColumnName="Empty" />
+                <ScalarProperty Name="Imminent" ColumnName="Imminent" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
