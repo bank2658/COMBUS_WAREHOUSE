@@ -76,7 +76,6 @@ namespace COMBUS_APP.Transection_Form
 
         void LoadComboboxData()
         {
-
             Dictionary<int, string> List = new Dictionary<int, string>();
             Master = new Master_StoreManagement();
             // List Rack
@@ -124,6 +123,25 @@ namespace COMBUS_APP.Transection_Form
             CbbCompany.DisplayMember = "Value";
             CbbCompany.ValueMember = "Key";
             List.Clear();
+
+            // List Percent 
+            List<Store_GetPercentrock_Result> resultListpercent = Master.Get_Percentrock();
+            foreach (Store_GetPercentrock_Result re in resultListpercent)
+            {
+                ProgressBar Pgb = Controls.Find("Pgb" + re.instandName, true).First() as ProgressBar;
+                Label lbPercent = Controls.Find("lbPercent" + re.instandName, true).First() as Label;
+                Pgb.Value = (int)re.Percen;
+                lbPercent.Text = re.Percen.ToString() + "%";
+                if(re.instandName != "Total")
+                {
+                    TextBox txtTotal = Controls.Find("txtTotal" + re.instandName, true).First() as TextBox; 
+                    TextBox txtEmpty = Controls.Find("txtEmpty" + re.instandName, true).First() as TextBox;
+                    TextBox txtITT = Controls.Find("txtITT" + re.instandName, true).First() as TextBox;
+                    txtTotal.Text = re.Total.ToString();
+                    txtEmpty.Text = re.Empty.ToString();
+                    txtITT.Text = re.Imminent.ToString();
+                }
+            }
         }
 
         private List<Store_GetListproduct_Result> GetIDproduct(int id)
@@ -217,5 +235,15 @@ namespace COMBUS_APP.Transection_Form
             }
         }
         #endregion
+
+        private void DpkTo_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDuration_Leave(object sender, EventArgs e)
+        {
+
+        }
     }
 }

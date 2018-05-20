@@ -15,5 +15,8 @@ namespace DATA
     {
         public string instandName { get; set; }
         public Nullable<int> Percen { get; set; }
+        public Nullable<int> Total { get; set; }
+        public Nullable<int> Empty { get; set; }
+        public Nullable<int> Imminent { get; set; }
     }
 }
