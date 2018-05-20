@@ -1932,7 +1932,6 @@
             // 
             this.txtDuration.BackColor = System.Drawing.Color.White;
             this.txtDuration.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDuration.Enabled = false;
             this.txtDuration.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuration.Location = new System.Drawing.Point(126, 216);
             this.txtDuration.Name = "txtDuration";
@@ -2027,7 +2026,6 @@
             // 
             // DpkTo
             // 
-            this.DpkTo.Enabled = false;
             this.DpkTo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DpkTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DpkTo.Location = new System.Drawing.Point(126, 281);
@@ -2050,6 +2048,7 @@
             // 
             this.BtnAdd.BackColor = System.Drawing.Color.Gray;
             this.BtnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAdd.Enabled = false;
             this.BtnAdd.FlatAppearance.BorderSize = 0;
             this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAdd.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2061,11 +2060,13 @@
             this.BtnAdd.TabIndex = 31;
             this.BtnAdd.Text = "Add";
             this.BtnAdd.UseVisualStyleBackColor = false;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnEdit
             // 
             this.BtnEdit.BackColor = System.Drawing.Color.Gray;
             this.BtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEdit.Enabled = false;
             this.BtnEdit.FlatAppearance.BorderSize = 0;
             this.BtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEdit.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2077,11 +2078,13 @@
             this.BtnEdit.TabIndex = 30;
             this.BtnEdit.Text = "Edit";
             this.BtnEdit.UseVisualStyleBackColor = false;
+            this.BtnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
             // 
             // BtnDelete
             // 
             this.BtnDelete.BackColor = System.Drawing.Color.Gray;
             this.BtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDelete.Enabled = false;
             this.BtnDelete.FlatAppearance.BorderSize = 0;
             this.BtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDelete.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2093,6 +2096,7 @@
             this.BtnDelete.TabIndex = 29;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = false;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // BtnSubmit
             // 
@@ -2109,11 +2113,13 @@
             this.BtnSubmit.TabIndex = 28;
             this.BtnSubmit.Text = "Submit";
             this.BtnSubmit.UseVisualStyleBackColor = false;
+            this.BtnSubmit.Click += new System.EventHandler(this.BtnSubmit_Click);
             // 
             // BtnCancel
             // 
             this.BtnCancel.BackColor = System.Drawing.Color.Gray;
             this.BtnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCancel.Enabled = false;
             this.BtnCancel.FlatAppearance.BorderSize = 0;
             this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancel.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2125,6 +2131,7 @@
             this.BtnCancel.TabIndex = 27;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = false;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // txtBy
             // 

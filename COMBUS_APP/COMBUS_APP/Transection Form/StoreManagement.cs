@@ -238,10 +238,47 @@ namespace COMBUS_APP.Transection_Form
 
         private void DpkTo_Leave(object sender, EventArgs e)
         {
-
+            if(DpkTo.Value > DpkFrom.Value)
+            {
+                TimeSpan ts = (DpkTo.Value - DpkFrom.Value);
+                txtDuration.Text = (ts.Days + 1).ToString();
+            }
+            else
+            {
+                DpkTo.Value = DpkFrom.Value;
+                txtDuration.Text = "0";
+            }
         }
 
         private void txtDuration_Leave(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(txtDuration.Text) > 0)
+            {
+                DpkTo.Value = DpkFrom.Value.AddDays(Convert.ToInt32(txtDuration.Text));
+            }
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
         {
 
         }
