@@ -16,6 +16,10 @@ namespace COMBUS_APP
 {
     public partial class Main : Form
     {
+        public void _LBUser(string User)
+        {
+            lbUser.Text = User;
+        }
 
         private int panelStoreHeight, panelEmployeeHeight;
         bool HiddenStore, HiddenEmployee, LoadStore, LoadEmployeeManage;
@@ -73,7 +77,6 @@ namespace COMBUS_APP
             panelMainmenu.Enabled = false;
             toggle(BtnHome, panelMainmenu.Top);
             panel4.Controls.Clear();
-            
             //UserControl_Main user_main = new UserControl_Main();
             panel4.Controls.Add(user_main);
             user_main.btnLoginClick += new EventHandler(UserControlMain);
@@ -103,7 +106,6 @@ namespace COMBUS_APP
                 toggle(sender, panelMainmenu.Top);
                 LoadStore = true; LoadEmployeeManage = false;
                 panel4.Controls.Clear();
-
                 StoreManagement user_store = new StoreManagement();
                 panel4.Controls.Add(user_store);
             }
@@ -209,6 +211,7 @@ namespace COMBUS_APP
         {
             AppCrash.StatusLogin = "F";
             AppCrash.Login = string.Empty;
+            lbUser.Text = "Not logged in.";
             panelMainmenu.Enabled = false;
             panel4.Controls.Clear();
             user_main.btnLoginClick -= new EventHandler(UserControlMain);

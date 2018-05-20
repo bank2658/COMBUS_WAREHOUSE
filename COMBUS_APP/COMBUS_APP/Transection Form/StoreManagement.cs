@@ -10,28 +10,54 @@ using System.Windows.Forms;
 using COMBUS_APP.Data;
 using DATA.Service_Transection;
 using DATA;
+using COMBUS_APP.Properties;
 
 namespace COMBUS_APP.Transection_Form
 {
     public partial class StoreManagement : UserControl
     {
+        #region Variable
         private Master_StoreManagement Master;
         List<Store_GetListrock_Result> ListRock = new List<Store_GetListrock_Result>();
+        List<Store_GetListbank_Result> Listbank = new List<Store_GetListbank_Result>();
         List<Store_GetListcompany_Result> Listcompany = new List<Store_GetListcompany_Result>();
         List<Store_GetListproduct_Result> Listproduct = new List<Store_GetListproduct_Result>();
         //Dictionary<string, Companyy> dic = new Dictionary<string, Companyy>();
+        //string Rack = string.Empty;
+        #endregion
 
-        string Rack = string.Empty;
+        #region function
         void BtnRockClick(object sender,EventArgs e)
         {
             Button RackName = (Button)sender;
-            List<Store_GetListrock_Result> Listtmp = new List<Store_GetListrock_Result>();
-            foreach(Store_GetListrock_Result re in GetListRock(RackName.Name.Replace("BTN", "")))
+            List<Store_GetListrock_Result> Listtmp = GetListRock(RackName.Name.Replace("BTN", ""));
+            if(Listtmp.Count > 0)
             {
-
+                foreach (Store_GetListrock_Result re in Listtmp)
+                {
+                    txtRack.Text = CbbRock.Text + re.Rack.ToString();
+                    CbbCompany.Text = re.companyName;
+                    CbbProduct.Text = re.productName;
+                    txtDuration.Text = re.Duration.ToString();
+                    DpkFrom.Value = re.dateIN.Value;
+                    DpkTo.Value = re.dateOut.Value;
+                    txtBy.Text = re.createBy;
+                    txtStatus.Text = re.statusInStock;
+                }
             }
-            
-            //txtRack.Text = CbbRock.Text + RackName.Name.Replace("BTN","");
+            else
+            {
+                txtRack.Text = CbbRock.Text + RackName.Name.Replace("BTN", "");
+                CbbCompany.SelectedIndex = -1;
+                //CbbProduct.Text = "-";
+                txtDuration.Text = "-";
+                DpkFrom.Value = DateTime.Now;
+                DpkTo.Value = DateTime.Now;
+                txtBy.Text = "-";
+                txtStatus.Text = "-";
+            }
+
+            //txtRack.Text = CbbRock.Text + RackName.Name.Replace("BTN", "");
             //MessageBox.Show(s.Name);
         }
 
@@ -59,15 +85,33 @@ namespace COMBUS_APP.Transection_Form
             {
                 List.Add(re.bankID
                             , re.instandName.ToString());
+                Listbank.Add(new Store_GetListbank_Result()
+                {
+                    bankID = re.bankID
+                    ,bankName = re.bankName
+                });
             }
             CbbRock.DataSource = new BindingSource(List, null);
             CbbRock.DisplayMember = "Value";
             CbbRock.ValueMember = "Key";
             List.Clear();
-            
+
+            //DataTable dt = new DataTable();
+            List<Store_GetListproduct_Result> resultListproduct = Master.Get_Listproduct();
+            foreach (Store_GetListproduct_Result re in resultListproduct)
+            {
+                Listproduct.Add(new Store_GetListproduct_Result()
+                {
+                    productID = (int)re.productID,
+                    companyID = (int)re.companyID,
+                    productName = (string)re.productName
+                });
+            }
+
             // List Company combobox
             List<Store_GetListcompany_Result> resultListcompany = Master.Get_Listcompany();
-            foreach(Store_GetListcompany_Result re in resultListcompany){
+            foreach (Store_GetListcompany_Result re in resultListcompany)
+            {
                 List.Add(re.companyID
                             , re.companyName);
                 Listcompany.Add(new Store_GetListcompany_Result()
@@ -80,60 +124,6 @@ namespace COMBUS_APP.Transection_Form
             CbbCompany.DisplayMember = "Value";
             CbbCompany.ValueMember = "Key";
             List.Clear();
-
-            DataTable dt = new DataTable();
-            List<Store_GetListproduct_Result> resultListproduct = Master.Get_Listproduct();
-            foreach (Store_GetListproduct_Result re in resultListproduct)
-            {
-                Listproduct.Add(new Store_GetListproduct_Result()
-                {
-                    productID = (int)re.productID,
-                    companyID = (int)re.companyID,
-                    productName = (string)re.productName
-                });
-            }
-
-            #region a
-
-            //List<Store_GetListcompany_Result> resultListcompany = Master.Get_Listcompany();
-            //foreach (Store_GetListcompany_Result re in resultListcompany)
-            //{
-            //    List.Add(re.companyID
-            //                , re.companyName.ToString());
-            //}
-            //CbbCompany.DataSource = new BindingSource(List, null);
-
-            //CbbCompany.DisplayMember = "Value";
-            //CbbCompany.ValueMember = "Key";
-
-            //CbbProduct = CbbCompany.SelectedValu;
-
-            //List<Store_GetListCpAndPd_Result> results = Master.Get_ListCpAndPd();
-            //List<Productt> l = new List<Productt>();
-            //string s = string.Empty;
-
-            //foreach(Store_GetListCpAndPd_Result res in results)
-            //{                
-            //    if (! dic.ContainsKey(res.companyName))
-            //    {
-            //        l = new List<Productt>();
-            //    }
-            //    l.Add(new Productt(res.productID, res.productName));
-
-            //    if (dic.ContainsKey(res.companyName))
-            //    {
-            //        dic.Remove(res.companyName);
-            //        dic.Add(res.companyName, new Companyy(res.companyID, res.companyName, l));
-            //    }
-            //    else
-            //    {
-            //        dic.Add(res.companyName, new Companyy(res.companyID, res.companyName, l));
-            //    }                              
-            //}           
-
-            //CbbCompany.DataSource = new BindingSource(dic.Keys, null);
-            #endregion
-
         }
 
         private List<Store_GetListproduct_Result> GetIDproduct(int id)
@@ -145,12 +135,16 @@ namespace COMBUS_APP.Transection_Form
         {
             return ListRock.Where(line => line.Rack == Rack).ToList();
         }
+        #endregion
 
+        #region Event
         public StoreManagement()
         {
             InitializeComponent();
             createEventrock();
             LoadComboboxData();
+
+            CbbCompany.SelectedIndex = -1;
         }
 
         private void StoreManagement_Load(object sender, EventArgs e)
@@ -162,32 +156,31 @@ namespace COMBUS_APP.Transection_Form
         {
             CbbProduct.DataSource = null;
             Dictionary<int, string> List = new Dictionary<int, string>();
-            int id = Listcompany[CbbCompany.SelectedIndex].companyID;
-            //string[] tmp;
-            foreach(Store_GetListproduct_Result re in GetIDproduct(id))
+            if(CbbCompany.SelectedIndex != -1)
             {
-                List.Add(re.productID
-                            ,re.productName);
+                int id = Listcompany[CbbCompany.SelectedIndex].companyID;
+                foreach(Store_GetListproduct_Result re in GetIDproduct(id))
+                {
+                    List.Add(re.productID
+                                ,re.productName);
+                }
+                if(List.Count > 0)
+                {
+                    CbbProduct.DataSource = new BindingSource(List, null);
+                    CbbProduct.DisplayMember = "Value";
+                    CbbProduct.ValueMember = "Key";
+                }
+                List.Clear();
             }
-            if(List.Count > 0)
-            {
-                CbbProduct.DataSource = new BindingSource(List, null);
-                CbbProduct.DisplayMember = "Value";
-                CbbProduct.ValueMember = "Key";
-            }
-            List.Clear();
-
-            //string key = CbbCompany.SelectedValue.ToString();
-            //MessageBox.Show(key);
-            //CbbProduct.DataSource = new BindingSource(dic[key].getProduct(), null);
-            //MessageBox.Show("ID : " + CbbCompany.SelectedValue.ToString() 
-            //                        + Environment.NewLine);
         }
 
         private void CbbRock_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ListRock.Clear();
             Master = new Master_StoreManagement();
-            int id = (int)CbbRock.SelectedValue;
+            int id = Listbank[CbbRock.SelectedIndex].bankID;
+            int[] Checkstatus = new int[130];
+            Array.Clear(Checkstatus, 0, Checkstatus.Length);
             List<Store_GetListrock_Result> result = Master.Get_Listrock(id);
             foreach (Store_GetListrock_Result re in result)
             {
@@ -202,64 +195,27 @@ namespace COMBUS_APP.Transection_Form
                     createBy = re.createBy,
                     statusInStock = re.statusInStock
                 });
+
+                // Check status product in rack and add image
+                Checkstatus[Convert.ToInt32(re.Rack)] = 1;
+                Button btn = this.Controls.Find("BTN" + re.Rack, true).First() as Button;
+                if (re.statusInStock == "normal") btn.Image = Resources.box_store;
+                else btn.Image = Resources.box_storeAlert;
+            }
+
+            // check add image null to rack empty
+            for (int i = 1; i <= 12; i++)
+            {
+                for (int j = 1; j <= 6; j++)
+                {
+                    if(Checkstatus[(i * 10) + j] == 0)
+                    {
+                        Button btn = this.Controls.Find("BTN" + i.ToString("0#") + j.ToString("#"), true).First() as Button;
+                        btn.Image = null;
+                    }
+                }
             }
         }
+        #endregion
     }
-    //public class Companyy
-    //{
-    //    private int? id;
-    //    private string company_name;
-    //    private List<Productt> product;
-    //    public Companyy() {
-    //        product = new List<Productt>();
-    //    }
-    //    public Companyy(int? id_com, string name, List<Productt> pro)
-    //    {
-    //        id = id_com;
-    //        company_name = name;
-    //        product = pro;
-    //    }
-    //    public void set(int? id_com, string name, List<Productt> pro)
-    //    {
-    //        id = id_com;
-    //        company_name = name;
-    //        product = pro;
-    //    }
-    //    public int? getIdCompany()
-    //    {
-    //        return id;
-    //    }
-    //    public string getCompanyName()
-    //    {
-    //        return company_name;
-    //    }
-    //    public List<string> getProduct()
-    //    {
-    //        List<string> list = new List<string>();
-    //        foreach(Productt p in product)
-    //        {
-    //            list.Add(p.getProductName());
-    //        }
-
-    //        return list;
-    //    }
-    //}
-    //public class Productt
-    //{
-    //    private int id;
-    //    private string name;
-    //    public Productt(int idd, string namee)
-    //    {
-    //        id = idd;
-    //        name = namee;
-    //    }
-    //    public string getProductName()
-    //    {
-    //        return name;
-    //    }
-    //    public int getIdProduct()
-    //    {
-    //        return id;
-    //    }
-    //}
 }

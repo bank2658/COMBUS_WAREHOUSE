@@ -342,7 +342,7 @@
             this.lbUser.BackColor = System.Drawing.Color.Transparent;
             this.lbUser.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUser.ForeColor = System.Drawing.Color.White;
-            this.lbUser.Location = new System.Drawing.Point(14, 4);
+            this.lbUser.Location = new System.Drawing.Point(11, 4);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(135, 19);
             this.lbUser.TabIndex = 23;

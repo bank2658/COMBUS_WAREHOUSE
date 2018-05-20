@@ -16,6 +16,7 @@ namespace COMBUS_APP.Data
         }
 
         private static string _StatusLogin = "F";
+
         public static string StatusLogin
         {
             get { return _StatusLogin; }

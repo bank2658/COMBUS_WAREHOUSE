@@ -29,6 +29,8 @@ namespace COMBUS_APP
         {
             if (AppCrash.StatusLogin == "T")
             {
+                Main M = new Main();
+                M._LBUser(AppCrash.Login.ToString());
                 panelLogin.Visible = false;
             }
             else {
@@ -48,16 +50,16 @@ namespace COMBUS_APP
             if (txtUsername.Text == string.Empty || txtPassword.Text == string.Empty
                     || txtUsername.Text == " Username" || txtPassword.Text == " Password")
             {
-                if (txtUsername.Text == string.Empty
-                    || txtUsername.Text == " Username")
-                {
-                    panelUsername.BackColor = Color.FromArgb(213, 0, 0);
-                }
-                if (txtPassword.Text == string.Empty
-                    || txtPassword.Text == " Password")
-                {
-                    panelPassword.BackColor = Color.FromArgb(213, 0, 0);
-                }
+                panelUsername.BackColor = Color.FromArgb(213, 0, 0);
+                //if (txtUsername.Text == string.Empty
+                //    || txtUsername.Text == " Username")
+                //{
+                //}
+                panelPassword.BackColor = Color.FromArgb(213, 0, 0);
+                //if (txtPassword.Text == string.Empty
+                //    || txtPassword.Text == " Password")
+                //{
+                //}
                 txtUsername.Focus();
                 lbWrong.Visible = true;
                 return false;
@@ -130,8 +132,13 @@ namespace COMBUS_APP
                         }
                         AppCrash.StatusLogin = "T";
                         AppCrash.Login = re.userName;
+                        //MessageBox.Show(AppCrash.Login);
+                        
+                        //((Label)M.Controls["lbUser"]).Text = "ghfg";
+                        //lb.Text = "AAAAAAA";
+
                         showObjectLoad();
-                        return;
+                        //return;
                     }
                 }
                 txtPassword.Text = string.Empty;
