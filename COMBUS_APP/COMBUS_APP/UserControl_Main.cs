@@ -126,12 +126,13 @@ namespace COMBUS_APP
                 {
                     if (re.password == txtPassword.Text.Trim())
                     {
+                        AppCrash.StatusLogin = "T";
+                        AppCrash.Login = re.userName;
+
                         if (this.btnLoginClick != null)
                         {
                             this.btnLoginClick(this, e);
                         }
-                        AppCrash.StatusLogin = "T";
-                        AppCrash.Login = re.userName;
                         //MessageBox.Show(AppCrash.Login);
                         
                         //((Label)M.Controls["lbUser"]).Text = "ghfg";

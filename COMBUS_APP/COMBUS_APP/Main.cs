@@ -29,6 +29,7 @@ namespace COMBUS_APP
         protected void UserControlMain(object sender, EventArgs e)
         {
             panelMainmenu.Enabled = true;
+            lbUser.Text = AppCrash.Login;
         }
 
         public Main()
