@@ -13,9 +13,9 @@ namespace DATA
     
     public partial class Company_GetCompany_Result
     {
+        public int companyID { get; set; }
         public string companyName { get; set; }
         public string phone { get; set; }
         public string address { get; set; }
-        public int companyID { get; set; }
     }
 }

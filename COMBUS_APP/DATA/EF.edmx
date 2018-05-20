@@ -5,8 +5,98 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="EF_COMBUS.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="Company_AddCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Companyname" Type="nvarchar" Mode="In" />
+          <Parameter Name="Phone" Type="varchar" Mode="In" />
+          <Parameter Name="Address" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Company_DelCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Company_EditCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="Companyname" Type="nvarchar" Mode="In" />
+          <Parameter Name="Phone" Type="varchar" Mode="In" />
+          <Parameter Name="Address" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Company_GetCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CompanyName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Emoloyee_AddEmp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Fname" Type="nvarchar" Mode="In" />
+          <Parameter Name="Lname" Type="nvarchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="Address" Type="nvarchar" Mode="In" />
+          <Parameter Name="Permistion" Type="varchar" Mode="In" />
+          <Parameter Name="Username" Type="varchar" Mode="In" />
+          <Parameter Name="Pass" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Emploee_DelEmp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Emploee_EditEmp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="Fname" Type="nvarchar" Mode="In" />
+          <Parameter Name="Lname" Type="nvarchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="Address" Type="nvarchar" Mode="In" />
+          <Parameter Name="Permistion" Type="varchar" Mode="In" />
+          <Parameter Name="Username" Type="varchar" Mode="In" />
+          <Parameter Name="Pass" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Employee_AddTimeWork" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="dateIN" Type="date" Mode="In" />
+          <Parameter Name="Wid" Type="varchar" Mode="In" />
+          <Parameter Name="WtimeIN" Type="varchar" Mode="In" />
+          <Parameter Name="WtimeOUT" Type="varchar" Mode="In" />
+          <Parameter Name="note" Type="nvarchar" Mode="In" />
+          <Parameter Name="user" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Employee_GetEmpName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="EmpName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Employee_GetTimeWork" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="dateIN" Type="date" Mode="In" />
+          <Parameter Name="employeeID" Type="int" Mode="In" />
+        </Function>
         <Function Name="Main_CheckLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Main_Get_TransectionError" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DateFrom" Type="date" Mode="In" />
+          <Parameter Name="DateTo" Type="date" Mode="In" />
+        </Function>
+        <Function Name="Main_Log_TransectionError" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ErrorName" Type="varchar(max)" Mode="In" />
+          <Parameter Name="ScreenName" Type="varchar" Mode="In" />
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Product_AddProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Weight" Type="decimal" Mode="In" />
+          <Parameter Name="type" Type="int" Mode="In" />
+          <Parameter Name="ComID" Type="int" Mode="In" />
+          <Parameter Name="TimeIn" Type="date" Mode="In" />
+          <Parameter Name="TimeOut" Type="date" Mode="In" />
+        </Function>
+        <Function Name="Product_DelProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Product_EditProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="ProductName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Weight" Type="decimal" Mode="In" />
+          <Parameter Name="Type" Type="int" Mode="In" />
+          <Parameter Name="TimeIn" Type="date" Mode="In" />
+          <Parameter Name="TimeOut" Type="date" Mode="In" />
+        </Function>
+        <Function Name="Product_GetProductAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Product_GetProductName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Product_GetProductTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Timein" Type="date" Mode="In" />
+          <Parameter Name="Timeout" Type="date" Mode="In" />
         </Function>
         <Function Name="Store_GetListbank" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="Store_GetListcompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
@@ -25,25 +115,21 @@
           <FunctionImport Name="Main_CheckLogin" ReturnType="Collection(EF_COMBUS.Main_CheckLogin_Result)">
           <Parameter Name="userName" Mode="In" Type="String" />
           </FunctionImport>
-          <FunctionImport Name="Main_Get_TransectionError" ReturnType="Collection(EF_COMBUS.Main_Get_TransectionError_Result)">
-            <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
-            <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+          <FunctionImport Name="Store_GetListbank" ReturnType="Collection(EF_COMBUS.Store_GetListbank_Result)" />
+          <FunctionImport Name="Store_GetListcompany" ReturnType="Collection(EF_COMBUS.Store_GetListcompany_Result)" />
+          <FunctionImport Name="Store_GetListproduct" ReturnType="Collection(EF_COMBUS.Store_GetListproduct_Result)" />
+          <FunctionImport Name="Store_GetListrock" ReturnType="Collection(EF_COMBUS.Store_GetListrock_Result)" >
+          <Parameter Name="BANKID" Mode="In" Type="Int32" />
           </FunctionImport>
-          <FunctionImport Name="Main_Log_TransectionError">
-            <Parameter Name="ErrorName" Mode="In" Type="String" />
-            <Parameter Name="ScreenName" Mode="In" Type="String" />
-            <Parameter Name="UserName" Mode="In" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="Company_GetCompany" ReturnType="Collection(EF_COMBUS.Company_GetCompany_Result)" >
-          <Parameter Name="CompanyName" Mode="In" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="Company_DelCompany">
-          <Parameter Name="ID" Mode="In" Type="Int32" />
-          </FunctionImport>
+          <FunctionImport Name="Store_GetPercentrock" ReturnType="Collection(EF_COMBUS.Store_GetPercentrock_Result)" />
+          <FunctionImport Name="Store_GetListCpAndPd" ReturnType="Collection(EF_COMBUS.Store_GetListCpAndPd_Result)" />
           <FunctionImport Name="Company_AddCompany">
             <Parameter Name="Companyname" Mode="In" Type="String" />
             <Parameter Name="Phone" Mode="In" Type="String" />
             <Parameter Name="Address" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Company_DelCompany">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="Company_EditCompany">
             <Parameter Name="ID" Mode="In" Type="Int32" />
@@ -51,38 +137,20 @@
             <Parameter Name="Phone" Mode="In" Type="String" />
             <Parameter Name="Address" Mode="In" Type="String" />
           </FunctionImport>
-          <FunctionImport Name="Product_GetProductAll" ReturnType="Collection(EF_COMBUS.Product_GetProductAll_Result)" />
-          <FunctionImport Name="Product_GetProductName" ReturnType="Collection(EF_COMBUS.Product_GetProductName_Result)">
-          <Parameter Name="ProductName" Mode="In" Type="String" />
+          <FunctionImport Name="Company_GetCompany" ReturnType="Collection(EF_COMBUS.Company_GetCompany_Result)">
+            <Parameter Name="CompanyName" Mode="In" Type="String" />
           </FunctionImport>
-          <FunctionImport Name="Product_GetProductTime" ReturnType="Collection(EF_COMBUS.Product_GetProductTime_Result)">
-            <Parameter Name="Timein" Mode="In" Type="DateTime" />
-            <Parameter Name="Timeout" Mode="In" Type="DateTime" />
-          </FunctionImport>
-          <FunctionImport Name="Product_DelProduct">
-          <Parameter Name="ID" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="Product_EditProduct">
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-            <Parameter Name="ProductName" Mode="In" Type="String" />
-            <Parameter Name="Weight" Mode="In" Type="Decimal" />
-            <Parameter Name="Type" Mode="In" Type="Int32" />
-            <Parameter Name="TimeIn" Mode="In" Type="DateTime" />
-            <Parameter Name="TimeOut" Mode="In" Type="DateTime" />
-          </FunctionImport>
-          <FunctionImport Name="Product_AddProduct">
-            <Parameter Name="ProductName" Mode="In" Type="String" />
-            <Parameter Name="Weight" Mode="In" Type="Decimal" />
-            <Parameter Name="type" Mode="In" Type="Int32" />
-            <Parameter Name="ComID" Mode="In" Type="Int32" />
-            <Parameter Name="TimeIn" Mode="In" Type="DateTime" />
-            <Parameter Name="TimeOut" Mode="In" Type="DateTime" />
-          </FunctionImport>
-          <FunctionImport Name="Employee_GetEmpName" ReturnType="Collection(EF_COMBUS.Employee_GetEmpName_Result)">
-          <Parameter Name="EmpName" Mode="In" Type="String" />
+          <FunctionImport Name="Emoloyee_AddEmp">
+            <Parameter Name="Fname" Mode="In" Type="String" />
+            <Parameter Name="Lname" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="Permistion" Mode="In" Type="String" />
+            <Parameter Name="Username" Mode="In" Type="String" />
+            <Parameter Name="Pass" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="Emploee_DelEmp">
-          <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="ID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="Emploee_EditEmp">
             <Parameter Name="ID" Mode="In" Type="Int32" />
@@ -94,19 +162,6 @@
             <Parameter Name="Username" Mode="In" Type="String" />
             <Parameter Name="Pass" Mode="In" Type="String" />
           </FunctionImport>
-          <FunctionImport Name="Emoloyee_AddEmp">
-            <Parameter Name="Fname" Mode="In" Type="String" />
-            <Parameter Name="Lname" Mode="In" Type="String" />
-            <Parameter Name="Age" Mode="In" Type="Int32" />
-            <Parameter Name="Address" Mode="In" Type="String" />
-            <Parameter Name="Permistion" Mode="In" Type="String" />
-            <Parameter Name="Username" Mode="In" Type="String" />
-            <Parameter Name="Pass" Mode="In" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="Employee_GetTimeWork" ReturnType="Collection(EF_COMBUS.Employee_GetTimeWork_Result)">
-            <Parameter Name="dateIN" Mode="In" Type="DateTime" />
-            <Parameter Name="employeeID" Mode="In" Type="Int32" />
-          </FunctionImport>
           <FunctionImport Name="Employee_AddTimeWork">
             <Parameter Name="dateIN" Mode="In" Type="DateTime" />
             <Parameter Name="Wid" Mode="In" Type="String" />
@@ -115,14 +170,49 @@
             <Parameter Name="note" Mode="In" Type="String" />
             <Parameter Name="user" Mode="In" Type="String" />
           </FunctionImport>
-          <FunctionImport Name="Store_GetListbank" ReturnType="Collection(EF_COMBUS.Store_GetListbank_Result)" />
-          <FunctionImport Name="Store_GetListcompany" ReturnType="Collection(EF_COMBUS.Store_GetListcompany_Result)" />
-          <FunctionImport Name="Store_GetListproduct" ReturnType="Collection(EF_COMBUS.Store_GetListproduct_Result)" />
-          <FunctionImport Name="Store_GetListrock" ReturnType="Collection(EF_COMBUS.Store_GetListrock_Result)" >
-          <Parameter Name="BANKID" Mode="In" Type="Int32" />
+          <FunctionImport Name="Employee_GetEmpName" ReturnType="Collection(EF_COMBUS.Employee_GetEmpName_Result)">
+            <Parameter Name="EmpName" Mode="In" Type="String" />
           </FunctionImport>
-          <FunctionImport Name="Store_GetPercentrock" ReturnType="Collection(EF_COMBUS.Store_GetPercentrock_Result)" />
-          <FunctionImport Name="Store_GetListCpAndPd" ReturnType="Collection(EF_COMBUS.Store_GetListCpAndPd_Result)" />
+          <FunctionImport Name="Employee_GetTimeWork" ReturnType="Collection(EF_COMBUS.Employee_GetTimeWork_Result)">
+            <Parameter Name="dateIN" Mode="In" Type="DateTime" />
+            <Parameter Name="employeeID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Main_Get_TransectionError" ReturnType="Collection(EF_COMBUS.Main_Get_TransectionError_Result)">
+            <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="Main_Log_TransectionError">
+            <Parameter Name="ErrorName" Mode="In" Type="String" />
+            <Parameter Name="ScreenName" Mode="In" Type="String" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Product_AddProduct">
+            <Parameter Name="ProductName" Mode="In" Type="String" />
+            <Parameter Name="Weight" Mode="In" Type="Decimal" />
+            <Parameter Name="type" Mode="In" Type="Int32" />
+            <Parameter Name="ComID" Mode="In" Type="Int32" />
+            <Parameter Name="TimeIn" Mode="In" Type="DateTime" />
+            <Parameter Name="TimeOut" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="Product_DelProduct">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Product_EditProduct">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="ProductName" Mode="In" Type="String" />
+            <Parameter Name="Weight" Mode="In" Type="Decimal" />
+            <Parameter Name="Type" Mode="In" Type="Int32" />
+            <Parameter Name="TimeIn" Mode="In" Type="DateTime" />
+            <Parameter Name="TimeOut" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="Product_GetProductAll" ReturnType="Collection(EF_COMBUS.Product_GetProductAll_Result)" />
+          <FunctionImport Name="Product_GetProductName" ReturnType="Collection(EF_COMBUS.Product_GetProductName_Result)">
+            <Parameter Name="ProductName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Product_GetProductTime" ReturnType="Collection(EF_COMBUS.Product_GetProductTime_Result)">
+            <Parameter Name="Timein" Mode="In" Type="DateTime" />
+            <Parameter Name="Timeout" Mode="In" Type="DateTime" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="Main_CheckLogin_Result">
           <Property Type="Int32" Name="employeeID" Nullable="false" />
@@ -133,67 +223,6 @@
           <Property Type="String" Name="permissionLoginSystem" Nullable="true" MaxLength="10" />
           <Property Type="String" Name="userName" Nullable="true" MaxLength="50" />
           <Property Type="String" Name="password" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="createBy" Nullable="true" MaxLength="50" />
-          <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
-        </ComplexType>
-        <ComplexType Name="Main_Get_TransectionError_Result">
-          <Property Type="Int32" Name="transectionID" Nullable="false" />
-          <Property Type="String" Name="transectionName" Nullable="true" />
-          <Property Type="String" Name="screenName" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="userName" Nullable="true" MaxLength="50" />
-          <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
-        </ComplexType>
-        <ComplexType Name="Company_GetCompany_Result">
-          <Property Type="String" Name="companyName" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="phone" Nullable="true" MaxLength="20" />
-          <Property Type="String" Name="address" Nullable="true" MaxLength="200" />
-          <Property Type="Int32" Name="companyID" Nullable="false" />
-        </ComplexType>
-        <ComplexType Name="Product_GetProductAll_Result">
-          <Property Type="String" Name="productName" Nullable="true" MaxLength="200" />
-          <Property Type="Int32" Name="bankID" Nullable="true" />
-          <Property Type="DateTime" Name="dateIN" Nullable="true" />
-          <Property Type="DateTime" Name="dateOut" Nullable="true" />
-          <Property Type="Int32" Name="productID" Nullable="false" />
-          <Property Type="Decimal" Name="productKG" Nullable="true" Precision="18" Scale="2" />
-        </ComplexType>
-        <ComplexType Name="Product_GetProductName_Result">
-          <Property Type="Int32" Name="productID" Nullable="false" />
-          <Property Type="String" Name="productName" Nullable="true" MaxLength="200" />
-          <Property Type="Decimal" Name="productKG" Nullable="true" Precision="18" Scale="2" />
-          <Property Type="Int32" Name="bankID" Nullable="true" />
-          <Property Type="DateTime" Name="dateIN" Nullable="true" />
-          <Property Type="DateTime" Name="dateOut" Nullable="true" />
-          <Property Type="Int32" Name="companyID" Nullable="true" />
-        </ComplexType>
-        <ComplexType Name="Product_GetProductTime_Result">
-          <Property Type="Int32" Name="productID" Nullable="false" />
-          <Property Type="String" Name="productName" Nullable="true" MaxLength="200" />
-          <Property Type="Decimal" Name="productKG" Nullable="true" Precision="18" Scale="2" />
-          <Property Type="Int32" Name="bankID" Nullable="true" />
-          <Property Type="DateTime" Name="dateIN" Nullable="true" />
-          <Property Type="DateTime" Name="dateOut" Nullable="true" />
-          <Property Type="Int32" Name="companyID" Nullable="true" />
-        </ComplexType>
-        <ComplexType Name="Employee_GetEmpName_Result">
-          <Property Type="Int32" Name="employeeID" Nullable="false" />
-          <Property Type="String" Name="firstName" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="lastName" Nullable="true" MaxLength="200" />
-          <Property Type="Int32" Name="age" Nullable="true" />
-          <Property Type="String" Name="address" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="permissionLoginSystem" Nullable="true" MaxLength="10" />
-          <Property Type="String" Name="userName" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="password" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="createBy" Nullable="true" MaxLength="50" />
-          <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
-        </ComplexType>
-        <ComplexType Name="Employee_GetTimeWork_Result">
-          <Property Type="Int32" Name="WorkID" Nullable="false" />
-          <Property Type="DateTime" Name="dateWork" Nullable="true" />
-          <Property Type="Int32" Name="employeeID" Nullable="true" />
-          <Property Type="Time" Name="timeIN" Nullable="true" />
-          <Property Type="Time" Name="timeOUT" Nullable="true" />
-          <Property Type="String" Name="note" Nullable="true" MaxLength="200" />
           <Property Type="String" Name="createBy" Nullable="true" MaxLength="50" />
           <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
         </ComplexType>
@@ -233,6 +262,67 @@
           <Property Type="Int32" Name="companyID" Nullable="true" />
           <Property Type="String" Name="productName" Nullable="true" MaxLength="200" />
           <Property Type="String" Name="companyName" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="Company_GetCompany_Result">
+          <Property Type="Int32" Name="companyID" Nullable="false" />
+          <Property Type="String" Name="companyName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="phone" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="address" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="Employee_GetEmpName_Result">
+          <Property Type="Int32" Name="employeeID" Nullable="false" />
+          <Property Type="String" Name="firstName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="lastName" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="age" Nullable="true" />
+          <Property Type="String" Name="address" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="permissionLoginSystem" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="userName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="password" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="createBy" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="Employee_GetTimeWork_Result">
+          <Property Type="Int32" Name="WorkID" Nullable="false" />
+          <Property Type="DateTime" Name="dateWork" Nullable="true" />
+          <Property Type="Int32" Name="employeeID" Nullable="true" />
+          <Property Type="Time" Name="timeIN" Nullable="true" />
+          <Property Type="Time" Name="timeOUT" Nullable="true" />
+          <Property Type="String" Name="note" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="createBy" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="Main_Get_TransectionError_Result">
+          <Property Type="Int32" Name="transectionID" Nullable="false" />
+          <Property Type="String" Name="transectionName" Nullable="true" />
+          <Property Type="String" Name="screenName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="userName" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="createDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="Product_GetProductAll_Result">
+          <Property Type="Int32" Name="productID" Nullable="false" />
+          <Property Type="String" Name="productName" Nullable="true" MaxLength="200" />
+          <Property Type="Decimal" Name="productKG" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="Int32" Name="bankID" Nullable="true" />
+          <Property Type="DateTime" Name="dateIN" Nullable="true" />
+          <Property Type="DateTime" Name="dateOut" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Product_GetProductName_Result">
+          <Property Type="Int32" Name="productID" Nullable="false" />
+          <Property Type="String" Name="productName" Nullable="true" MaxLength="200" />
+          <Property Type="Decimal" Name="productKG" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="Int32" Name="bankID" Nullable="true" />
+          <Property Type="Int32" Name="companyID" Nullable="true" />
+          <Property Type="DateTime" Name="dateIN" Nullable="true" />
+          <Property Type="DateTime" Name="dateOut" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Product_GetProductTime_Result">
+          <Property Type="Int32" Name="productID" Nullable="false" />
+          <Property Type="String" Name="productName" Nullable="true" MaxLength="200" />
+          <Property Type="Decimal" Name="productKG" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="Int32" Name="bankID" Nullable="true" />
+          <Property Type="Int32" Name="companyID" Nullable="true" />
+          <Property Type="DateTime" Name="dateIN" Nullable="true" />
+          <Property Type="DateTime" Name="dateOut" Nullable="true" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -314,6 +404,106 @@
                 <ScalarProperty Name="companyID" ColumnName="companyID" />
                 <ScalarProperty Name="productName" ColumnName="productName" />
                 <ScalarProperty Name="companyName" ColumnName="companyName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Company_AddCompany" FunctionName="EF_COMBUS.Store.Company_AddCompany" />
+          <FunctionImportMapping FunctionImportName="Company_DelCompany" FunctionName="EF_COMBUS.Store.Company_DelCompany" />
+          <FunctionImportMapping FunctionImportName="Company_EditCompany" FunctionName="EF_COMBUS.Store.Company_EditCompany" />
+          <FunctionImportMapping FunctionImportName="Company_GetCompany" FunctionName="EF_COMBUS.Store.Company_GetCompany">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Company_GetCompany_Result">
+                <ScalarProperty Name="companyID" ColumnName="companyID" />
+                <ScalarProperty Name="companyName" ColumnName="companyName" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="address" ColumnName="address" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Emoloyee_AddEmp" FunctionName="EF_COMBUS.Store.Emoloyee_AddEmp" />
+          <FunctionImportMapping FunctionImportName="Emploee_DelEmp" FunctionName="EF_COMBUS.Store.Emploee_DelEmp" />
+          <FunctionImportMapping FunctionImportName="Emploee_EditEmp" FunctionName="EF_COMBUS.Store.Emploee_EditEmp" />
+          <FunctionImportMapping FunctionImportName="Employee_AddTimeWork" FunctionName="EF_COMBUS.Store.Employee_AddTimeWork" />
+          <FunctionImportMapping FunctionImportName="Employee_GetEmpName" FunctionName="EF_COMBUS.Store.Employee_GetEmpName">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Employee_GetEmpName_Result">
+                <ScalarProperty Name="employeeID" ColumnName="employeeID" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="permissionLoginSystem" ColumnName="permissionLoginSystem" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="createBy" ColumnName="createBy" />
+                <ScalarProperty Name="createDate" ColumnName="createDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Employee_GetTimeWork" FunctionName="EF_COMBUS.Store.Employee_GetTimeWork">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Employee_GetTimeWork_Result">
+                <ScalarProperty Name="WorkID" ColumnName="WorkID" />
+                <ScalarProperty Name="dateWork" ColumnName="dateWork" />
+                <ScalarProperty Name="employeeID" ColumnName="employeeID" />
+                <ScalarProperty Name="timeIN" ColumnName="timeIN" />
+                <ScalarProperty Name="timeOUT" ColumnName="timeOUT" />
+                <ScalarProperty Name="note" ColumnName="note" />
+                <ScalarProperty Name="createBy" ColumnName="createBy" />
+                <ScalarProperty Name="createDate" ColumnName="createDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Main_Get_TransectionError" FunctionName="EF_COMBUS.Store.Main_Get_TransectionError">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Main_Get_TransectionError_Result">
+                <ScalarProperty Name="transectionID" ColumnName="transectionID" />
+                <ScalarProperty Name="transectionName" ColumnName="transectionName" />
+                <ScalarProperty Name="screenName" ColumnName="screenName" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="createDate" ColumnName="createDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Main_Log_TransectionError" FunctionName="EF_COMBUS.Store.Main_Log_TransectionError" />
+          <FunctionImportMapping FunctionImportName="Product_AddProduct" FunctionName="EF_COMBUS.Store.Product_AddProduct" />
+          <FunctionImportMapping FunctionImportName="Product_DelProduct" FunctionName="EF_COMBUS.Store.Product_DelProduct" />
+          <FunctionImportMapping FunctionImportName="Product_EditProduct" FunctionName="EF_COMBUS.Store.Product_EditProduct" />
+          <FunctionImportMapping FunctionImportName="Product_GetProductAll" FunctionName="EF_COMBUS.Store.Product_GetProductAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Product_GetProductAll_Result">
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="productName" ColumnName="productName" />
+                <ScalarProperty Name="productKG" ColumnName="productKG" />
+                <ScalarProperty Name="bankID" ColumnName="bankID" />
+                <ScalarProperty Name="dateIN" ColumnName="dateIN" />
+                <ScalarProperty Name="dateOut" ColumnName="dateOut" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Product_GetProductName" FunctionName="EF_COMBUS.Store.Product_GetProductName">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Product_GetProductName_Result">
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="productName" ColumnName="productName" />
+                <ScalarProperty Name="productKG" ColumnName="productKG" />
+                <ScalarProperty Name="bankID" ColumnName="bankID" />
+                <ScalarProperty Name="companyID" ColumnName="companyID" />
+                <ScalarProperty Name="dateIN" ColumnName="dateIN" />
+                <ScalarProperty Name="dateOut" ColumnName="dateOut" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Product_GetProductTime" FunctionName="EF_COMBUS.Store.Product_GetProductTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EF_COMBUS.Product_GetProductTime_Result">
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="productName" ColumnName="productName" />
+                <ScalarProperty Name="productKG" ColumnName="productKG" />
+                <ScalarProperty Name="bankID" ColumnName="bankID" />
+                <ScalarProperty Name="companyID" ColumnName="companyID" />
+                <ScalarProperty Name="dateIN" ColumnName="dateIN" />
+                <ScalarProperty Name="dateOut" ColumnName="dateOut" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

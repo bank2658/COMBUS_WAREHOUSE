@@ -17,8 +17,8 @@ namespace DATA
         public string productName { get; set; }
         public Nullable<decimal> productKG { get; set; }
         public Nullable<int> bankID { get; set; }
+        public Nullable<int> companyID { get; set; }
         public Nullable<System.DateTime> dateIN { get; set; }
         public Nullable<System.DateTime> dateOut { get; set; }
-        public Nullable<int> companyID { get; set; }
     }
 }

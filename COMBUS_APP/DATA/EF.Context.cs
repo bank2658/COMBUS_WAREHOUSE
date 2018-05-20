@@ -37,52 +37,38 @@ namespace DATA
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Main_CheckLogin_Result>("Main_CheckLogin", userNameParameter);
         }
     
-        public virtual ObjectResult<Main_Get_TransectionError_Result> Main_Get_TransectionError(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo)
+        public virtual ObjectResult<Store_GetListbank_Result> Store_GetListbank()
         {
-            var dateFromParameter = dateFrom.HasValue ?
-                new ObjectParameter("DateFrom", dateFrom) :
-                new ObjectParameter("DateFrom", typeof(System.DateTime));
-    
-            var dateToParameter = dateTo.HasValue ?
-                new ObjectParameter("DateTo", dateTo) :
-                new ObjectParameter("DateTo", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Main_Get_TransectionError_Result>("Main_Get_TransectionError", dateFromParameter, dateToParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListbank_Result>("Store_GetListbank");
         }
     
-        public virtual int Main_Log_TransectionError(string errorName, string screenName, string userName)
+        public virtual ObjectResult<Store_GetListcompany_Result> Store_GetListcompany()
         {
-            var errorNameParameter = errorName != null ?
-                new ObjectParameter("ErrorName", errorName) :
-                new ObjectParameter("ErrorName", typeof(string));
-    
-            var screenNameParameter = screenName != null ?
-                new ObjectParameter("ScreenName", screenName) :
-                new ObjectParameter("ScreenName", typeof(string));
-    
-            var userNameParameter = userName != null ?
-                new ObjectParameter("UserName", userName) :
-                new ObjectParameter("UserName", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Main_Log_TransectionError", errorNameParameter, screenNameParameter, userNameParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListcompany_Result>("Store_GetListcompany");
         }
     
-        public virtual ObjectResult<Company_GetCompany_Result> Company_GetCompany(string companyName)
+        public virtual ObjectResult<Store_GetListproduct_Result> Store_GetListproduct()
         {
-            var companyNameParameter = companyName != null ?
-                new ObjectParameter("CompanyName", companyName) :
-                new ObjectParameter("CompanyName", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Company_GetCompany_Result>("Company_GetCompany", companyNameParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListproduct_Result>("Store_GetListproduct");
         }
     
-        public virtual int Company_DelCompany(Nullable<int> iD)
+        public virtual ObjectResult<Store_GetListrock_Result> Store_GetListrock(Nullable<int> bANKID)
         {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
+            var bANKIDParameter = bANKID.HasValue ?
+                new ObjectParameter("BANKID", bANKID) :
+                new ObjectParameter("BANKID", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Company_DelCompany", iDParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListrock_Result>("Store_GetListrock", bANKIDParameter);
+        }
+    
+        public virtual ObjectResult<Store_GetPercentrock_Result> Store_GetPercentrock()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetPercentrock_Result>("Store_GetPercentrock");
+        }
+    
+        public virtual ObjectResult<Store_GetListCpAndPd_Result> Store_GetListCpAndPd()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListCpAndPd_Result>("Store_GetListCpAndPd");
         }
     
         public virtual int Company_AddCompany(string companyname, string phone, string address)
@@ -100,6 +86,15 @@ namespace DATA
                 new ObjectParameter("Address", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Company_AddCompany", companynameParameter, phoneParameter, addressParameter);
+        }
+    
+        public virtual int Company_DelCompany(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Company_DelCompany", iDParameter);
         }
     
         public virtual int Company_EditCompany(Nullable<int> iD, string companyname, string phone, string address)
@@ -123,107 +118,46 @@ namespace DATA
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Company_EditCompany", iDParameter, companynameParameter, phoneParameter, addressParameter);
         }
     
-        public virtual ObjectResult<Product_GetProductAll_Result> Product_GetProductAll()
+        public virtual ObjectResult<Company_GetCompany_Result> Company_GetCompany(string companyName)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Product_GetProductAll_Result>("Product_GetProductAll");
+            var companyNameParameter = companyName != null ?
+                new ObjectParameter("CompanyName", companyName) :
+                new ObjectParameter("CompanyName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Company_GetCompany_Result>("Company_GetCompany", companyNameParameter);
         }
     
-        public virtual ObjectResult<Product_GetProductName_Result> Product_GetProductName(string productName)
+        public virtual int Emoloyee_AddEmp(string fname, string lname, Nullable<int> age, string address, string permistion, string username, string pass)
         {
-            var productNameParameter = productName != null ?
-                new ObjectParameter("ProductName", productName) :
-                new ObjectParameter("ProductName", typeof(string));
+            var fnameParameter = fname != null ?
+                new ObjectParameter("Fname", fname) :
+                new ObjectParameter("Fname", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Product_GetProductName_Result>("Product_GetProductName", productNameParameter);
-        }
+            var lnameParameter = lname != null ?
+                new ObjectParameter("Lname", lname) :
+                new ObjectParameter("Lname", typeof(string));
     
-        public virtual ObjectResult<Product_GetProductTime_Result> Product_GetProductTime(Nullable<System.DateTime> timein, Nullable<System.DateTime> timeout)
-        {
-            var timeinParameter = timein.HasValue ?
-                new ObjectParameter("Timein", timein) :
-                new ObjectParameter("Timein", typeof(System.DateTime));
+            var ageParameter = age.HasValue ?
+                new ObjectParameter("Age", age) :
+                new ObjectParameter("Age", typeof(int));
     
-            var timeoutParameter = timeout.HasValue ?
-                new ObjectParameter("Timeout", timeout) :
-                new ObjectParameter("Timeout", typeof(System.DateTime));
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Product_GetProductTime_Result>("Product_GetProductTime", timeinParameter, timeoutParameter);
-        }
+            var permistionParameter = permistion != null ?
+                new ObjectParameter("Permistion", permistion) :
+                new ObjectParameter("Permistion", typeof(string));
     
-        public virtual int Product_DelProduct(Nullable<int> iD)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
+            var usernameParameter = username != null ?
+                new ObjectParameter("Username", username) :
+                new ObjectParameter("Username", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Product_DelProduct", iDParameter);
-        }
+            var passParameter = pass != null ?
+                new ObjectParameter("Pass", pass) :
+                new ObjectParameter("Pass", typeof(string));
     
-        public virtual int Product_EditProduct(Nullable<int> iD, string productName, Nullable<decimal> weight, Nullable<int> type, Nullable<System.DateTime> timeIn, Nullable<System.DateTime> timeOut)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var productNameParameter = productName != null ?
-                new ObjectParameter("ProductName", productName) :
-                new ObjectParameter("ProductName", typeof(string));
-    
-            var weightParameter = weight.HasValue ?
-                new ObjectParameter("Weight", weight) :
-                new ObjectParameter("Weight", typeof(decimal));
-    
-            var typeParameter = type.HasValue ?
-                new ObjectParameter("Type", type) :
-                new ObjectParameter("Type", typeof(int));
-    
-            var timeInParameter = timeIn.HasValue ?
-                new ObjectParameter("TimeIn", timeIn) :
-                new ObjectParameter("TimeIn", typeof(System.DateTime));
-    
-            var timeOutParameter = timeOut.HasValue ?
-                new ObjectParameter("TimeOut", timeOut) :
-                new ObjectParameter("TimeOut", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Product_EditProduct", iDParameter, productNameParameter, weightParameter, typeParameter, timeInParameter, timeOutParameter);
-        }
-    
-        public virtual int Product_AddProduct(string productName, Nullable<decimal> weight, Nullable<int> type, Nullable<int> comID, Nullable<System.DateTime> timeIn, Nullable<System.DateTime> timeOut)
-        {
-            var productNameParameter = productName != null ?
-                new ObjectParameter("ProductName", productName) :
-                new ObjectParameter("ProductName", typeof(string));
-    
-            var weightParameter = weight.HasValue ?
-                new ObjectParameter("Weight", weight) :
-                new ObjectParameter("Weight", typeof(decimal));
-    
-            var typeParameter = type.HasValue ?
-                new ObjectParameter("type", type) :
-                new ObjectParameter("type", typeof(int));
-    
-            var comIDParameter = comID.HasValue ?
-                new ObjectParameter("ComID", comID) :
-                new ObjectParameter("ComID", typeof(int));
-    
-            var timeInParameter = timeIn.HasValue ?
-                new ObjectParameter("TimeIn", timeIn) :
-                new ObjectParameter("TimeIn", typeof(System.DateTime));
-    
-            var timeOutParameter = timeOut.HasValue ?
-                new ObjectParameter("TimeOut", timeOut) :
-                new ObjectParameter("TimeOut", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Product_AddProduct", productNameParameter, weightParameter, typeParameter, comIDParameter, timeInParameter, timeOutParameter);
-        }
-    
-        public virtual ObjectResult<Employee_GetEmpName_Result> Employee_GetEmpName(string empName)
-        {
-            var empNameParameter = empName != null ?
-                new ObjectParameter("EmpName", empName) :
-                new ObjectParameter("EmpName", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Employee_GetEmpName_Result>("Employee_GetEmpName", empNameParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Emoloyee_AddEmp", fnameParameter, lnameParameter, ageParameter, addressParameter, permistionParameter, usernameParameter, passParameter);
         }
     
         public virtual int Emploee_DelEmp(Nullable<int> iD)
@@ -272,52 +206,6 @@ namespace DATA
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Emploee_EditEmp", iDParameter, fnameParameter, lnameParameter, ageParameter, addressParameter, permistionParameter, usernameParameter, passParameter);
         }
     
-        public virtual int Emoloyee_AddEmp(string fname, string lname, Nullable<int> age, string address, string permistion, string username, string pass)
-        {
-            var fnameParameter = fname != null ?
-                new ObjectParameter("Fname", fname) :
-                new ObjectParameter("Fname", typeof(string));
-    
-            var lnameParameter = lname != null ?
-                new ObjectParameter("Lname", lname) :
-                new ObjectParameter("Lname", typeof(string));
-    
-            var ageParameter = age.HasValue ?
-                new ObjectParameter("Age", age) :
-                new ObjectParameter("Age", typeof(int));
-    
-            var addressParameter = address != null ?
-                new ObjectParameter("Address", address) :
-                new ObjectParameter("Address", typeof(string));
-    
-            var permistionParameter = permistion != null ?
-                new ObjectParameter("Permistion", permistion) :
-                new ObjectParameter("Permistion", typeof(string));
-    
-            var usernameParameter = username != null ?
-                new ObjectParameter("Username", username) :
-                new ObjectParameter("Username", typeof(string));
-    
-            var passParameter = pass != null ?
-                new ObjectParameter("Pass", pass) :
-                new ObjectParameter("Pass", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Emoloyee_AddEmp", fnameParameter, lnameParameter, ageParameter, addressParameter, permistionParameter, usernameParameter, passParameter);
-        }
-    
-        public virtual ObjectResult<Employee_GetTimeWork_Result> Employee_GetTimeWork(Nullable<System.DateTime> dateIN, Nullable<int> employeeID)
-        {
-            var dateINParameter = dateIN.HasValue ?
-                new ObjectParameter("dateIN", dateIN) :
-                new ObjectParameter("dateIN", typeof(System.DateTime));
-    
-            var employeeIDParameter = employeeID.HasValue ?
-                new ObjectParameter("employeeID", employeeID) :
-                new ObjectParameter("employeeID", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Employee_GetTimeWork_Result>("Employee_GetTimeWork", dateINParameter, employeeIDParameter);
-        }
-    
         public virtual int Employee_AddTimeWork(Nullable<System.DateTime> dateIN, string wid, string wtimeIN, string wtimeOUT, string note, string user)
         {
             var dateINParameter = dateIN.HasValue ?
@@ -347,38 +235,150 @@ namespace DATA
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Employee_AddTimeWork", dateINParameter, widParameter, wtimeINParameter, wtimeOUTParameter, noteParameter, userParameter);
         }
     
-        public virtual ObjectResult<Store_GetListbank_Result> Store_GetListbank()
+        public virtual ObjectResult<Employee_GetEmpName_Result> Employee_GetEmpName(string empName)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListbank_Result>("Store_GetListbank");
+            var empNameParameter = empName != null ?
+                new ObjectParameter("EmpName", empName) :
+                new ObjectParameter("EmpName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Employee_GetEmpName_Result>("Employee_GetEmpName", empNameParameter);
         }
     
-        public virtual ObjectResult<Store_GetListcompany_Result> Store_GetListcompany()
+        public virtual ObjectResult<Employee_GetTimeWork_Result> Employee_GetTimeWork(Nullable<System.DateTime> dateIN, Nullable<int> employeeID)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListcompany_Result>("Store_GetListcompany");
+            var dateINParameter = dateIN.HasValue ?
+                new ObjectParameter("dateIN", dateIN) :
+                new ObjectParameter("dateIN", typeof(System.DateTime));
+    
+            var employeeIDParameter = employeeID.HasValue ?
+                new ObjectParameter("employeeID", employeeID) :
+                new ObjectParameter("employeeID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Employee_GetTimeWork_Result>("Employee_GetTimeWork", dateINParameter, employeeIDParameter);
         }
     
-        public virtual ObjectResult<Store_GetListproduct_Result> Store_GetListproduct()
+        public virtual ObjectResult<Main_Get_TransectionError_Result> Main_Get_TransectionError(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListproduct_Result>("Store_GetListproduct");
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Main_Get_TransectionError_Result>("Main_Get_TransectionError", dateFromParameter, dateToParameter);
         }
     
-        public virtual ObjectResult<Store_GetListrock_Result> Store_GetListrock(Nullable<int> bANKID)
+        public virtual int Main_Log_TransectionError(string errorName, string screenName, string userName)
         {
-            var bANKIDParameter = bANKID.HasValue ?
-                new ObjectParameter("BANKID", bANKID) :
-                new ObjectParameter("BANKID", typeof(int));
+            var errorNameParameter = errorName != null ?
+                new ObjectParameter("ErrorName", errorName) :
+                new ObjectParameter("ErrorName", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListrock_Result>("Store_GetListrock", bANKIDParameter);
+            var screenNameParameter = screenName != null ?
+                new ObjectParameter("ScreenName", screenName) :
+                new ObjectParameter("ScreenName", typeof(string));
+    
+            var userNameParameter = userName != null ?
+                new ObjectParameter("UserName", userName) :
+                new ObjectParameter("UserName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Main_Log_TransectionError", errorNameParameter, screenNameParameter, userNameParameter);
         }
     
-        public virtual ObjectResult<Store_GetPercentrock_Result> Store_GetPercentrock()
+        public virtual int Product_AddProduct(string productName, Nullable<decimal> weight, Nullable<int> type, Nullable<int> comID, Nullable<System.DateTime> timeIn, Nullable<System.DateTime> timeOut)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetPercentrock_Result>("Store_GetPercentrock");
+            var productNameParameter = productName != null ?
+                new ObjectParameter("ProductName", productName) :
+                new ObjectParameter("ProductName", typeof(string));
+    
+            var weightParameter = weight.HasValue ?
+                new ObjectParameter("Weight", weight) :
+                new ObjectParameter("Weight", typeof(decimal));
+    
+            var typeParameter = type.HasValue ?
+                new ObjectParameter("type", type) :
+                new ObjectParameter("type", typeof(int));
+    
+            var comIDParameter = comID.HasValue ?
+                new ObjectParameter("ComID", comID) :
+                new ObjectParameter("ComID", typeof(int));
+    
+            var timeInParameter = timeIn.HasValue ?
+                new ObjectParameter("TimeIn", timeIn) :
+                new ObjectParameter("TimeIn", typeof(System.DateTime));
+    
+            var timeOutParameter = timeOut.HasValue ?
+                new ObjectParameter("TimeOut", timeOut) :
+                new ObjectParameter("TimeOut", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Product_AddProduct", productNameParameter, weightParameter, typeParameter, comIDParameter, timeInParameter, timeOutParameter);
         }
     
-        public virtual ObjectResult<Store_GetListCpAndPd_Result> Store_GetListCpAndPd()
+        public virtual int Product_DelProduct(Nullable<int> iD)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListCpAndPd_Result>("Store_GetListCpAndPd");
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Product_DelProduct", iDParameter);
+        }
+    
+        public virtual int Product_EditProduct(Nullable<int> iD, string productName, Nullable<decimal> weight, Nullable<int> type, Nullable<System.DateTime> timeIn, Nullable<System.DateTime> timeOut)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            var productNameParameter = productName != null ?
+                new ObjectParameter("ProductName", productName) :
+                new ObjectParameter("ProductName", typeof(string));
+    
+            var weightParameter = weight.HasValue ?
+                new ObjectParameter("Weight", weight) :
+                new ObjectParameter("Weight", typeof(decimal));
+    
+            var typeParameter = type.HasValue ?
+                new ObjectParameter("Type", type) :
+                new ObjectParameter("Type", typeof(int));
+    
+            var timeInParameter = timeIn.HasValue ?
+                new ObjectParameter("TimeIn", timeIn) :
+                new ObjectParameter("TimeIn", typeof(System.DateTime));
+    
+            var timeOutParameter = timeOut.HasValue ?
+                new ObjectParameter("TimeOut", timeOut) :
+                new ObjectParameter("TimeOut", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Product_EditProduct", iDParameter, productNameParameter, weightParameter, typeParameter, timeInParameter, timeOutParameter);
+        }
+    
+        public virtual ObjectResult<Product_GetProductAll_Result> Product_GetProductAll()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Product_GetProductAll_Result>("Product_GetProductAll");
+        }
+    
+        public virtual ObjectResult<Product_GetProductName_Result> Product_GetProductName(string productName)
+        {
+            var productNameParameter = productName != null ?
+                new ObjectParameter("ProductName", productName) :
+                new ObjectParameter("ProductName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Product_GetProductName_Result>("Product_GetProductName", productNameParameter);
+        }
+    
+        public virtual ObjectResult<Product_GetProductTime_Result> Product_GetProductTime(Nullable<System.DateTime> timein, Nullable<System.DateTime> timeout)
+        {
+            var timeinParameter = timein.HasValue ?
+                new ObjectParameter("Timein", timein) :
+                new ObjectParameter("Timein", typeof(System.DateTime));
+    
+            var timeoutParameter = timeout.HasValue ?
+                new ObjectParameter("Timeout", timeout) :
+                new ObjectParameter("Timeout", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Product_GetProductTime_Result>("Product_GetProductTime", timeinParameter, timeoutParameter);
         }
     }
 }
