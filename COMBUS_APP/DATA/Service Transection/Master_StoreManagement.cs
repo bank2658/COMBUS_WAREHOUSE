@@ -33,13 +33,13 @@ namespace DATA.Service_Transection
         {
             return this.ContextEntity.Store_GetListcompany().ToList();
         }
-        public List<Store_GetListproduct_Result> Get_Listproduct()
+        public List<Store_GetListproduct_Result> Get_Listproduct(int bankid)
         {
-            return this.ContextEntity.Store_GetListproduct().ToList();
+            return this.ContextEntity.Store_GetListproduct(bankid).ToList();
         }
-        public List<Store_GetListproductNULL_Result> Get_ListproductNULL()
+        public List<Store_GetListproductNULL_Result> Get_ListproductNULL(int bankid)
         {
-            return this.ContextEntity.Store_GetListproductNULL().ToList();
+            return this.ContextEntity.Store_GetListproductNULL(bankid).ToList();
         }
         public List<Store_GetListrock_Result> Get_Listrock(int Bankid)
         {
