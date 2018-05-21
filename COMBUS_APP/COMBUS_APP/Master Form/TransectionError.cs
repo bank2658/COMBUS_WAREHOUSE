@@ -79,6 +79,7 @@ namespace COMBUS_APP.Master_Form
             foreach(Main_Get_TransectionError_Result re in result)
             {
                 dgvMonitor.Rows.Add(dgvMonitor.RowCount + 1
+                                    , string.Empty
                                     , re.transectionName
                                     , re.screenName
                                     , re.userName

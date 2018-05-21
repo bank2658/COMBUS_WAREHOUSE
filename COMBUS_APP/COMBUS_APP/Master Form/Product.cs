@@ -138,7 +138,7 @@ namespace COMBUS_APP.Master_Form
             txtID.Text = "ADD";
             txtName.ReadOnly = false;
             txtWeight.ReadOnly = false;
-            cbCompany.Enabled = false;
+            cbCompany.Enabled = true;
 
             cbbType.Enabled = true;
 
@@ -238,7 +238,12 @@ namespace COMBUS_APP.Master_Form
         private void OnEdit()
         {
             master = new Master_Product();
-            master.Edit_Product(Convert.ToInt32(txtID.Text),txtName.Text,Convert.ToDecimal(txtWeight.Text),Convert.ToInt32(cbbType.Text),dtpIn.Value,dtpOut.Value);
+            master.Edit_Product(Convert.ToInt32(txtID.Text)
+                ,txtName.Text
+                ,Convert.ToDecimal(txtWeight.Text)
+                , (cbbType.SelectedItem as ComboboxItem).Value
+                , dtpIn.Value
+                ,dtpOut.Value);
             MessageBox.Show(Messge.INF_Edit,Messge.CM_Confirm);
             OnSearchName();
         }
@@ -333,7 +338,7 @@ namespace COMBUS_APP.Master_Form
         private void btnCancel_Click(object sender, EventArgs e)
         {
             ViewMode();
-            GrdProClick(0);
+            if(GrdProduct.Rows.Count > 0) GrdProClick(0);
         }
 
         private void GrdProduct_CellClick(object sender, DataGridViewCellEventArgs e)
