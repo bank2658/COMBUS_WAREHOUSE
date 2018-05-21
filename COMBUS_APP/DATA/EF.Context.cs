@@ -380,5 +380,97 @@ namespace DATA
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Product_GetProductTime_Result>("Product_GetProductTime", timeinParameter, timeoutParameter);
         }
+    
+        public virtual int Store_AddStock(Nullable<int> productID, Nullable<int> bankID, Nullable<int> bay, Nullable<int> level, string statusInStock, string dateIN, string dateOut, string createBy)
+        {
+            var productIDParameter = productID.HasValue ?
+                new ObjectParameter("productID", productID) :
+                new ObjectParameter("productID", typeof(int));
+    
+            var bankIDParameter = bankID.HasValue ?
+                new ObjectParameter("bankID", bankID) :
+                new ObjectParameter("bankID", typeof(int));
+    
+            var bayParameter = bay.HasValue ?
+                new ObjectParameter("bay", bay) :
+                new ObjectParameter("bay", typeof(int));
+    
+            var levelParameter = level.HasValue ?
+                new ObjectParameter("level", level) :
+                new ObjectParameter("level", typeof(int));
+    
+            var statusInStockParameter = statusInStock != null ?
+                new ObjectParameter("statusInStock", statusInStock) :
+                new ObjectParameter("statusInStock", typeof(string));
+    
+            var dateINParameter = dateIN != null ?
+                new ObjectParameter("dateIN", dateIN) :
+                new ObjectParameter("dateIN", typeof(string));
+    
+            var dateOutParameter = dateOut != null ?
+                new ObjectParameter("dateOut", dateOut) :
+                new ObjectParameter("dateOut", typeof(string));
+    
+            var createByParameter = createBy != null ?
+                new ObjectParameter("createBy", createBy) :
+                new ObjectParameter("createBy", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Store_AddStock", productIDParameter, bankIDParameter, bayParameter, levelParameter, statusInStockParameter, dateINParameter, dateOutParameter, createByParameter);
+        }
+    
+        public virtual int Store_DelStock(Nullable<int> stockID)
+        {
+            var stockIDParameter = stockID.HasValue ?
+                new ObjectParameter("StockID", stockID) :
+                new ObjectParameter("StockID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Store_DelStock", stockIDParameter);
+        }
+    
+        public virtual int Store_EditStock(Nullable<int> stockID, Nullable<int> productID, Nullable<int> bankID, Nullable<int> bay, Nullable<int> level, string statusInStock, string dateIN, string dateOut, string createBy)
+        {
+            var stockIDParameter = stockID.HasValue ?
+                new ObjectParameter("stockID", stockID) :
+                new ObjectParameter("stockID", typeof(int));
+    
+            var productIDParameter = productID.HasValue ?
+                new ObjectParameter("productID", productID) :
+                new ObjectParameter("productID", typeof(int));
+    
+            var bankIDParameter = bankID.HasValue ?
+                new ObjectParameter("bankID", bankID) :
+                new ObjectParameter("bankID", typeof(int));
+    
+            var bayParameter = bay.HasValue ?
+                new ObjectParameter("bay", bay) :
+                new ObjectParameter("bay", typeof(int));
+    
+            var levelParameter = level.HasValue ?
+                new ObjectParameter("level", level) :
+                new ObjectParameter("level", typeof(int));
+    
+            var statusInStockParameter = statusInStock != null ?
+                new ObjectParameter("statusInStock", statusInStock) :
+                new ObjectParameter("statusInStock", typeof(string));
+    
+            var dateINParameter = dateIN != null ?
+                new ObjectParameter("dateIN", dateIN) :
+                new ObjectParameter("dateIN", typeof(string));
+    
+            var dateOutParameter = dateOut != null ?
+                new ObjectParameter("dateOut", dateOut) :
+                new ObjectParameter("dateOut", typeof(string));
+    
+            var createByParameter = createBy != null ?
+                new ObjectParameter("createBy", createBy) :
+                new ObjectParameter("createBy", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Store_EditStock", stockIDParameter, productIDParameter, bankIDParameter, bayParameter, levelParameter, statusInStockParameter, dateINParameter, dateOutParameter, createByParameter);
+        }
+    
+        public virtual ObjectResult<Store_GetListproductNULL_Result> Store_GetListproductNULL()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListproductNULL_Result>("Store_GetListproductNULL");
+        }
     }
 }

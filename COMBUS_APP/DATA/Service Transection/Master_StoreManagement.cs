@@ -37,6 +37,10 @@ namespace DATA.Service_Transection
         {
             return this.ContextEntity.Store_GetListproduct().ToList();
         }
+        public List<Store_GetListproductNULL_Result> Get_ListproductNULL()
+        {
+            return this.ContextEntity.Store_GetListproductNULL().ToList();
+        }
         public List<Store_GetListrock_Result> Get_Listrock(int Bankid)
         {
             return this.ContextEntity.Store_GetListrock(Bankid).ToList();
@@ -49,6 +53,19 @@ namespace DATA.Service_Transection
         public List<Store_GetListCpAndPd_Result> Get_ListCpAndPd()
         {
             return this.ContextEntity.Store_GetListCpAndPd().ToList();
+        }
+
+        public void Add_Stock(int productID,int bankID, int bay, int level, string statusInStock, string dateIN, string dateOUT, string createBy)
+        {
+            this.ContextEntity.Store_AddStock(productID,bankID,bay,level,statusInStock,dateIN,dateOUT,createBy).ToString();
+        }
+        public void Edit_Stock(int stockID, int productID, int bankID, int bay, int level, string statusInStock, string dateIN, string dateOUT, string createBy)
+        {
+            this.ContextEntity.Store_EditStock(stockID,productID,bankID,bay,level,statusInStock, dateIN, dateOUT, createBy);
+        }
+        public void Del_Stock(int id)
+        {
+            this.ContextEntity.Store_DelStock(id);
         }
     }
 }

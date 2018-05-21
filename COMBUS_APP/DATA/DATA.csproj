@@ -114,6 +114,9 @@
     <Compile Include="Store_GetListCpAndPd_Result.cs">
       <DependentUpon>EF.tt</DependentUpon>
     </Compile>
+    <Compile Include="Store_GetListproductNULL_Result.cs">
+      <DependentUpon>EF.tt</DependentUpon>
+    </Compile>
     <Compile Include="Store_GetListproduct_Result.cs">
       <DependentUpon>EF.tt</DependentUpon>
     </Compile>
