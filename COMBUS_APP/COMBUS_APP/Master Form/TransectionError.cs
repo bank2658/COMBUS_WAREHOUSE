@@ -60,6 +60,7 @@ namespace COMBUS_APP.Master_Form
 
         private void Get_TransectionError()
         {
+            if (dgvMonitor.Rows.Count > 0) dgvMonitor.Rows.Clear();
             master = new Master_TransectionError();
             List<Main_Get_TransectionError_Result> result = new List<Main_Get_TransectionError_Result>();
             if (cbPullAll.Checked)

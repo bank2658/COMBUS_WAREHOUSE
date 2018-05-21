@@ -99,7 +99,16 @@ namespace COMBUS_APP.Master_Form
                 cbCompany.Items.Add(item);
             }
 
+            MasterStore = new Master_StoreManagement();
+            List<Store_GetListbank_Result> result2 = MasterStore.Get_Listbank();
+            foreach(Store_GetListbank_Result re2 in result2)
+            {
+                ComboboxItem item = new ComboboxItem();
+                item.Text = re2.bankName;
+                item.Value = re2.bankID;
 
+                cbbType.Items.Add(item);
+            }
 
 
             ViewMode();
@@ -242,7 +251,7 @@ namespace COMBUS_APP.Master_Form
             {
                 master.Add_Product(txtName.Text
                                 , Convert.ToDecimal(txtWeight.Text)
-                                , Convert.ToInt32(cbbType.Text)
+                                , (cbbType.SelectedItem as ComboboxItem).Value
                                 , (cbCompany.SelectedItem as ComboboxItem).Value
                                 , dtpIn.Value
                                 , dtpOut.Value);
@@ -261,7 +270,17 @@ namespace COMBUS_APP.Master_Form
             txtName.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductName].Value.ToString();
             txtWeight.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductKg].Value.ToString();
 
-            cbbType.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductType].Value.ToString();
+            int intBanktype = Convert.ToInt32( GrdProduct.CurrentRow.Cells[(int)EProduct.ProductType].Value.ToString());
+            foreach(ComboboxItem re in cbbType.Items)
+            {
+                if(intBanktype == re.Value)
+                {
+                    cbbType.SelectedItem = re;
+                    break;
+                }
+            }
+
+
 
             int intCompany = Convert.ToInt32( GrdProduct.CurrentRow.Cells[(int)EProduct.ComID].Value.ToString());
             foreach(ComboboxItem re in cbCompany.Items)
