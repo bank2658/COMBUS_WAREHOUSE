@@ -239,9 +239,10 @@ namespace COMBUS_APP.Transection_Form
         }
         void LoadCbbProduct()
         {
+            int bankid = Listbank[CbbRock.SelectedIndex].bankID;
             Listproduct.Clear();
             ListproductNULL.Clear();
-            List<Store_GetListproduct_Result> resultListproduct = Master.Get_Listproduct();
+            List<Store_GetListproduct_Result> resultListproduct = Master.Get_Listproduct(bankid);
             foreach (Store_GetListproduct_Result re in resultListproduct)
             {
                 Listproduct.Add(new Store_GetListproduct_Result()
@@ -254,7 +255,7 @@ namespace COMBUS_APP.Transection_Form
                     dateOut = re.dateOut
                 });
             }
-            List<Store_GetListproductNULL_Result> resultListproductNULL = Master.Get_ListproductNULL();
+            List<Store_GetListproductNULL_Result> resultListproductNULL = Master.Get_ListproductNULL(bankid);
             foreach (Store_GetListproductNULL_Result re in resultListproductNULL)
             {
                 ListproductNULL.Add(new Store_GetListproductNULL_Result()
