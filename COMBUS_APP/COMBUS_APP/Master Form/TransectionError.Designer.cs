@@ -190,7 +190,7 @@
             this.cbPullFromTo.Location = new System.Drawing.Point(569, 109);
             this.cbPullFromTo.Name = "cbPullFromTo";
             this.cbPullFromTo.Size = new System.Drawing.Size(105, 17);
-            this.cbPullFromTo.TabIndex = 59;
+            this.cbPullFromTo.TabIndex = 2;
             this.cbPullFromTo.Text = "ดึงข้อมูล From-To";
             this.cbPullFromTo.UseVisualStyleBackColor = true;
             this.cbPullFromTo.CheckedChanged += new System.EventHandler(this.cbPullFromTo_CheckedChanged);
@@ -201,7 +201,7 @@
             this.cbPullFrom.Location = new System.Drawing.Point(680, 109);
             this.cbPullFrom.Name = "cbPullFrom";
             this.cbPullFrom.Size = new System.Drawing.Size(120, 17);
-            this.cbPullFrom.TabIndex = 58;
+            this.cbPullFrom.TabIndex = 3;
             this.cbPullFrom.Text = "ดึงข้อมูลเฉพาะ From";
             this.cbPullFrom.UseVisualStyleBackColor = true;
             this.cbPullFrom.CheckedChanged += new System.EventHandler(this.cbPullFrom_CheckedChanged);
@@ -214,7 +214,7 @@
             this.cbPullAll.Location = new System.Drawing.Point(806, 109);
             this.cbPullAll.Name = "cbPullAll";
             this.cbPullAll.Size = new System.Drawing.Size(96, 17);
-            this.cbPullAll.TabIndex = 57;
+            this.cbPullAll.TabIndex = 4;
             this.cbPullAll.Text = "ดึงข้อมูลทั้งหมด";
             this.cbPullAll.UseVisualStyleBackColor = true;
             this.cbPullAll.CheckedChanged += new System.EventHandler(this.cbPullAll_CheckedChanged);
@@ -247,7 +247,7 @@
             this.DtpTo.Location = new System.Drawing.Point(579, 77);
             this.DtpTo.Name = "DtpTo";
             this.DtpTo.Size = new System.Drawing.Size(323, 26);
-            this.DtpTo.TabIndex = 50;
+            this.DtpTo.TabIndex = 1;
             // 
             // DtpFrom
             // 
@@ -255,7 +255,7 @@
             this.DtpFrom.Location = new System.Drawing.Point(579, 36);
             this.DtpFrom.Name = "DtpFrom";
             this.DtpFrom.Size = new System.Drawing.Size(323, 26);
-            this.DtpFrom.TabIndex = 45;
+            this.DtpFrom.TabIndex = 0;
             // 
             // btnSearch
             // 
@@ -268,7 +268,7 @@
             this.btnSearch.Location = new System.Drawing.Point(928, 25);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(110, 90);
-            this.btnSearch.TabIndex = 42;
+            this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);

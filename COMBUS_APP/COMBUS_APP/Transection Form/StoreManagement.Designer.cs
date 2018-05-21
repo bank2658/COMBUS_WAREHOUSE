@@ -149,6 +149,9 @@
             this.BtnCancel = new System.Windows.Forms.Button();
             this.txtBy = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.DgvType = new System.Windows.Forms.DataGridView();
+            this.Rack = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -165,6 +168,12 @@
             this.lbPercentA = new System.Windows.Forms.Label();
             this.lbPercentTotal = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.PgbF = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbE = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbD = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbC = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbB = new COMBUS_APP.Data.RoundedProgressBar();
+            this.PgbA = new COMBUS_APP.Data.RoundedProgressBar();
             this.PgbTotal = new System.Windows.Forms.ProgressBar();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -194,15 +203,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.DgvType = new System.Windows.Forms.DataGridView();
-            this.Rack = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PgbF = new COMBUS_APP.Data.RoundedProgressBar();
-            this.PgbE = new COMBUS_APP.Data.RoundedProgressBar();
-            this.PgbD = new COMBUS_APP.Data.RoundedProgressBar();
-            this.PgbC = new COMBUS_APP.Data.RoundedProgressBar();
-            this.PgbB = new COMBUS_APP.Data.RoundedProgressBar();
-            this.PgbA = new COMBUS_APP.Data.RoundedProgressBar();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -217,11 +217,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvType)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -327,7 +327,7 @@
             this.panel1.Location = new System.Drawing.Point(365, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(696, 440);
-            this.panel1.TabIndex = 9;
+            this.panel1.TabIndex = 1;
             // 
             // CbbRock
             // 
@@ -339,7 +339,7 @@
             this.CbbRock.Location = new System.Drawing.Point(492, 219);
             this.CbbRock.Name = "CbbRock";
             this.CbbRock.Size = new System.Drawing.Size(56, 45);
-            this.CbbRock.TabIndex = 166;
+            this.CbbRock.TabIndex = 0;
             this.CbbRock.SelectedIndexChanged += new System.EventHandler(this.CbbRock_SelectedIndexChanged);
             // 
             // panel10
@@ -363,6 +363,7 @@
             this.button86.Name = "button86";
             this.button86.Size = new System.Drawing.Size(35, 42);
             this.button86.TabIndex = 159;
+            this.button86.TabStop = false;
             this.button86.Text = "B";
             this.button86.UseVisualStyleBackColor = false;
             // 
@@ -387,6 +388,7 @@
             this.button85.Name = "button85";
             this.button85.Size = new System.Drawing.Size(35, 42);
             this.button85.TabIndex = 159;
+            this.button85.TabStop = false;
             this.button85.Text = "C";
             this.button85.UseVisualStyleBackColor = false;
             // 
@@ -411,6 +413,7 @@
             this.button84.Name = "button84";
             this.button84.Size = new System.Drawing.Size(35, 42);
             this.button84.TabIndex = 159;
+            this.button84.TabStop = false;
             this.button84.Text = "D";
             this.button84.UseVisualStyleBackColor = false;
             // 
@@ -435,6 +438,7 @@
             this.button82.Name = "button82";
             this.button82.Size = new System.Drawing.Size(35, 42);
             this.button82.TabIndex = 159;
+            this.button82.TabStop = false;
             this.button82.Text = "E";
             this.button82.UseVisualStyleBackColor = false;
             // 
@@ -459,6 +463,7 @@
             this.button83.Name = "button83";
             this.button83.Size = new System.Drawing.Size(35, 42);
             this.button83.TabIndex = 160;
+            this.button83.TabStop = false;
             this.button83.Text = "F";
             this.button83.UseVisualStyleBackColor = false;
             // 
@@ -476,6 +481,7 @@
             this.BTN126.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN126.Size = new System.Drawing.Size(30, 30);
             this.BTN126.TabIndex = 155;
+            this.BTN126.TabStop = false;
             this.BTN126.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN126.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN126.UseVisualStyleBackColor = false;
@@ -494,6 +500,7 @@
             this.BTN125.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN125.Size = new System.Drawing.Size(30, 30);
             this.BTN125.TabIndex = 154;
+            this.BTN125.TabStop = false;
             this.BTN125.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN125.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN125.UseVisualStyleBackColor = false;
@@ -512,6 +519,7 @@
             this.BTN124.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN124.Size = new System.Drawing.Size(30, 30);
             this.BTN124.TabIndex = 153;
+            this.BTN124.TabStop = false;
             this.BTN124.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN124.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN124.UseVisualStyleBackColor = false;
@@ -530,6 +538,7 @@
             this.BTN123.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN123.Size = new System.Drawing.Size(30, 30);
             this.BTN123.TabIndex = 152;
+            this.BTN123.TabStop = false;
             this.BTN123.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN123.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN123.UseVisualStyleBackColor = false;
@@ -548,6 +557,7 @@
             this.BTN122.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN122.Size = new System.Drawing.Size(30, 30);
             this.BTN122.TabIndex = 151;
+            this.BTN122.TabStop = false;
             this.BTN122.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN122.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN122.UseVisualStyleBackColor = false;
@@ -566,6 +576,7 @@
             this.BTN116.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN116.Size = new System.Drawing.Size(30, 30);
             this.BTN116.TabIndex = 150;
+            this.BTN116.TabStop = false;
             this.BTN116.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN116.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN116.UseVisualStyleBackColor = false;
@@ -584,6 +595,7 @@
             this.BTN115.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN115.Size = new System.Drawing.Size(30, 30);
             this.BTN115.TabIndex = 149;
+            this.BTN115.TabStop = false;
             this.BTN115.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN115.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN115.UseVisualStyleBackColor = false;
@@ -602,6 +614,7 @@
             this.BTN114.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN114.Size = new System.Drawing.Size(30, 30);
             this.BTN114.TabIndex = 148;
+            this.BTN114.TabStop = false;
             this.BTN114.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN114.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN114.UseVisualStyleBackColor = false;
@@ -620,6 +633,7 @@
             this.BTN113.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN113.Size = new System.Drawing.Size(30, 30);
             this.BTN113.TabIndex = 147;
+            this.BTN113.TabStop = false;
             this.BTN113.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN113.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN113.UseVisualStyleBackColor = false;
@@ -638,6 +652,7 @@
             this.BTN112.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN112.Size = new System.Drawing.Size(30, 30);
             this.BTN112.TabIndex = 146;
+            this.BTN112.TabStop = false;
             this.BTN112.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN112.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN112.UseVisualStyleBackColor = false;
@@ -656,6 +671,7 @@
             this.BTN106.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN106.Size = new System.Drawing.Size(30, 30);
             this.BTN106.TabIndex = 145;
+            this.BTN106.TabStop = false;
             this.BTN106.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN106.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN106.UseVisualStyleBackColor = false;
@@ -674,6 +690,7 @@
             this.BTN105.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN105.Size = new System.Drawing.Size(30, 30);
             this.BTN105.TabIndex = 144;
+            this.BTN105.TabStop = false;
             this.BTN105.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN105.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN105.UseVisualStyleBackColor = false;
@@ -692,6 +709,7 @@
             this.BTN104.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN104.Size = new System.Drawing.Size(30, 30);
             this.BTN104.TabIndex = 143;
+            this.BTN104.TabStop = false;
             this.BTN104.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN104.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN104.UseVisualStyleBackColor = false;
@@ -710,6 +728,7 @@
             this.BTN103.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN103.Size = new System.Drawing.Size(30, 30);
             this.BTN103.TabIndex = 142;
+            this.BTN103.TabStop = false;
             this.BTN103.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN103.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN103.UseVisualStyleBackColor = false;
@@ -728,6 +747,7 @@
             this.BTN102.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN102.Size = new System.Drawing.Size(30, 30);
             this.BTN102.TabIndex = 141;
+            this.BTN102.TabStop = false;
             this.BTN102.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN102.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN102.UseVisualStyleBackColor = false;
@@ -746,6 +766,7 @@
             this.BTN096.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN096.Size = new System.Drawing.Size(30, 30);
             this.BTN096.TabIndex = 140;
+            this.BTN096.TabStop = false;
             this.BTN096.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN096.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN096.UseVisualStyleBackColor = false;
@@ -764,6 +785,7 @@
             this.BTN095.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN095.Size = new System.Drawing.Size(30, 30);
             this.BTN095.TabIndex = 139;
+            this.BTN095.TabStop = false;
             this.BTN095.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN095.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN095.UseVisualStyleBackColor = false;
@@ -782,6 +804,7 @@
             this.BTN094.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN094.Size = new System.Drawing.Size(30, 30);
             this.BTN094.TabIndex = 138;
+            this.BTN094.TabStop = false;
             this.BTN094.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN094.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN094.UseVisualStyleBackColor = false;
@@ -800,6 +823,7 @@
             this.BTN093.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN093.Size = new System.Drawing.Size(30, 30);
             this.BTN093.TabIndex = 137;
+            this.BTN093.TabStop = false;
             this.BTN093.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN093.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN093.UseVisualStyleBackColor = false;
@@ -818,6 +842,7 @@
             this.BTN092.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN092.Size = new System.Drawing.Size(30, 30);
             this.BTN092.TabIndex = 136;
+            this.BTN092.TabStop = false;
             this.BTN092.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN092.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN092.UseVisualStyleBackColor = false;
@@ -836,6 +861,7 @@
             this.BTN121.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN121.Size = new System.Drawing.Size(30, 30);
             this.BTN121.TabIndex = 135;
+            this.BTN121.TabStop = false;
             this.BTN121.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN121.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN121.UseVisualStyleBackColor = false;
@@ -854,6 +880,7 @@
             this.BTN111.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN111.Size = new System.Drawing.Size(30, 30);
             this.BTN111.TabIndex = 134;
+            this.BTN111.TabStop = false;
             this.BTN111.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN111.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN111.UseVisualStyleBackColor = false;
@@ -872,6 +899,7 @@
             this.BTN101.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN101.Size = new System.Drawing.Size(30, 30);
             this.BTN101.TabIndex = 133;
+            this.BTN101.TabStop = false;
             this.BTN101.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN101.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN101.UseVisualStyleBackColor = false;
@@ -890,6 +918,7 @@
             this.BTN091.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN091.Size = new System.Drawing.Size(30, 30);
             this.BTN091.TabIndex = 122;
+            this.BTN091.TabStop = false;
             this.BTN091.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN091.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN091.UseVisualStyleBackColor = false;
@@ -908,6 +937,7 @@
             this.BTN086.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN086.Size = new System.Drawing.Size(30, 30);
             this.BTN086.TabIndex = 132;
+            this.BTN086.TabStop = false;
             this.BTN086.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN086.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN086.UseVisualStyleBackColor = false;
@@ -926,6 +956,7 @@
             this.BTN085.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN085.Size = new System.Drawing.Size(30, 30);
             this.BTN085.TabIndex = 131;
+            this.BTN085.TabStop = false;
             this.BTN085.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN085.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN085.UseVisualStyleBackColor = false;
@@ -944,6 +975,7 @@
             this.BTN084.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN084.Size = new System.Drawing.Size(30, 30);
             this.BTN084.TabIndex = 130;
+            this.BTN084.TabStop = false;
             this.BTN084.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN084.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN084.UseVisualStyleBackColor = false;
@@ -962,6 +994,7 @@
             this.BTN083.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN083.Size = new System.Drawing.Size(30, 30);
             this.BTN083.TabIndex = 129;
+            this.BTN083.TabStop = false;
             this.BTN083.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN083.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN083.UseVisualStyleBackColor = false;
@@ -980,6 +1013,7 @@
             this.BTN082.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN082.Size = new System.Drawing.Size(30, 30);
             this.BTN082.TabIndex = 128;
+            this.BTN082.TabStop = false;
             this.BTN082.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN082.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN082.UseVisualStyleBackColor = false;
@@ -998,6 +1032,7 @@
             this.BTN076.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN076.Size = new System.Drawing.Size(30, 30);
             this.BTN076.TabIndex = 127;
+            this.BTN076.TabStop = false;
             this.BTN076.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN076.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN076.UseVisualStyleBackColor = false;
@@ -1016,6 +1051,7 @@
             this.BTN075.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN075.Size = new System.Drawing.Size(30, 30);
             this.BTN075.TabIndex = 126;
+            this.BTN075.TabStop = false;
             this.BTN075.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN075.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN075.UseVisualStyleBackColor = false;
@@ -1034,6 +1070,7 @@
             this.BTN074.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN074.Size = new System.Drawing.Size(30, 30);
             this.BTN074.TabIndex = 125;
+            this.BTN074.TabStop = false;
             this.BTN074.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN074.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN074.UseVisualStyleBackColor = false;
@@ -1052,6 +1089,7 @@
             this.BTN073.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN073.Size = new System.Drawing.Size(30, 30);
             this.BTN073.TabIndex = 124;
+            this.BTN073.TabStop = false;
             this.BTN073.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN073.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN073.UseVisualStyleBackColor = false;
@@ -1070,6 +1108,7 @@
             this.BTN072.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN072.Size = new System.Drawing.Size(30, 30);
             this.BTN072.TabIndex = 123;
+            this.BTN072.TabStop = false;
             this.BTN072.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN072.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN072.UseVisualStyleBackColor = false;
@@ -1088,6 +1127,7 @@
             this.BTN081.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN081.Size = new System.Drawing.Size(30, 30);
             this.BTN081.TabIndex = 122;
+            this.BTN081.TabStop = false;
             this.BTN081.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN081.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN081.UseVisualStyleBackColor = false;
@@ -1106,6 +1146,7 @@
             this.BTN071.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN071.Size = new System.Drawing.Size(30, 30);
             this.BTN071.TabIndex = 121;
+            this.BTN071.TabStop = false;
             this.BTN071.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN071.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN071.UseVisualStyleBackColor = false;
@@ -1124,6 +1165,7 @@
             this.BTN066.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN066.Size = new System.Drawing.Size(30, 30);
             this.BTN066.TabIndex = 120;
+            this.BTN066.TabStop = false;
             this.BTN066.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN066.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN066.UseVisualStyleBackColor = false;
@@ -1142,6 +1184,7 @@
             this.BTN065.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN065.Size = new System.Drawing.Size(30, 30);
             this.BTN065.TabIndex = 119;
+            this.BTN065.TabStop = false;
             this.BTN065.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN065.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN065.UseVisualStyleBackColor = false;
@@ -1160,6 +1203,7 @@
             this.BTN064.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN064.Size = new System.Drawing.Size(30, 30);
             this.BTN064.TabIndex = 118;
+            this.BTN064.TabStop = false;
             this.BTN064.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN064.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN064.UseVisualStyleBackColor = false;
@@ -1178,6 +1222,7 @@
             this.BTN063.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN063.Size = new System.Drawing.Size(30, 30);
             this.BTN063.TabIndex = 117;
+            this.BTN063.TabStop = false;
             this.BTN063.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN063.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN063.UseVisualStyleBackColor = false;
@@ -1196,6 +1241,7 @@
             this.BTN062.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN062.Size = new System.Drawing.Size(30, 30);
             this.BTN062.TabIndex = 116;
+            this.BTN062.TabStop = false;
             this.BTN062.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN062.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN062.UseVisualStyleBackColor = false;
@@ -1214,6 +1260,7 @@
             this.BTN061.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN061.Size = new System.Drawing.Size(30, 30);
             this.BTN061.TabIndex = 115;
+            this.BTN061.TabStop = false;
             this.BTN061.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN061.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN061.UseVisualStyleBackColor = false;
@@ -1232,6 +1279,7 @@
             this.BTN056.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN056.Size = new System.Drawing.Size(30, 30);
             this.BTN056.TabIndex = 114;
+            this.BTN056.TabStop = false;
             this.BTN056.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN056.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN056.UseVisualStyleBackColor = false;
@@ -1250,6 +1298,7 @@
             this.BTN055.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN055.Size = new System.Drawing.Size(30, 30);
             this.BTN055.TabIndex = 113;
+            this.BTN055.TabStop = false;
             this.BTN055.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN055.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN055.UseVisualStyleBackColor = false;
@@ -1268,6 +1317,7 @@
             this.BTN054.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN054.Size = new System.Drawing.Size(30, 30);
             this.BTN054.TabIndex = 112;
+            this.BTN054.TabStop = false;
             this.BTN054.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN054.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN054.UseVisualStyleBackColor = false;
@@ -1286,6 +1336,7 @@
             this.BTN053.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN053.Size = new System.Drawing.Size(30, 30);
             this.BTN053.TabIndex = 111;
+            this.BTN053.TabStop = false;
             this.BTN053.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN053.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN053.UseVisualStyleBackColor = false;
@@ -1304,6 +1355,7 @@
             this.BTN052.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN052.Size = new System.Drawing.Size(30, 30);
             this.BTN052.TabIndex = 110;
+            this.BTN052.TabStop = false;
             this.BTN052.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN052.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN052.UseVisualStyleBackColor = false;
@@ -1322,6 +1374,7 @@
             this.BTN051.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN051.Size = new System.Drawing.Size(30, 30);
             this.BTN051.TabIndex = 109;
+            this.BTN051.TabStop = false;
             this.BTN051.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN051.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN051.UseVisualStyleBackColor = false;
@@ -1340,6 +1393,7 @@
             this.BTN046.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN046.Size = new System.Drawing.Size(30, 30);
             this.BTN046.TabIndex = 108;
+            this.BTN046.TabStop = false;
             this.BTN046.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN046.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN046.UseVisualStyleBackColor = false;
@@ -1358,6 +1412,7 @@
             this.BTN045.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN045.Size = new System.Drawing.Size(30, 30);
             this.BTN045.TabIndex = 107;
+            this.BTN045.TabStop = false;
             this.BTN045.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN045.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN045.UseVisualStyleBackColor = false;
@@ -1376,6 +1431,7 @@
             this.BTN044.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN044.Size = new System.Drawing.Size(30, 30);
             this.BTN044.TabIndex = 106;
+            this.BTN044.TabStop = false;
             this.BTN044.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN044.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN044.UseVisualStyleBackColor = false;
@@ -1394,6 +1450,7 @@
             this.BTN043.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN043.Size = new System.Drawing.Size(30, 30);
             this.BTN043.TabIndex = 105;
+            this.BTN043.TabStop = false;
             this.BTN043.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN043.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN043.UseVisualStyleBackColor = false;
@@ -1412,6 +1469,7 @@
             this.BTN042.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN042.Size = new System.Drawing.Size(30, 30);
             this.BTN042.TabIndex = 104;
+            this.BTN042.TabStop = false;
             this.BTN042.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN042.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN042.UseVisualStyleBackColor = false;
@@ -1430,6 +1488,7 @@
             this.BTN041.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN041.Size = new System.Drawing.Size(30, 30);
             this.BTN041.TabIndex = 103;
+            this.BTN041.TabStop = false;
             this.BTN041.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN041.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN041.UseVisualStyleBackColor = false;
@@ -1448,6 +1507,7 @@
             this.BTN036.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN036.Size = new System.Drawing.Size(30, 30);
             this.BTN036.TabIndex = 102;
+            this.BTN036.TabStop = false;
             this.BTN036.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN036.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN036.UseVisualStyleBackColor = false;
@@ -1466,6 +1526,7 @@
             this.BTN034.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN034.Size = new System.Drawing.Size(30, 30);
             this.BTN034.TabIndex = 101;
+            this.BTN034.TabStop = false;
             this.BTN034.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN034.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN034.UseVisualStyleBackColor = false;
@@ -1484,6 +1545,7 @@
             this.BTN035.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN035.Size = new System.Drawing.Size(30, 30);
             this.BTN035.TabIndex = 100;
+            this.BTN035.TabStop = false;
             this.BTN035.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN035.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN035.UseVisualStyleBackColor = false;
@@ -1502,6 +1564,7 @@
             this.BTN033.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN033.Size = new System.Drawing.Size(30, 30);
             this.BTN033.TabIndex = 99;
+            this.BTN033.TabStop = false;
             this.BTN033.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN033.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN033.UseVisualStyleBackColor = false;
@@ -1520,6 +1583,7 @@
             this.BTN032.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN032.Size = new System.Drawing.Size(30, 30);
             this.BTN032.TabIndex = 98;
+            this.BTN032.TabStop = false;
             this.BTN032.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN032.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN032.UseVisualStyleBackColor = false;
@@ -1538,6 +1602,7 @@
             this.BTN031.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN031.Size = new System.Drawing.Size(30, 30);
             this.BTN031.TabIndex = 97;
+            this.BTN031.TabStop = false;
             this.BTN031.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN031.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN031.UseVisualStyleBackColor = false;
@@ -1556,6 +1621,7 @@
             this.BTN026.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN026.Size = new System.Drawing.Size(30, 30);
             this.BTN026.TabIndex = 96;
+            this.BTN026.TabStop = false;
             this.BTN026.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN026.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN026.UseVisualStyleBackColor = false;
@@ -1574,6 +1640,7 @@
             this.BTN025.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN025.Size = new System.Drawing.Size(30, 30);
             this.BTN025.TabIndex = 95;
+            this.BTN025.TabStop = false;
             this.BTN025.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN025.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN025.UseVisualStyleBackColor = false;
@@ -1592,6 +1659,7 @@
             this.BTN024.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN024.Size = new System.Drawing.Size(30, 30);
             this.BTN024.TabIndex = 94;
+            this.BTN024.TabStop = false;
             this.BTN024.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN024.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN024.UseVisualStyleBackColor = false;
@@ -1610,6 +1678,7 @@
             this.BTN023.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN023.Size = new System.Drawing.Size(30, 30);
             this.BTN023.TabIndex = 93;
+            this.BTN023.TabStop = false;
             this.BTN023.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN023.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN023.UseVisualStyleBackColor = false;
@@ -1628,6 +1697,7 @@
             this.BTN022.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN022.Size = new System.Drawing.Size(30, 30);
             this.BTN022.TabIndex = 92;
+            this.BTN022.TabStop = false;
             this.BTN022.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN022.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN022.UseVisualStyleBackColor = false;
@@ -1647,6 +1717,7 @@
             this.BTN021.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN021.Size = new System.Drawing.Size(30, 30);
             this.BTN021.TabIndex = 91;
+            this.BTN021.TabStop = false;
             this.BTN021.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN021.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN021.UseVisualStyleBackColor = false;
@@ -1666,6 +1737,7 @@
             this.BTN011.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN011.Size = new System.Drawing.Size(30, 30);
             this.BTN011.TabIndex = 90;
+            this.BTN011.TabStop = false;
             this.BTN011.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN011.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN011.UseVisualStyleBackColor = false;
@@ -1685,6 +1757,7 @@
             this.BTN013.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN013.Size = new System.Drawing.Size(30, 30);
             this.BTN013.TabIndex = 89;
+            this.BTN013.TabStop = false;
             this.BTN013.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN013.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN013.UseVisualStyleBackColor = false;
@@ -1704,6 +1777,7 @@
             this.BTN014.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN014.Size = new System.Drawing.Size(30, 30);
             this.BTN014.TabIndex = 88;
+            this.BTN014.TabStop = false;
             this.BTN014.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN014.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN014.UseVisualStyleBackColor = false;
@@ -1723,6 +1797,7 @@
             this.BTN015.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN015.Size = new System.Drawing.Size(30, 30);
             this.BTN015.TabIndex = 87;
+            this.BTN015.TabStop = false;
             this.BTN015.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN015.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN015.UseVisualStyleBackColor = false;
@@ -1741,6 +1816,7 @@
             this.BTN016.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN016.Size = new System.Drawing.Size(30, 30);
             this.BTN016.TabIndex = 86;
+            this.BTN016.TabStop = false;
             this.BTN016.UseVisualStyleBackColor = false;
             // 
             // BTN012
@@ -1758,6 +1834,7 @@
             this.BTN012.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.BTN012.Size = new System.Drawing.Size(30, 30);
             this.BTN012.TabIndex = 84;
+            this.BTN012.TabStop = false;
             this.BTN012.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BTN012.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN012.UseVisualStyleBackColor = false;
@@ -1933,7 +2010,7 @@
             this.txtRack.Location = new System.Drawing.Point(126, 112);
             this.txtRack.Name = "txtRack";
             this.txtRack.Size = new System.Drawing.Size(108, 23);
-            this.txtRack.TabIndex = 20;
+            this.txtRack.TabIndex = 3;
             // 
             // txtDuration
             // 
@@ -1944,7 +2021,8 @@
             this.txtDuration.Location = new System.Drawing.Point(126, 216);
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.Size = new System.Drawing.Size(213, 23);
-            this.txtDuration.TabIndex = 22;
+            this.txtDuration.TabIndex = 6;
+            this.txtDuration.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDuration_KeyPress);
             this.txtDuration.Leave += new System.EventHandler(this.txtDuration_Leave);
             // 
             // txtStatus
@@ -1956,7 +2034,7 @@
             this.txtStatus.Location = new System.Drawing.Point(126, 350);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(213, 23);
-            this.txtStatus.TabIndex = 26;
+            this.txtStatus.TabIndex = 10;
             // 
             // panel3
             // 
@@ -1985,7 +2063,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 45);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(365, 442);
-            this.panel3.TabIndex = 18;
+            this.panel3.TabIndex = 0;
             // 
             // CbbCompany
             // 
@@ -1997,7 +2075,7 @@
             this.CbbCompany.Location = new System.Drawing.Point(126, 142);
             this.CbbCompany.Name = "CbbCompany";
             this.CbbCompany.Size = new System.Drawing.Size(213, 30);
-            this.CbbCompany.TabIndex = 168;
+            this.CbbCompany.TabIndex = 4;
             this.CbbCompany.SelectedIndexChanged += new System.EventHandler(this.CbbCompany_SelectedIndexChanged);
             // 
             // CbbProduct
@@ -2010,7 +2088,7 @@
             this.CbbProduct.Location = new System.Drawing.Point(126, 179);
             this.CbbProduct.Name = "CbbProduct";
             this.CbbProduct.Size = new System.Drawing.Size(213, 30);
-            this.CbbProduct.TabIndex = 167;
+            this.CbbProduct.TabIndex = 5;
             this.CbbProduct.SelectedIndexChanged += new System.EventHandler(this.CbbProduct_SelectedIndexChanged);
             // 
             // label2
@@ -2031,7 +2109,7 @@
             this.DpkFrom.Location = new System.Drawing.Point(126, 247);
             this.DpkFrom.Name = "DpkFrom";
             this.DpkFrom.Size = new System.Drawing.Size(168, 26);
-            this.DpkFrom.TabIndex = 55;
+            this.DpkFrom.TabIndex = 7;
             this.DpkFrom.Leave += new System.EventHandler(this.DpkFrom_Leave);
             // 
             // DpkTo
@@ -2042,7 +2120,7 @@
             this.DpkTo.Location = new System.Drawing.Point(126, 281);
             this.DpkTo.Name = "DpkTo";
             this.DpkTo.Size = new System.Drawing.Size(168, 26);
-            this.DpkTo.TabIndex = 54;
+            this.DpkTo.TabIndex = 8;
             this.DpkTo.Leave += new System.EventHandler(this.DpkTo_Leave);
             // 
             // label32
@@ -2068,7 +2146,7 @@
             this.BtnAdd.Location = new System.Drawing.Point(33, 56);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(88, 42);
-            this.BtnAdd.TabIndex = 31;
+            this.BtnAdd.TabIndex = 0;
             this.BtnAdd.Text = "Add";
             this.BtnAdd.UseVisualStyleBackColor = false;
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
@@ -2086,7 +2164,7 @@
             this.BtnEdit.Location = new System.Drawing.Point(137, 56);
             this.BtnEdit.Name = "BtnEdit";
             this.BtnEdit.Size = new System.Drawing.Size(88, 42);
-            this.BtnEdit.TabIndex = 30;
+            this.BtnEdit.TabIndex = 1;
             this.BtnEdit.Text = "Edit";
             this.BtnEdit.UseVisualStyleBackColor = false;
             this.BtnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
@@ -2104,7 +2182,7 @@
             this.BtnDelete.Location = new System.Drawing.Point(242, 56);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(88, 42);
-            this.BtnDelete.TabIndex = 29;
+            this.BtnDelete.TabIndex = 2;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = false;
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
@@ -2122,14 +2200,14 @@
             this.BtnSubmit.Location = new System.Drawing.Point(134, 387);
             this.BtnSubmit.Name = "BtnSubmit";
             this.BtnSubmit.Size = new System.Drawing.Size(88, 42);
-            this.BtnSubmit.TabIndex = 28;
+            this.BtnSubmit.TabIndex = 11;
             this.BtnSubmit.Text = "Submit";
             this.BtnSubmit.UseVisualStyleBackColor = false;
             this.BtnSubmit.Click += new System.EventHandler(this.BtnSubmit_Click);
             // 
             // BtnCancel
             // 
-            this.BtnCancel.BackColor = System.Drawing.Color.Gray;
+            this.BtnCancel.BackColor = System.Drawing.Color.Brown;
             this.BtnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCancel.Enabled = false;
             this.BtnCancel.FlatAppearance.BorderSize = 0;
@@ -2140,7 +2218,7 @@
             this.BtnCancel.Location = new System.Drawing.Point(242, 387);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(88, 42);
-            this.BtnCancel.TabIndex = 27;
+            this.BtnCancel.TabIndex = 12;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = false;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
@@ -2154,7 +2232,7 @@
             this.txtBy.Location = new System.Drawing.Point(126, 315);
             this.txtBy.Name = "txtBy";
             this.txtBy.Size = new System.Drawing.Size(213, 23);
-            this.txtBy.TabIndex = 25;
+            this.txtBy.TabIndex = 9;
             // 
             // panel4
             // 
@@ -2171,6 +2249,57 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(366, 185);
             this.panel4.TabIndex = 19;
+            // 
+            // DgvType
+            // 
+            this.DgvType.AllowUserToAddRows = false;
+            this.DgvType.AllowUserToDeleteRows = false;
+            this.DgvType.AllowUserToResizeColumns = false;
+            this.DgvType.AllowUserToResizeRows = false;
+            this.DgvType.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.DgvType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvType.ColumnHeadersVisible = false;
+            this.DgvType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Rack,
+            this.Type});
+            this.DgvType.Location = new System.Drawing.Point(12, 60);
+            this.DgvType.Name = "DgvType";
+            this.DgvType.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvType.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DgvType.RowHeadersVisible = false;
+            this.DgvType.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.DgvType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvType.Size = new System.Drawing.Size(168, 111);
+            this.DgvType.TabIndex = 49;
+            this.DgvType.TabStop = false;
+            // 
+            // Rack
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.Rack.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Rack.HeaderText = "Rack";
+            this.Rack.Name = "Rack";
+            this.Rack.ReadOnly = true;
+            this.Rack.Width = 54;
+            // 
+            // Type
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            this.Type.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Type.HeaderText = "Type";
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
             // 
             // label17
             // 
@@ -2390,6 +2519,54 @@
             this.label33.Size = new System.Drawing.Size(190, 22);
             this.label33.TabIndex = 79;
             this.label33.Text = "Total in Warehouse";
+            // 
+            // PgbF
+            // 
+            this.PgbF.Location = new System.Drawing.Point(504, 106);
+            this.PgbF.Name = "PgbF";
+            this.PgbF.Size = new System.Drawing.Size(23, 95);
+            this.PgbF.TabIndex = 78;
+            this.PgbF.Value = 50;
+            // 
+            // PgbE
+            // 
+            this.PgbE.Location = new System.Drawing.Point(415, 106);
+            this.PgbE.Name = "PgbE";
+            this.PgbE.Size = new System.Drawing.Size(23, 95);
+            this.PgbE.TabIndex = 77;
+            this.PgbE.Value = 69;
+            // 
+            // PgbD
+            // 
+            this.PgbD.Location = new System.Drawing.Point(324, 104);
+            this.PgbD.Name = "PgbD";
+            this.PgbD.Size = new System.Drawing.Size(23, 95);
+            this.PgbD.TabIndex = 76;
+            this.PgbD.Value = 24;
+            // 
+            // PgbC
+            // 
+            this.PgbC.Location = new System.Drawing.Point(233, 105);
+            this.PgbC.Name = "PgbC";
+            this.PgbC.Size = new System.Drawing.Size(23, 95);
+            this.PgbC.TabIndex = 75;
+            this.PgbC.Value = 58;
+            // 
+            // PgbB
+            // 
+            this.PgbB.Location = new System.Drawing.Point(145, 105);
+            this.PgbB.Name = "PgbB";
+            this.PgbB.Size = new System.Drawing.Size(23, 95);
+            this.PgbB.TabIndex = 74;
+            this.PgbB.Value = 30;
+            // 
+            // PgbA
+            // 
+            this.PgbA.Location = new System.Drawing.Point(59, 105);
+            this.PgbA.Name = "PgbA";
+            this.PgbA.Size = new System.Drawing.Size(23, 95);
+            this.PgbA.TabIndex = 73;
+            this.PgbA.Value = 88;
             // 
             // PgbTotal
             // 
@@ -2724,103 +2901,6 @@
             this.label22.TabIndex = 39;
             this.label22.Text = "Rack";
             // 
-            // DgvType
-            // 
-            this.DgvType.AllowUserToAddRows = false;
-            this.DgvType.AllowUserToDeleteRows = false;
-            this.DgvType.AllowUserToResizeColumns = false;
-            this.DgvType.AllowUserToResizeRows = false;
-            this.DgvType.BackgroundColor = System.Drawing.Color.DodgerBlue;
-            this.DgvType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvType.ColumnHeadersVisible = false;
-            this.DgvType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Rack,
-            this.Type});
-            this.DgvType.Location = new System.Drawing.Point(12, 60);
-            this.DgvType.Name = "DgvType";
-            this.DgvType.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvType.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.DgvType.RowHeadersVisible = false;
-            this.DgvType.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DgvType.Size = new System.Drawing.Size(168, 111);
-            this.DgvType.TabIndex = 49;
-            // 
-            // Rack
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.Rack.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Rack.HeaderText = "Rack";
-            this.Rack.Name = "Rack";
-            this.Rack.ReadOnly = true;
-            this.Rack.Width = 54;
-            // 
-            // Type
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            this.Type.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Type.HeaderText = "Type";
-            this.Type.Name = "Type";
-            this.Type.ReadOnly = true;
-            // 
-            // PgbF
-            // 
-            this.PgbF.Location = new System.Drawing.Point(504, 106);
-            this.PgbF.Name = "PgbF";
-            this.PgbF.Size = new System.Drawing.Size(23, 95);
-            this.PgbF.TabIndex = 78;
-            this.PgbF.Value = 50;
-            // 
-            // PgbE
-            // 
-            this.PgbE.Location = new System.Drawing.Point(415, 106);
-            this.PgbE.Name = "PgbE";
-            this.PgbE.Size = new System.Drawing.Size(23, 95);
-            this.PgbE.TabIndex = 77;
-            this.PgbE.Value = 69;
-            // 
-            // PgbD
-            // 
-            this.PgbD.Location = new System.Drawing.Point(324, 104);
-            this.PgbD.Name = "PgbD";
-            this.PgbD.Size = new System.Drawing.Size(23, 95);
-            this.PgbD.TabIndex = 76;
-            this.PgbD.Value = 24;
-            // 
-            // PgbC
-            // 
-            this.PgbC.Location = new System.Drawing.Point(233, 105);
-            this.PgbC.Name = "PgbC";
-            this.PgbC.Size = new System.Drawing.Size(23, 95);
-            this.PgbC.TabIndex = 75;
-            this.PgbC.Value = 58;
-            // 
-            // PgbB
-            // 
-            this.PgbB.Location = new System.Drawing.Point(145, 105);
-            this.PgbB.Name = "PgbB";
-            this.PgbB.Size = new System.Drawing.Size(23, 95);
-            this.PgbB.TabIndex = 74;
-            this.PgbB.Value = 30;
-            // 
-            // PgbA
-            // 
-            this.PgbA.Location = new System.Drawing.Point(59, 105);
-            this.PgbA.Name = "PgbA";
-            this.PgbA.Size = new System.Drawing.Size(23, 95);
-            this.PgbA.TabIndex = 73;
-            this.PgbA.Value = 88;
-            // 
             // StoreManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2850,12 +2930,12 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvType)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

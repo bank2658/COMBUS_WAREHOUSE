@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -86,7 +86,7 @@
             this.btnAdd.Location = new System.Drawing.Point(32, 189);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(88, 42);
-            this.btnAdd.TabIndex = 51;
+            this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -102,7 +102,7 @@
             this.btnEdit.Location = new System.Drawing.Point(165, 189);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(88, 42);
-            this.btnEdit.TabIndex = 50;
+            this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -118,7 +118,7 @@
             this.btnDelete.Location = new System.Drawing.Point(289, 189);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(88, 42);
-            this.btnDelete.TabIndex = 49;
+            this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -134,7 +134,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(157, 585);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(88, 42);
-            this.btnSubmit.TabIndex = 48;
+            this.btnSubmit.TabIndex = 11;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -150,7 +150,7 @@
             this.btnCancel.Location = new System.Drawing.Point(272, 585);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(88, 42);
-            this.btnCancel.TabIndex = 47;
+            this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -195,7 +195,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(662, 156);
-            this.panel3.TabIndex = 1;
+            this.panel3.TabIndex = 0;
             // 
             // txtSearch
             // 
@@ -205,7 +205,7 @@
             this.txtSearch.Location = new System.Drawing.Point(127, 66);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(323, 23);
-            this.txtSearch.TabIndex = 51;
+            this.txtSearch.TabIndex = 0;
             // 
             // label15
             // 
@@ -229,7 +229,7 @@
             this.btnSearch.Location = new System.Drawing.Point(486, 50);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(110, 90);
-            this.btnSearch.TabIndex = 42;
+            this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -252,15 +252,15 @@
             this.permistion,
             this.username,
             this.password});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdEmp.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdEmp.DefaultCellStyle = dataGridViewCellStyle2;
             this.grdEmp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdEmp.Location = new System.Drawing.Point(0, 156);
             this.grdEmp.MultiSelect = false;
@@ -270,13 +270,13 @@
             this.grdEmp.RowTemplate.ReadOnly = true;
             this.grdEmp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdEmp.Size = new System.Drawing.Size(662, 513);
-            this.grdEmp.TabIndex = 0;
+            this.grdEmp.TabIndex = 1;
             this.grdEmp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdEmp_CellClick);
             // 
             // No
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.No.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.No.DefaultCellStyle = dataGridViewCellStyle1;
             this.No.HeaderText = "No.";
             this.No.Name = "No";
             this.No.Width = 38;
@@ -348,7 +348,7 @@
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(232, 80);
-            this.txtAddress.TabIndex = 43;
+            this.txtAddress.TabIndex = 7;
             // 
             // panel1
             // 
@@ -368,7 +368,7 @@
             this.txtLname.Location = new System.Drawing.Point(145, 313);
             this.txtLname.Name = "txtLname";
             this.txtLname.Size = new System.Drawing.Size(179, 23);
-            this.txtLname.TabIndex = 42;
+            this.txtLname.TabIndex = 5;
             // 
             // txtFname
             // 
@@ -378,7 +378,7 @@
             this.txtFname.Location = new System.Drawing.Point(145, 279);
             this.txtFname.Name = "txtFname";
             this.txtFname.Size = new System.Drawing.Size(179, 23);
-            this.txtFname.TabIndex = 41;
+            this.txtFname.TabIndex = 4;
             // 
             // txtID
             // 
@@ -389,7 +389,7 @@
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(88, 23);
-            this.txtID.TabIndex = 40;
+            this.txtID.TabIndex = 3;
             // 
             // label1
             // 
@@ -456,7 +456,7 @@
             this.cbbPermistion.Location = new System.Drawing.Point(145, 539);
             this.cbbPermistion.Name = "cbbPermistion";
             this.cbbPermistion.Size = new System.Drawing.Size(121, 27);
-            this.cbbPermistion.TabIndex = 60;
+            this.cbbPermistion.TabIndex = 10;
             // 
             // txtPassword
             // 
@@ -466,7 +466,7 @@
             this.txtPassword.Location = new System.Drawing.Point(145, 506);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(179, 23);
-            this.txtPassword.TabIndex = 58;
+            this.txtPassword.TabIndex = 9;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtAge
@@ -477,7 +477,7 @@
             this.txtAge.Location = new System.Drawing.Point(145, 347);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(88, 23);
-            this.txtAge.TabIndex = 57;
+            this.txtAge.TabIndex = 6;
             // 
             // label6
             // 
@@ -527,7 +527,7 @@
             this.txtUsername.Location = new System.Drawing.Point(145, 472);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(179, 23);
-            this.txtUsername.TabIndex = 52;
+            this.txtUsername.TabIndex = 8;
             // 
             // EmployeeManagement
             // 

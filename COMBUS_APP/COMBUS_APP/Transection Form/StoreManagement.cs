@@ -11,6 +11,7 @@ using COMBUS_APP.Data;
 using DATA.Service_Transection;
 using DATA;
 using COMBUS_APP.Properties;
+using System.Text.RegularExpressions;
 
 namespace COMBUS_APP.Transection_Form
 {
@@ -450,9 +451,16 @@ namespace COMBUS_APP.Transection_Form
 
         private void txtDuration_Leave(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(txtDuration.Text) > 0)
+            if(txtDuration.Text != string.Empty)
             {
-                DpkTo.Value = DpkFrom.Value.AddDays(Convert.ToInt32(txtDuration.Text));
+                if (Convert.ToInt32(txtDuration.Text) > 0)
+                {
+                    DpkTo.Value = DpkFrom.Value.AddDays(Convert.ToInt32(txtDuration.Text));
+                }
+            }
+            else
+            {
+                txtDuration.Text = "0";
             }
         }
 
@@ -525,6 +533,15 @@ namespace COMBUS_APP.Transection_Form
                     DpkFrom.Value = re.dateIN.Value;
                     DpkTo.Value = re.dateOut.Value;
                 }
+            }
+        }
+
+        private void txtDuration_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            var regex = new Regex(@"[^0-9\b]");
+            if (regex.IsMatch(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
             }
         }
     }

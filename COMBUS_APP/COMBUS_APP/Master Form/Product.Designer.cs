@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -37,6 +37,14 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.GrdProduct = new System.Windows.Forms.DataGridView();
+            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productKG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CompanyID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateIn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -63,14 +71,6 @@
             this.dtpOut = new System.Windows.Forms.DateTimePicker();
             this.dtpIn = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productKG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CompanyID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateIn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GrdProduct)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -88,7 +88,7 @@
             this.btnAdd.Location = new System.Drawing.Point(36, 215);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(88, 42);
-            this.btnAdd.TabIndex = 51;
+            this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -104,7 +104,7 @@
             this.btnEdit.Location = new System.Drawing.Point(161, 215);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(88, 42);
-            this.btnEdit.TabIndex = 50;
+            this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -120,7 +120,7 @@
             this.btnDelete.Location = new System.Drawing.Point(284, 215);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(88, 42);
-            this.btnDelete.TabIndex = 49;
+            this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -136,7 +136,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(159, 523);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(88, 42);
-            this.btnSubmit.TabIndex = 48;
+            this.btnSubmit.TabIndex = 10;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -152,7 +152,7 @@
             this.btnCancel.Location = new System.Drawing.Point(261, 522);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(88, 42);
-            this.btnCancel.TabIndex = 47;
+            this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -185,15 +185,15 @@
             this.CompanyID,
             this.dateIn,
             this.dateOut});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GrdProduct.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GrdProduct.DefaultCellStyle = dataGridViewCellStyle2;
             this.GrdProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GrdProduct.Location = new System.Drawing.Point(0, 156);
             this.GrdProduct.MultiSelect = false;
@@ -203,8 +203,58 @@
             this.GrdProduct.RowTemplate.ReadOnly = true;
             this.GrdProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GrdProduct.Size = new System.Drawing.Size(662, 513);
-            this.GrdProduct.TabIndex = 0;
+            this.GrdProduct.TabIndex = 1;
             this.GrdProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdProduct_CellClick);
+            // 
+            // No
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.No.DefaultCellStyle = dataGridViewCellStyle1;
+            this.No.HeaderText = "No.";
+            this.No.Name = "No";
+            this.No.Width = 38;
+            // 
+            // productID
+            // 
+            this.productID.HeaderText = "productID";
+            this.productID.Name = "productID";
+            this.productID.Width = 60;
+            // 
+            // productName
+            // 
+            this.productName.HeaderText = "productName";
+            this.productName.Name = "productName";
+            this.productName.Width = 150;
+            // 
+            // productKG
+            // 
+            this.productKG.HeaderText = "productKG";
+            this.productKG.Name = "productKG";
+            this.productKG.Width = 70;
+            // 
+            // productType
+            // 
+            this.productType.HeaderText = "Type";
+            this.productType.Name = "productType";
+            this.productType.Width = 60;
+            // 
+            // CompanyID
+            // 
+            this.CompanyID.HeaderText = "CompanyID";
+            this.CompanyID.Name = "CompanyID";
+            this.CompanyID.Width = 70;
+            // 
+            // dateIn
+            // 
+            this.dateIn.HeaderText = "dateIn";
+            this.dateIn.Name = "dateIn";
+            this.dateIn.Width = 112;
+            // 
+            // dateOut
+            // 
+            this.dateOut.HeaderText = "dateOut";
+            this.dateOut.Name = "dateOut";
+            this.dateOut.Width = 112;
             // 
             // txtSearch
             // 
@@ -214,7 +264,7 @@
             this.txtSearch.Location = new System.Drawing.Point(115, 51);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(323, 23);
-            this.txtSearch.TabIndex = 51;
+            this.txtSearch.TabIndex = 1;
             // 
             // label8
             // 
@@ -247,7 +297,7 @@
             this.BtnSearch.Location = new System.Drawing.Point(476, 53);
             this.BtnSearch.Name = "BtnSearch";
             this.BtnSearch.Size = new System.Drawing.Size(110, 90);
-            this.BtnSearch.TabIndex = 42;
+            this.BtnSearch.TabIndex = 5;
             this.BtnSearch.Text = "Search";
             this.BtnSearch.UseVisualStyleBackColor = false;
             this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
@@ -280,7 +330,7 @@
             this.txtWeight.Location = new System.Drawing.Point(140, 345);
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(73, 23);
-            this.txtWeight.TabIndex = 42;
+            this.txtWeight.TabIndex = 5;
             // 
             // txtName
             // 
@@ -290,7 +340,7 @@
             this.txtName.Location = new System.Drawing.Point(140, 311);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(232, 23);
-            this.txtName.TabIndex = 41;
+            this.txtName.TabIndex = 4;
             // 
             // panel3
             // 
@@ -305,7 +355,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(662, 156);
-            this.panel3.TabIndex = 1;
+            this.panel3.TabIndex = 0;
             // 
             // dtplast
             // 
@@ -313,7 +363,7 @@
             this.dtplast.Location = new System.Drawing.Point(115, 115);
             this.dtplast.Name = "dtplast";
             this.dtplast.Size = new System.Drawing.Size(323, 26);
-            this.dtplast.TabIndex = 50;
+            this.dtplast.TabIndex = 4;
             // 
             // label15
             // 
@@ -332,7 +382,7 @@
             this.dtpFirst.Location = new System.Drawing.Point(115, 84);
             this.dtpFirst.Name = "dtpFirst";
             this.dtpFirst.Size = new System.Drawing.Size(323, 26);
-            this.dtpFirst.TabIndex = 45;
+            this.dtpFirst.TabIndex = 3;
             // 
             // rdoTime
             // 
@@ -340,7 +390,7 @@
             this.rdoTime.Location = new System.Drawing.Point(86, 91);
             this.rdoTime.Name = "rdoTime";
             this.rdoTime.Size = new System.Drawing.Size(14, 13);
-            this.rdoTime.TabIndex = 44;
+            this.rdoTime.TabIndex = 2;
             this.rdoTime.UseVisualStyleBackColor = true;
             this.rdoTime.CheckedChanged += new System.EventHandler(this.rdoTime_CheckedChanged);
             // 
@@ -351,7 +401,7 @@
             this.rdoSearch.Location = new System.Drawing.Point(86, 57);
             this.rdoSearch.Name = "rdoSearch";
             this.rdoSearch.Size = new System.Drawing.Size(14, 13);
-            this.rdoSearch.TabIndex = 43;
+            this.rdoSearch.TabIndex = 0;
             this.rdoSearch.TabStop = true;
             this.rdoSearch.UseVisualStyleBackColor = true;
             this.rdoSearch.CheckedChanged += new System.EventHandler(this.rdoSearch_CheckedChanged);
@@ -395,7 +445,7 @@
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(88, 23);
-            this.txtID.TabIndex = 40;
+            this.txtID.TabIndex = 3;
             // 
             // label1
             // 
@@ -458,7 +508,7 @@
             this.cbCompany.Location = new System.Drawing.Point(140, 415);
             this.cbCompany.Name = "cbCompany";
             this.cbCompany.Size = new System.Drawing.Size(121, 27);
-            this.cbCompany.TabIndex = 55;
+            this.cbCompany.TabIndex = 7;
             // 
             // cbbType
             // 
@@ -470,7 +520,7 @@
             this.cbbType.Location = new System.Drawing.Point(140, 377);
             this.cbbType.Name = "cbbType";
             this.cbbType.Size = new System.Drawing.Size(121, 27);
-            this.cbbType.TabIndex = 55;
+            this.cbbType.TabIndex = 6;
             // 
             // dtpOut
             // 
@@ -479,7 +529,7 @@
             this.dtpOut.Location = new System.Drawing.Point(140, 481);
             this.dtpOut.Name = "dtpOut";
             this.dtpOut.Size = new System.Drawing.Size(148, 26);
-            this.dtpOut.TabIndex = 54;
+            this.dtpOut.TabIndex = 9;
             // 
             // dtpIn
             // 
@@ -488,7 +538,7 @@
             this.dtpIn.Location = new System.Drawing.Point(140, 447);
             this.dtpIn.Name = "dtpIn";
             this.dtpIn.Size = new System.Drawing.Size(148, 26);
-            this.dtpIn.TabIndex = 53;
+            this.dtpIn.TabIndex = 8;
             // 
             // label3
             // 
@@ -499,56 +549,6 @@
             this.label3.Size = new System.Drawing.Size(30, 22);
             this.label3.TabIndex = 52;
             this.label3.Text = "kg";
-            // 
-            // No
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.No.DefaultCellStyle = dataGridViewCellStyle5;
-            this.No.HeaderText = "No.";
-            this.No.Name = "No";
-            this.No.Width = 38;
-            // 
-            // productID
-            // 
-            this.productID.HeaderText = "productID";
-            this.productID.Name = "productID";
-            this.productID.Width = 60;
-            // 
-            // productName
-            // 
-            this.productName.HeaderText = "productName";
-            this.productName.Name = "productName";
-            this.productName.Width = 150;
-            // 
-            // productKG
-            // 
-            this.productKG.HeaderText = "productKG";
-            this.productKG.Name = "productKG";
-            this.productKG.Width = 70;
-            // 
-            // productType
-            // 
-            this.productType.HeaderText = "Type";
-            this.productType.Name = "productType";
-            this.productType.Width = 60;
-            // 
-            // CompanyID
-            // 
-            this.CompanyID.HeaderText = "CompanyID";
-            this.CompanyID.Name = "CompanyID";
-            this.CompanyID.Width = 70;
-            // 
-            // dateIn
-            // 
-            this.dateIn.HeaderText = "dateIn";
-            this.dateIn.Name = "dateIn";
-            this.dateIn.Width = 112;
-            // 
-            // dateOut
-            // 
-            this.dateOut.HeaderText = "dateOut";
-            this.dateOut.Name = "dateOut";
-            this.dateOut.Width = 112;
             // 
             // Product
             // 

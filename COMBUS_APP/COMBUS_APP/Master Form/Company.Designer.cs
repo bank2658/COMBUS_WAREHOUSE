@@ -74,7 +74,7 @@
             this.btnAdd.Location = new System.Drawing.Point(39, 210);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(88, 42);
-            this.btnAdd.TabIndex = 51;
+            this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -90,7 +90,7 @@
             this.btnEdit.Location = new System.Drawing.Point(158, 210);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(88, 42);
-            this.btnEdit.TabIndex = 50;
+            this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -106,7 +106,7 @@
             this.btnDelete.Location = new System.Drawing.Point(273, 210);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(88, 42);
-            this.btnDelete.TabIndex = 49;
+            this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -122,7 +122,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(143, 507);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(88, 42);
-            this.btnSubmit.TabIndex = 48;
+            this.btnSubmit.TabIndex = 7;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -138,7 +138,7 @@
             this.BtnCancel.Location = new System.Drawing.Point(253, 507);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(88, 42);
-            this.BtnCancel.TabIndex = 47;
+            this.BtnCancel.TabIndex = 8;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = false;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
@@ -193,7 +193,7 @@
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(232, 123);
-            this.txtAddress.TabIndex = 43;
+            this.txtAddress.TabIndex = 6;
             // 
             // label12
             // 
@@ -247,7 +247,7 @@
             this.txtPhone.Location = new System.Drawing.Point(129, 334);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(130, 23);
-            this.txtPhone.TabIndex = 42;
+            this.txtPhone.TabIndex = 5;
             // 
             // txtCompany
             // 
@@ -257,7 +257,7 @@
             this.txtCompany.Location = new System.Drawing.Point(129, 300);
             this.txtCompany.Name = "txtCompany";
             this.txtCompany.Size = new System.Drawing.Size(232, 23);
-            this.txtCompany.TabIndex = 41;
+            this.txtCompany.TabIndex = 4;
             // 
             // txtID
             // 
@@ -268,7 +268,7 @@
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(88, 23);
-            this.txtID.TabIndex = 40;
+            this.txtID.TabIndex = 3;
             // 
             // label15
             // 
@@ -292,7 +292,7 @@
             this.btnSearch.Location = new System.Drawing.Point(486, 20);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(110, 90);
-            this.btnSearch.TabIndex = 42;
+            this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -306,7 +306,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(662, 129);
-            this.panel3.TabIndex = 1;
+            this.panel3.TabIndex = 0;
             // 
             // txtSearch
             // 
@@ -316,7 +316,7 @@
             this.txtSearch.Location = new System.Drawing.Point(125, 48);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(323, 23);
-            this.txtSearch.TabIndex = 51;
+            this.txtSearch.TabIndex = 0;
             this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
             this.txtSearch.Leave += new System.EventHandler(this.txtSearch_Leave);
             // 
@@ -352,7 +352,7 @@
             this.grdCompany.RowTemplate.ReadOnly = true;
             this.grdCompany.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdCompany.Size = new System.Drawing.Size(662, 540);
-            this.grdCompany.TabIndex = 0;
+            this.grdCompany.TabIndex = 1;
             this.grdCompany.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCompany_CellClick);
             // 
             // No

@@ -108,7 +108,7 @@
             this.btnSave.Location = new System.Drawing.Point(844, 59);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(93, 49);
-            this.btnSave.TabIndex = 60;
+            this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -211,7 +211,7 @@
             this.dtpDate.Location = new System.Drawing.Point(380, 68);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(323, 26);
-            this.dtpDate.TabIndex = 45;
+            this.dtpDate.TabIndex = 0;
             // 
             // btnSearch
             // 
@@ -224,7 +224,7 @@
             this.btnSearch.Location = new System.Drawing.Point(730, 59);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(93, 49);
-            this.btnSearch.TabIndex = 42;
+            this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
