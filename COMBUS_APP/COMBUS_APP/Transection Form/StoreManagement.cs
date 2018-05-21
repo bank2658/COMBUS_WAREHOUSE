@@ -78,29 +78,6 @@ namespace COMBUS_APP.Transection_Form
                 }
             }
             CbbRock.Enabled = b;
-            //Dictionary<int, string> List = new Dictionary<int, string>();
-
-            //if (b)
-            //{
-            //    foreach (Store_GetListproduct_Result re in Listproduct)
-            //    {
-            //        List.Add(re.productID
-            //                    ,re.productName);
-            //    }
-            //}
-            //else
-            //{
-            //    foreach (Store_GetListproductNULL_Result re in ListproductNULL)
-            //    {
-            //        List.Add(re.productID
-            //                    , re.productName);
-            //    }
-            //}
-            //CbbProduct.DataSource = new BindingSource(List, null);
-            //CbbProduct.DisplayMember = "Value";
-            //CbbProduct.ValueMember = "Key";
-            //CbbProduct.SelectedIndex = -1;
-            //List.Clear();
         }
         void EventSubmit()
         {
@@ -186,7 +163,8 @@ namespace COMBUS_APP.Transection_Form
         {
             Button RackName = (Button)sender;
             List<Store_GetListrock_Result> Listtmp = GetListRock(RackName.Name.Replace("BTN", ""));
-            if(Listtmp.Count > 0)
+            CbbCompany_SelectedIndexChanged((object)CbbCompany,null);
+            if (Listtmp.Count > 0)
             {
                 foreach (Store_GetListrock_Result re in Listtmp)
                 {
@@ -360,6 +338,7 @@ namespace COMBUS_APP.Transection_Form
             LoadComboboxData();
 
             CbbCompany.SelectedIndex = -1;
+            CbbProduct.SelectedIndex = -1;
         }
 
         private void StoreManagement_Load(object sender, EventArgs e)
@@ -403,7 +382,7 @@ namespace COMBUS_APP.Transection_Form
                     CbbProduct.DataSource = new BindingSource(List, null);
                     CbbProduct.DisplayMember = "Value";
                     CbbProduct.ValueMember = "Key";
-                    CbbProduct.SelectedIndex = -1;
+                    CbbProduct.SelectedIndex = 0;
                 }
                 List.Clear();
             }
@@ -438,6 +417,7 @@ namespace COMBUS_APP.Transection_Form
                 if (re.statusInStock == "normal") btn.Image = Resources.box_store;
                 else btn.Image = Resources.box_storeAlert;
             }
+            LoadCbbProduct();
 
             // check add image null to rack empty
             for (int i = 1; i <= 12; i++)
@@ -480,6 +460,7 @@ namespace COMBUS_APP.Transection_Form
         {
             BtnAddmode();
             LoadCbbProduct();
+            CbbCompany_SelectedIndexChanged((object)CbbCompany,null);
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)
