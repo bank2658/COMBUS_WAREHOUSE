@@ -4,7 +4,15 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="EF_COMBUS.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="EF_COMBUS.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BankType">
+          <Key>
+            <PropertyRef Name="bankID" />
+          </Key>
+          <Property Name="bankID" Type="int" Nullable="false" />
+          <Property Name="bankName" Type="nvarchar" MaxLength="200" />
+          <Property Name="instandName" Type="varchar" MaxLength="1" />
+        </EntityType>
         <Function Name="Company_AddCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="Companyname" Type="nvarchar" Mode="In" />
           <Parameter Name="Phone" Type="varchar" Mode="In" />
@@ -125,13 +133,19 @@
         <Function Name="Store_GetListbank" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="Store_GetListcompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="Store_GetListCpAndPd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="Store_GetListproduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="Store_GetListproductNULL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Store_GetListproduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="bankID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Store_GetListproductNULL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="bankID" Type="int" Mode="In" />
+        </Function>
         <Function Name="Store_GetListrock" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="BANKID" Type="int" Mode="In" />
         </Function>
         <Function Name="Store_GetPercentrock" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <EntityContainer Name="EF_COMBUSStoreContainer" />
+        <EntityContainer Name="EF_COMBUSStoreContainer">
+          <EntitySet Name="BankType" EntityType="Self.BankType" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
@@ -142,7 +156,9 @@
           </FunctionImport>
           <FunctionImport Name="Store_GetListbank" ReturnType="Collection(EF_COMBUS.Store_GetListbank_Result)" />
           <FunctionImport Name="Store_GetListcompany" ReturnType="Collection(EF_COMBUS.Store_GetListcompany_Result)" />
-          <FunctionImport Name="Store_GetListproduct" ReturnType="Collection(EF_COMBUS.Store_GetListproduct_Result)" />
+          <FunctionImport Name="Store_GetListproduct" ReturnType="Collection(EF_COMBUS.Store_GetListproduct_Result)" >
+            <Parameter Name="bankID" Mode="In" Type="Int32" />
+          </FunctionImport>
           <FunctionImport Name="Store_GetListrock" ReturnType="Collection(EF_COMBUS.Store_GetListrock_Result)" >
           <Parameter Name="BANKID" Mode="In" Type="Int32" />
           </FunctionImport>
@@ -262,7 +278,10 @@
             <Parameter Name="dateOut" Mode="In" Type="String" />
             <Parameter Name="createBy" Mode="In" Type="String" />
           </FunctionImport>
-          <FunctionImport Name="Store_GetListproductNULL" ReturnType="Collection(EF_COMBUS.Store_GetListproductNULL_Result)" />
+          <FunctionImport Name="Store_GetListproductNULL" ReturnType="Collection(EF_COMBUS.Store_GetListproductNULL_Result)" >
+            <Parameter Name="bankID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="BankTypes" EntityType="EF_COMBUS.BankType" />
         </EntityContainer>
         <ComplexType Name="Main_CheckLogin_Result">
           <Property Type="Int32" Name="employeeID" Nullable="false" />
@@ -386,6 +405,14 @@
           <Property Type="DateTime" Name="dateIN" Nullable="true" />
           <Property Type="DateTime" Name="dateOut" Nullable="true" />
         </ComplexType>
+        <EntityType Name="BankType">
+          <Key>
+            <PropertyRef Name="bankID" />
+          </Key>
+          <Property Name="bankID" Type="Int32" Nullable="false" />
+          <Property Name="bankName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="instandName" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -588,6 +615,15 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <EntitySetMapping Name="BankTypes">
+            <EntityTypeMapping TypeName="EF_COMBUS.BankType">
+              <MappingFragment StoreEntitySet="BankType">
+                <ScalarProperty Name="instandName" ColumnName="instandName" />
+                <ScalarProperty Name="bankName" ColumnName="bankName" />
+                <ScalarProperty Name="bankID" ColumnName="bankID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

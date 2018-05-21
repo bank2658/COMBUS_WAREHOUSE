@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DATA.Service_Master;
 using DATA;
 using COMBUS_APP.Data;
+using DATA.Service_Transection;
 
 namespace COMBUS_APP.Master_Form
 {
@@ -18,6 +19,7 @@ namespace COMBUS_APP.Master_Form
 
         private Master_Product master;
         private Master_Company masterCom;
+        private Master_StoreManagement MasterStore;
         private int Check = 0;
 
         private enum EProduct

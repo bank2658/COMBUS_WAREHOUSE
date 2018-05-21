@@ -27,6 +27,7 @@ namespace DATA
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<BankType> BankTypes { get; set; }
     
         public virtual ObjectResult<Main_CheckLogin_Result> Main_CheckLogin(string userName)
         {
@@ -47,9 +48,13 @@ namespace DATA
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListcompany_Result>("Store_GetListcompany");
         }
     
-        public virtual ObjectResult<Store_GetListproduct_Result> Store_GetListproduct()
+        public virtual ObjectResult<Store_GetListproduct_Result> Store_GetListproduct(Nullable<int> bankID)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListproduct_Result>("Store_GetListproduct");
+            var bankIDParameter = bankID.HasValue ?
+                new ObjectParameter("bankID", bankID) :
+                new ObjectParameter("bankID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListproduct_Result>("Store_GetListproduct", bankIDParameter);
         }
     
         public virtual ObjectResult<Store_GetListrock_Result> Store_GetListrock(Nullable<int> bANKID)
@@ -468,9 +473,13 @@ namespace DATA
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Store_EditStock", stockIDParameter, productIDParameter, bankIDParameter, bayParameter, levelParameter, statusInStockParameter, dateINParameter, dateOutParameter, createByParameter);
         }
     
-        public virtual ObjectResult<Store_GetListproductNULL_Result> Store_GetListproductNULL()
+        public virtual ObjectResult<Store_GetListproductNULL_Result> Store_GetListproductNULL(Nullable<int> bankID)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListproductNULL_Result>("Store_GetListproductNULL");
+            var bankIDParameter = bankID.HasValue ?
+                new ObjectParameter("bankID", bankID) :
+                new ObjectParameter("bankID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Store_GetListproductNULL_Result>("Store_GetListproductNULL", bankIDParameter);
         }
     }
 }
