@@ -157,7 +157,7 @@
           <FunctionImport Name="Store_GetListbank" ReturnType="Collection(EF_COMBUS.Store_GetListbank_Result)" />
           <FunctionImport Name="Store_GetListcompany" ReturnType="Collection(EF_COMBUS.Store_GetListcompany_Result)" />
           <FunctionImport Name="Store_GetListproduct" ReturnType="Collection(EF_COMBUS.Store_GetListproduct_Result)" >
-            <Parameter Name="bankID" Mode="In" Type="Int32" />
+          <Parameter Name="bankID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="Store_GetListrock" ReturnType="Collection(EF_COMBUS.Store_GetListrock_Result)" >
           <Parameter Name="BANKID" Mode="In" Type="Int32" />
@@ -279,7 +279,7 @@
             <Parameter Name="createBy" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="Store_GetListproductNULL" ReturnType="Collection(EF_COMBUS.Store_GetListproductNULL_Result)" >
-            <Parameter Name="bankID" Mode="In" Type="Int32" />
+          <Parameter Name="bankID" Mode="In" Type="Int32" />
           </FunctionImport>
           <EntitySet Name="BankTypes" EntityType="EF_COMBUS.BankType" />
         </EntityContainer>
