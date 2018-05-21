@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.CbbRock = new System.Windows.Forms.ComboBox();
@@ -191,6 +194,9 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.DgvType = new System.Windows.Forms.DataGridView();
+            this.Rack = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PgbF = new COMBUS_APP.Data.RoundedProgressBar();
             this.PgbE = new COMBUS_APP.Data.RoundedProgressBar();
             this.PgbD = new COMBUS_APP.Data.RoundedProgressBar();
@@ -215,6 +221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvType)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -2152,6 +2159,7 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.DgvType);
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.label18);
             this.panel4.Controls.Add(this.label16);
@@ -2716,6 +2724,55 @@
             this.label22.TabIndex = 39;
             this.label22.Text = "Rack";
             // 
+            // DgvType
+            // 
+            this.DgvType.AllowUserToAddRows = false;
+            this.DgvType.AllowUserToDeleteRows = false;
+            this.DgvType.AllowUserToResizeColumns = false;
+            this.DgvType.AllowUserToResizeRows = false;
+            this.DgvType.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.DgvType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvType.ColumnHeadersVisible = false;
+            this.DgvType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Rack,
+            this.Type});
+            this.DgvType.Location = new System.Drawing.Point(12, 60);
+            this.DgvType.Name = "DgvType";
+            this.DgvType.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvType.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DgvType.RowHeadersVisible = false;
+            this.DgvType.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.DgvType.Size = new System.Drawing.Size(168, 111);
+            this.DgvType.TabIndex = 49;
+            // 
+            // Rack
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.Rack.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Rack.HeaderText = "Rack";
+            this.Rack.Name = "Rack";
+            this.Rack.ReadOnly = true;
+            this.Rack.Width = 54;
+            // 
+            // Type
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            this.Type.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Type.HeaderText = "Type";
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            // 
             // PgbF
             // 
             this.PgbF.Location = new System.Drawing.Point(504, 106);
@@ -2798,6 +2855,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvType)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2974,5 +3032,8 @@
         private System.Windows.Forms.ComboBox CbbCompany;
         private System.Windows.Forms.ComboBox CbbProduct;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView DgvType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rack;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
     }
 }

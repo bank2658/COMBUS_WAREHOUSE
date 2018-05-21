@@ -283,6 +283,7 @@ namespace COMBUS_APP.Transection_Form
                     bankID = re.bankID
                     ,bankName = re.bankName
                 });
+                DgvType.Rows.Add(re.instandName,re.bankName);
             }
             CbbRock.DataSource = new BindingSource(List, null);
             CbbRock.DisplayMember = "Value";
