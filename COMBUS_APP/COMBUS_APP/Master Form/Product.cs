@@ -238,7 +238,12 @@ namespace COMBUS_APP.Master_Form
         private void OnEdit()
         {
             master = new Master_Product();
-            master.Edit_Product(Convert.ToInt32(txtID.Text),txtName.Text,Convert.ToDecimal(txtWeight.Text),Convert.ToInt32(cbbType.Text),dtpIn.Value,dtpOut.Value);
+            master.Edit_Product(Convert.ToInt32(txtID.Text)
+                ,txtName.Text
+                ,Convert.ToDecimal(txtWeight.Text)
+                , (cbbType.SelectedItem as ComboboxItem).Value
+                , dtpIn.Value
+                ,dtpOut.Value);
             MessageBox.Show(Messge.INF_Edit,Messge.CM_Confirm);
             OnSearchName();
         }
