@@ -11,16 +11,13 @@ namespace DATA
 {
     using System;
     
-    public partial class Store_GetListrock_Result
+    public partial class Store_GetListproductNULL_Result
     {
-        public string Rack { get; set; }
-        public string companyName { get; set; }
+        public int productID { get; set; }
+        public Nullable<int> companyID { get; set; }
         public string productName { get; set; }
         public Nullable<int> Duration { get; set; }
         public Nullable<System.DateTime> dateIN { get; set; }
         public Nullable<System.DateTime> dateOut { get; set; }
-        public string createBy { get; set; }
-        public string statusInStock { get; set; }
-        public int stockID { get; set; }
     }
 }

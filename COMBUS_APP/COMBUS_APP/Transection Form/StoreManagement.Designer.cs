@@ -1932,6 +1932,7 @@
             // 
             this.txtDuration.BackColor = System.Drawing.Color.White;
             this.txtDuration.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDuration.Enabled = false;
             this.txtDuration.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuration.Location = new System.Drawing.Point(126, 216);
             this.txtDuration.Name = "txtDuration";
@@ -2003,6 +2004,7 @@
             this.CbbProduct.Name = "CbbProduct";
             this.CbbProduct.Size = new System.Drawing.Size(213, 30);
             this.CbbProduct.TabIndex = 167;
+            this.CbbProduct.SelectedIndexChanged += new System.EventHandler(this.CbbProduct_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -2023,9 +2025,11 @@
             this.DpkFrom.Name = "DpkFrom";
             this.DpkFrom.Size = new System.Drawing.Size(168, 26);
             this.DpkFrom.TabIndex = 55;
+            this.DpkFrom.Leave += new System.EventHandler(this.DpkFrom_Leave);
             // 
             // DpkTo
             // 
+            this.DpkTo.Enabled = false;
             this.DpkTo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DpkTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DpkTo.Location = new System.Drawing.Point(126, 281);
@@ -2102,6 +2106,7 @@
             // 
             this.BtnSubmit.BackColor = System.Drawing.Color.Green;
             this.BtnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSubmit.Enabled = false;
             this.BtnSubmit.FlatAppearance.BorderSize = 0;
             this.BtnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSubmit.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
