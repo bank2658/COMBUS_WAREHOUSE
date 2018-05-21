@@ -78,34 +78,40 @@
     <Compile Include="Master Form\Company.Designer.cs">
       <DependentUpon>Company.cs</DependentUpon>
     </Compile>
-    <Compile Include="Report\Report_Company.cs">
+    <Compile Include="Report\Company_Re.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Report_Company.rpt</DependentUpon>
+      <DependentUpon>Company_Re.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\Report_Employee.cs">
+    <Compile Include="Report\Employee_Re.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Report_Employee.rpt</DependentUpon>
+      <DependentUpon>Employee_Re.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\Report_EmployeeTimeWork.cs">
+    <Compile Include="Report\Product_Re.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Report_EmployeeTimeWork.rpt</DependentUpon>
+      <DependentUpon>Product_Re.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\Report_Product.cs">
+    <Compile Include="Report\Report_Master_All.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\Report_Master_All.Designer.cs">
+      <DependentUpon>Report_Master_All.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\TimeWork_Re.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Report_Product.rpt</DependentUpon>
+      <DependentUpon>TimeWork_Re.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\Report_TransectionError.cs">
+    <Compile Include="Report\TransectionError_Re.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Report_TransectionError.rpt</DependentUpon>
+      <DependentUpon>TransectionError_Re.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Transection Form\Employee.cs">
@@ -133,12 +139,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Report\MasterReport.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Report\MasterReport.Designer.cs">
-      <DependentUpon>MasterReport.cs</DependentUpon>
-    </Compile>
     <Compile Include="Master Form\EmployeeManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -163,25 +163,28 @@
     <EmbeddedResource Include="Master Form\Company.resx">
       <DependentUpon>Company.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\Report_Company.rpt">
+    <EmbeddedResource Include="Report\Company_Re.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_Company.cs</LastGenOutput>
+      <LastGenOutput>Company_Re.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\Report_Employee.rpt">
+    <EmbeddedResource Include="Report\Employee_Re.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_Employee.cs</LastGenOutput>
+      <LastGenOutput>Employee_Re.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\Report_EmployeeTimeWork.rpt">
+    <EmbeddedResource Include="Report\Product_Re.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_EmployeeTimeWork.cs</LastGenOutput>
+      <LastGenOutput>Product_Re.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\Report_Product.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_Product.cs</LastGenOutput>
+    <EmbeddedResource Include="Report\Report_Master_All.resx">
+      <DependentUpon>Report_Master_All.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\Report_TransectionError.rpt">
+    <EmbeddedResource Include="Report\TimeWork_Re.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_TransectionError.cs</LastGenOutput>
+      <LastGenOutput>TimeWork_Re.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TransectionError_Re.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TransectionError_Re.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Transection Form\Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
@@ -196,9 +199,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Report\MasterReport.resx">
-      <DependentUpon>MasterReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master Form\EmployeeManagement.resx">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>

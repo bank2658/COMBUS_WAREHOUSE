@@ -16,14 +16,14 @@ namespace COMBUS_APP.Report {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class Report_Product : ReportClass {
+    public class Company_Re : ReportClass {
         
-        public Report_Product() {
+        public Company_Re() {
         }
         
         public override string ResourceName {
             get {
-                return "Report_Product.rpt";
+                return "Company_Re.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace COMBUS_APP.Report {
         
         public override string FullResourceName {
             get {
-                return "COMBUS_APP.Report.Report_Product.rpt";
+                return "COMBUS_APP.Report.Company_Re.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace COMBUS_APP.Report {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReport_Product : Component, ICachedReport {
+    public class CachedCompany_Re : Component, ICachedReport {
         
-        public CachedReport_Product() {
+        public CachedCompany_Re() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace COMBUS_APP.Report {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            Report_Product rpt = new Report_Product();
+            Company_Re rpt = new Company_Re();
             rpt.Site = this.Site;
             return rpt;
         }

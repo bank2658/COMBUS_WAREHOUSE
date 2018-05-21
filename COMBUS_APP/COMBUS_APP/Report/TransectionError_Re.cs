@@ -16,14 +16,14 @@ namespace COMBUS_APP.Report {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class Report_TransectionError : ReportClass {
+    public class TransectionError_Re : ReportClass {
         
-        public Report_TransectionError() {
+        public TransectionError_Re() {
         }
         
         public override string ResourceName {
             get {
-                return "Report_TransectionError.rpt";
+                return "TransectionError_Re.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace COMBUS_APP.Report {
         
         public override string FullResourceName {
             get {
-                return "COMBUS_APP.Report.Report_TransectionError.rpt";
+                return "COMBUS_APP.Report.TransectionError_Re.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace COMBUS_APP.Report {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReport_TransectionError : Component, ICachedReport {
+    public class CachedTransectionError_Re : Component, ICachedReport {
         
-        public CachedReport_TransectionError() {
+        public CachedTransectionError_Re() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace COMBUS_APP.Report {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            Report_TransectionError rpt = new Report_TransectionError();
+            TransectionError_Re rpt = new TransectionError_Re();
             rpt.Site = this.Site;
             return rpt;
         }

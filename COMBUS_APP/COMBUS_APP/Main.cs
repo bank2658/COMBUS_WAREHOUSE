@@ -166,7 +166,7 @@ namespace COMBUS_APP
             toggle(sender, panelMainmenu.Top);
             panel4.Controls.Clear();
 
-            MasterReport user_report = new MasterReport();
+            Report_Master_All user_report = new Report_Master_All();
             panel4.Controls.Add(user_report);
         }
 

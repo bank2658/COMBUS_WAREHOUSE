@@ -16,14 +16,14 @@ namespace COMBUS_APP.Report {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class Report_EmployeeTimeWork : ReportClass {
+    public class Employee_Re : ReportClass {
         
-        public Report_EmployeeTimeWork() {
+        public Employee_Re() {
         }
         
         public override string ResourceName {
             get {
-                return "Report_EmployeeTimeWork.rpt";
+                return "Employee_Re.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace COMBUS_APP.Report {
         
         public override string FullResourceName {
             get {
-                return "COMBUS_APP.Report.Report_EmployeeTimeWork.rpt";
+                return "COMBUS_APP.Report.Employee_Re.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace COMBUS_APP.Report {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReport_EmployeeTimeWork : Component, ICachedReport {
+    public class CachedEmployee_Re : Component, ICachedReport {
         
-        public CachedReport_EmployeeTimeWork() {
+        public CachedEmployee_Re() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace COMBUS_APP.Report {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            Report_EmployeeTimeWork rpt = new Report_EmployeeTimeWork();
+            Employee_Re rpt = new Employee_Re();
             rpt.Site = this.Site;
             return rpt;
         }
