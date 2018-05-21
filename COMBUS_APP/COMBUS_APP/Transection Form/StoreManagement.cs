@@ -100,6 +100,7 @@ namespace COMBUS_APP.Transection_Form
                     Button btn = this.Controls.Find("BTN" + txtRack.Text.Substring(1), true).First() as Button;
                     BtnRockClick((object)btn, null);
                     BtnRackmode(true);
+                    LoadComboboxData();
                 }
                 else
                 {
@@ -125,7 +126,7 @@ namespace COMBUS_APP.Transection_Form
                     Button btn = this.Controls.Find("BTN" + txtRack.Text.Substring(1), true).First() as Button;
                     BtnRockClick((object)btn, null);
                     BtnRackmode(true);
-
+                    LoadComboboxData();
                 }
             }
         }
@@ -182,6 +183,7 @@ namespace COMBUS_APP.Transection_Form
                 BtnAdd.Enabled = false;
                 BtnEdit.Enabled = true;
                 BtnDelete.Enabled = true;
+
             }
             else
             {
