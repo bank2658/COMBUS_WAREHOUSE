@@ -57,12 +57,12 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbCompany = new System.Windows.Forms.ComboBox();
             this.cbbType = new System.Windows.Forms.ComboBox();
             this.dtpOut = new System.Windows.Forms.DateTimePicker();
             this.dtpIn = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtComID = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -411,7 +411,7 @@
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txtComID);
+            this.panel2.Controls.Add(this.cbCompany);
             this.panel2.Controls.Add(this.cbbType);
             this.panel2.Controls.Add(this.dtpOut);
             this.panel2.Controls.Add(this.dtpIn);
@@ -438,6 +438,28 @@
             this.panel2.Size = new System.Drawing.Size(403, 669);
             this.panel2.TabIndex = 5;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(32, 415);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 22);
+            this.label4.TabIndex = 57;
+            this.label4.Text = "CompanyID";
+            // 
+            // cbCompany
+            // 
+            this.cbCompany.BackColor = System.Drawing.Color.White;
+            this.cbCompany.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCompany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbCompany.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCompany.FormattingEnabled = true;
+            this.cbCompany.Location = new System.Drawing.Point(140, 415);
+            this.cbCompany.Name = "cbCompany";
+            this.cbCompany.Size = new System.Drawing.Size(121, 27);
+            this.cbCompany.TabIndex = 55;
+            // 
             // cbbType
             // 
             this.cbbType.BackColor = System.Drawing.Color.White;
@@ -445,13 +467,6 @@
             this.cbbType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbbType.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbType.FormattingEnabled = true;
-            this.cbbType.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"});
             this.cbbType.Location = new System.Drawing.Point(140, 377);
             this.cbbType.Name = "cbbType";
             this.cbbType.Size = new System.Drawing.Size(121, 27);
@@ -485,26 +500,6 @@
             this.label3.TabIndex = 52;
             this.label3.Text = "kg";
             // 
-            // txtComID
-            // 
-            this.txtComID.BackColor = System.Drawing.Color.White;
-            this.txtComID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtComID.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComID.Location = new System.Drawing.Point(140, 415);
-            this.txtComID.Name = "txtComID";
-            this.txtComID.Size = new System.Drawing.Size(73, 23);
-            this.txtComID.TabIndex = 56;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 415);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 22);
-            this.label4.TabIndex = 57;
-            this.label4.Text = "CompanyID";
-            // 
             // No
             // 
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
@@ -517,29 +512,31 @@
             // 
             this.productID.HeaderText = "productID";
             this.productID.Name = "productID";
+            this.productID.Width = 60;
             // 
             // productName
             // 
             this.productName.HeaderText = "productName";
             this.productName.Name = "productName";
-            this.productName.Width = 250;
+            this.productName.Width = 150;
             // 
             // productKG
             // 
             this.productKG.HeaderText = "productKG";
             this.productKG.Name = "productKG";
+            this.productKG.Width = 70;
             // 
             // productType
             // 
-            this.productType.HeaderText = "productType";
+            this.productType.HeaderText = "Type";
             this.productType.Name = "productType";
-            this.productType.Width = 150;
+            this.productType.Width = 60;
             // 
             // CompanyID
             // 
             this.CompanyID.HeaderText = "CompanyID";
             this.CompanyID.Name = "CompanyID";
-            this.CompanyID.Width = 50;
+            this.CompanyID.Width = 70;
             // 
             // dateIn
             // 
@@ -604,6 +601,8 @@
         private System.Windows.Forms.DateTimePicker dtpOut;
         private System.Windows.Forms.DateTimePicker dtpIn;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbCompany;
         private System.Windows.Forms.DataGridViewTextBoxColumn No;
         private System.Windows.Forms.DataGridViewTextBoxColumn productID;
         private System.Windows.Forms.DataGridViewTextBoxColumn productName;
@@ -612,7 +611,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CompanyID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateIn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateOut;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtComID;
     }
 }

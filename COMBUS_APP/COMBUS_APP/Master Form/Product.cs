@@ -17,6 +17,7 @@ namespace COMBUS_APP.Master_Form
     {
 
         private Master_Product master;
+        private Master_Company masterCom;
         private int Check = 0;
 
         private enum EProduct
@@ -85,6 +86,20 @@ namespace COMBUS_APP.Master_Form
         {
             design_Dgv();
 
+            masterCom = new Master_Company();
+            List<Company_GetCompany_Result> result =  masterCom.Get_Company(string.Empty);
+            foreach(Company_GetCompany_Result re in result)
+            {
+                ComboboxItem item = new ComboboxItem();
+                item.Text = re.companyName;
+                item.Value = re.companyID;
+
+                cbCompany.Items.Add(item);
+            }
+
+
+
+
             ViewMode();
         }
 
@@ -92,7 +107,7 @@ namespace COMBUS_APP.Master_Form
         {                  
             txtName.ReadOnly = true;
             txtWeight.ReadOnly = true;
-            txtComID.ReadOnly = true;
+            cbCompany.Enabled = true;
 
             cbbType.Enabled = false;
 
@@ -112,7 +127,7 @@ namespace COMBUS_APP.Master_Form
             txtID.Text = "ADD";
             txtName.ReadOnly = false;
             txtWeight.ReadOnly = false;
-            txtComID.ReadOnly = false;
+            cbCompany.Enabled = false;
 
             cbbType.Enabled = true;
 
@@ -127,7 +142,8 @@ namespace COMBUS_APP.Master_Form
             txtName.Text = string.Empty;
             txtWeight.Text = string.Empty;
             cbbType.Text = string.Empty;
-            txtComID.Text = string.Empty;           
+            if (cbCompany.Items.Count > 0) cbCompany.SelectedIndex = 0;
+            else cbCompany.SelectedIndex = -1;
         }
 
         private void EditMode()
@@ -135,7 +151,7 @@ namespace COMBUS_APP.Master_Form
             //txtID.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductID].Value.ToString();
             txtName.ReadOnly = false;
             txtWeight.ReadOnly = false;
-            txtComID.ReadOnly = false;
+            cbCompany.Enabled = false;
 
             cbbType.Enabled = true;
 
@@ -225,7 +241,7 @@ namespace COMBUS_APP.Master_Form
                 master.Add_Product(txtName.Text
                                 , Convert.ToDecimal(txtWeight.Text)
                                 , Convert.ToInt32(cbbType.Text)
-                                , Convert.ToInt32(txtComID.Text)
+                                , (cbCompany.SelectedItem as ComboboxItem).Value
                                 , dtpIn.Value
                                 , dtpOut.Value);
                 MessageBox.Show(Messge.INF_Save, Messge.CM_Confirm);
@@ -242,8 +258,19 @@ namespace COMBUS_APP.Master_Form
             txtID.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductID].Value.ToString();
             txtName.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductName].Value.ToString();
             txtWeight.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductKg].Value.ToString();
+
             cbbType.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ProductType].Value.ToString();
-            txtComID.Text = GrdProduct.CurrentRow.Cells[(int)EProduct.ComID].Value.ToString();
+
+            int intCompany = Convert.ToInt32( GrdProduct.CurrentRow.Cells[(int)EProduct.ComID].Value.ToString());
+            foreach(ComboboxItem re in cbCompany.Items)
+            {
+                if(intCompany == re.Value)
+                {
+                    cbCompany.SelectedItem = re;
+                    break;
+                }
+            }
+
             dtpIn.Value = Convert.ToDateTime(GrdProduct.CurrentRow.Cells[(int)EProduct.DateIn].Value.ToString());
             dtpOut.Value = Convert.ToDateTime(GrdProduct.CurrentRow.Cells[(int)EProduct.Dateout].Value.ToString());
         }
@@ -310,6 +337,16 @@ namespace COMBUS_APP.Master_Form
                 OnEdit();
             }
             ViewMode();
+        }
+    }
+    public class ComboboxItem
+    {
+        public string Text { get; set; }
+        public int Value { get; set; }
+
+        public override string ToString()
+        {
+            return Text;
         }
     }
 }
