@@ -230,7 +230,7 @@ namespace COMBUS_APP.Transection_Form
 
         private void grdEmp_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            GrdEmpClick(0);
+            if(grdEmp.Rows.Count > 0) GrdEmpClick(0);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -248,7 +248,7 @@ namespace COMBUS_APP.Transection_Form
         private void btnCancel_Click(object sender, EventArgs e)
         {
             ViewMode();
-            GrdEmpClick(0);
+            if(grdEmp.Rows.Count > 0) GrdEmpClick(0);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

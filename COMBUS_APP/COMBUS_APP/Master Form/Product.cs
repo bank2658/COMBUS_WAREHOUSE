@@ -338,7 +338,7 @@ namespace COMBUS_APP.Master_Form
         private void btnCancel_Click(object sender, EventArgs e)
         {
             ViewMode();
-            GrdProClick(0);
+            if(GrdProduct.Rows.Count > 0) GrdProClick(0);
         }
 
         private void GrdProduct_CellClick(object sender, DataGridViewCellEventArgs e)
