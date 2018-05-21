@@ -138,7 +138,7 @@ namespace COMBUS_APP.Master_Form
             txtID.Text = "ADD";
             txtName.ReadOnly = false;
             txtWeight.ReadOnly = false;
-            cbCompany.Enabled = false;
+            cbCompany.Enabled = true;
 
             cbbType.Enabled = true;
 
